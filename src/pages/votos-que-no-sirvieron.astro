@@ -1,0 +1,83 @@
+---
+// Ruta: src/pages/votos-que-no-sirvieron.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { PROVINCIAS, num, pct, votosSinEscano } from '../lib/datos';
+
+const total = PROVINCIAS.reduce((s, p) => s + votosSinEscano(p), 0);
+const validos = PROVINCIAS.reduce((s, p) => s + p.r2023.validos, 0);
+const blancos = PROVINCIAS.reduce((s, p) => s + p.r2023.blancos, 0);
+const ranking = [...PROVINCIAS]
+  .map((p) => ({ p, v: votosSinEscano(p), pc: (100 * votosSinEscano(p)) / p.r2023.validos }))
+  .sort((a, b) => b.pc - a.pc);
+const max = ranking[0].pc;
+// Partidos con más votos sin ningún escaño en una provincia.
+const perdidos = new Map<string, number>();
+for (const p of PROVINCIAS) for (const x of p.r2023.partidos) if (x.escanos === 0) perdidos.set(x.siglas, (perdidos.get(x.siglas) ?? 0) + x.votos);
+const topPerdidos = [...perdidos.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+const millones = (total / 1e6).toLocaleString('es-ES', { maximumFractionDigits: 1 });
+
+const title = `${millones} millones de votos no sacaron ningún escaño en 2023`;
+const heading = 'Votos que no sirvieron para elegir a nadie en 2023';
+const description = `En las generales de 2023, ${num(total)} votos (el ${pct((100 * total) / validos)} de los válidos) fueron a listas que no sacaron diputado en su provincia. Provincia a provincia.`;
+
+const preguntas = [
+  {
+    q: '¿Qué es un voto que no sirve para elegir a nadie?',
+    a: 'Un voto a una lista que no saca ningún diputado en su provincia. Ese voto cuenta en el total, pero no se traduce en ningún escaño.',
+  },
+  {
+    q: '¿Por qué hay más en unas provincias que en otras?',
+    a: 'Porque en las provincias que reparten pocos escaños hace falta un porcentaje alto para sacar uno, y más votos se quedan fuera.',
+  },
+  {
+    q: '¿El voto en blanco está incluido?',
+    a: `No. Aparte, en 2023 hubo ${num(blancos)} votos en blanco, que cuentan como válidos pero no van a ninguna lista.`,
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Votos que no sirvieron' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Votos que no sirvieron' }]} etiqueta="Datos oficiales de 2023">
+    <p><strong>{num(total)} votos</strong> fueron en 2023 a listas que no sacaron ningún diputado en su provincia: el {pct((100 * total) / validos)} de los votos válidos.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight">Por provincia</h2>
+        <p class="mt-2 text-slate-600">Porcentaje de los votos válidos que fue a listas sin escaño.</p>
+        <ol class="mt-6 space-y-1.5">
+          {ranking.map(({ p, v, pc }) => (
+            <li>
+              <a href={`/provincias/${p.slug}`} class="grid grid-cols-[8.5rem_1fr_4rem] items-center gap-2 rounded-lg px-1 py-1 text-sm hover:bg-indigo-50 sm:grid-cols-[11rem_1fr_6rem_4rem]">
+                <span class="truncate font-semibold text-slate-800">{p.nombre}</span>
+                <span class="h-4 rounded bg-slate-100"><span class="block h-4 rounded bg-amber-500" style={`width:${(100 * pc) / max}%`} /></span>
+                <span class="hidden text-right tabular-nums text-slate-500 sm:block">{num(v)}</span>
+                <span class="text-right font-bold tabular-nums">{pct(pc)}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight">Las listas con más votos sin escaño</h2>
+        <p class="mt-2 text-slate-600">Suma de sus votos en las provincias donde no sacaron diputado.</p>
+        <ul class="mt-6 space-y-2">
+          {topPerdidos.map(([s, v]) => (
+            <li class="flex items-center justify-between rounded-xl bg-white px-4 py-2.5 text-sm ring-1 ring-slate-200"><span class="font-semibold">{s}</span><span class="tabular-nums">{num(v)}</span></li>
+          ))}
+        </ul>
+        <a href="/simulador-dhondt" class="boton mt-6">Prueba el reparto en tu provincia</a>
+      </div>
+    </section>
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: resultados de las elecciones al Congreso del 23 de julio de 2023, Ministerio del Interior. Cálculo propio.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

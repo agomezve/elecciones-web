@@ -1,0 +1,53 @@
+# Ruta: .github/workflows/deploy.yml
+name: Deploy Elecciones al Día
+
+on:
+  push:
+    branches: [ main ]
+  # Reconstruye la web cada día a las 05:17 UTC para que la cuenta atrás y los avisos de plazos
+  # (voto por correo, campaña, encuestas) estén al día aunque no haya cambios.
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install, build, and upload site
+        uses: withastro/action@v3
+        with:
+          # Astro 7 requiere Node 22.22 o superior (ver "engines" en package.json).
+          node-version: 22
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      # Avisa a IndexNow (Bing y otros buscadores) con las URL del sitemap ya publicado.
+      # Solo en los push y los lanzamientos manuales, no en la reconstrucción diaria.
+      # Si falla, solo deja un aviso: nunca rompe el despliegue.
+      - name: Checkout repository (IndexNow)
+        if: github.event_name != 'schedule'
+        uses: actions/checkout@v4
+      - name: Notify IndexNow
+        if: github.event_name != 'schedule'
+        continue-on-error: true
+        run: node scripts/indexnow.mjs

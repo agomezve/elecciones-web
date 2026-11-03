@@ -1,0 +1,17 @@
+---
+// Ruta: src/pages/404.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { HERRAMIENTAS } from '../config/site';
+---
+
+<BaseLayout title="Página no encontrada" description="La página que buscas no existe." noindex>
+  <section class="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
+    <p class="text-sm font-semibold text-amber-600">Error 404</p>
+    <h1 class="mt-2 text-4xl font-extrabold tracking-tight">Esta página no existe</h1>
+    <p class="mt-4 text-lg text-slate-600">La dirección no existe o ha cambiado. Quizá buscabas una de estas:</p>
+    <ul class="mt-8 flex flex-wrap justify-center gap-2 text-sm">
+      {HERRAMIENTAS.slice(0, 8).map((h) => <li><a href={h.href} class="rounded-full border border-slate-200 bg-white px-3 py-1.5 hover:border-amber-400">{h.titulo}</a></li>)}
+    </ul>
+    <a href="/" class="boton mt-10">Ir a la portada</a>
+  </section>
+</BaseLayout>

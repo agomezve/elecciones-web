@@ -1,0 +1,196 @@
+---
+// Ruta: src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CuentaAtras from '../components/CuentaAtras.astro';
+import SelectorProvincia from '../components/SelectorProvincia.astro';
+import TarjetaPartido from '../components/TarjetaPartido.astro';
+import Icono from '../components/Icono.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE, HERRAMIENTAS } from '../config/site';
+import { CALENDARIO, ELECCION, PROVINCIAS, diasHasta, electoresPorEscano, fechaCorta, getProvincia, num } from '../lib/datos';
+import { PARTIDOS_ORDENADOS } from '../lib/partidos';
+
+const ahora = Date.now();
+const proximos = CALENDARIO.filter((h) => new Date(h.limite).getTime() > ahora);
+const siguiente = proximos.find((h) => h.clave) ?? proximos[0];
+const listas = PROVINCIAS.reduce((s, p) => s + p.listas.length, 0);
+const censo = PROVINCIAS.reduce((s, p) => s + p.r2023.censo, 0);
+const soria = getProvincia('soria');
+const madrid = getProvincia('madrid');
+const veces = (electoresPorEscano(madrid) / electoresPorEscano(soria)).toLocaleString('es-ES', { maximumFractionDigits: 1 });
+const diasCorreo = diasHasta('2026-11-19');
+
+const preguntas = [
+  {
+    q: '¿Cuándo son las elecciones generales?',
+    a: 'El domingo 29 de noviembre de 2026. Los colegios electorales abren de 9:00 a 20:00. Las convocó el Real Decreto 806/2026, publicado en el BOE el 6 de octubre.',
+  },
+  {
+    q: '¿Hasta cuándo puedo pedir el voto por correo?',
+    a: 'Hasta el jueves 19 de noviembre, en cualquier oficina de Correos o en su web. Después tienes que enviar el voto como tarde el miércoles 25. Si lo pides, ya no puedes votar en persona en tu mesa.',
+  },
+  {
+    q: '¿Cuántos escaños hacen falta para gobernar?',
+    a: 'La mayoría absoluta del Congreso son 176 de 350 diputados. En la investidura, la primera votación exige esa mayoría; en la segunda, 48 horas después, basta con más síes que noes.',
+  },
+  {
+    q: '¿Qué partidos se presentan?',
+    a: `El BOE del 3 de noviembre publicó ${listas} listas al Congreso en las 52 circunscripciones. Solo VOX, el PSOE (con sus federaciones) y el Frente Obrero se presentan en todas.`,
+  },
+  {
+    q: '¿Cuándo empieza la campaña electoral?',
+    a: 'A las 0:00 del viernes 13 de noviembre y termina a las 24:00 del viernes 27. El sábado 28 es la jornada de reflexión.',
+  },
+  {
+    q: '¿Se pueden publicar encuestas la última semana?',
+    a: 'No. Desde el martes 24 de noviembre hasta el cierre de los colegios está prohibido publicar o difundir sondeos electorales (LOREG, artículo 69.7).',
+  },
+];
+---
+
+<BaseLayout title={SITE.homeTitle} heading="Elecciones generales del 29 de noviembre de 2026" description={SITE.description}>
+  <!-- Portada -->
+  <section class="relative overflow-hidden bg-slate-950 text-white">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(99,102,241,0.35),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(245,158,11,0.18),transparent_50%)]"></div>
+    <div class="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.25fr_1fr] lg:py-20">
+      <div>
+        <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300 ring-1 ring-white/15">
+          <span class="h-2 w-2 animate-pulse rounded-full bg-amber-400"></span> Elecciones generales · domingo 29 de noviembre
+        </p>
+        <h1 class="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+          Elecciones generales del <span class="whitespace-nowrap">29-N:</span> <span class="text-amber-400">todo para votar</span>, sin ruido
+        </h1>
+        <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">
+          Plazos del voto por correo, las {listas} listas al Congreso de tu provincia según el BOE, los partidos con sus
+          cabezas de lista y herramientas para entender cómo se reparten los 350 escaños.
+        </p>
+        <div class="mt-7">
+          <SelectorProvincia oscuro />
+        </div>
+        <div class="mt-4 flex flex-wrap gap-3 text-sm">
+          <a href="/voto-por-correo" class="font-semibold text-amber-300 underline-offset-4 hover:underline">Voto por correo →</a>
+          <a href="/pactos" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Calculadora de pactos →</a>
+          <a href="/partidos" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Los partidos →</a>
+        </div>
+      </div>
+
+      <div class="self-center rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur sm:p-8">
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-300">Abren los colegios en</p>
+        <div class="mt-3"><CuentaAtras hasta={ELECCION.apertura} pasado="Los colegios ya han abierto" oscuro /></div>
+        {
+          siguiente && (
+            <a href={siguiente.href ?? '/calendario'} class="mt-6 block rounded-2xl bg-amber-400 p-4 text-slate-900 transition hover:bg-amber-300">
+              <span class="text-xs font-bold uppercase tracking-wider">Próximo plazo · {fechaCorta(siguiente.fecha)}</span>
+              <span class="mt-1 block text-lg font-extrabold leading-snug">{siguiente.titulo}</span>
+              {siguiente.fecha === '2026-11-19' && diasCorreo >= 0 && (
+                <span class="mt-0.5 block text-sm font-medium">{diasCorreo === 0 ? 'Hoy es el último día' : `Te quedan ${diasCorreo} ${diasCorreo === 1 ? 'día' : 'días'}`} →</span>
+              )}
+            </a>
+          )
+        }
+        <dl class="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div><dt class="text-[11px] uppercase tracking-wider text-slate-400">Escaños</dt><dd class="text-2xl font-black">350</dd></div>
+          <div><dt class="text-[11px] uppercase tracking-wider text-slate-400">Mayoría</dt><dd class="text-2xl font-black text-amber-400">176</dd></div>
+          <div><dt class="text-[11px] uppercase tracking-wider text-slate-400">Provincias</dt><dd class="text-2xl font-black">52</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partidos -->
+  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Quién se presenta</p>
+        <h2 class="mt-1 text-3xl font-extrabold tracking-tight">Los partidos y sus cabezas de lista</h2>
+        <p class="mt-2 max-w-2xl text-slate-600">Según las candidaturas proclamadas en el BOE. Ordenados por escaños de 2023 y, después, por provincias en las que se presentan.</p>
+      </div>
+      <a href="/partidos" class="boton-secundario">Ver todos</a>
+    </div>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {PARTIDOS_ORDENADOS.slice(0, 8).map((p) => <TarjetaPartido partido={p} />)}
+    </div>
+  </section>
+
+  <!-- Dato destacado -->
+  <section class="mx-auto max-w-6xl px-4 sm:px-6">
+    <a href="/cuanto-vale-tu-voto" class="group grid items-center gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-700 to-slate-900 p-6 text-white shadow-lg sm:grid-cols-[auto_1fr] sm:p-10">
+      <p class="text-7xl font-black leading-none text-amber-400 sm:text-8xl">{veces}×</p>
+      <div>
+        <p class="text-2xl font-extrabold leading-tight sm:text-3xl">Un voto en Soria pesa {veces} veces más que uno en Madrid</p>
+        <p class="mt-2 text-slate-200">
+          Soria elige 2 diputados con {num(soria.r2023.censo)} electores; Madrid, 38 con {num(madrid.r2023.censo)}. Mira cuánto vale el tuyo
+          <span class="font-semibold text-amber-300 group-hover:underline">→</span>
+        </p>
+      </div>
+    </a>
+  </section>
+
+  <AdSlot class="mx-auto max-w-6xl px-4 sm:px-6" />
+
+  <!-- Herramientas -->
+  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Herramientas y guías</p>
+    <h2 class="mt-1 text-3xl font-extrabold tracking-tight">Todo lo que necesitas antes del domingo 29</h2>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        HERRAMIENTAS.map((h) => (
+          <a href={h.href} class="group flex gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-indigo-300 hover:shadow-md">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-amber-400">
+              <Icono nombre={h.icono} />
+            </span>
+            <span>
+              <span class="block font-bold text-slate-900 group-hover:text-indigo-700">{h.titulo}</span>
+              <span class="mt-1 block text-sm leading-relaxed text-slate-600">{h.texto}</span>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Calendario -->
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Calendario</p>
+          <h2 class="mt-1 text-3xl font-extrabold tracking-tight">Las fechas que importan</h2>
+        </div>
+        <a href="/calendario" class="boton-secundario">Calendario completo</a>
+      </div>
+      <ol class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          CALENDARIO.filter((h) => h.fecha >= '2026-11-09' && h.fecha <= '2026-11-29').map((h) => {
+            const pasado = new Date(h.limite).getTime() <= ahora;
+            return (
+              <li class:list={['rounded-2xl border p-4', h.clave ? 'border-amber-300 bg-amber-50' : 'border-slate-200 bg-slate-50', pasado && 'opacity-50']}>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-500">{fechaCorta(h.fecha)}{pasado && ' · pasado'}</p>
+                <p class="mt-1 font-bold leading-snug text-slate-900">{h.href ? <a href={h.href} class="hover:text-indigo-700">{h.titulo}</a> : h.titulo}</p>
+                <p class="mt-1 text-sm leading-relaxed text-slate-600">{h.texto}</p>
+              </li>
+            );
+          })
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Cifras -->
+  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <h2 class="text-3xl font-extrabold tracking-tight">Las elecciones en cifras</h2>
+    <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="tarjeta"><dt class="dato-nombre">Listas al Congreso</dt><dd class="dato-valor">{num(listas)}</dd><p class="ayuda">En las 52 circunscripciones (BOE, 3-nov).</p></div>
+      <div class="tarjeta"><dt class="dato-nombre">Senadores que se eligen</dt><dd class="dato-valor">208</dd><p class="ayuda">4 por provincia; en las islas, por isla.</p></div>
+      <div class="tarjeta"><dt class="dato-nombre">Electores en 2023</dt><dd class="dato-valor">{(censo / 1e6).toLocaleString('es-ES', { maximumFractionDigits: 1 })} M</dd><p class="ayuda">Censo de las últimas generales.</p></div>
+      <div class="tarjeta"><dt class="dato-nombre">Escaños de Madrid</dt><dd class="dato-valor">38</dd><p class="ayuda">Uno más que en 2023. Cádiz pasa de 9 a 8.</p></div>
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
+    <Faq preguntas={preguntas} />
+    <Autor />
+  </section>
+</BaseLayout>

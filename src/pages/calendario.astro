@@ -1,0 +1,44 @@
+---
+// Ruta: src/pages/calendario.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { CALENDARIO, ELECCION, diasHasta, fechaLarga } from '../lib/datos';
+
+const ahora = new Date();
+const title = 'Calendario electoral de las elecciones del 29-N de 2026';
+const heading = 'Calendario electoral del 29-N';
+const description = 'Fechas de las elecciones generales: voto por correo (19 y 25 de noviembre), campaña del 13 al 27, reflexión el 28, votación el 29 y Cortes el 23-D.';
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Calendario' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Calendario' }]} etiqueta="Fechas oficiales">
+    <p>De la convocatoria en el BOE a la constitución de las nuevas Cortes. Las fechas marcadas son las que más te afectan.</p>
+  </CabeceraPagina>
+  <div class="mx-auto max-w-4xl space-y-12 px-4 py-10 sm:px-6">
+    <ol class="relative space-y-6 border-l-2 border-slate-200 pl-6">
+      {CALENDARIO.map((h) => {
+        const pasado = new Date(h.limite) < ahora;
+        const d = diasHasta(h.fecha, ahora);
+        return (
+          <li class:list={['relative', pasado && 'opacity-60']}>
+            <span class:list={['absolute -left-[33px] top-1.5 h-4 w-4 rounded-full ring-4 ring-white', h.clave ? 'bg-amber-400' : pasado ? 'bg-slate-300' : 'bg-indigo-600']} />
+            <p class="text-sm font-semibold capitalize text-indigo-700">
+              {fechaLarga(h.fecha)}
+              {!pasado && d > 0 && <span class="ml-2 rounded-full bg-indigo-50 px-2 py-0.5 text-xs normal-case">faltan {d} días</span>}
+              {!pasado && d === 0 && <span class="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs normal-case">hoy</span>}
+            </p>
+            <h2 class="mt-1 text-lg font-bold text-slate-900">{h.titulo}</h2>
+            <p class="mt-1 text-slate-600">{h.texto}</p>
+            {h.href && <a href={h.href} class="mt-2 inline-block text-sm font-semibold text-indigo-700 hover:underline">Más información →</a>}
+          </li>
+        );
+      })}
+    </ol>
+    <AdSlot />
+    <Fuente>Fuente: <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a> y LOREG. La página se actualiza cada día.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

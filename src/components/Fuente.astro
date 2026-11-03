@@ -1,0 +1,12 @@
+---
+// Ruta: src/components/Fuente.astro
+// Nota de fuente y fecha de revisión al final de cada página de datos.
+interface Props {
+  revisado?: string;
+}
+const { revisado = '3 de noviembre de 2026' } = Astro.props;
+---
+
+<p class="fuente mt-8 max-w-3xl">
+  <slot /> Revisado el {revisado}.
+</p>

@@ -1,0 +1,4372 @@
+{
+ "A Coruña": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 292272,
+    "pct": 43.13,
+    "escanos": 4
+   },
+   {
+    "siglas": "PSdeG–PSOE",
+    "nombre": "Socialists' Party of Galicia (PSdeG–PSOE)",
+    "votos": 190897,
+    "pct": 28.17,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Galicia (Sumar)",
+    "votos": 82618,
+    "pct": 12.19,
+    "escanos": 1
+   },
+   {
+    "siglas": "BNG",
+    "nombre": "Galician Nationalist Bloc (BNG)",
+    "votos": 67653,
+    "pct": 9.98,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 34410,
+    "pct": 5.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3096,
+    "pct": 0.46,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1011,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 548,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 5197,
+  "validos": 677702,
+  "nulos": 5485,
+  "votantes": 683187,
+  "abstencion": 402486,
+  "censo": 1085673
+ },
+ "Albacete": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 88299,
+    "pct": 39.92,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 76322,
+    "pct": 34.51,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 36750,
+    "pct": 16.61,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 15834,
+    "pct": 7.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1261,
+    "pct": 0.57,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 381,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 325,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 185,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1834,
+  "validos": 221191,
+  "nulos": 2726,
+  "votantes": 223917,
+  "abstencion": 84071,
+  "censo": 307988
+ },
+ "Alicante": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 330293,
+    "pct": 36.73,
+    "escanos": 5
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 287737,
+    "pct": 32.0,
+    "escanos": 4
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 146133,
+    "pct": 16.25,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar–Compromís",
+    "nombre": "Commitment–Unite: We Unite to Win (Sumar–Compromís)",
+    "votos": 115787,
+    "pct": 12.88,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 7335,
+    "pct": 0.82,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1724,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "Partido Autónomos",
+    "nombre": "Self-employed Party (Partido Autónomos)",
+    "votos": 1446,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 1135,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 1027,
+    "pct": 0.11,
+    "escanos": 0
+   }
+  ],
+  "blancos": 6575,
+  "validos": 899192,
+  "nulos": 9650,
+  "votantes": 908842,
+  "abstencion": 397469,
+  "censo": 1306311
+ },
+ "Almería": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 131524,
+    "pct": 40.94,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 93282,
+    "pct": 29.04,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 68364,
+    "pct": 21.28,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 21485,
+    "pct": 6.69,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1962,
+    "pct": 0.61,
+    "escanos": 0
+   },
+   {
+    "siglas": "ALM",
+    "nombre": "People from Almería–Regionalists for Almería (ALM)",
+    "votos": 874,
+    "pct": 0.27,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 500,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 371,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "LB",
+    "nombre": "Free (LB)",
+    "votos": 210,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 206,
+    "pct": 0.06,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2464,
+  "validos": 321242,
+  "nulos": 3163,
+  "votantes": 324405,
+  "abstencion": 191709,
+  "censo": 516114
+ },
+ "Álava": {
+  "partidos": [
+   {
+    "siglas": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "nombre": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "votos": 46775,
+    "pct": 27.66,
+    "escanos": 1
+   },
+   {
+    "siglas": "EH Bildu",
+    "nombre": "Basque Country Gather (EH Bildu)",
+    "votos": 32987,
+    "pct": 19.51,
+    "escanos": 1
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 30212,
+    "pct": 17.87,
+    "escanos": 1
+   },
+   {
+    "siglas": "EAJ/PNV",
+    "nombre": "Basque Nationalist Party (EAJ/PNV)",
+    "votos": 28075,
+    "pct": 16.6,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 21561,
+    "pct": 12.75,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 6573,
+    "pct": 3.89,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 773,
+    "pct": 0.46,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 619,
+    "pct": 0.37,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 354,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 185,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE/ELAK",
+    "nombre": "Communist Party of the Workers of the Basque Country (PCTE/ELAK)",
+    "votos": 165,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 106,
+    "pct": 0.06,
+    "escanos": 0
+   }
+  ],
+  "blancos": 722,
+  "validos": 169107,
+  "nulos": 1431,
+  "votantes": 170538,
+  "abstencion": 89676,
+  "censo": 260214
+ },
+ "Asturias": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 212816,
+    "pct": 35.65,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 205049,
+    "pct": 34.34,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 88630,
+    "pct": 14.85,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 74571,
+    "pct": 12.49,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3167,
+    "pct": 0.53,
+    "escanos": 0
+   },
+   {
+    "siglas": "Asturias Existe EV",
+    "nombre": "Asturias Exists–Empty Spain (Asturias Existe EV)",
+    "votos": 2314,
+    "pct": 0.39,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 1598,
+    "pct": 0.27,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1176,
+    "pct": 0.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 773,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 590,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUEDE",
+    "nombre": "State of Spain Unionist Party (PUEDE)",
+    "votos": 269,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 6079,
+  "validos": 597032,
+  "nulos": 6151,
+  "votantes": 603183,
+  "abstencion": 355840,
+  "censo": 959023
+ },
+ "Ávila": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 42369,
+    "pct": 43.25,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 26828,
+    "pct": 27.39,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 15068,
+    "pct": 15.38,
+    "escanos": 0
+   },
+   {
+    "siglas": "XAV",
+    "nombre": "For Ávila (XAV)",
+    "votos": 7362,
+    "pct": 7.52,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 5027,
+    "pct": 5.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 275,
+    "pct": 0.28,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 100,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 91,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 85,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 77,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 42,
+    "pct": 0.04,
+    "escanos": 0
+   }
+  ],
+  "blancos": 632,
+  "validos": 97956,
+  "nulos": 1164,
+  "votantes": 99120,
+  "abstencion": 37549,
+  "censo": 136669
+ },
+ "Badajoz": {
+  "partidos": [
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 153473,
+    "pct": 39.21,
+    "escanos": 2
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 148068,
+    "pct": 37.82,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 53492,
+    "pct": 13.66,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 26778,
+    "pct": 6.84,
+    "escanos": 0
+   },
+   {
+    "siglas": "BQEx",
+    "nombre": "Extremaduran Bloc (BQEx)",
+    "votos": 3885,
+    "pct": 0.99,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1395,
+    "pct": 0.36,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 477,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 464,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 204,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3225,
+  "validos": 391461,
+  "nulos": 6772,
+  "votantes": 398233,
+  "abstencion": 152469,
+  "censo": 550702
+ },
+ "Illes Balears": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 179303,
+    "pct": 35.63,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSIB–PSOE",
+    "nombre": "Socialist Party of the Balearic Islands (PSIB–PSOE)",
+    "votos": 151786,
+    "pct": 30.16,
+    "escanos": 3
+   },
+   {
+    "siglas": "Més–MxMe–Sumar",
+    "nombre": "More for Mallorca–More for Menorca–Unite (Més–MxMe–Sumar)",
+    "votos": 83487,
+    "pct": 16.59,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 76547,
+    "pct": 15.21,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 4969,
+    "pct": 0.99,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1039,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 726,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 719,
+    "pct": 0.14,
+    "escanos": 0
+   }
+  ],
+  "blancos": 4704,
+  "validos": 503280,
+  "nulos": 4953,
+  "votantes": 508233,
+  "abstencion": 320522,
+  "censo": 828755
+ },
+ "Barcelona": {
+  "partidos": [
+   {
+    "siglas": "PSC–PSOE",
+    "nombre": "Socialists' Party of Catalonia (PSC–PSOE)",
+    "votos": 952347,
+    "pct": 35.7,
+    "escanos": 13
+   },
+   {
+    "siglas": "Sumar–ECP",
+    "nombre": "Unite–In Common We Can (Sumar–ECP)",
+    "votos": 405993,
+    "pct": 15.22,
+    "escanos": 5
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 367519,
+    "pct": 13.78,
+    "escanos": 5
+   },
+   {
+    "siglas": "ERC",
+    "nombre": "Republican Left of Catalonia (ERC)",
+    "votos": 328697,
+    "pct": 12.32,
+    "escanos": 4
+   },
+   {
+    "siglas": "Junts",
+    "nombre": "Together for Catalonia (Junts)",
+    "votos": 258159,
+    "pct": 9.68,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 201775,
+    "pct": 7.56,
+    "escanos": 2
+   },
+   {
+    "siglas": "CUP–PR",
+    "nombre": "Popular Unity Candidacy–For Rupture (CUP–PR)",
+    "votos": 67266,
+    "pct": 2.52,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 28201,
+    "pct": 1.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "PDeCAT–E–CiU",
+    "nombre": "Catalan European Democratic Party–CiU Space (PDeCAT–E–CiU)",
+    "votos": 24452,
+    "pct": 0.92,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 6048,
+    "pct": 0.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 3104,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTC",
+    "nombre": "Communist Party of the Workers of Catalonia (PCTC)",
+    "votos": 2858,
+    "pct": 0.11,
+    "escanos": 0
+   }
+  ],
+  "blancos": 21059,
+  "validos": 2667478,
+  "nulos": 21242,
+  "votantes": 2688720,
+  "abstencion": 1554780,
+  "censo": 4243500
+ },
+ "Bizkaia": {
+  "partidos": [
+   {
+    "siglas": "EAJ/PNV",
+    "nombre": "Basque Nationalist Party (EAJ/PNV)",
+    "votos": 164188,
+    "pct": 26.93,
+    "escanos": 2
+   },
+   {
+    "siglas": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "nombre": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "votos": 157448,
+    "pct": 25.82,
+    "escanos": 2
+   },
+   {
+    "siglas": "EH Bildu",
+    "nombre": "Basque Country Gather (EH Bildu)",
+    "votos": 125867,
+    "pct": 20.64,
+    "escanos": 2
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 70533,
+    "pct": 11.57,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 66592,
+    "pct": 10.92,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 16069,
+    "pct": 2.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 2729,
+    "pct": 0.45,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 929,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 804,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE/ELAK",
+    "nombre": "Communist Party of the Workers of the Basque Country (PCTE/ELAK)",
+    "votos": 618,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 525,
+    "pct": 0.09,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3391,
+  "validos": 609693,
+  "nulos": 5251,
+  "votantes": 614944,
+  "abstencion": 328039,
+  "censo": 942983
+ },
+ "Burgos": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 82329,
+    "pct": 40.64,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 69775,
+    "pct": 34.45,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 25858,
+    "pct": 12.77,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 17508,
+    "pct": 8.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "VB",
+    "nombre": "Burgalese Way (VB)",
+    "votos": 1774,
+    "pct": 0.88,
+    "escanos": 0
+   },
+   {
+    "siglas": "EV–PCAS–TC",
+    "nombre": "Empty Spain–Castilian Party–Commoners' Land (EV–PCAS–TC)",
+    "votos": 1184,
+    "pct": 0.58,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 943,
+    "pct": 0.47,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 490,
+    "pct": 0.24,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 354,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 349,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 154,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1851,
+  "validos": 202569,
+  "nulos": 2317,
+  "votantes": 204886,
+  "abstencion": 91515,
+  "censo": 296401
+ },
+ "Cáceres": {
+  "partidos": [
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 91692,
+    "pct": 38.88,
+    "escanos": 2
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 89633,
+    "pct": 38.0,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 32076,
+    "pct": 13.6,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 16354,
+    "pct": 6.93,
+    "escanos": 0
+   },
+   {
+    "siglas": "BQEx",
+    "nombre": "Extremaduran Bloc (BQEx)",
+    "votos": 1922,
+    "pct": 0.81,
+    "escanos": 0
+   },
+   {
+    "siglas": "Somos Cc",
+    "nombre": "We Are Cáceres (Somos Cc)",
+    "votos": 963,
+    "pct": 0.41,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 814,
+    "pct": 0.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 316,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 249,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 111,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1721,
+  "validos": 275851,
+  "nulos": 3896,
+  "votantes": 239747,
+  "abstencion": 99744,
+  "censo": 339491
+ },
+ "Cádiz": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 221703,
+    "pct": 34.8,
+    "escanos": 4
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 211200,
+    "pct": 33.15,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 96720,
+    "pct": 15.18,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 82115,
+    "pct": 12.89,
+    "escanos": 1
+   },
+   {
+    "siglas": "Adelante Andalucía",
+    "nombre": "Forward Andalusia (Adelante Andalucía)",
+    "votos": 9191,
+    "pct": 1.44,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 5937,
+    "pct": 0.93,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1225,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 745,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 673,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 486,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 7103,
+  "validos": 637098,
+  "nulos": 7703,
+  "votantes": 644801,
+  "abstencion": 373157,
+  "censo": 1017958
+ },
+ "Cantabria": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 147326,
+    "pct": 42.08,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 116596,
+    "pct": 33.3,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 49243,
+    "pct": 14.06,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 29713,
+    "pct": 8.49,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 2089,
+    "pct": 0.6,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 790,
+    "pct": 0.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 598,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 533,
+    "pct": 0.15,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3262,
+  "validos": 350150,
+  "nulos": 4995,
+  "votantes": 355145,
+  "abstencion": 152673,
+  "censo": 507818
+ },
+ "Castellón": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 108302,
+    "pct": 35.17,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 100530,
+    "pct": 32.65,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 48913,
+    "pct": 15.88,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar–Compromís",
+    "nombre": "Commitment–Unite: We Unite to Win (Sumar–Compromís)",
+    "votos": 44187,
+    "pct": 14.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1968,
+    "pct": 0.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 721,
+    "pct": 0.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 493,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 161,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2655,
+  "validos": 307930,
+  "nulos": 3651,
+  "votantes": 311581,
+  "abstencion": 119249,
+  "censo": 430830
+ },
+ "Ciudad Real": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 114709,
+    "pct": 40.54,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 100102,
+    "pct": 35.37,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 46046,
+    "pct": 16.27,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 17405,
+    "pct": 6.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1319,
+    "pct": 0.47,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 447,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 365,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 233,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2353,
+  "validos": 282979,
+  "nulos": 3916,
+  "votantes": 286895,
+  "abstencion": 104600,
+  "censo": 391495
+ },
+ "Córdoba": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 169976,
+    "pct": 37.89,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 144080,
+    "pct": 32.12,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 62526,
+    "pct": 13.94,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 61594,
+    "pct": 13.73,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 2699,
+    "pct": 0.6,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 942,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 746,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 701,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 598,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 392,
+    "pct": 0.09,
+    "escanos": 0
+   }
+  ],
+  "blancos": 4348,
+  "validos": 448602,
+  "nulos": 6962,
+  "votantes": 455564,
+  "abstencion": 189724,
+  "censo": 645288
+ },
+ "Cuenca": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 45255,
+    "pct": 39.76,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 42528,
+    "pct": 37.37,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 17700,
+    "pct": 15.55,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 6325,
+    "pct": 5.56,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 387,
+    "pct": 0.34,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 207,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 168,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 111,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 100,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 58,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 969,
+  "validos": 113808,
+  "nulos": 1472,
+  "votantes": 115280,
+  "abstencion": 37414,
+  "censo": 152694
+ },
+ "Gipuzkoa": {
+  "partidos": [
+   {
+    "siglas": "EH Bildu",
+    "nombre": "Basque Country Gather (EH Bildu)",
+    "votos": 117321,
+    "pct": 31.15,
+    "escanos": 2
+   },
+   {
+    "siglas": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "nombre": "Socialist Party of the Basque Country–Basque Country Left (PSE–EE (PSOE))",
+    "votos": 87709,
+    "pct": 23.29,
+    "escanos": 2
+   },
+   {
+    "siglas": "EAJ/PNV",
+    "nombre": "Basque Nationalist Party (EAJ/PNV)",
+    "votos": 85026,
+    "pct": 22.58,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 40081,
+    "pct": 10.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 32721,
+    "pct": 8.69,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 7877,
+    "pct": 2.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1568,
+    "pct": 0.42,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 933,
+    "pct": 0.25,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 530,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 442,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE/ELAK",
+    "nombre": "Communist Party of the Workers of the Basque Country (PCTE/ELAK)",
+    "votos": 259,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 149,
+    "pct": 0.04,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2005,
+  "validos": 376621,
+  "nulos": 2344,
+  "votantes": 378965,
+  "abstencion": 206908,
+  "censo": 585873
+ },
+ "Girona": {
+  "partidos": [
+   {
+    "siglas": "PSC–PSOE",
+    "nombre": "Socialists' Party of Catalonia (PSC–PSOE)",
+    "votos": 93448,
+    "pct": 28.93,
+    "escanos": 2
+   },
+   {
+    "siglas": "Junts",
+    "nombre": "Together for Catalonia (Junts)",
+    "votos": 63251,
+    "pct": 19.58,
+    "escanos": 2
+   },
+   {
+    "siglas": "ERC",
+    "nombre": "Republican Left of Catalonia (ERC)",
+    "votos": 47531,
+    "pct": 14.72,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar–ECP",
+    "nombre": "Unite–In Common We Can (Sumar–ECP)",
+    "votos": 35344,
+    "pct": 10.94,
+    "escanos": 1
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 31341,
+    "pct": 9.7,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 22706,
+    "pct": 7.03,
+    "escanos": 0
+   },
+   {
+    "siglas": "CUP–PR",
+    "nombre": "Popular Unity Candidacy–For Rupture (CUP–PR)",
+    "votos": 18229,
+    "pct": 5.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3531,
+    "pct": 1.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PDeCAT–E–CiU",
+    "nombre": "Catalan European Democratic Party–CiU Space (PDeCAT–E–CiU)",
+    "votos": 3388,
+    "pct": 1.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 570,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTC",
+    "nombre": "Communist Party of the Workers of Catalonia (PCTC)",
+    "votos": 420,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 248,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2981,
+  "validos": 322988,
+  "nulos": 4171,
+  "votantes": 327159,
+  "abstencion": 219211,
+  "censo": 546370
+ },
+ "Granada": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 185996,
+    "pct": 36.99,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 165862,
+    "pct": 32.98,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 81080,
+    "pct": 16.12,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 58567,
+    "pct": 11.65,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3143,
+    "pct": 0.63,
+    "escanos": 0
+   },
+   {
+    "siglas": "JxG",
+    "nombre": "Together for Granada (JxG)",
+    "votos": 1218,
+    "pct": 0.24,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 765,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 695,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 658,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 461,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 343,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 4057,
+  "validos": 502845,
+  "nulos": 6641,
+  "votantes": 509486,
+  "abstencion": 255992,
+  "censo": 765478
+ },
+ "Guadalajara": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 51195,
+    "pct": 36.33,
+    "escanos": 1
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 46479,
+    "pct": 32.98,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 27126,
+    "pct": 19.25,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 12907,
+    "pct": 9.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1039,
+    "pct": 0.74,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 304,
+    "pct": 0.22,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 249,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 191,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 162,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 118,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1143,
+  "validos": 140913,
+  "nulos": 1831,
+  "votantes": 142744,
+  "abstencion": 54239,
+  "censo": 196983
+ },
+ "Huelva": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 93565,
+    "pct": 36.43,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 92326,
+    "pct": 35.95,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 37572,
+    "pct": 14.63,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 26752,
+    "pct": 10.42,
+    "escanos": 0
+   },
+   {
+    "siglas": "XH",
+    "nombre": "For Huelva (XH)",
+    "votos": 1931,
+    "pct": 0.75,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1663,
+    "pct": 0.65,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 368,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 217,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2410,
+  "validos": 256804,
+  "nulos": 4057,
+  "votantes": 260861,
+  "abstencion": 141643,
+  "censo": 402504
+ },
+ "Huesca": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 45783,
+    "pct": 38.19,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 40307,
+    "pct": 33.62,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 15155,
+    "pct": 12.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar Aragón",
+    "nombre": "Unite Aragon (Sumar Aragón)",
+    "votos": 13774,
+    "pct": 11.49,
+    "escanos": 0
+   },
+   {
+    "siglas": "Existe",
+    "nombre": "Aragon Exists–Exists Coalition (Existe)",
+    "votos": 1312,
+    "pct": 1.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PAR",
+    "nombre": "Aragonese Party (PAR)",
+    "votos": 717,
+    "pct": 0.6,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 498,
+    "pct": 0.42,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 475,
+    "pct": 0.4,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 258,
+    "pct": 0.22,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 137,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 114,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "FIA",
+    "nombre": "Federation of Independents of Aragon (FIA)",
+    "votos": 84,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 64,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1217,
+  "validos": 119895,
+  "nulos": 1253,
+  "votantes": 121148,
+  "abstencion": 52243,
+  "censo": 173391
+ },
+ "Jaén": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 137617,
+    "pct": 37.32,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 133819,
+    "pct": 36.29,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 54400,
+    "pct": 14.75,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 29461,
+    "pct": 7.99,
+    "escanos": 0
+   },
+   {
+    "siglas": "JM+",
+    "nombre": "Jaén Deserves More (JM+)",
+    "votos": 8293,
+    "pct": 2.25,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1671,
+    "pct": 0.45,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 410,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 360,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 203,
+    "pct": 0.06,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2497,
+  "validos": 368731,
+  "nulos": 4926,
+  "votantes": 373657,
+  "abstencion": 144714,
+  "censo": 518371
+ },
+ "León": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 101605,
+    "pct": 36.92,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 92578,
+    "pct": 33.64,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 35451,
+    "pct": 12.88,
+    "escanos": 0
+   },
+   {
+    "siglas": "UPL",
+    "nombre": "Leonese People's Union (UPL)",
+    "votos": 22675,
+    "pct": 8.24,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 18577,
+    "pct": 6.75,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 895,
+    "pct": 0.33,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 541,
+    "pct": 0.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "España Vaciada",
+    "nombre": "Empty Spain (España Vaciada)",
+    "votos": 486,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 319,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PREPAL",
+    "nombre": "Regionalist Party of the Leonese Country (PREPAL)",
+    "votos": 309,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 155,
+    "pct": 0.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 72,
+    "pct": 0.03,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1577,
+  "validos": 275240,
+  "nulos": 2486,
+  "votantes": 277726,
+  "abstencion": 145191,
+  "censo": 422917
+ },
+ "Lleida": {
+  "partidos": [
+   {
+    "siglas": "PSC–PSOE",
+    "nombre": "Socialists' Party of Catalonia (PSC–PSOE)",
+    "votos": 54414,
+    "pct": 29.49,
+    "escanos": 2
+   },
+   {
+    "siglas": "ERC",
+    "nombre": "Republican Left of Catalonia (ERC)",
+    "votos": 34331,
+    "pct": 18.6,
+    "escanos": 1
+   },
+   {
+    "siglas": "Junts",
+    "nombre": "Together for Catalonia (Junts)",
+    "votos": 33228,
+    "pct": 18.01,
+    "escanos": 1
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 23699,
+    "pct": 12.84,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar–ECP",
+    "nombre": "Unite–In Common We Can (Sumar–ECP)",
+    "votos": 14561,
+    "pct": 7.89,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 12560,
+    "pct": 6.81,
+    "escanos": 0
+   },
+   {
+    "siglas": "CUP–PR",
+    "nombre": "Popular Unity Candidacy–For Rupture (CUP–PR)",
+    "votos": 5449,
+    "pct": 2.95,
+    "escanos": 0
+   },
+   {
+    "siglas": "PDeCAT–E–CiU",
+    "nombre": "Catalan European Democratic Party–CiU Space (PDeCAT–E–CiU)",
+    "votos": 1865,
+    "pct": 1.01,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1352,
+    "pct": 0.73,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 462,
+    "pct": 0.25,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 247,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTC",
+    "nombre": "Communist Party of the Workers of Catalonia (PCTC)",
+    "votos": 192,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 120,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2059,
+  "validos": 184539,
+  "nulos": 2390,
+  "votantes": 186929,
+  "abstencion": 130296,
+  "censo": 317225
+ },
+ "Lugo": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 99769,
+    "pct": 50.24,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSdeG–PSOE",
+    "nombre": "Socialists' Party of Galicia (PSdeG–PSOE)",
+    "votos": 60163,
+    "pct": 30.3,
+    "escanos": 1
+   },
+   {
+    "siglas": "BNG",
+    "nombre": "Galician Nationalist Bloc (BNG)",
+    "votos": 17197,
+    "pct": 8.66,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Galicia (Sumar)",
+    "votos": 10287,
+    "pct": 5.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 8643,
+    "pct": 4.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 645,
+    "pct": 0.32,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 233,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 149,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTG",
+    "nombre": "Communist Party of the Workers of Galicia (PCTG)",
+    "votos": 116,
+    "pct": 0.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 113,
+    "pct": 0.06,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1251,
+  "validos": 198566,
+  "nulos": 2143,
+  "votantes": 200709,
+  "abstencion": 137046,
+  "censo": 337755
+ },
+ "Madrid": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 1463183,
+    "pct": 40.55,
+    "escanos": 16
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 1004599,
+    "pct": 27.84,
+    "escanos": 10
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 557780,
+    "pct": 15.46,
+    "escanos": 6
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 506164,
+    "pct": 14.03,
+    "escanos": 5
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 21742,
+    "pct": 0.6,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 7652,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 6749,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 3784,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 3407,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PH",
+    "nombre": "Humanist Party (PH)",
+    "votos": 2902,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 1751,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 28960,
+  "validos": 3608673,
+  "nulos": 30827,
+  "votantes": 3639500,
+  "abstencion": 1585061,
+  "censo": 5224561
+ },
+ "Málaga": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 302000,
+    "pct": 38.31,
+    "escanos": 5
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 239172,
+    "pct": 30.34,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 129758,
+    "pct": 16.46,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 96652,
+    "pct": 12.26,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 8487,
+    "pct": 1.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1662,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 1519,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 888,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 691,
+    "pct": 0.09,
+    "escanos": 0
+   }
+  ],
+  "blancos": 7509,
+  "validos": 788338,
+  "nulos": 10219,
+  "votantes": 798557,
+  "abstencion": 441289,
+  "censo": 1239846
+ },
+ "Murcia": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 307972,
+    "pct": 41.18,
+    "escanos": 4
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 189210,
+    "pct": 25.3,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 163124,
+    "pct": 21.81,
+    "escanos": 2
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 71578,
+    "pct": 9.57,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 5063,
+    "pct": 0.68,
+    "escanos": 0
+   },
+   {
+    "siglas": "Por Mi Región",
+    "nombre": "For My Region (Por Mi Región)",
+    "votos": 1698,
+    "pct": 0.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 1377,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1201,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 546,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 453,
+    "pct": 0.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 376,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "+RDS+",
+    "nombre": "System Money Referendum (+RDS+)",
+    "votos": 165,
+    "pct": 0.02,
+    "escanos": 0
+   }
+  ],
+  "blancos": 5034,
+  "validos": 747797,
+  "nulos": 7458,
+  "votantes": 755255,
+  "abstencion": 344448,
+  "censo": 1099703
+ },
+ "Navarra": {
+  "partidos": [
+   {
+    "siglas": "PSN–PSOE",
+    "nombre": "Socialist Party of Navarre (PSN–PSOE)",
+    "votos": 93553,
+    "pct": 27.37,
+    "escanos": 2
+   },
+   {
+    "siglas": "EH Bildu",
+    "nombre": "Basque Country Gather (EH Bildu)",
+    "votos": 58954,
+    "pct": 17.25,
+    "escanos": 1
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 57134,
+    "pct": 16.71,
+    "escanos": 1
+   },
+   {
+    "siglas": "UPN",
+    "nombre": "Navarrese People's Union (UPN)",
+    "votos": 52188,
+    "pct": 15.27,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 43922,
+    "pct": 12.85,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 19491,
+    "pct": 5.7,
+    "escanos": 0
+   },
+   {
+    "siglas": "GBai",
+    "nombre": "Yes to the Future (GBai)",
+    "votos": 9938,
+    "pct": 2.91,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1530,
+    "pct": 0.45,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 1002,
+    "pct": 0.29,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 679,
+    "pct": 0.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 311,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 252,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2890,
+  "validos": 341844,
+  "nulos": 3251,
+  "votantes": 345095,
+  "abstencion": 174823,
+  "censo": 519918
+ },
+ "Ourense": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 93182,
+    "pct": 50.02,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSdeG–PSOE",
+    "nombre": "Socialists' Party of Galicia (PSdeG–PSOE)",
+    "votos": 56035,
+    "pct": 30.08,
+    "escanos": 1
+   },
+   {
+    "siglas": "BNG",
+    "nombre": "Galician Nationalist Bloc (BNG)",
+    "votos": 15317,
+    "pct": 8.22,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Galicia (Sumar)",
+    "votos": 10171,
+    "pct": 5.46,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 9080,
+    "pct": 4.87,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 700,
+    "pct": 0.38,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 182,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "CCD",
+    "nombre": "Citizens of Democratic Centre (CCD)",
+    "votos": 153,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 144,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTG",
+    "nombre": "Communist Party of the Workers of Galicia (PCTG)",
+    "votos": 101,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 97,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1109,
+  "validos": 186271,
+  "nulos": 1794,
+  "votantes": 188065,
+  "abstencion": 167700,
+  "censo": 355765
+ },
+ "Palencia": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 40709,
+    "pct": 41.98,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 33613,
+    "pct": 34.67,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 12504,
+    "pct": 12.9,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 5877,
+    "pct": 6.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "VP",
+    "nombre": "Let's Go Palencia (VP)",
+    "votos": 1917,
+    "pct": 1.98,
+    "escanos": 0
+   },
+   {
+    "siglas": "España Vaciada",
+    "nombre": "Empty Spain (España Vaciada)",
+    "votos": 384,
+    "pct": 0.4,
+    "escanos": 0
+   },
+   {
+    "siglas": "GIPTV",
+    "nombre": "Alive Land Palencia Independent Group (GIPTV)",
+    "votos": 366,
+    "pct": 0.38,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 295,
+    "pct": 0.3,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 139,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 99,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 80,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 71,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 42,
+    "pct": 0.04,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 33,
+    "pct": 0.03,
+    "escanos": 0
+   }
+  ],
+  "blancos": 833,
+  "validos": 96962,
+  "nulos": 1117,
+  "votantes": 98079,
+  "abstencion": 39563,
+  "censo": 137642
+ },
+ "Las Palmas": {
+  "partidos": [
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 175671,
+    "pct": 33.19,
+    "escanos": 3
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 136857,
+    "pct": 25.85,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 77343,
+    "pct": 14.61,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Canaries (Sumar)",
+    "votos": 54369,
+    "pct": 10.27,
+    "escanos": 1
+   },
+   {
+    "siglas": "NC–BC",
+    "nombre": "New Canaries–Canarian Bloc (NC–BC)",
+    "votos": 42430,
+    "pct": 8.02,
+    "escanos": 0
+   },
+   {
+    "siglas": "CCa",
+    "nombre": "Canarian Coalition (CCa)",
+    "votos": 33558,
+    "pct": 6.34,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3570,
+    "pct": 0.67,
+    "escanos": 0
+   },
+   {
+    "siglas": "[[Canarian Nationalist Alternative|ANC]]–[[Unity of the People|UP]]–[[Communist Party of the Peoples of Spain|PCPC]]",
+    "nombre": "Canaries Now–Communist Party of the Canarian People (ANC–UP–PCPC)",
+    "votos": 883,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 635,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 563,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 396,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3062,
+  "validos": 529337,
+  "nulos": 5575,
+  "votantes": 534912,
+  "abstencion": 363970,
+  "censo": 898882
+ },
+ "Pontevedra": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 227658,
+    "pct": 39.72,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSdeG–PSOE",
+    "nombre": "Socialists' Party of Galicia (PSdeG–PSOE)",
+    "votos": 179737,
+    "pct": 31.36,
+    "escanos": 3
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Galicia (Sumar)",
+    "votos": 75615,
+    "pct": 13.19,
+    "escanos": 1
+   },
+   {
+    "siglas": "BNG",
+    "nombre": "Galician Nationalist Bloc (BNG)",
+    "votos": 53828,
+    "pct": 9.39,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 27539,
+    "pct": 4.81,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3003,
+    "pct": 0.52,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 884,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 510,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTG",
+    "nombre": "Communist Party of the Workers of Galicia (PCTG)",
+    "votos": 485,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3865,
+  "validos": 573124,
+  "nulos": 6001,
+  "votantes": 579125,
+  "abstencion": 330309,
+  "censo": 909434
+ },
+ "La Rioja": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 79715,
+    "pct": 45.64,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 62322,
+    "pct": 35.68,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 17056,
+    "pct": 9.77,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 11470,
+    "pct": 6.57,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 723,
+    "pct": 0.41,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 608,
+    "pct": 0.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 295,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "3e",
+    "nombre": "Seniors in Action (3e)",
+    "votos": 286,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 232,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 224,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 124,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1608,
+  "validos": 174663,
+  "nulos": 2282,
+  "votantes": 176945,
+  "abstencion": 75146,
+  "censo": 252091
+ },
+ "Salamanca": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 93318,
+    "pct": 46.87,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 60718,
+    "pct": 30.49,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 29203,
+    "pct": 14.67,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 11012,
+    "pct": 5.53,
+    "escanos": 0
+   },
+   {
+    "siglas": "España Vaciada",
+    "nombre": "Empty Spain (España Vaciada)",
+    "votos": 1062,
+    "pct": 0.53,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 631,
+    "pct": 0.32,
+    "escanos": 0
+   },
+   {
+    "siglas": "PREPAL",
+    "nombre": "Regionalist Party of the Leonese Country (PREPAL)",
+    "votos": 489,
+    "pct": 0.25,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 325,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 278,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 205,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 140,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 80,
+    "pct": 0.04,
+    "escanos": 0
+   }
+  ],
+  "blancos": 1649,
+  "validos": 199110,
+  "nulos": 2309,
+  "votantes": 201419,
+  "abstencion": 99087,
+  "censo": 300506
+ },
+ "Santa Cruz de Tenerife": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 174770,
+    "pct": 35.35,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 165590,
+    "pct": 33.49,
+    "escanos": 3
+   },
+   {
+    "siglas": "CCa",
+    "nombre": "Canarian Coalition (CCa)",
+    "votos": 82805,
+    "pct": 16.75,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Canaries (Sumar)",
+    "votos": 53632,
+    "pct": 10.85,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 6147,
+    "pct": 1.24,
+    "escanos": 0
+   },
+   {
+    "siglas": "NC–BC",
+    "nombre": "New Canaries–Canarian Bloc (NC–BC)",
+    "votos": 3165,
+    "pct": 0.64,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1619,
+    "pct": 0.33,
+    "escanos": 0
+   },
+   {
+    "siglas": "[[Canarian Nationalist Alternative|ANC]]–[[Unity of the People|UP]]–[[Communist Party of the Peoples of Spain|PCPC]]",
+    "nombre": "Canaries Now–Communist Party of the Canarian People (ANC–UP–PCPC)",
+    "votos": 791,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 766,
+    "pct": 0.15,
+    "escanos": 0
+   }
+  ],
+  "blancos": 5088,
+  "validos": 494373,
+  "nulos": 6404,
+  "votantes": 500777,
+  "abstencion": 380440,
+  "censo": 881217
+ },
+ "Segovia": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 39894,
+    "pct": 45.02,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 27113,
+    "pct": 30.6,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 12510,
+    "pct": 14.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 7137,
+    "pct": 8.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 307,
+    "pct": 0.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "3e",
+    "nombre": "Seniors in Action (3e)",
+    "votos": 198,
+    "pct": 0.22,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 183,
+    "pct": 0.21,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 136,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 102,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 94,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 64,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 875,
+  "validos": 88613,
+  "nulos": 1332,
+  "votantes": 89945,
+  "abstencion": 29509,
+  "censo": 119454
+ },
+ "Sevilla": {
+  "partidos": [
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 387760,
+    "pct": 36.6,
+    "escanos": 5
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 353663,
+    "pct": 33.38,
+    "escanos": 4
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite Andalusia (Sumar)",
+    "votos": 148745,
+    "pct": 14.04,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 141087,
+    "pct": 13.32,
+    "escanos": 1
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 9288,
+    "pct": 0.88,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1950,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 1765,
+    "pct": 0.17,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 1522,
+    "pct": 0.14,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 1034,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 912,
+    "pct": 0.09,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 681,
+    "pct": 0.06,
+    "escanos": 0
+   }
+  ],
+  "blancos": 10951,
+  "validos": 1059358,
+  "nulos": 15775,
+  "votantes": 1075133,
+  "abstencion": 488949,
+  "censo": 1564082
+ },
+ "Soria": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 18895,
+    "pct": 37.22,
+    "escanos": 1
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 14966,
+    "pct": 29.48,
+    "escanos": 1
+   },
+   {
+    "siglas": "SY",
+    "nombre": "Soria Now! (SY)",
+    "votos": 9697,
+    "pct": 19.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 4978,
+    "pct": 9.81,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 1711,
+    "pct": 3.37,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 94,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 68,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 43,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 23,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 9,
+    "pct": 0.02,
+    "escanos": 0
+   }
+  ],
+  "blancos": 285,
+  "validos": 50769,
+  "nulos": 388,
+  "votantes": 51157,
+  "abstencion": 24611,
+  "censo": 75768
+ },
+ "Tarragona": {
+  "partidos": [
+   {
+    "siglas": "PSC–PSOE",
+    "nombre": "Socialists' Party of Catalonia (PSC–PSOE)",
+    "votos": 121126,
+    "pct": 32.91,
+    "escanos": 2
+   },
+   {
+    "siglas": "ERC",
+    "nombre": "Republican Left of Catalonia (ERC)",
+    "votos": 55461,
+    "pct": 15.07,
+    "escanos": 1
+   },
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 51061,
+    "pct": 13.87,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar–ECP",
+    "nombre": "Unite–In Common We Can (Sumar–ECP)",
+    "votos": 41719,
+    "pct": 11.34,
+    "escanos": 1
+   },
+   {
+    "siglas": "Junts",
+    "nombre": "Together for Catalonia (Junts)",
+    "votos": 40791,
+    "pct": 11.08,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 38039,
+    "pct": 10.34,
+    "escanos": 0
+   },
+   {
+    "siglas": "CUP–PR",
+    "nombre": "Popular Unity Candidacy–For Rupture (CUP–PR)",
+    "votos": 8700,
+    "pct": 2.36,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 3797,
+    "pct": 1.03,
+    "escanos": 0
+   },
+   {
+    "siglas": "PDeCAT–E–CiU",
+    "nombre": "Catalan European Democratic Party–CiU Space (PDeCAT–E–CiU)",
+    "votos": 2311,
+    "pct": 0.63,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 661,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTC",
+    "nombre": "Communist Party of the Workers of Catalonia (PCTC)",
+    "votos": 405,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 267,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "EVR",
+    "nombre": "Catalonia Among Neighbors (EVR)",
+    "votos": 265,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Unidos SI",
+    "nombre": "United Yes (Unidos SI)",
+    "votos": 253,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 3168,
+  "validos": 368024,
+  "nulos": 4402,
+  "votantes": 372426,
+  "abstencion": 224263,
+  "censo": 596689
+ },
+ "Teruel": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 26586,
+    "pct": 35.02,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 22226,
+    "pct": 29.28,
+    "escanos": 1
+   },
+   {
+    "siglas": "Existe",
+    "nombre": "Teruel Exists–Exists Coalition (Existe)",
+    "votos": 11348,
+    "pct": 14.95,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 9932,
+    "pct": 13.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar Aragón",
+    "nombre": "Unite Aragon (Sumar Aragón)",
+    "votos": 4126,
+    "pct": 5.44,
+    "escanos": 0
+   },
+   {
+    "siglas": "PAR",
+    "nombre": "Aragonese Party (PAR)",
+    "votos": 711,
+    "pct": 0.94,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 172,
+    "pct": 0.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 135,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 94,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 60,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 49,
+    "pct": 0.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 36,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "FIA",
+    "nombre": "Federation of Independents of Aragon (FIA)",
+    "votos": 28,
+    "pct": 0.04,
+    "escanos": 0
+   }
+  ],
+  "blancos": 410,
+  "validos": 75913,
+  "nulos": 648,
+  "votantes": 76561,
+  "abstencion": 29791,
+  "censo": 106352
+ },
+ "Toledo": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 146533,
+    "pct": 37.84,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 126072,
+    "pct": 32.56,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 76044,
+    "pct": 19.64,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 31876,
+    "pct": 8.23,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 2024,
+    "pct": 0.52,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 985,
+    "pct": 0.25,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 499,
+    "pct": 0.13,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 281,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 275,
+    "pct": 0.07,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2611,
+  "validos": 387200,
+  "nulos": 5788,
+  "votantes": 392988,
+  "abstencion": 149579,
+  "censo": 542567
+ },
+ "Valencia": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 483469,
+    "pct": 33.64,
+    "escanos": 6
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 461353,
+    "pct": 32.1,
+    "escanos": 5
+   },
+   {
+    "siglas": "Sumar–Compromís",
+    "nombre": "Commitment–Unite: We Unite to Win (Sumar–Compromís)",
+    "votos": 242839,
+    "pct": 16.9,
+    "escanos": 3
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 218657,
+    "pct": 15.21,
+    "escanos": 2
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 10334,
+    "pct": 0.72,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 2919,
+    "pct": 0.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 1778,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 1773,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "EVB",
+    "nombre": "Valencian Welfare State (EVB)",
+    "votos": 1442,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "CJ",
+    "nombre": "Walking Together (CJ)",
+    "votos": 1056,
+    "pct": 0.07,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 731,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 10810,
+  "validos": 1437161,
+  "nulos": 14026,
+  "votantes": 1451187,
+  "abstencion": 548153,
+  "censo": 1999340
+ },
+ "Valladolid": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 129170,
+    "pct": 40.84,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 103596,
+    "pct": 32.75,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 47948,
+    "pct": 15.16,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 28049,
+    "pct": 8.87,
+    "escanos": 0
+   },
+   {
+    "siglas": "España Vaciada",
+    "nombre": "Empty Spain (España Vaciada)",
+    "votos": 1226,
+    "pct": 0.39,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 1105,
+    "pct": 0.35,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 601,
+    "pct": 0.19,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 583,
+    "pct": 0.18,
+    "escanos": 0
+   },
+   {
+    "siglas": "UdCa",
+    "nombre": "Castilian Unity (UdCa)",
+    "votos": 463,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 376,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 335,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 164,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 159,
+    "pct": 0.05,
+    "escanos": 0
+   },
+   {
+    "siglas": "Fuerza Cívica",
+    "nombre": "Civic Force (Fuerza Cívica)",
+    "votos": 115,
+    "pct": 0.04,
+    "escanos": 0
+   }
+  ],
+  "blancos": 2419,
+  "validos": 316309,
+  "nulos": 3003,
+  "votantes": 319312,
+  "abstencion": 112069,
+  "censo": 431381
+ },
+ "Zamora": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 46196,
+    "pct": 44.67,
+    "escanos": 2
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 33601,
+    "pct": 32.49,
+    "escanos": 1
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 13652,
+    "pct": 13.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 5839,
+    "pct": 5.65,
+    "escanos": 0
+   },
+   {
+    "siglas": "ZSí",
+    "nombre": "Zamora Yes (ZSí)",
+    "votos": 1843,
+    "pct": 1.78,
+    "escanos": 0
+   },
+   {
+    "siglas": "UPL",
+    "nombre": "Leonese People's Union (UPL)",
+    "votos": 526,
+    "pct": 0.51,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 313,
+    "pct": 0.3,
+    "escanos": 0
+   },
+   {
+    "siglas": "PREPAL",
+    "nombre": "Regionalist Party of the Leonese Country (PREPAL)",
+    "votos": 166,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 121,
+    "pct": 0.12,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 100,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 81,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 50,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 922,
+  "validos": 103410,
+  "nulos": 1261,
+  "votantes": 104671,
+  "abstencion": 58327,
+  "censo": 162998
+ },
+ "Zaragoza": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 186776,
+    "pct": 36.01,
+    "escanos": 3
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 159858,
+    "pct": 30.82,
+    "escanos": 2
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 79376,
+    "pct": 15.3,
+    "escanos": 1
+   },
+   {
+    "siglas": "Sumar Aragón",
+    "nombre": "Unite Aragon (Sumar Aragón)",
+    "votos": 69925,
+    "pct": 13.48,
+    "escanos": 1
+   },
+   {
+    "siglas": "Existe",
+    "nombre": "Aragon Exists–Exists Coalition (Existe)",
+    "votos": 7780,
+    "pct": 1.5,
+    "escanos": 0
+   },
+   {
+    "siglas": "PAR",
+    "nombre": "Aragonese Party (PAR)",
+    "votos": 2745,
+    "pct": 0.53,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 2428,
+    "pct": 0.47,
+    "escanos": 0
+   },
+   {
+    "siglas": "EB",
+    "nombre": "Blank Seats to Leave Empty Seats (EB)",
+    "votos": 2146,
+    "pct": 0.41,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 1026,
+    "pct": 0.2,
+    "escanos": 0
+   },
+   {
+    "siglas": "PCTE",
+    "nombre": "Communist Party of the Workers of Spain (PCTE)",
+    "votos": 561,
+    "pct": 0.11,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 419,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "FIA",
+    "nombre": "Federation of Independents of Aragon (FIA)",
+    "votos": 394,
+    "pct": 0.08,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 306,
+    "pct": 0.06,
+    "escanos": 0
+   },
+   {
+    "siglas": "FE de las JONS",
+    "nombre": "Spanish Phalanx of the CNSO (FE de las JONS)",
+    "votos": 272,
+    "pct": 0.05,
+    "escanos": 0
+   }
+  ],
+  "blancos": 4693,
+  "validos": 518705,
+  "nulos": 4705,
+  "votantes": 523410,
+  "abstencion": 216650,
+  "censo": 740060
+ },
+ "Ceuta": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 12918,
+    "pct": 38.77,
+    "escanos": 1
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 11332,
+    "pct": 34.01,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 7752,
+    "pct": 23.26,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 821,
+    "pct": 2.46,
+    "escanos": 0
+   },
+   {
+    "siglas": "FO",
+    "nombre": "Workers' Front (FO)",
+    "votos": 53,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "LB",
+    "nombre": "Free (LB)",
+    "votos": 53,
+    "pct": 0.16,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 33,
+    "pct": 0.1,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 31,
+    "pct": 0.09,
+    "escanos": 0
+   }
+  ],
+  "blancos": 328,
+  "validos": 33321,
+  "nulos": 353,
+  "votantes": 33674,
+  "abstencion": 29636,
+  "censo": 63310
+ },
+ "Melilla": {
+  "partidos": [
+   {
+    "siglas": "PP",
+    "nombre": "People's Party (PP)",
+    "votos": 13446,
+    "pct": 49.16,
+    "escanos": 1
+   },
+   {
+    "siglas": "PSOE",
+    "nombre": "Spanish Socialist Workers' Party (PSOE)",
+    "votos": 6943,
+    "pct": 25.39,
+    "escanos": 0
+   },
+   {
+    "siglas": "Vox",
+    "nombre": "Vox (Vox)",
+    "votos": 4359,
+    "pct": 15.94,
+    "escanos": 0
+   },
+   {
+    "siglas": "CpM",
+    "nombre": "Coalition for Melilla (CpM)",
+    "votos": 1298,
+    "pct": 4.75,
+    "escanos": 0
+   },
+   {
+    "siglas": "Sumar",
+    "nombre": "Unite (Sumar)",
+    "votos": 827,
+    "pct": 3.02,
+    "escanos": 0
+   },
+   {
+    "siglas": "PACMA",
+    "nombre": "Animalist Party with the Environment (PACMA)",
+    "votos": 160,
+    "pct": 0.59,
+    "escanos": 0
+   },
+   {
+    "siglas": "PUM+J",
+    "nombre": "For a Fairer World (PUM+J)",
+    "votos": 40,
+    "pct": 0.15,
+    "escanos": 0
+   },
+   {
+    "siglas": "Recortes Cero",
+    "nombre": "Zero Cuts (Recortes Cero)",
+    "votos": 23,
+    "pct": 0.08,
+    "escanos": 0
+   }
+  ],
+  "blancos": 253,
+  "validos": 27349,
+  "nulos": 300,
+  "votantes": 27649,
+  "abstencion": 33469,
+  "censo": 61118
+ }
+}

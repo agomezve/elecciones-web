@@ -1,0 +1,88 @@
+---
+// Ruta: src/pages/permiso-para-votar.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+
+const title = 'Horas para votar el 29-N: cuántas te paga tu empresa';
+const heading = '¿Trabajas el 29-N? Calcula tus horas pagadas para votar';
+const description =
+  'Si trabajas el domingo 29 de noviembre, tu empresa te tiene que dar hasta 4 horas pagadas para votar. Calcula cuántas te corresponden según tu turno.';
+
+const tramos = [
+  { t: 'Tu jornada coincide 6 horas o más con el horario de votación', h: '4 horas' },
+  { t: 'Coincide entre 4 y 6 horas', h: '3 horas' },
+  { t: 'Coincide entre 2 y 4 horas', h: '2 horas' },
+  { t: 'Coincide menos de 2 horas', h: 'Ninguna' },
+];
+
+const preguntas = [
+  { q: '¿Cuántas horas me tienen que dar para votar?', a: 'Depende de cuántas horas de tu turno coincidan con el horario de los colegios (de 9:00 a 20:00): 4 horas si coinciden 6 o más, 3 si coinciden entre 4 y 6, 2 si coinciden entre 2 y 4, y ninguna si coinciden menos de 2.' },
+  { q: '¿Me las tienen que pagar?', a: 'Sí. Son horas retribuidas: la empresa no te puede descontar nada del sueldo por ellas.' },
+  { q: '¿Me pueden pedir un justificante?', a: 'Sí. La empresa puede pedirte el certificado de haber votado, que te da la mesa electoral si lo pides al votar.' },
+  { q: '¿Y si he votado por correo?', a: 'El permiso es para ir a votar. Si ya has votado por correo, no tiene sentido pedirlo para ese día.' },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Horas para votar' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Horas para votar' }]} etiqueta="Calculadora">
+    <p>Los colegios abren de 9:00 a 20:00. Si tu turno del domingo 29 coincide con ese horario, tienes derecho a <strong>hasta 4 horas pagadas</strong> para ir a votar.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="grid gap-6 lg:grid-cols-2">
+      <form id="calc" class="tarjeta space-y-4" onsubmit="return false">
+        <h2 class="text-xl font-bold">Tu turno del domingo 29</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <label class="block"><span class="etiqueta">Entras a las</span><input type="time" id="ini" value="08:00" class="entrada mt-1 w-full" /></label>
+          <label class="block"><span class="etiqueta">Sales a las</span><input type="time" id="fin" value="16:00" class="entrada mt-1 w-full" /></label>
+        </div>
+        <p class="ayuda">Si tu turno pasa de medianoche, pon la hora de salida tal cual (por ejemplo, 02:00).</p>
+      </form>
+      <div class="rounded-3xl bg-slate-950 p-6 text-white" aria-live="polite">
+        <p class="text-sm font-semibold uppercase tracking-wider text-amber-300">Te corresponden</p>
+        <p id="horas" class="mt-2 text-6xl font-black">4 horas</p>
+        <p id="detalle" class="mt-3 text-slate-300">Tu turno coincide 7 h con el horario de votación.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">La tabla oficial</h2>
+      <div class="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="tabla">
+          <thead><tr><th>Coincidencia de tu jornada con las 9:00–20:00</th><th class="text-right">Horas pagadas</th></tr></thead>
+          <tbody>{tramos.map((x) => <tr><td>{x.t}</td><td class="text-right font-bold">{x.h}</td></tr>)}</tbody>
+        </table>
+      </div>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: Real Decreto 605/1999 (art. 13) y las instrucciones del Ministerio de Trabajo para cada convocatoria. Si tu convenio te da más, se aplica tu convenio.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const min = (v: string) => { const [h, m] = v.split(':').map(Number); return h * 60 + m; };
+  function calcular() {
+    let a = min($('ini').value || '0:00');
+    let b = min($('fin').value || '0:00');
+    if (b <= a) b += 24 * 60;
+    const solape = Math.max(0, Math.min(b, 20 * 60) - Math.max(a, 9 * 60));
+    const h = solape / 60;
+    const horas = h >= 6 ? 4 : h >= 4 ? 3 : h >= 2 ? 2 : 0;
+    $('horas').textContent = horas ? `${horas} horas` : 'Ninguna';
+    const txt = h.toLocaleString('es-ES', { maximumFractionDigits: 1 });
+    $('detalle').textContent = horas
+      ? `Tu turno coincide ${txt} h con el horario de votación.`
+      : `Tu turno coincide ${txt} h con el horario de votación: te da tiempo a votar fuera de él.`;
+  }
+  $('ini').addEventListener('input', calcular);
+  $('fin').addEventListener('input', calcular);
+  calcular();
+</script>

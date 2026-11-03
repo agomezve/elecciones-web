@@ -1,0 +1,76 @@
+---
+// Ruta: src/pages/como-hacemos-este-contenido.astro
+// Transparencia: qué hace la IA, qué reviso yo, de dónde salen los datos y cómo se calcula cada cifra.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalArticle from '../components/LegalArticle.astro';
+import { SITE, OWNER, CHANNEL, CONTENT_PROCESS, LEGAL_UPDATED } from '../config/site';
+import { ELECCION, PROVINCIAS } from '../lib/datos';
+
+const title = CONTENT_PROCESS.title;
+const listas = PROVINCIAS.reduce((s, p) => s + p.listas.length, 0);
+const toc = [
+  { id: 'resumen', title: 'En pocas palabras' },
+  { id: 'ia', title: 'Qué hace la IA' },
+  { id: 'revision', title: 'Qué reviso yo' },
+  { id: 'calculos', title: 'Cómo se calcula cada cifra' },
+  { id: 'limites', title: 'Lo que estos datos no dicen' },
+  { id: 'errores', title: 'Si encuentras un error' },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`Qué hace la IA en ${SITE.name}, qué revisa ${OWNER.name}, de dónde salen las listas y los resultados y cómo se calcula cada cifra.`}
+  schemaType="AboutPage"
+  breadcrumbs={[{ name: title }]}
+>
+  <LegalArticle title={title} lead="Qué parte hace la inteligencia artificial, qué parte reviso yo y de dónde sale cada número." updated={LEGAL_UPDATED} toc={toc}>
+    <h2 id="resumen">En pocas palabras</h2>
+    <ul>
+      <li>Los datos (listas, escaños y resultados) vienen tal cual del BOE y del Ministerio del Interior.</li>
+      <li>La IA (Claude Code) escribe el código de la web y un primer borrador de los textos.</li>
+      <li>Yo, {OWNER.name}, reviso los textos, compruebo los plazos con la ley y decido qué se publica.</li>
+    </ul>
+
+    <h2 id="ia">Qué hace la IA</h2>
+    <p>
+      Programa las páginas y las herramientas y escribe el programa que lee el BOE. El BOE publica las candidaturas
+      como texto corrido; el programa lo convierte en {listas} listas ordenadas. No redacta ni resume programas
+      electorales por su cuenta.
+    </p>
+
+    <h2 id="revision">Qué reviso yo</h2>
+    <ul>
+      <li>Que cada lista tenga tantos candidatos como escaños reparte su provincia y que las provincias sumen 350 escaños.</li>
+      <li>Que los resultados de 2023 sumen 350 escaños y coincidan con los oficiales del Ministerio del Interior.</li>
+      <li>Los plazos del voto por correo, la campaña y la jornada, con la LOREG y el <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a>.</li>
+      <li>Que ningún texto opine sobre un partido ni pida el voto.</li>
+    </ul>
+
+    <h2 id="calculos">Cómo se calcula cada cifra</h2>
+    <ul>
+      <li><strong>Electores por escaño:</strong> censo de la provincia en 2023 ÷ escaños que reparte en 2026.</li>
+      <li><strong>Cuántas veces vale más un voto:</strong> electores por escaño de una provincia ÷ los de otra.</li>
+      <li><strong>Votos que no sirvieron:</strong> votos de 2023 a candidaturas que no sacaron escaño en esa provincia (sin blancos ni nulos).</li>
+      <li>
+        <strong>Reparto de escaños:</strong> ley D'Hondt de la LOREG (art. 163): fuera quien no llega al 3 % de los
+        votos válidos (que incluyen el voto en blanco); los votos de cada lista se dividen entre 1, 2, 3… y los
+        escaños van a los cocientes más altos.
+      </li>
+      <li><strong>Mayoría absoluta:</strong> 176 de 350 escaños.</li>
+    </ul>
+
+    <h2 id="limites">Lo que estos datos no dicen</h2>
+    <ul>
+      <li>El censo de 2026 aún no está publicado por provincias: por eso usamos el de 2023 para comparar provincias.</li>
+      <li>Los partidos que se presentan en coalición cambian de una elección a otra: comparar 2023 con 2026 no siempre es comparar lo mismo.</li>
+      <li>Las simulaciones no son encuestas ni previsiones: enseñan cómo funciona el reparto con los números que pones.</li>
+    </ul>
+
+    <h2 id="errores">Si encuentras un error</h2>
+    <p>
+      Escríbeme a través de la página de <a href="/contacto">contacto</a> con la página y el dato. Lo compruebo con la
+      fuente oficial y lo corrijo. El proceso completo lo cuento en <a href={CHANNEL.url} rel="noopener" target="_blank">{CHANNEL.name}</a>.
+    </p>
+  </LegalArticle>
+</BaseLayout>

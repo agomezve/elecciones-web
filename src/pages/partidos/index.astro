@@ -1,0 +1,74 @@
+---
+// Ruta: src/pages/partidos/index.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CabeceraPagina from '../../components/CabeceraPagina.astro';
+import TarjetaPartido from '../../components/TarjetaPartido.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Fuente from '../../components/Fuente.astro';
+import { ELECCION, PROVINCIAS, num } from '../../lib/datos';
+import { PARTIDOS_ORDENADOS } from '../../lib/partidos';
+
+const title = 'Partidos que se presentan a las elecciones del 29-N';
+const listas = PROVINCIAS.reduce((s, p) => s + p.listas.length, 0);
+const estatales = PARTIDOS_ORDENADOS.filter((p) => p.ambito === 'estatal');
+const autonomicos = PARTIDOS_ORDENADOS.filter((p) => p.ambito === 'autonómico');
+// Listas sin ficha propia: partidos que solo se presentan en una o pocas provincias.
+const otras = new Map<string, { nombre: string; provincias: string[] }>();
+for (const p of PROVINCIAS)
+  for (const l of p.listas.filter((l) => !l.familia)) {
+    const o = otras.get(l.siglas) ?? { nombre: l.nombre, provincias: [] };
+    o.provincias.push(p.nombre);
+    otras.set(l.siglas, o);
+  }
+const otrasOrdenadas = [...otras.entries()].sort((a, b) => b[1].provincias.length - a[1].provincias.length || a[0].localeCompare(b[0], 'es'));
+---
+
+<BaseLayout
+  title={title}
+  description={`Los ${PARTIDOS_ORDENADOS.length} principales partidos del 29-N con su cabeza de lista, las provincias en las que se presentan y su resultado de 2023, según el BOE.`}
+  breadcrumbs={[{ name: 'Partidos' }]}
+  schemaType="CollectionPage"
+>
+  <CabeceraPagina titulo={title} breadcrumbs={[{ name: 'Partidos' }]} etiqueta="Candidaturas proclamadas">
+    <p>
+      El BOE publicó el 3 de noviembre {num(listas)} listas al Congreso. Aquí tienes una ficha de cada partido que se
+      presenta en varias provincias o que tiene diputados, con la misma plantilla para todos.
+    </p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Se presentan en toda España o en casi toda</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {estatales.map((p) => <TarjetaPartido partido={p} />)}
+      </div>
+    </section>
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Se presentan en su comunidad</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {autonomicos.map((p) => <TarjetaPartido partido={p} />)}
+      </div>
+    </section>
+
+    <AdSlot />
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">El resto de candidaturas</h2>
+      <p class="mt-2 max-w-3xl text-slate-600">Partidos y agrupaciones que se presentan en una o pocas provincias. Sus candidatos están en la página de cada provincia.</p>
+      <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="tabla">
+          <thead><tr><th>Siglas</th><th>Nombre</th><th>Provincias</th></tr></thead>
+          <tbody>
+            {otrasOrdenadas.map(([s, o]) => (
+              <tr><td class="font-semibold">{s}</td><td>{o.nombre}</td><td class="min-w-48 whitespace-normal">{o.provincias.join(', ')}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <Fuente>
+      Fuente: candidaturas proclamadas, <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>.
+      Orden: escaños de 2023 y, después, número de provincias en las que se presentan.
+    </Fuente>
+  </div>
+</BaseLayout>

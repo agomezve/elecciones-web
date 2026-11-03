@@ -1,0 +1,86 @@
+---
+// Ruta: src/pages/cuanto-vale-tu-voto.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import SelectorProvincia from '../components/SelectorProvincia.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { PROVINCIAS, electoresPorEscano, getProvincia, num } from '../lib/datos';
+
+const ranking = [...PROVINCIAS].sort((a, b) => electoresPorEscano(a) - electoresPorEscano(b));
+const max = electoresPorEscano(ranking[ranking.length - 1]);
+const madrid = getProvincia('madrid');
+const soria = getProvincia('soria');
+const veces = (a: number) => a.toLocaleString('es-ES', { maximumFractionDigits: 1 });
+const vSoria = veces(electoresPorEscano(madrid) / electoresPorEscano(soria));
+const primero = ranking[0];
+const ultimo = ranking[ranking.length - 1];
+const vMax = veces(electoresPorEscano(ultimo) / electoresPorEscano(primero));
+
+const title = `Tu voto vale ${vSoria} veces más en Soria que en Madrid`;
+const heading = '¿Cuánto vale tu voto? Electores por escaño en cada provincia';
+const description = `Soria elige un diputado por cada ${num(electoresPorEscano(soria))} electores; Madrid, uno por cada ${num(electoresPorEscano(madrid))}. El ranking de las 52 provincias para el 29-N.`;
+
+const preguntas = [
+  {
+    q: '¿Por qué un voto en Soria vale más que en Madrid?',
+    a: 'Porque cada provincia tiene un mínimo de 2 diputados (Ceuta y Melilla, 1) y el resto se reparte según la población. Las provincias poco pobladas tienen más diputados de los que les tocarían solo por población.',
+  },
+  {
+    q: '¿Quién decide cuántos diputados tiene cada provincia?',
+    a: 'La ley electoral (LOREG, art. 162) fija el reparto y el decreto de convocatoria lo aplica con los últimos datos de población. Para el 29-N lo fija el Real Decreto 806/2026: Madrid sube de 37 a 38 y Cádiz baja de 9 a 8.',
+  },
+  {
+    q: '¿Significa esto que mi voto no sirve en una provincia grande?',
+    a: 'No. Significa que hacen falta más votos para cada escaño, pero en las provincias grandes se reparten más escaños y es más fácil que partidos pequeños consigan alguno.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: '¿Cuánto vale tu voto?' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: '¿Cuánto vale tu voto?' }]} etiqueta="Datos oficiales">
+    <p>
+      <strong>Un voto en Soria pesa {vSoria} veces más que uno en Madrid.</strong> Entre la provincia con menos electores por
+      escaño ({primero.nombre}) y la que más ({ultimo.nombre}) la diferencia es de {vMax} veces.
+    </p>
+    <div class="mt-6"><SelectorProvincia etiqueta="Mira tu provincia" /></div>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="grid gap-4 md:grid-cols-3">
+      <div class="tarjeta"><p class="dato-nombre">{primero.nombre}</p><p class="dato-valor">{num(electoresPorEscano(primero))}</p><p class="ayuda">electores por escaño · la que menos</p></div>
+      <div class="tarjeta"><p class="dato-nombre">Soria</p><p class="dato-valor">{num(electoresPorEscano(soria))}</p><p class="ayuda">{num(soria.r2023.censo)} electores para 2 escaños</p></div>
+      <div class="tarjeta"><p class="dato-nombre">{ultimo.nombre}</p><p class="dato-valor">{num(electoresPorEscano(ultimo))}</p><p class="ayuda">electores por escaño · la que más</p></div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Ranking de las 52 provincias</h2>
+      <p class="mt-2 text-slate-600">De más a menos peso por voto. La barra y la última columna comparan con un voto de {ultimo.nombre}.</p>
+      <ol class="mt-6 space-y-1.5">
+        {
+          ranking.map((p, i) => (
+            <li>
+              <a href={`/provincias/${p.slug}`} class="grid grid-cols-[2rem_8.5rem_1fr_4.5rem] items-center gap-2 rounded-lg px-1 py-1 text-sm hover:bg-indigo-50 sm:grid-cols-[2rem_12rem_1fr_7rem_4.5rem]">
+                <span class="text-right font-semibold tabular-nums text-slate-400">{i + 1}</span>
+                <span class="truncate font-semibold text-slate-800">{p.nombre}</span>
+                <span class="h-4 rounded bg-slate-100"><span class="block h-4 rounded bg-amber-500" style={`width:${(100 * electoresPorEscano(primero)) / electoresPorEscano(p)}%`} /></span>
+                <span class="hidden text-right tabular-nums text-slate-600 sm:block">{num(electoresPorEscano(p))}</span>
+                <span class="text-right font-bold tabular-nums text-slate-900">{veces(max / electoresPorEscano(p))}×</span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>
+      Cálculo: censo electoral de las generales de 2023 (incluye a los residentes en el extranjero; Ministerio del Interior) ÷
+      escaños de 2026 (Real Decreto 806/2026). El censo de 2026 por provincia aún no está publicado.
+    </Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

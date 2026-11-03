@@ -1,0 +1,39 @@
+---
+// Ruta: src/components/TarjetaPartido.astro
+// Tarjeta de partido: logotipo, cabeza de lista de referencia (BOE), provincias y escaños de 2023.
+import Candidato from './Candidato.astro';
+import LogoPartido from './LogoPartido.astro';
+import { cabezaEn, listasDe, type Partido } from '../lib/partidos';
+
+interface Props {
+  partido: Partido;
+}
+const { partido } = Astro.props;
+const cabeza = cabezaEn(partido.slug, partido.provinciaRef);
+const provincias = listasDe(partido.slug).length;
+---
+
+<a
+  href={`/partidos/${partido.slug}`}
+  class="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
+>
+  <span class="h-1.5 w-full" style={`background:${partido.color}`}></span>
+  <div class="flex items-start gap-4 p-4">
+    {cabeza && <Candidato nombre={cabeza.nombre} color={partido.color} size={72} />}
+    <div class="min-w-0 flex-1">
+      <LogoPartido partido={partido} class="h-9 w-24 -ml-2 justify-start" />
+      <p class="mt-1 text-sm font-bold leading-tight text-slate-900 group-hover:text-indigo-700">{cabeza?.nombre}</p>
+      <p class="text-xs text-slate-500">Cabeza de lista por {cabeza?.provincia.nombre}</p>
+    </div>
+  </div>
+  <dl class="mt-auto grid grid-cols-2 border-t border-slate-100 text-center text-xs">
+    <div class="p-2.5">
+      <dt class="text-slate-500">Se presenta en</dt>
+      <dd class="font-bold text-slate-900">{provincias} {provincias === 1 ? 'provincia' : 'provincias'}</dd>
+    </div>
+    <div class="border-l border-slate-100 p-2.5">
+      <dt class="text-slate-500">Escaños en 2023</dt>
+      <dd class="font-bold text-slate-900">{partido.r2023 ? partido.r2023.escanos : '—'}</dd>
+    </div>
+  </dl>
+</a>

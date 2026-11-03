@@ -1,0 +1,197 @@
+---
+// Ruta: src/pages/simulador-dhondt.astro
+// Simulador del reparto de escaños de una provincia con la ley D'Hondt (LOREG art. 163).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { COMUNIDADES, PROVINCIAS } from '../lib/datos';
+import { getPartido } from '../lib/partidos';
+
+const title = "Simulador D'Hondt: reparto de escaños en tu provincia";
+const heading = "Simulador D'Hondt: reparte los escaños de tu provincia";
+const description =
+  "Elige provincia, pon votos a cada lista y mira cómo se reparten los diputados con la ley D'Hondt y la barrera del 3 %. Con los datos de 2023.";
+
+const DATOS = Object.fromEntries(
+  PROVINCIAS.map((p) => [
+    p.slug,
+    {
+      n: p.nombre,
+      e: p.escanos,
+      e23: p.escanos2023,
+      l26: p.listas.map((l) => [l.siglas, l.familia ? (getPartido(l.familia)?.color ?? '#64748b') : '#64748b']),
+      r23: p.r2023.partidos.map((x) => [x.siglas, x.votos]),
+      b23: p.r2023.blancos,
+    },
+  ]),
+);
+
+const preguntas = [
+  {
+    q: '¿Cómo funciona la ley D\'Hondt?',
+    a: 'Primero se quitan las listas con menos del 3 % de los votos válidos de la provincia. Los votos de cada lista que queda se dividen entre 1, 2, 3… hasta el número de escaños, y los escaños van a los cocientes más altos.',
+  },
+  {
+    q: '¿El voto en blanco cuenta para el 3 %?',
+    a: 'Sí. El 3 % se calcula sobre los votos válidos, que incluyen los votos en blanco. Por eso más votos en blanco suben un poco la barrera. Los votos nulos no cuentan.',
+  },
+  {
+    q: '¿Por qué en las provincias pequeñas el 3 % no importa?',
+    a: 'Porque con pocos escaños hace falta mucho más que un 3 % para sacar uno. Elige arriba una provincia que reparta 3 escaños y mira en los cocientes cuánto costó el último en 2023.',
+  },
+  {
+    q: '¿Esto es una encuesta?',
+    a: 'No. El simulador reparte los votos que escribes tú o los resultados oficiales de 2023. No predice nada.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: "Simulador D'Hondt" }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: "Simulador D'Hondt" }]} etiqueta="Herramienta">
+    <p>Cada provincia reparte sus escaños por separado. Elige la tuya, cambia los votos y mira qué lista gana o pierde un diputado.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="tarjeta" data-sim>
+      <div class="grid gap-4 sm:grid-cols-[1fr_auto]">
+        <div>
+          <label class="etiqueta" for="sim-prov">Provincia</label>
+          <select id="sim-prov" class="entrada" data-prov>
+            {COMUNIDADES.map((c) => <optgroup label={c.nombre}>{c.provincias.map((p) => <option value={p.slug} selected={p.slug === 'madrid'}>{p.nombre}</option>)}</optgroup>)}
+          </select>
+        </div>
+        <div>
+          <span class="etiqueta">Votos de partida</span>
+          <div class="flex gap-2">
+            <button type="button" class="pastilla" data-modo="r23">Resultados de 2023</button>
+            <button type="button" class="pastilla" data-modo="l26">Listas de 2026</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-8 lg:grid-cols-2">
+        <div>
+          <p class="etiqueta">Votos de cada lista</p>
+          <p class="ayuda -mt-1 mb-3" data-ayuda></p>
+          <ul class="max-h-[34rem] space-y-1.5 overflow-y-auto pr-1" data-entradas></ul>
+          <div class="mt-3 flex items-center gap-2">
+            <label for="sim-blancos" class="flex-1 text-sm font-semibold text-slate-700">Votos en blanco</label>
+            <input id="sim-blancos" type="number" min="0" inputmode="numeric" class="entrada w-32 py-2 text-right" data-blancos />
+          </div>
+        </div>
+        <div>
+          <p class="text-sm text-slate-500"><span data-nombre></span> reparte <strong data-escanos></strong> escaños · barrera del 3 %: <strong data-barrera></strong> votos</p>
+          <ul class="mt-4 space-y-2" data-resultado></ul>
+          <details class="mt-6 rounded-xl bg-slate-50 p-4 text-sm">
+            <summary class="cursor-pointer font-semibold text-slate-800">Ver los cocientes paso a paso</summary>
+            <div class="mt-3 overflow-x-auto"><table class="tabla" data-cocientes></table></div>
+          </details>
+          <p class="nota mt-6" data-ultimo></p>
+        </div>
+      </div>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuentes: Ley Orgánica del Régimen Electoral General, art. 163; escaños, Real Decreto 806/2026; listas, BOE del 3 de noviembre de 2026; resultados de 2023, Ministerio del Interior.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ DATOS }}>
+  const raiz = document.querySelector('[data-sim]');
+  const $ = (s) => raiz.querySelector(s);
+  const nf = new Intl.NumberFormat('es-ES');
+  const PALETA = ['#4f46e5', '#0891b2', '#16a34a', '#ca8a04', '#dc2626', '#9333ea', '#db2777', '#0d9488', '#ea580c', '#64748b'];
+  const COLORES_23 = { PP: '#1d84ce', PSOE: '#e30613', 'PSC–PSOE': '#e30613', 'PSdeG–PSOE': '#e30613', 'PSE–EE (PSOE)': '#e30613', 'PSIB–PSOE': '#e30613', 'PSN–PSOE': '#e30613', Vox: '#5ac035', ERC: '#ffb232', Junts: '#00c3b2', 'EH Bildu': '#00a19a', 'EAJ/PNV': '#008a3e', BNG: '#76b3dd', CCa: '#ffd700', UPN: '#2a52be' };
+  let st = { prov: 'madrid', modo: 'r23', filas: [], blancos: 0 };
+
+  function cargar() {
+    const d = DATOS[st.prov];
+    if (st.modo === 'r23') {
+      st.filas = d.r23.map(([s, v], i) => ({ s, v, c: COLORES_23[s] ?? (s.startsWith('Sumar') ? '#e51c55' : PALETA[i % PALETA.length]) }));
+      st.blancos = d.b23;
+    } else {
+      st.filas = d.l26.map(([s, c], i) => ({ s, v: 0, c: c === '#64748b' ? PALETA[i % PALETA.length] : c }));
+      st.blancos = 0;
+    }
+    $('[data-ayuda]').textContent = st.modo === 'r23'
+      ? `Votos oficiales de 2023 (entonces ${d.n} repartía ${d.e23} escaños; aquí se reparten los ${d.e} de 2026). Cámbialos para probar.`
+      : 'Escribe los votos que quieras probar para cada lista proclamada en 2026.';
+    $('[data-blancos]').value = st.blancos || '';
+    const ul = $('[data-entradas]');
+    ul.innerHTML = '';
+    st.filas.forEach((f) => {
+      const li = document.createElement('li');
+      li.className = 'flex items-center gap-2';
+      li.innerHTML = `<span class="h-3 w-3 shrink-0 rounded-full" style="background:${f.c}"></span><label class="min-w-0 flex-1 truncate text-sm font-medium text-slate-700"></label>`;
+      li.querySelector('label').textContent = f.s;
+      const inp = document.createElement('input');
+      inp.type = 'number'; inp.min = '0'; inp.inputMode = 'numeric';
+      inp.className = 'entrada w-32 py-1.5 text-right';
+      inp.value = f.v || '';
+      inp.placeholder = '0';
+      inp.setAttribute('aria-label', `Votos de ${f.s}`);
+      inp.oninput = () => { f.v = Math.max(0, parseInt(inp.value) || 0); calcular(); };
+      li.append(inp);
+      ul.append(li);
+    });
+    raiz.querySelectorAll('[data-modo]').forEach((b) => {
+      const on = b.dataset.modo === st.modo;
+      b.classList.toggle('!bg-indigo-700', on); b.classList.toggle('!text-white', on); b.classList.toggle('!border-indigo-700', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    calcular();
+  }
+
+  function calcular() {
+    const d = DATOS[st.prov];
+    const E = d.e;
+    const validos = st.filas.reduce((s, f) => s + f.v, 0) + st.blancos;
+    const barrera = validos * 0.03;
+    const aptas = st.filas.filter((f) => f.v > 0 && f.v >= barrera);
+    const coc = aptas.flatMap((f) => Array.from({ length: E }, (_, i) => ({ f, i: i + 1, q: f.v / (i + 1) })));
+    coc.sort((a, b) => b.q - a.q || b.f.v - a.f.v);
+    const gana = coc.slice(0, E);
+    const esc = new Map();
+    gana.forEach((c) => esc.set(c.f, (esc.get(c.f) || 0) + 1));
+    $('[data-nombre]').textContent = d.n;
+    $('[data-escanos]').textContent = E;
+    $('[data-barrera]').textContent = nf.format(Math.ceil(barrera));
+    const res = $('[data-resultado]');
+    const filas = [...st.filas].filter((f) => f.v > 0).sort((a, b) => (esc.get(b) || 0) - (esc.get(a) || 0) || b.v - a.v);
+    res.innerHTML = filas.length ? '' : '<li class="text-sm text-slate-500">Escribe votos para ver el reparto.</li>';
+    for (const f of filas.slice(0, 14)) {
+      const n = esc.get(f) || 0;
+      const li = document.createElement('li');
+      li.className = 'grid grid-cols-[7rem_1fr_auto] items-center gap-3 text-sm';
+      const pctv = validos ? (100 * f.v) / validos : 0;
+      li.innerHTML = `<span class="truncate font-semibold"></span><span class="flex flex-wrap gap-1">${Array.from({ length: n }, () => `<span class="h-4 w-4 rounded-full" style="background:${f.c}"></span>`).join('') || '<span class="text-xs text-slate-400">' + (f.v < barrera ? 'no llega al 3 %' : 'sin escaño') + '</span>'}</span><span class="tabular-nums text-slate-600">${pctv.toFixed(1).replace('.', ',')} % · <strong class="text-slate-900">${n}</strong></span>`;
+      li.firstChild.textContent = f.s;
+      res.append(li);
+    }
+    // Tabla de cocientes de las listas con escaño o cerca.
+    const top = filas.filter((f) => f.v >= barrera).slice(0, 8);
+    const cols = Math.min(E, 12);
+    const corte = gana.length ? gana[gana.length - 1].q : Infinity;
+    $('[data-cocientes]').innerHTML = `<thead><tr><th>Lista</th>${Array.from({ length: cols }, (_, i) => `<th>÷${i + 1}</th>`).join('')}</tr></thead><tbody>${top
+      .map((f) => `<tr><td></td>${Array.from({ length: cols }, (_, i) => { const q = f.v / (i + 1); return `<td class="${q >= corte ? 'font-bold text-indigo-700' : 'text-slate-400'}">${nf.format(Math.round(q))}</td>`; }).join('')}</tr>`)
+      .join('')}</tbody>`;
+    $('[data-cocientes]').querySelectorAll('tbody tr').forEach((tr, i) => (tr.firstChild.textContent = top[i].s));
+    const ult = gana[gana.length - 1];
+    const sig = coc[E];
+    $('[data-ultimo]').textContent = ult
+      ? `El último escaño (el ${E}.º) se lo lleva ${ult.f.s} con un cociente de ${nf.format(Math.round(ult.q))} votos.` + (sig ? ` La siguiente en la cola es ${sig.f.s}: le harían falta unos ${nf.format(Math.ceil(ult.q * sig.i - sig.f.v) + 1)} votos más para quitárselo.` : '')
+      : 'Aún no hay escaños repartidos.';
+  }
+
+  $('[data-prov]').onchange = (e) => { st.prov = e.target.value; history.replaceState(null, '', `?p=${st.prov}`); cargar(); };
+  $('[data-blancos]').oninput = (e) => { st.blancos = Math.max(0, parseInt(e.target.value) || 0); calcular(); };
+  raiz.querySelectorAll('[data-modo]').forEach((b) => (b.onclick = () => { st.modo = b.dataset.modo; cargar(); }));
+  const q = new URLSearchParams(location.search).get('p');
+  if (q && DATOS[q]) { st.prov = q; $('[data-prov]').value = q; }
+  cargar();
+</script>

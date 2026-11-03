@@ -1,0 +1,29 @@
+---
+// Ruta: src/pages/herramientas.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Icono from '../components/Icono.astro';
+import { HERRAMIENTAS } from '../config/site';
+
+const title = 'Herramientas y guías para las elecciones del 29-N';
+const heading = 'Todas las herramientas y guías';
+const description = 'Simulador D\'Hondt, calculadora de pactos, cuánto vale tu voto, voto por correo, horas para votar, mesa electoral y más, con datos oficiales.';
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Herramientas' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Herramientas' }]} etiqueta="Todo gratis y sin registro">
+    <p>Calculadoras y guías con datos del BOE, la Junta Electoral Central y el Ministerio del Interior.</p>
+  </CabeceraPagina>
+  <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {HERRAMIENTAS.map((h) => (
+        <li>
+          <a href={h.href} class="tarjeta group flex h-full gap-4 transition hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-700 group-hover:bg-amber-400 group-hover:text-slate-900"><Icono nombre={h.icono} /></span>
+            <span><span class="block font-bold text-slate-900">{h.titulo}</span><span class="mt-1 block text-sm text-slate-600">{h.texto}</span></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

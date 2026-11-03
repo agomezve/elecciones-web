@@ -1,0 +1,50 @@
+---
+// Ruta: src/components/SelectorProvincia.astro
+// Desplegable que lleva a la página de una provincia (o a otra ruta con ?p=slug).
+import { COMUNIDADES } from '../lib/datos';
+
+interface Props {
+  /** Prefijo de la ruta de destino. */
+  base?: string;
+  oscuro?: boolean;
+  etiqueta?: string;
+}
+const { base = '/provincias/', oscuro = false, etiqueta = 'Busca tu provincia' } = Astro.props;
+---
+
+<form class="flex w-full max-w-md gap-2" data-selector-provincia={base} action="/provincias">
+  <label class="sr-only" for="sel-provincia">{etiqueta}</label>
+  <select
+    id="sel-provincia"
+    class:list={[
+      'min-w-0 flex-1 rounded-xl px-3.5 py-3 text-base font-medium shadow-sm focus:outline-none focus:ring-2',
+      oscuro ? 'border border-white/20 bg-white text-slate-900 focus:ring-amber-400' : 'entrada',
+    ]}
+  >
+    <option value="">{etiqueta}…</option>
+    {
+      COMUNIDADES.map((c) => (
+        <optgroup label={c.nombre}>
+          {c.provincias.map((p) => (
+            <option value={p.slug}>{p.nombre}</option>
+          ))}
+        </optgroup>
+      ))
+    }
+  </select>
+  <button type="submit" class="rounded-xl bg-amber-400 px-5 font-bold text-slate-900 shadow-sm hover:bg-amber-300">Ver</button>
+</form>
+
+<script>
+  for (const form of document.querySelectorAll<HTMLFormElement>('[data-selector-provincia]')) {
+    const select = form.querySelector('select')!;
+    const ir = () => {
+      if (select.value) location.href = form.dataset.selectorProvincia + select.value;
+    };
+    select.addEventListener('change', ir);
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      ir();
+    });
+  }
+</script>

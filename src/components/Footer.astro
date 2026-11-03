@@ -1,0 +1,95 @@
+---
+// Ruta: src/components/Footer.astro
+import { SITE, CURRENT_PROJECT, HERRAMIENTAS, LEGAL_LINKS, PROJECTS, SITE_LINKS, CHANNEL } from '../config/site';
+import { PARTIDOS_ORDENADOS } from '../lib/partidos';
+
+const year = new Date().getFullYear();
+const otherProjects = PROJECTS.filter((p) => p.id !== CURRENT_PROJECT);
+---
+
+<footer class="mt-16 bg-slate-950 text-slate-300">
+  <div class="border-b border-slate-800">
+    <p class="mx-auto max-w-6xl px-4 py-5 text-sm leading-relaxed sm:px-6">
+      <span aria-hidden="true">🎬</span> <strong class="text-slate-50">Cómo hice esta web:</strong>
+      la construí con IA (Claude Code) y enseño el proceso, con sus errores, en mi canal de YouTube.
+      <a href={CHANNEL.url} rel="noopener" target="_blank" class="font-semibold text-slate-50 underline hover:text-amber-400">
+        Ver {CHANNEL.name} <span aria-hidden="true">→</span>
+      </a>
+    </p>
+  </div>
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:grid-cols-2 lg:grid-cols-5">
+    <div>
+      <p class="text-lg font-bold text-slate-50">Elecciones <span class="text-amber-400">al Día</span></p>
+      <p class="mt-2 text-sm leading-relaxed">{SITE.tagline}.</p>
+      <p class="mt-4 text-xs leading-relaxed text-slate-400">
+        Fuentes: Boletín Oficial del Estado, Junta Electoral Central y Ministerio del Interior. Web independiente: no
+        trabajamos para ningún partido ni publicamos encuestas.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold text-slate-50">Partidos</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {
+          PARTIDOS_ORDENADOS.slice(0, 10).map((p) => (
+            <li>
+              <a href={`/partidos/${p.slug}`} class="hover:text-amber-400">{p.nombre.length > 28 ? p.siglas : p.nombre}</a>
+            </li>
+          ))
+        }
+        <li><a href="/partidos" class="font-semibold text-amber-400 hover:underline">Todos los partidos →</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold text-slate-50">Herramientas y guías</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {
+          HERRAMIENTAS.map((h) => (
+            <li>
+              <a href={h.href} class="hover:text-amber-400">{h.titulo}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold text-slate-50">Información</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {
+          [...SITE_LINKS, ...LEGAL_LINKS].map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-amber-400">
+                {link.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-sm font-semibold text-slate-50">Otros proyectos</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {
+          otherProjects.map((project) => (
+            <li>
+              <a href={project.url} class="hover:text-amber-400">
+                {project.name}
+              </a>
+              <span class="block text-xs text-slate-400">{project.description}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-slate-800">
+    <p class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-400 sm:px-6">
+      © {year} {SITE.name}. Proyecto independiente. La información es orientativa: ante cualquier duda, manda lo que digan
+      el BOE, la Junta Electoral Central, la Oficina del Censo Electoral o Correos.
+    </p>
+  </div>
+</footer>

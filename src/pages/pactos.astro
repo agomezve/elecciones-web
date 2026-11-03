@@ -1,0 +1,240 @@
+---
+// Ruta: src/pages/pactos.astro
+// Calculadora de pactos: suma escaños de los partidos que marques y comprueba si llegan a 176.
+// Dos modos: el Congreso que salió de 2023 (datos oficiales) y escaños que pone el usuario (no es una encuesta).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { PARTIDOS_ORDENADOS } from '../lib/partidos';
+
+const title = 'Calculadora de pactos: ¿quién suma 176 escaños?';
+const heading = 'Calculadora de pactos: ¿quién llega a 176?';
+const description =
+  'Marca partidos y mira si suman la mayoría absoluta de 176 escaños, con el hemiciclo dibujado. Parte del Congreso de 2023 o pon tú los escaños.';
+
+// Congreso salido del 23-J (grupos por candidatura; Sumar incluye sus marcas territoriales).
+const CONGRESO_2023 = [
+  { id: 'pp', siglas: 'PP', color: '#1d84ce', escanos: 137 },
+  { id: 'psoe', siglas: 'PSOE', color: '#e30613', escanos: 121 },
+  { id: 'vox', siglas: 'VOX', color: '#5ac035', escanos: 33 },
+  { id: 'sumar', siglas: 'Sumar', color: '#e51c55', escanos: 31 },
+  { id: 'erc', siglas: 'ERC', color: '#ffb232', escanos: 7 },
+  { id: 'junts', siglas: 'Junts', color: '#00c3b2', escanos: 7 },
+  { id: 'eh-bildu', siglas: 'EH Bildu', color: '#00a19a', escanos: 6 },
+  { id: 'pnv', siglas: 'PNV', color: '#008a3e', escanos: 5 },
+  { id: 'bng', siglas: 'BNG', color: '#76b3dd', escanos: 1 },
+  { id: 'coalicion-canaria', siglas: 'CCa', color: '#ffd700', escanos: 1 },
+  { id: 'upn-pp', siglas: 'UPN', color: '#2a52be', escanos: 1 },
+];
+const PRESETS_2023 = [
+  { nombre: 'Investidura de Sánchez (2023): 179 síes', ids: ['psoe', 'sumar', 'erc', 'junts', 'eh-bildu', 'pnv', 'bng', 'coalicion-canaria'] },
+  { nombre: 'Investidura fallida de Feijóo (2023): 172 síes', ids: ['pp', 'vox', 'upn-pp', 'coalicion-canaria'] },
+];
+const PARTIDOS_2026 = [
+  ...PARTIDOS_ORDENADOS.map((p) => ({ id: p.slug, siglas: p.siglas, color: p.color, escanos: 0 })),
+  { id: 'otros', siglas: 'Otros', color: '#94a3b8', escanos: 0 },
+];
+
+const preguntas = [
+  {
+    q: '¿Cuántos escaños hacen falta para gobernar en España?',
+    a: 'Para ser investido presidente en la primera votación hacen falta 176 síes (mayoría absoluta de 350). Si no se consigue, 48 horas después basta con más síes que noes, así que las abstenciones también cuentan.',
+  },
+  {
+    q: '¿Qué apoyos tuvo la investidura de 2023?',
+    a: 'Pedro Sánchez fue investido en noviembre de 2023 con 179 votos a favor: PSOE, Sumar, ERC, Junts, EH Bildu, PNV, BNG y Coalición Canaria. Antes, Alberto Núñez Feijóo no fue investido: obtuvo 172 síes (PP, Vox, UPN y Coalición Canaria).',
+  },
+  {
+    q: '¿Esta calculadora es una encuesta?',
+    a: 'No. Parte de los escaños oficiales de 2023 o de los que escribes tú. No hace ninguna previsión del resultado del 29 de noviembre.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Calculadora de pactos' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Calculadora de pactos' }]} etiqueta="Herramienta">
+    <p>Pulsa en los partidos para sumarlos a un acuerdo. El hemiciclo se colorea y te dice si llegan a la mayoría absoluta.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="tarjeta" data-pactos>
+      <div class="flex flex-wrap gap-2" role="tablist" aria-label="Escaños de partida">
+        <button type="button" class="pastilla" data-modo="2023" aria-pressed="true">Congreso de 2023</button>
+        <button type="button" class="pastilla" data-modo="2026" aria-pressed="false">Pon tú los escaños (2026)</button>
+      </div>
+
+      <div class="mt-6 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+        <div>
+          <svg viewBox="0 0 400 215" class="w-full" role="img" aria-label="Hemiciclo del Congreso con los escaños del acuerdo" data-hemiciclo></svg>
+          <div class="mt-2 text-center">
+            <p class="text-5xl font-black tabular-nums" data-total>0</p>
+            <p class="text-sm text-slate-500">escaños en el acuerdo · mayoría absoluta: <strong>176</strong></p>
+            <p class="mt-3 inline-block rounded-full px-4 py-1.5 text-sm font-bold" data-veredicto></p>
+          </div>
+          <div class="mt-4 h-4 overflow-hidden rounded-full bg-slate-100" aria-hidden="true">
+            <div class="relative h-4">
+              <div class="h-4 rounded-full bg-indigo-600 transition-all" data-barra style="width:0"></div>
+              <span class="absolute inset-y-0 w-0.5 bg-slate-900" style={`left:${(176 / 350) * 100}%`}></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="etiqueta">Partidos <span class="font-normal text-slate-500">(pulsa para sumar o quitar)</span></p>
+          <ul class="space-y-2" data-lista></ul>
+          <p class="ayuda mt-3" data-aviso-2026 hidden>
+            Escribe los escaños que quieras probar; el total no puede pasar de 350. No es una previsión: después del 29-N
+            pondremos aquí los escaños oficiales.
+          </p>
+          <div class="mt-5 space-y-2" data-presets></div>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <button type="button" class="boton-secundario px-4 py-2 text-sm" data-limpiar>Quitar todos</button>
+            <button type="button" class="boton px-4 py-2 text-sm" data-compartir>Copiar enlace</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: composición del Congreso tras las elecciones del 23 de julio de 2023 (Ministerio del Interior) y votaciones de investidura del Congreso de los Diputados.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ CONGRESO_2023, PRESETS_2023, PARTIDOS_2026 }}>
+  const raiz = document.querySelector('[data-pactos]');
+  const svg = raiz.querySelector('[data-hemiciclo]');
+  const lista = raiz.querySelector('[data-lista]');
+  const estado = { modo: '2023', sel: new Set(), esc: { '2023': CONGRESO_2023.map((p) => ({ ...p })), '2026': PARTIDOS_2026.map((p) => ({ ...p })) } };
+
+  // Posiciones de los 350 escaños en semicírculos concéntricos, ordenadas de izquierda a derecha.
+  const filas = 10, total = 350, r0 = 70, r1 = 190;
+  const radios = Array.from({ length: filas }, (_, i) => r0 + ((r1 - r0) * i) / (filas - 1));
+  const sumaR = radios.reduce((a, b) => a + b, 0);
+  let por = radios.map((r) => Math.round((total * r) / sumaR));
+  por[filas - 1] += total - por.reduce((a, b) => a + b, 0);
+  const puntos = [];
+  radios.forEach((r, i) => {
+    for (let k = 0; k < por[i]; k++) {
+      const a = Math.PI - (Math.PI * k) / (por[i] - 1);
+      puntos.push({ x: 200 + r * Math.cos(a), y: 205 - r * Math.sin(a), a });
+    }
+  });
+  puntos.sort((p, q) => q.a - p.a);
+
+  const partidos = () => estado.esc[estado.modo];
+  function pintar() {
+    const ps = partidos();
+    // Primero los del acuerdo (a la izquierda), luego el resto.
+    const orden = [...ps.filter((p) => estado.sel.has(p.id)), ...ps.filter((p) => !estado.sel.has(p.id))];
+    const colores = [];
+    for (const p of orden) for (let i = 0; i < p.escanos; i++) colores.push(estado.sel.has(p.id) ? p.color : '#e2e8f0');
+    while (colores.length < total) colores.push('#f1f5f9');
+    svg.innerHTML = puntos.map((pt, i) => `<circle cx="${pt.x.toFixed(1)}" cy="${pt.y.toFixed(1)}" r="4.6" fill="${colores[i]}"/>`).join('');
+    const suma = ps.filter((p) => estado.sel.has(p.id)).reduce((s, p) => s + p.escanos, 0);
+    raiz.querySelector('[data-total]').textContent = suma;
+    raiz.querySelector('[data-barra]').style.width = `${Math.min(100, (suma / 350) * 100)}%`;
+    const v = raiz.querySelector('[data-veredicto]');
+    const falta = 176 - suma;
+    v.textContent = suma === 0 ? 'Marca algún partido' : falta <= 0 ? `Mayoría absoluta: ${suma - 176} por encima de 176` : `Les faltan ${falta} para la mayoría absoluta`;
+    v.className = 'mt-3 inline-block rounded-full px-4 py-1.5 text-sm font-bold ' + (suma === 0 ? 'bg-slate-100 text-slate-600' : falta <= 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-900');
+    const resto = 350 - ps.reduce((s, p) => s + p.escanos, 0);
+    raiz.querySelector('[data-aviso-2026]').hidden = estado.modo !== '2026';
+    if (estado.modo === '2026') raiz.querySelector('[data-aviso-2026]').textContent = `Te quedan ${resto} escaños por repartir. Escribe los que quieras probar; no es una previsión: después del 29-N pondremos aquí los escaños oficiales.`;
+  }
+
+  function lista_() {
+    const ps = partidos();
+    lista.innerHTML = '';
+    for (const p of ps) {
+      const li = document.createElement('li');
+      li.className = 'flex items-center gap-2';
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'flex flex-1 items-center gap-3 rounded-xl border px-3 py-2 text-left text-sm font-semibold transition';
+      b.setAttribute('aria-pressed', String(estado.sel.has(p.id)));
+      const marca = () => {
+        const on = estado.sel.has(p.id);
+        b.style.borderColor = on ? p.color : '#e2e8f0';
+        b.style.background = on ? p.color + '1a' : '#fff';
+        b.setAttribute('aria-pressed', String(on));
+      };
+      b.innerHTML = `<span class="h-3.5 w-3.5 rounded-full" style="background:${p.color}"></span><span class="flex-1">${p.siglas}</span>`;
+      b.onclick = () => {
+        estado.sel.has(p.id) ? estado.sel.delete(p.id) : estado.sel.add(p.id);
+        marca();
+        pintar();
+      };
+      marca();
+      li.append(b);
+      if (estado.modo === '2026') {
+        const inp = document.createElement('input');
+        inp.type = 'number'; inp.min = '0'; inp.max = '350'; inp.inputMode = 'numeric';
+        inp.value = String(p.escanos || '');
+        inp.placeholder = '0';
+        inp.className = 'entrada w-20 py-2 text-right';
+        inp.setAttribute('aria-label', `Escaños de ${p.siglas}`);
+        inp.oninput = () => {
+          const otros = ps.filter((x) => x !== p).reduce((s, x) => s + x.escanos, 0);
+          p.escanos = Math.max(0, Math.min(350 - otros, parseInt(inp.value) || 0));
+          if (String(p.escanos) !== inp.value && inp.value !== '') inp.value = String(p.escanos);
+          pintar();
+        };
+        li.append(inp);
+      } else {
+        const s = document.createElement('span');
+        s.className = 'w-12 text-right text-sm font-bold tabular-nums';
+        s.textContent = p.escanos;
+        li.append(s);
+      }
+      lista.append(li);
+    }
+    const pre = raiz.querySelector('[data-presets]');
+    pre.innerHTML = '';
+    if (estado.modo === '2023')
+      for (const x of PRESETS_2023) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'block w-full rounded-xl bg-slate-50 px-3 py-2 text-left text-sm font-medium text-slate-700 ring-1 ring-slate-200 hover:bg-indigo-50';
+        b.textContent = '↺ ' + x.nombre;
+        b.onclick = () => { estado.sel = new Set(x.ids); lista_(); pintar(); };
+        pre.append(b);
+      }
+  }
+
+  function modo(m) {
+    estado.modo = m;
+    estado.sel.clear();
+    raiz.querySelectorAll('[data-modo]').forEach((b) => {
+      const on = b.dataset.modo === m;
+      b.setAttribute('aria-pressed', String(on));
+      b.classList.toggle('!bg-indigo-700', on); b.classList.toggle('!text-white', on); b.classList.toggle('!border-indigo-700', on);
+    });
+    lista_();
+    pintar();
+  }
+  raiz.querySelectorAll('[data-modo]').forEach((b) => (b.onclick = () => modo(b.dataset.modo)));
+  raiz.querySelector('[data-limpiar]').onclick = () => { estado.sel.clear(); lista_(); pintar(); };
+  raiz.querySelector('[data-compartir]').onclick = async (e) => {
+    const ps = partidos();
+    const h = new URLSearchParams({ m: estado.modo, s: [...estado.sel].join(',') });
+    if (estado.modo === '2026') h.set('e', ps.filter((p) => p.escanos).map((p) => `${p.id}:${p.escanos}`).join(','));
+    const url = `${location.origin}${location.pathname}#${h}`;
+    history.replaceState(null, '', url);
+    try { await navigator.clipboard.writeText(url); e.target.textContent = 'Enlace copiado'; } catch { e.target.textContent = 'Copia la dirección de arriba'; }
+  };
+
+  // Estado desde el enlace compartido.
+  const h = new URLSearchParams(location.hash.slice(1));
+  const m = h.get('m') === '2026' ? '2026' : '2023';
+  if (h.get('e')) for (const par of h.get('e').split(',')) {
+    const [id, n] = par.split(':');
+    const p = estado.esc['2026'].find((x) => x.id === id);
+    if (p) p.escanos = Math.max(0, Math.min(350, parseInt(n) || 0));
+  }
+  modo(m);
+  if (h.get('s')) { for (const id of h.get('s').split(',')) if (partidos().some((p) => p.id === id)) estado.sel.add(id); lista_(); pintar(); }
+</script>

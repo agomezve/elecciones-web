@@ -1,0 +1,57 @@
+---
+// Ruta: src/pages/voto-en-blanco-nulo-abstencion.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { PROVINCIAS, num } from '../lib/datos';
+
+const blancos = PROVINCIAS.reduce((s, p) => s + p.r2023.blancos, 0);
+const nulos = PROVINCIAS.reduce((s, p) => s + p.r2023.nulos, 0);
+const abst = PROVINCIAS.reduce((s, p) => s + p.r2023.abstencion, 0);
+
+const title = 'Voto en blanco, nulo o abstención: qué cuenta cada uno';
+const heading = 'Voto en blanco, nulo o abstención: diferencias y a quién afectan';
+const description = 'El voto en blanco cuenta para el 3 % mínimo; el nulo y la abstención, no. Qué pasa con cada uno en el reparto de escaños, con los datos de 2023.';
+
+const filas = [
+  { n: 'Voto en blanco', cuenta: 'Sí, es un voto válido', umbral: 'Sí: sube la barrera del 3 %', escano: 'No', v2023: num(blancos) },
+  { n: 'Voto nulo', cuenta: 'No', umbral: 'No', escano: 'No', v2023: num(nulos) },
+  { n: 'Abstención', cuenta: 'No', umbral: 'No', escano: 'No', v2023: num(abst) },
+];
+
+const preguntas = [
+  { q: '¿El voto en blanco beneficia al partido más votado?', a: 'No directamente: no da escaños a nadie. Lo que hace es subir la barrera del 3 % en la provincia, lo que puede dejar fuera a una lista que estaba justo en el límite.' },
+  { q: '¿Qué es un voto nulo?', a: 'El que no se puede contar: papeletas de otra elección, sobres con papeletas de listas distintas, papeletas tachadas o con añadidos, o el sobre con objetos dentro. Dos papeletas de la misma lista en un sobre cuentan como un voto.' },
+  { q: '¿Sobre vacío es nulo o blanco?', a: 'Blanco. El sobre sin papeleta cuenta como voto en blanco en el Congreso. En el Senado, la papeleta sin ninguna cruz también es voto en blanco.' },
+  { q: '¿El 3 % importa en todas las provincias?', a: 'En la práctica solo en las que reparten muchos escaños, como Madrid o Barcelona. En las pequeñas hace falta mucho más del 3 % para sacar un diputado. Pruébalo en el simulador.' },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Blanco, nulo o abstención' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Blanco, nulo o abstención' }]} etiqueta="Guía práctica">
+    <p><strong>Solo el voto en blanco cuenta como voto válido</strong>, y por eso sube el número de votos que necesita una lista para llegar al 3 %. El nulo y la abstención no afectan al reparto.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+      <table class="tabla">
+        <thead><tr><th></th><th>¿Es válido?</th><th>¿Cuenta para el 3 %?</th><th>¿Da escaños?</th><th class="text-right">En 2023</th></tr></thead>
+        <tbody>{filas.map((f) => <tr><td class="font-bold">{f.n}</td><td>{f.cuenta}</td><td>{f.umbral}</td><td>{f.escano}</td><td class="text-right tabular-nums">{f.v2023}</td></tr>)}</tbody>
+      </table>
+    </section>
+
+    <section class="texto max-w-3xl">
+      <h2>Un ejemplo con números</h2>
+      <p>En una provincia con 1.000.000 de votos válidos, una lista necesita 30.000 para llegar al 3 %. Si 50.000 personas más votan en blanco, los válidos pasan a 1.050.000 y la barrera sube a 31.500. Si en vez de eso se abstienen o votan nulo, la barrera se queda en 30.000.</p>
+      <p>Prueba con tus propios números en el <a href="/simulador-dhondt">simulador D'Hondt</a>.</p>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: LOREG (arts. 96 y 163) y resultados de 2023 del Ministerio del Interior.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

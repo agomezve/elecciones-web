@@ -1,0 +1,230 @@
+---
+// Ruta: src/pages/provincias/[slug].astro
+// Candidaturas al Congreso de una provincia (orden del BOE), escaños, Senado y resultado de 2023.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Candidato from '../../components/Candidato.astro';
+import LogoPartido from '../../components/LogoPartido.astro';
+import Faq from '../../components/Faq.astro';
+import Autor from '../../components/Autor.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Fuente from '../../components/Fuente.astro';
+import { ELECCION, PROVINCIAS, electoresPorEscano, num, pct, type Provincia } from '../../lib/datos';
+import { getPartido } from '../../lib/partidos';
+
+export function getStaticPaths() {
+  return PROVINCIAS.map((provincia) => ({ params: { slug: provincia.slug }, props: { provincia } }));
+}
+
+interface Props {
+  provincia: Provincia;
+}
+const { provincia: p } = Astro.props;
+const r = p.r2023;
+
+const ranking = [...PROVINCIAS].sort((a, b) => electoresPorEscano(a) - electoresPorEscano(b));
+const puesto = ranking.findIndex((x) => x.slug === p.slug) + 1;
+const madrid = PROVINCIAS.find((x) => x.slug === 'madrid')!;
+const vecesMadrid = electoresPorEscano(madrid) / electoresPorEscano(p);
+
+// Coste del último escaño en 2023: el menor cociente D'Hondt que obtuvo escaño.
+const aptos = r.partidos.filter((x) => x.votos >= r.validos * 0.03);
+const cocientes = aptos.flatMap((x) => Array.from({ length: p.escanos2023 }, (_, i) => ({ s: x.siglas, q: x.votos / (i + 1) }))).sort((a, b) => b.q - a.q);
+const ultimo = cocientes[p.escanos2023 - 1];
+const conEscano = r.partidos.filter((x) => x.escanos > 0);
+const sinEscano = r.partidos.filter((x) => x.escanos === 0).reduce((s, x) => s + x.votos, 0);
+const maxPct = Math.max(...r.partidos.map((x) => x.pct));
+const participacion = (100 * r.votantes) / r.censo;
+
+const senadores = p.senado.reduce((s, x) => s + x.senadores, 0);
+const marcas = (n: number) => (n === 4 ? 3 : n === 3 ? 2 : n === 2 ? 1 : 1);
+const vecinas = PROVINCIAS.filter((x) => x.comunidad === p.comunidad && x.slug !== p.slug);
+const enLaCapital = p.nombre;
+
+const title = `Candidatos al Congreso por ${p.nombre} el 29-N`;
+const heading = `Elecciones generales en ${p.nombre}: candidatos y listas al Congreso`;
+const descripciones = [
+  `${p.nombre} elige ${p.escanos} ${p.escanos === 1 ? 'diputado' : 'diputados'} el 29 de noviembre. Las ${p.listas.length} listas al Congreso con todos sus candidatos según el BOE, el Senado y el resultado de 2023.`,
+  `${p.nombre} elige ${p.escanos} ${p.escanos === 1 ? 'diputado' : 'diputados'} el 29-N. Las ${p.listas.length} listas al Congreso con sus candidatos según el BOE, el Senado y el resultado de 2023.`,
+];
+const description = descripciones.find((d) => d.length <= 155) ?? descripciones[1];
+
+const preguntas = [
+  {
+    q: `¿Cuántos diputados elige ${p.nombre} el 29-N?`,
+    a: `${p.escanos}, según el Real Decreto 806/2026.${p.escanos !== p.escanos2023 ? ` En 2023 eligió ${p.escanos2023}.` : ' Los mismos que en 2023.'}`,
+  },
+  {
+    q: `¿Qué partidos se presentan por ${p.nombre}?`,
+    a: `${p.listas.length} candidaturas: ${p.listas.map((l) => l.siglas).join(', ')}.`,
+  },
+  {
+    q: `¿Cuántos senadores se eligen en ${p.nombre}?`,
+    a:
+      p.senado.length > 1
+        ? `${senadores}, por islas: ${p.senado.map((s) => `${s.isla} ${s.senadores}`).join(', ')}.`
+        : `${senadores}. En la papeleta del Senado puedes marcar hasta ${marcas(senadores)} ${marcas(senadores) === 1 ? 'candidato' : 'candidatos'}.`,
+  },
+  {
+    q: `¿Qué votó ${p.nombre} en las generales de 2023?`,
+    a: `Votó el ${pct(participacion)} del censo. Sacaron escaño: ${conEscano.map((x) => `${x.siglas} (${x.escanos})`).join(', ')}.`,
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  heading={heading}
+  description={description}
+  breadcrumbs={[{ name: 'Provincias', href: '/provincias' }, { name: p.nombre }]}
+>
+  <section class="relative overflow-hidden bg-slate-950 text-white">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(99,102,241,0.35),transparent_60%)]"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
+      <div class="[&_a]:text-slate-300 [&_span]:text-slate-300 [&_[aria-current]]:text-white"><Breadcrumbs items={[{ name: 'Provincias', href: '/provincias' }, { name: p.nombre }]} /></div>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-wider text-amber-300">{p.comunidad} · 29 de noviembre de 2026</p>
+      <h1 class="mt-2 max-w-4xl text-3xl font-extrabold tracking-tight sm:text-5xl">{heading}</h1>
+      <dl class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
+          <dt class="text-xs uppercase tracking-wider text-slate-300">Diputados</dt>
+          <dd class="text-3xl font-black">{p.escanos}</dd>
+          {p.escanos !== p.escanos2023 && <dd class="text-xs font-semibold text-amber-300">{p.escanos > p.escanos2023 ? '+' : ''}{p.escanos - p.escanos2023} respecto a 2023</dd>}
+        </div>
+        <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10"><dt class="text-xs uppercase tracking-wider text-slate-300">Listas</dt><dd class="text-3xl font-black">{p.listas.length}</dd></div>
+        <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10"><dt class="text-xs uppercase tracking-wider text-slate-300">Senadores</dt><dd class="text-3xl font-black">{senadores}</dd></div>
+        <div class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10"><dt class="text-xs uppercase tracking-wider text-slate-300">Electores por escaño</dt><dd class="text-3xl font-black">{num(electoresPorEscano(p))}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Las {p.listas.length} listas al Congreso por {p.nombre}</h2>
+      <p class="mt-2 max-w-3xl text-slate-600">En el orden en que las publica el BOE. Se vota la lista entera, cerrada y bloqueada: los escaños que saque cada una van a sus candidatos por orden.</p>
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {
+          p.listas.map((l) => {
+            const partido = l.familia ? getPartido(l.familia) : undefined;
+            const color = partido?.color ?? '#475569';
+            return (
+              <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <span class="h-1.5" style={`background:${color}`} />
+                <header class="flex items-start gap-3 p-4">
+                  <Candidato nombre={l.candidatos[0]?.n ?? ''} color={color} size={56} />
+                  <div class="min-w-0">
+                    <p class="text-lg font-black leading-tight" style={`color:${color}`}>{l.siglas}</p>
+                    <p class="text-xs leading-snug text-slate-500">{l.nombre}</p>
+                    {partido && <a href={`/partidos/${partido.slug}`} class="mt-1 inline-block text-xs font-semibold text-indigo-700 hover:underline">Ficha del partido →</a>}
+                  </div>
+                  {partido?.logo && <LogoPartido partido={partido} class="ml-auto h-9 w-12 shrink-0 sm:h-10 sm:w-16" />}
+                </header>
+                <ol class="flex-1 space-y-1 px-4 pb-3 text-sm">
+                  {l.candidatos.map((c, i) => (
+                    <li class="flex gap-2">
+                      <span class="w-5 shrink-0 text-right font-semibold tabular-nums text-slate-400">{i + 1}.</span>
+                      <span class:list={[i === 0 && 'font-bold text-slate-900', 'text-slate-700']}>
+                        {c.n}
+                        {c.nota && <span class="text-xs text-slate-400"> ({c.nota})</span>}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+                {l.suplentes.length > 0 && (
+                  <details class="border-t border-slate-100 px-4 py-2 text-sm">
+                    <summary class="cursor-pointer text-xs font-semibold text-slate-500">Suplentes ({l.suplentes.length})</summary>
+                    <ol class="mt-2 space-y-1 text-slate-600">
+                      {l.suplentes.map((c, i) => <li>{i + 1}. {c.n}</li>)}
+                    </ol>
+                  </details>
+                )}
+              </article>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <AdSlot />
+
+    <section class="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight">Qué votó {p.nombre} en 2023</h2>
+        <p class="mt-2 text-slate-600">Elecciones al Congreso del 23 de julio de 2023: votó el {pct(participacion)} del censo y se repartieron {p.escanos2023} escaños.</p>
+        <ul class="mt-6 space-y-2.5">
+          {
+            r.partidos.filter((x) => x.pct >= 0.5).map((x) => (
+              <li class="grid grid-cols-[6.5rem_1fr_auto] items-center gap-3 text-sm">
+                <span class="truncate font-semibold text-slate-800" title={x.siglas}>{x.siglas}</span>
+                <span class="h-5 rounded-md bg-slate-100">
+                  <span class="block h-5 rounded-md bg-indigo-600" style={`width:${Math.max(1, (100 * x.pct) / maxPct)}%`} />
+                </span>
+                <span class="w-28 text-right tabular-nums text-slate-600">
+                  {pct(x.pct)}
+                  {x.escanos > 0 && <strong class="ml-1 text-slate-900">· {x.escanos}</strong>}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="fuente mt-3">Porcentaje sobre votos válidos. El número en negrita son los escaños.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="tarjeta">
+          <p class="dato-nombre">El último escaño de 2023 costó</p>
+          <p class="dato-valor">{ultimo ? num(ultimo.q) : '—'} votos</p>
+          <p class="ayuda">Es el cociente D'Hondt más bajo que obtuvo escaño ({ultimo?.s}). <a href={`/simulador-dhondt?p=${p.slug}`} class="font-semibold text-indigo-700 underline">Pruébalo en el simulador</a>.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="dato-nombre">Votos que no sacaron escaño</p>
+          <p class="dato-valor">{num(sinEscano)}</p>
+          <p class="ayuda">El {pct((100 * sinEscano) / r.validos)} de los votos válidos fue a listas sin diputado. <a href="/votos-que-no-sirvieron" class="font-semibold text-indigo-700 underline">Ver todas las provincias</a>.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="dato-nombre">Tu voto frente a uno de Madrid</p>
+          <p class="dato-valor">{p.slug === 'madrid' ? '1×' : `${vecesMadrid.toLocaleString('es-ES', { maximumFractionDigits: 1 })}×`}</p>
+          <p class="ayuda">Puesto {puesto} de 52 en electores por escaño (de menos a más). <a href="/cuanto-vale-tu-voto" class="font-semibold text-indigo-700 underline">Ver el ranking</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="texto max-w-3xl">
+      <h2>El Senado en {enLaCapital}</h2>
+      {
+        p.senado.length > 1 ? (
+          <p>
+            En {p.nombre} el Senado se elige por islas: {p.senado.map((s) => `${s.isla} elige ${s.senadores}`).join(', ')}. En las islas con 3
+            senadores puedes marcar hasta 2 candidatos; en las de 1, uno.
+          </p>
+        ) : (
+          <p>
+            Se eligen {senadores} {senadores === 1 ? 'senador' : 'senadores'}. En la papeleta del Senado puedes marcar hasta {marcas(senadores)}{' '}
+            {marcas(senadores) === 1 ? 'candidato' : 'candidatos'}, del mismo partido o de partidos distintos. Los más votados salen elegidos.
+          </p>
+        )
+      }
+    </section>
+
+    <Faq preguntas={preguntas} />
+
+    {
+      vecinas.length > 0 && (
+        <section>
+          <h2 class="text-xl font-bold tracking-tight">Otras provincias de {p.comunidad}</h2>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {vecinas.map((v) => (
+              <a href={`/provincias/${v.slug}`} class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-indigo-300">{v.nombre}</a>
+            ))}
+            <a href="/provincias" class="rounded-full px-3 py-1.5 text-sm font-semibold text-indigo-700 hover:underline">Todas →</a>
+          </div>
+        </section>
+      )
+    }
+
+    <Fuente>
+      Fuentes: candidaturas proclamadas por la Junta Electoral Provincial de {p.nombre}, <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>;
+      escaños, <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a>; resultados y censo de 2023, Ministerio del Interior.
+      Fotos: Wikimedia Commons (<a href="/creditos-imagenes">créditos</a>).
+    </Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

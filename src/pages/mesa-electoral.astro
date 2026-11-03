@@ -1,0 +1,60 @@
+---
+// Ruta: src/pages/mesa-electoral.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+
+const title = 'Mesa electoral 29-N: dieta de 75 €, permisos y cómo alegar';
+const heading = 'Si te toca mesa electoral el 29-N';
+const description =
+  'Los miembros de mesa cobran una dieta de 75 €, tienen libre la mañana del lunes 30 y 7 días desde la notificación para alegar. Lo que tienes que saber.';
+
+const datos = [
+  { v: '75 €', n: 'dieta por el día', a: 'Para presidentes y vocales que forman la mesa.' },
+  { v: '7 días', n: 'para alegar', a: 'Desde que te notifican, ante la Junta Electoral de Zona.' },
+  { v: '5 h', n: 'libres el lunes 30', a: 'Además del domingo completo, si trabajas.' },
+];
+
+const preguntas = [
+  { q: '¿Cuánto se cobra por estar en una mesa electoral?', a: 'Una dieta de 75 € para los miembros que forman la mesa el día de la votación (Orden INT/650/2026).' },
+  { q: '¿Puedo librarme de la mesa?', a: 'Solo con una causa justificada y documentada. Tienes 7 días desde la notificación para presentar la alegación ante la Junta Electoral de Zona, que decide si la acepta.' },
+  { q: '¿Qué pasa si no voy?', a: 'No presentarse sin causa justificada es un delito electoral castigado con prisión de 3 meses a 1 año o multa de 6 a 24 meses (LOREG, art. 143).' },
+  { q: '¿Tengo permiso en el trabajo?', a: 'Sí. Si trabajas, tienes permiso retribuido la jornada completa del domingo y las 5 primeras horas de la jornada del lunes siguiente.' },
+  { q: '¿Qué hacen los suplentes?', a: 'Tienen que estar en el colegio a las 8:00. Si falta algún titular, ocupan su lugar; si no, se pueden ir.' },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Mesa electoral' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Mesa electoral' }]} etiqueta="Guía práctica">
+    <p>La mesa se forma a las 8:00 del domingo 29 y no acaba hasta que termina el recuento. A cambio: <strong>75 € de dieta</strong> y la mañana del lunes libre.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="grid gap-4 md:grid-cols-3">
+      {datos.map((d) => (
+        <div class="tarjeta"><p class="dato-valor">{d.v}</p><p class="dato-nombre">{d.n}</p><p class="ayuda mt-1">{d.a}</p></div>
+      ))}
+    </section>
+
+    <section class="texto max-w-3xl">
+      <h2>Cómo es el día, hora a hora</h2>
+      <ul>
+        <li><strong>8:00</strong>: titulares y suplentes se presentan en el colegio. Se forma la mesa.</li>
+        <li><strong>9:00</strong>: abren las urnas. Se vota hasta las 20:00.</li>
+        <li><strong>20:00</strong>: se cierra la votación, votan los miembros de la mesa y se meten los votos por correo.</li>
+        <li><strong>Recuento</strong>: se cuentan Congreso y Senado en público, se rellenan las actas y se entregan.</li>
+      </ul>
+      <h2>Qué hace cada uno</h2>
+      <p>El <strong>presidente</strong> dirige la mesa, abre las urnas y entrega la documentación. Los dos <strong>vocales</strong> comprueban la identidad de los votantes en el censo y anotan quién vota.</p>
+      <p>Si tu caso está en el límite, consulta tus horas con la <a href="/permiso-para-votar">calculadora de horas para votar</a>.</p>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: LOREG (arts. 26, 27, 28 y 143), Orden INT/650/2026 y Real Decreto 605/1999.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

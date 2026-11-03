@@ -1,0 +1,215 @@
+---
+// Ruta: src/pages/partidos/[slug].astro
+// Ficha de partido. Misma plantilla para todos (ver la regla de neutralidad en src/lib/partidos.ts).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Candidato from '../../components/Candidato.astro';
+import LogoPartido from '../../components/LogoPartido.astro';
+import TarjetaPartido from '../../components/TarjetaPartido.astro';
+import Faq from '../../components/Faq.astro';
+import Autor from '../../components/Autor.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Fuente from '../../components/Fuente.astro';
+import { ELECCION, PROVINCIAS, num, pct } from '../../lib/datos';
+import { PARTIDOS, PARTIDOS_ORDENADOS, SIGLAS_2023, VALIDOS_2023, cabezaEn, listasDe, type Partido } from '../../lib/partidos';
+
+export function getStaticPaths() {
+  return PARTIDOS.map((partido) => ({ params: { slug: partido.slug }, props: { partido } }));
+}
+
+interface Props {
+  partido: Partido;
+}
+const { partido } = Astro.props;
+const listas = listasDe(partido.slug);
+const cabeza = cabezaEn(partido.slug, partido.provinciaRef)!;
+const destacados = (partido.destacados ?? []).map((s) => cabezaEn(partido.slug, s)).filter((x) => x !== undefined);
+const sinLista = PROVINCIAS.filter((p) => !listas.some((l) => l.provincia.slug === p.slug));
+const otrasSiglas = [...new Set(listas.map((l) => l.lista.siglas))].filter((s) => s !== partido.siglas);
+const candidatos = listas.reduce((s, l) => s + l.lista.candidatos.length, 0);
+
+// Escaños de 2023 por provincia con las mismas siglas.
+const siglas23 = SIGLAS_2023[partido.slug] ?? [];
+const escanos23 = PROVINCIAS.map((p) => ({
+  provincia: p,
+  escanos: p.r2023.partidos.filter((x) => siglas23.includes(x.siglas)).reduce((s, x) => s + x.escanos, 0),
+}))
+  .filter((x) => x.escanos > 0)
+  .sort((a, b) => b.escanos - a.escanos || a.provincia.nombre.localeCompare(b.provincia.nombre, 'es'));
+
+const posicion = PARTIDOS_ORDENADOS.findIndex((p) => p.slug === partido.slug);
+const vecinos = PARTIDOS_ORDENADOS.filter((p) => p.slug !== partido.slug).slice(0, 4);
+const nombreCorto = partido.nombre.length > 30 ? partido.siglas : partido.nombre;
+
+const title = `${nombreCorto} el 29-N: candidatos y listas`;
+const heading = `${partido.nombre} (${partido.siglas}) en las elecciones generales de 2026`;
+const descripciones = [
+  `${partido.siglas} se presenta en ${listas.length} ${listas.length === 1 ? 'provincia' : 'provincias'}. Su cabeza de lista por ${cabeza.provincia.nombre} es ${cabeza.nombre}. Candidatos de cada provincia según el BOE y resultado de 2023.`,
+  `${partido.siglas} se presenta en ${listas.length} ${listas.length === 1 ? 'provincia' : 'provincias'}. Cabeza de lista por ${cabeza.provincia.nombre}: ${cabeza.nombre}. Candidatos según el BOE y resultado de 2023.`,
+];
+const description = descripciones.find((d) => d.length <= 155) ?? descripciones[1];
+
+const preguntas = [
+  {
+    q: `¿Quién es el candidato de ${partido.siglas} por ${cabeza.provincia.nombre}?`,
+    a: `${cabeza.nombre} encabeza la lista de ${cabeza.lista.siglas} al Congreso por ${cabeza.provincia.nombre}, según las candidaturas proclamadas en el BOE del 3 de noviembre de 2026.`,
+  },
+  {
+    q: `¿En cuántas provincias se presenta ${partido.siglas}?`,
+    a:
+      listas.length === 52
+        ? `En las 52 circunscripciones${otrasSiglas.length ? `, en algunas con otras siglas (${otrasSiglas.join(', ')})` : ''}.`
+        : `En ${listas.length} de las 52 circunscripciones${otrasSiglas.length ? `, en algunas con otras siglas (${otrasSiglas.join(', ')})` : ''}.`,
+  },
+  {
+    q: `¿Cuántos escaños sacó ${partido.siglas} en 2023?`,
+    a: partido.r2023
+      ? `${partido.r2023.escanos} escaños y ${num(partido.r2023.votos)} votos (${pct((100 * partido.r2023.votos) / VALIDOS_2023)} de los votos válidos).${partido.r2023.nota ? ' ' + partido.r2023.nota : ''}`
+      : (partido.nota2023 ?? 'No se presentó.'),
+  },
+  {
+    q: `¿Dónde está el programa electoral de ${partido.siglas} para el 29-N?`,
+    a: partido.programa
+      ? `Lo publicó el ${partido.programa.fecha} en su web.`
+      : `A ${'3 de noviembre'} no lo ha publicado. Cuando lo publique en su web oficial, resumiremos aquí sus medidas citando el programa.`,
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  heading={heading}
+  description={description}
+  breadcrumbs={[{ name: 'Partidos', href: '/partidos' }, { name: partido.siglas }]}
+>
+  <section class="relative overflow-hidden border-b border-slate-200 bg-white">
+    <div class="absolute inset-x-0 top-0 h-2" style={`background:${partido.color}`}></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full opacity-10" style={`background:${partido.color}`}></div>
+    <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-8 sm:px-6">
+      <Breadcrumbs items={[{ name: 'Partidos', href: '/partidos' }, { name: partido.siglas }]} />
+      <div class="mt-6 flex flex-col gap-6 md:flex-row md:items-center">
+        <LogoPartido partido={partido} class="h-24 w-48 border border-slate-200 shadow-sm" />
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+            {partido.ambito === 'estatal' ? 'Partido de ámbito estatal' : 'Partido de ámbito autonómico'} · Nº {posicion + 1} por escaños de 2023
+          </p>
+          <h1 class="mt-1 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{heading}</h1>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-[auto_1fr]">
+        <div class="flex items-center gap-5 rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+          <Candidato nombre={cabeza.nombre} color={partido.color} size={120} credito />
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Cabeza de lista por {cabeza.provincia.nombre}</p>
+            <p class="mt-1 text-xl font-extrabold text-slate-900">{cabeza.nombre}</p>
+            <p class="mt-1 text-sm text-slate-600">Lista: {cabeza.lista.siglas}</p>
+            <a href={`/provincias/${cabeza.provincia.slug}`} class="mt-2 inline-block text-sm font-semibold text-indigo-700 hover:underline">Ver la lista completa →</a>
+          </div>
+        </div>
+        <dl class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="dato"><dt class="dato-nombre">Provincias</dt><dd class="dato-valor">{listas.length}<span class="text-base font-semibold text-slate-400">/52</span></dd></div>
+          <div class="dato"><dt class="dato-nombre">Candidatos al Congreso</dt><dd class="dato-valor">{num(candidatos)}</dd></div>
+          <div class="dato"><dt class="dato-nombre">Escaños en 2023</dt><dd class="dato-valor">{partido.r2023 ? partido.r2023.escanos : '—'}</dd></div>
+          <div class="dato"><dt class="dato-nombre">Votos en 2023</dt><dd class="dato-valor">{partido.r2023 ? pct((100 * partido.r2023.votos) / VALIDOS_2023) : '—'}</dd></div>
+        </dl>
+      </div>
+      {(partido.r2023?.nota || partido.nota2023) && <p class="mt-3 text-sm text-slate-500">{partido.r2023?.nota ?? partido.nota2023}</p>}
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Sus medidas para el 29-N</h2>
+      {
+        partido.programa ? (
+          <p class="mt-3">Programa publicado el {partido.programa.fecha}: <a href={partido.programa.url} rel="noopener" target="_blank" class="font-semibold text-indigo-700 underline">leer el programa ↗</a></p>
+        ) : (
+          <div class="mt-4 rounded-2xl border border-dashed border-slate-300 bg-white p-6">
+            <p class="text-lg font-bold text-slate-900">Programa aún no publicado</p>
+            <p class="mt-2 max-w-2xl text-slate-600">
+              A 3 de noviembre, {partido.siglas} no ha publicado su programa electoral completo. No resumimos propuestas sueltas
+              ni declaraciones: cuando el programa esté en su web oficial, aquí aparecerán sus medidas principales, citando cada una.
+            </p>
+            {partido.web && <a href={partido.web} rel="noopener nofollow" target="_blank" class="boton-secundario mt-4">Web oficial de {partido.siglas} ↗</a>}
+          </div>
+        )
+      }
+    </section>
+
+    {
+      destacados.length > 0 && (
+        <section>
+          <h2 class="text-2xl font-bold tracking-tight">Otras cabezas de lista destacadas</h2>
+          <div class="mt-6 flex flex-wrap gap-4">
+            {destacados.map((d) => (
+              <a href={`/provincias/${d.provincia.slug}`} class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-indigo-300">
+                <Candidato nombre={d.nombre} color={partido.color} size={72} credito />
+                <span>
+                  <span class="block font-bold text-slate-900">{d.nombre}</span>
+                  <span class="block text-sm text-slate-500">{d.lista.siglas} · {d.provincia.nombre}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Cabezas de lista de {partido.siglas} en cada provincia</h2>
+      <p class="mt-2 text-slate-600">Los dos primeros de cada lista al Congreso. Pulsa en la provincia para ver la lista entera.</p>
+      <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="tabla">
+          <thead><tr><th>Provincia</th><th>Escaños</th><th>Siglas</th><th>Nº 1</th><th>Nº 2</th></tr></thead>
+          <tbody>
+            {listas.map(({ provincia, lista }) => (
+              <tr>
+                <td><a href={`/provincias/${provincia.slug}`} class="font-semibold text-indigo-700 hover:underline">{provincia.nombre}</a></td>
+                <td>{provincia.escanos}</td>
+                <td class="whitespace-nowrap">{lista.siglas}</td>
+                <td class="min-w-44">{lista.candidatos[0]?.n}</td>
+                <td class="min-w-44">{lista.candidatos[1]?.n ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {sinLista.length > 0 && sinLista.length < 52 && (
+        <p class="mt-3 text-sm text-slate-500">No se presenta en: {sinLista.map((p) => p.nombre).join(', ')}.</p>
+      )}
+    </section>
+
+    <AdSlot />
+
+    {
+      escanos23.length > 0 && (
+        <section>
+          <h2 class="text-2xl font-bold tracking-tight">Dónde sacó escaños en 2023</h2>
+          <div class="mt-6 flex flex-wrap gap-2">
+            {escanos23.map((x) => (
+              <a href={`/provincias/${x.provincia.slug}`} class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-indigo-300">
+                {x.provincia.nombre} <strong class="ml-1" style={`color:${partido.color}`}>{x.escanos}</strong>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <Faq preguntas={preguntas} />
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Otros partidos</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {vecinos.map((p) => <TarjetaPartido partido={p} />)}
+      </div>
+    </section>
+
+    <Fuente>
+      Fuentes: candidaturas proclamadas, <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>;
+      resultados de 2023, Ministerio del Interior. Foto y logotipo: Wikimedia Commons (<a href="/creditos-imagenes">créditos</a>).
+    </Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

@@ -1,0 +1,54 @@
+---
+// Ruta: src/components/Candidato.astro
+// Foto de un candidato (Wikimedia Commons, con su licencia) o sus iniciales si no hay foto libre.
+import { CREDITOS } from '../lib/datos';
+import { fotoDe, iniciales } from '../lib/partidos';
+
+interface Props {
+  nombre: string;
+  color?: string;
+  /** Lado en píxeles. */
+  size?: number;
+  class?: string;
+  /** Muestra el pie con autor y licencia. */
+  credito?: boolean;
+}
+const { nombre, color = '#334155', size = 96, class: clase = '', credito = false } = Astro.props;
+const foto = fotoDe(nombre);
+const c = foto ? CREDITOS[`f-${foto}`] : undefined;
+---
+
+<figure class:list={['shrink-0', clase]} style={`width:${size}px`}>
+  {
+    foto ? (
+      <img
+        src={`/img/candidatos/${foto}.jpg`}
+        alt={`Foto de ${nombre}`}
+        width={size}
+        height={size}
+        loading="lazy"
+        decoding="async"
+        class="aspect-square w-full rounded-2xl bg-slate-100 object-cover object-top shadow-sm ring-4 ring-white"
+        style={`box-shadow:0 0 0 4px ${color}`}
+      />
+    ) : (
+      <span
+        class="flex aspect-square w-full items-center justify-center rounded-2xl font-extrabold text-white shadow-sm"
+        style={`background:${color};font-size:${Math.round(size / 3)}px`}
+        role="img"
+        aria-label={`Iniciales de ${nombre} (no hay foto con licencia libre)`}
+      >
+        {iniciales(nombre)}
+      </span>
+    )
+  }
+  {
+    credito && c && (
+      <figcaption class="mt-1.5 text-[10px] leading-tight text-slate-400">
+        <a href={c.url} rel="noopener nofollow" target="_blank" class="hover:underline">
+          {c.autor} · {c.licencia}
+        </a>
+      </figcaption>
+    )
+  }
+</figure>

@@ -1,0 +1,56 @@
+---
+// Ruta: src/components/CuentaAtras.astro
+// Cuenta atrás en vivo hasta un instante. Sin JavaScript, muestra los días calculados en el build.
+interface Props {
+  hasta: string;
+  /** Texto cuando el plazo ya ha pasado. */
+  pasado?: string;
+  oscuro?: boolean;
+}
+const { hasta, pasado = 'Plazo cerrado', oscuro = false } = Astro.props;
+const ms = new Date(hasta).getTime() - Date.now();
+const d = Math.max(0, Math.floor(ms / 86_400_000));
+const caja = oscuro ? 'bg-white/10 text-white ring-1 ring-white/15' : 'bg-white text-slate-900 ring-1 ring-slate-200';
+const pie = oscuro ? 'text-slate-300' : 'text-slate-500';
+---
+
+<div class="flex gap-2 sm:gap-3" data-cuenta={hasta} data-pasado={pasado} aria-live="off">
+  {
+    [
+      ['d', d, 'días'],
+      ['h', 0, 'horas'],
+      ['m', 0, 'min'],
+      ['s', 0, 'seg'],
+    ].map(([k, v, t]) => (
+      <div class:list={['min-w-16 rounded-xl px-3 py-2 text-center shadow-sm sm:min-w-20', caja, k !== 'd' && 'hidden sm:block']} data-caja={k}>
+        <span class="block text-3xl font-black tabular-nums sm:text-4xl" data-v={k}>
+          {v}
+        </span>
+        <span class:list={['block text-[11px] font-semibold uppercase tracking-wider', pie]}>{t}</span>
+      </div>
+    ))
+  }
+</div>
+
+<script>
+  for (const el of document.querySelectorAll<HTMLElement>('[data-cuenta]')) {
+    const fin = new Date(el.dataset.cuenta!).getTime();
+    el.querySelectorAll('[data-caja]').forEach((c) => c.classList.remove('hidden'));
+    const pinta = () => {
+      const ms = fin - Date.now();
+      if (ms <= 0) {
+        el.innerHTML = `<p class="text-lg font-bold">${el.dataset.pasado}</p>`;
+        return false;
+      }
+      const v = { d: Math.floor(ms / 864e5), h: Math.floor(ms / 36e5) % 24, m: Math.floor(ms / 6e4) % 60, s: Math.floor(ms / 1e3) % 60 };
+      for (const [k, n] of Object.entries(v)) {
+        const s = el.querySelector(`[data-v="${k}"]`);
+        if (s) s.textContent = k === 'd' ? String(n) : String(n).padStart(2, '0');
+      }
+      return true;
+    };
+    if (pinta()) {
+      const t = setInterval(() => pinta() || clearInterval(t), 1000);
+    }
+  }
+</script>

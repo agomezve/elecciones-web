@@ -1,0 +1,82 @@
+---
+// Ruta: src/pages/resultados-2023.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { COMUNIDADES, PROVINCIAS, num, pct } from '../lib/datos';
+
+// Agrupa las candidaturas de 2023 en sus grupos (PSOE con sus federaciones y Sumar con sus marcas).
+const grupo = (s: string) => (s.includes('PSOE') ? 'PSOE' : s.startsWith('Sumar') || s.includes('Sumar') ? 'Sumar' : s);
+const COLORES: Record<string, string> = { PP: '#1d84ce', PSOE: '#e30613', Vox: '#5ac035', Sumar: '#e51c55', ERC: '#ffb232', Junts: '#00c3b2', 'EH Bildu': '#00a19a', 'EAJ/PNV': '#008a3e', BNG: '#76b3dd', CCa: '#ffd700', UPN: '#2a52be' };
+const totales = new Map<string, { votos: number; escanos: number }>();
+for (const p of PROVINCIAS)
+  for (const x of p.r2023.partidos) {
+    const g = grupo(x.siglas);
+    const t = totales.get(g) ?? { votos: 0, escanos: 0 };
+    t.votos += x.votos;
+    t.escanos += x.escanos;
+    totales.set(g, t);
+  }
+const validos = PROVINCIAS.reduce((s, p) => s + p.r2023.validos, 0);
+const censo = PROVINCIAS.reduce((s, p) => s + p.r2023.censo, 0);
+const votantes = PROVINCIAS.reduce((s, p) => s + p.r2023.votantes, 0);
+const conEscano = [...totales.entries()].filter(([, t]) => t.escanos > 0).sort((a, b) => b[1].escanos - a[1].escanos);
+const sinEscano = [...totales.entries()].filter(([, t]) => t.escanos === 0).sort((a, b) => b[1].votos - a[1].votos).slice(0, 6);
+
+const title = 'Resultados de las elecciones generales de 2023 por provincia';
+const heading = 'Resultados de las elecciones generales del 23-J de 2023';
+const description = `PP 137 escaños, PSOE 121, Vox 33 y Sumar 31: los resultados oficiales de 2023 en España y en cada provincia, para comparar con el 29-N.`;
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Resultados de 2023' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Resultados de 2023' }]} etiqueta="Datos oficiales">
+    <p>Votó el {pct((100 * votantes) / censo)} del censo. Así quedó el Congreso que se disuelve ahora.</p>
+  </CabeceraPagina>
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section>
+      <div class="flex h-10 overflow-hidden rounded-xl" role="img" aria-label="Reparto de los 350 escaños en 2023">
+        {conEscano.map(([g, t]) => <span style={`width:${(100 * t.escanos) / 350}%;background:${COLORES[g] ?? '#64748b'}`} title={`${g}: ${t.escanos}`} />)}
+      </div>
+      <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+        <table class="tabla">
+          <thead><tr><th>Candidatura</th><th class="text-right">Escaños</th><th class="text-right">Votos</th><th class="text-right">% válidos</th></tr></thead>
+          <tbody>
+            {conEscano.map(([g, t]) => (
+              <tr><td class="font-semibold"><span class="mr-2 inline-block h-3 w-3 rounded-full align-middle" style={`background:${COLORES[g] ?? '#64748b'}`} />{g}</td><td class="text-right font-bold">{t.escanos}</td><td class="text-right">{num(t.votos)}</td><td class="text-right">{pct((100 * t.votos) / validos)}</td></tr>
+            ))}
+            {sinEscano.map(([g, t]) => (
+              <tr class="text-slate-500"><td>{g}</td><td class="text-right">0</td><td class="text-right">{num(t.votos)}</td><td class="text-right">{pct((100 * t.votos) / validos)}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="fuente mt-2">PSOE incluye PSC, PSdeG, PSE-EE, PSIB y PSN. Sumar incluye sus candidaturas territoriales (ECP, Compromís, Sumar Aragón y Més).</p>
+    </section>
+    <AdSlot />
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Resultados por provincia</h2>
+      {COMUNIDADES.map((c) => (
+        <div class="mt-6">
+          <h3 class="font-bold text-slate-900">{c.nombre}</h3>
+          <ul class="mt-2 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {c.provincias.map((p) => (
+              <li>
+                <a href={`/provincias/${p.slug}`} class="block rounded-xl border border-slate-200 bg-white p-3 hover:border-indigo-300">
+                  <span class="flex justify-between text-sm font-semibold"><span>{p.nombre}</span><span class="text-slate-500">{p.escanos2023} escaños</span></span>
+                  <span class="mt-2 flex h-3 overflow-hidden rounded">
+                    {p.r2023.partidos.filter((x) => x.escanos > 0).map((x) => <span style={`width:${(100 * x.escanos) / p.escanos2023}%;background:${COLORES[grupo(x.siglas)] ?? '#64748b'}`} />)}
+                  </span>
+                  <span class="mt-1.5 block text-xs text-slate-500">{p.r2023.partidos.filter((x) => x.escanos > 0).map((x) => `${x.siglas} ${x.escanos}`).join(' · ')}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+    <Fuente>Fuente: Ministerio del Interior, elecciones al Congreso de los Diputados del 23 de julio de 2023.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

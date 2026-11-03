@@ -1,0 +1,70 @@
+---
+// Ruta: src/pages/donde-voto-y-que-llevar.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import CuentaAtras from '../components/CuentaAtras.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+
+const title = 'Dónde voto el 29-N y qué documentos llevar';
+const heading = 'Dónde voto el 29-N y qué tengo que llevar';
+const description = 'Cómo saber tu colegio electoral y tu mesa, qué documentos valen para votar (DNI, pasaporte o carné de conducir con foto) y el horario: de 9:00 a 20:00.';
+
+const docs = [
+  { n: 'DNI', ok: true, d: 'Aunque esté caducado, siempre que se te reconozca en la foto.' },
+  { n: 'Pasaporte', ok: true, d: 'Original, con fotografía.' },
+  { n: 'Carné de conducir', ok: true, d: 'El de plástico con fotografía.' },
+  { n: 'Fotocopias o fotos en el móvil', ok: false, d: 'No valen: tiene que ser el documento original.' },
+];
+
+const preguntas = [
+  { q: '¿Cómo sé en qué colegio voto?', a: 'En la tarjeta censal que el INE envía a casa antes de las elecciones, en la consulta del censo de la sede electrónica del INE o preguntando en tu ayuntamiento.' },
+  { q: '¿Necesito llevar la tarjeta censal?', a: 'No. Ayuda a encontrar tu mesa más rápido, pero para votar basta con un documento de identidad con foto.' },
+  { q: '¿Vale el DNI caducado?', a: 'Sí, la Junta Electoral Central lo acepta siempre que la mesa pueda comprobar tu identidad.' },
+  { q: '¿Puedo llevar las papeletas de casa?', a: 'Sí. Puedes usar las que te lleguen por correo o las que haya en el colegio. Lo que no puede llevar el sobre es nada más que la papeleta.' },
+  { q: '¿A qué hora abren y cierran los colegios?', a: 'De 9:00 a 20:00 en la península y Baleares, y de 9:00 a 20:00 hora canaria en Canarias.' },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Dónde voto' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Dónde voto' }]} etiqueta="Guía práctica">
+    <p>Domingo 29 de noviembre, <strong>de 9:00 a 20:00</strong>. Lleva el original de tu DNI, pasaporte o carné de conducir.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <div class="rounded-3xl bg-slate-950 p-6 text-white">
+      <p class="text-sm font-semibold uppercase tracking-wider text-amber-300">Abren los colegios en</p>
+      <div class="mt-3"><CuentaAtras hasta="2026-11-29T09:00:00+01:00" pasado="Los colegios ya han abierto" oscuro /></div>
+    </div>
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Qué documentos valen</h2>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {docs.map((x) => (
+          <li class="tarjeta flex gap-4">
+            <span class:list={['flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg font-black', x.ok ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700']}>{x.ok ? '✓' : '✕'}</span>
+            <div><h3 class="font-bold">{x.n}</h3><p class="mt-1 text-sm text-slate-600">{x.d}</p></div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="texto max-w-3xl">
+      <h2>Cómo encontrar tu colegio y tu mesa</h2>
+      <p>La forma más rápida es la consulta del censo electoral en la <a href="https://sede.ine.gob.es/" rel="noopener" target="_blank">sede electrónica del INE</a>, con certificado digital, Cl@ve o los datos de tu DNI. También viene en la tarjeta censal que llega a casa.</p>
+      <h2>Antes de ir</h2>
+      <ul>
+        <li>Mira <a href="/provincias">quién va en cada lista de tu provincia</a>.</li>
+        <li>Si trabajas ese domingo, calcula tus <a href="/permiso-para-votar">horas pagadas para votar</a>.</li>
+        <li>Si has pedido el voto por correo, ya no puedes votar en persona.</li>
+      </ul>
+    </section>
+
+    <AdSlot />
+    <Faq preguntas={preguntas} />
+    <Fuente>Fuente: LOREG (art. 85), Junta Electoral Central e Instituto Nacional de Estadística (Oficina del Censo Electoral).</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

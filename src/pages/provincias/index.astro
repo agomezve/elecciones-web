@@ -1,0 +1,56 @@
+---
+// Ruta: src/pages/provincias/index.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CabeceraPagina from '../../components/CabeceraPagina.astro';
+import SelectorProvincia from '../../components/SelectorProvincia.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Fuente from '../../components/Fuente.astro';
+import { COMUNIDADES, ELECCION, PROVINCIAS, num } from '../../lib/datos';
+
+const title = 'Candidatos al Congreso en cada provincia: elecciones 29-N';
+const listas = PROVINCIAS.reduce((s, p) => s + p.listas.length, 0);
+const max = Math.max(...PROVINCIAS.map((p) => p.escanos));
+---
+
+<BaseLayout
+  title={title}
+  description={`Las ${num(listas)} listas al Congreso de las 52 provincias para el 29-N, con todos sus candidatos según el BOE, los escaños de cada provincia y su resultado de 2023.`}
+  breadcrumbs={[{ name: 'Provincias' }]}
+  schemaType="CollectionPage"
+>
+  <CabeceraPagina titulo="Candidatos al Congreso de tu provincia" breadcrumbs={[{ name: 'Provincias' }]} etiqueta="52 circunscripciones">
+    <p>Cada provincia (y Ceuta y Melilla) elige a sus diputados por separado. Elige la tuya para ver todas las listas, nombre a nombre, tal como salen en el BOE.</p>
+    <div class="mt-6"><SelectorProvincia /></div>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-10 px-4 py-10 sm:px-6">
+    {
+      COMUNIDADES.map((c) => (
+        <section>
+          <h2 class="text-lg font-bold text-slate-900">{c.nombre}</h2>
+          <ul class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {c.provincias.map((p) => (
+              <li>
+                <a href={`/provincias/${p.slug}`} class="group block rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:shadow-md">
+                  <span class="flex items-baseline justify-between gap-2">
+                    <span class="font-bold text-slate-900 group-hover:text-indigo-700">{p.nombre}</span>
+                    <span class="text-sm font-semibold text-slate-500">{p.escanos} {p.escanos === 1 ? 'escaño' : 'escaños'}</span>
+                  </span>
+                  <span class="mt-2 block h-1.5 rounded-full bg-slate-100">
+                    <span class="block h-1.5 rounded-full bg-indigo-600" style={`width:${Math.max(3, (100 * p.escanos) / max)}%`}></span>
+                  </span>
+                  <span class="mt-2 block text-xs text-slate-500">{p.listas.length} listas al Congreso</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    <AdSlot />
+    <Fuente>
+      Fuentes: escaños, <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a>; listas,
+      <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>.
+    </Fuente>
+  </div>
+</BaseLayout>

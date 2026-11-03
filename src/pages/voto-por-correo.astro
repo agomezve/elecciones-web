@@ -1,0 +1,135 @@
+---
+// Ruta: src/pages/voto-por-correo.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import CuentaAtras from '../components/CuentaAtras.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { ELECCION } from '../lib/datos';
+
+const title = 'Voto por correo 29-N: plazos y cómo pedirlo paso a paso';
+const heading = 'Voto por correo para el 29-N: plazos y pasos';
+const description =
+  'Pide el voto por correo hasta el 19 de noviembre y envíalo hasta el 25. Cómo se pide en Correos, qué llega a casa y qué pasa si luego votas en persona.';
+
+const pasos = [
+  {
+    t: 'Pídelo hasta el jueves 19 de noviembre',
+    d: 'En cualquier oficina de Correos, en persona y con tu DNI, o en la web de Correos con certificado digital o DNI electrónico. Si no puedes ir por enfermedad o discapacidad, puede hacerlo otra persona con un poder notarial o consular y un certificado médico oficial.',
+  },
+  {
+    t: 'Recibe la documentación en casa',
+    d: 'La Oficina del Censo Electoral la envía por correo certificado a la dirección que indicaste, a partir del 9 de noviembre. La tienes que recoger tú, enseñando tu DNI. Llegan las papeletas y sobres de Congreso y Senado, el certificado de inscripción en el censo y un sobre para enviarlo todo.',
+  },
+  {
+    t: 'Vota en casa',
+    d: 'Mete la papeleta del Congreso en su sobre y la del Senado en el suyo (en la del Senado puedes marcar hasta 3 candidatos en una provincia peninsular). Cierra los sobres.',
+  },
+  {
+    t: 'Envíalo hasta el miércoles 25 de noviembre',
+    d: 'Mete los sobres de votación y el certificado del censo en el sobre grande dirigido a tu mesa electoral y llévalo a cualquier oficina de Correos. Es gratis y va certificado.',
+  },
+];
+
+const preguntas = [
+  {
+    q: '¿Hasta cuándo se puede pedir el voto por correo para el 29-N?',
+    a: 'Hasta el jueves 19 de noviembre de 2026, en Correos (oficina o web).',
+  },
+  {
+    q: '¿Hasta cuándo puedo enviar el voto por correo?',
+    a: 'El sobre con tu voto tiene que estar en una oficina de Correos como tarde el miércoles 25 de noviembre.',
+  },
+  {
+    q: 'Si pido el voto por correo, ¿puedo votar luego en persona?',
+    a: 'No. Una vez que lo pides, la mesa sabe que votas por correo y no te dejará votar en persona, aunque no hayas llegado a enviar el voto.',
+  },
+  {
+    q: '¿Cuánto cuesta votar por correo?',
+    a: 'Nada. La solicitud y el envío del voto son gratuitos.',
+  },
+  {
+    q: '¿Qué hago si no me llega la documentación?',
+    a: 'Si no estabas en casa, Correos deja un aviso para recogerla en la oficina. Si no te llega nada, pregunta en Correos o en la Delegación Provincial de la Oficina del Censo Electoral.',
+  },
+  {
+    q: '¿Puede recoger otra persona la documentación por mí?',
+    a: 'Por regla general, no: el cartero o la oficina tienen que comprobar tu identidad. Solo puede recogerla otra persona en los casos de enfermedad o discapacidad con poder notarial o consular.',
+  },
+  {
+    q: '¿Vivo en el extranjero, también me sirve esto?',
+    a: 'No. Los residentes en el extranjero inscritos en el CERA votan con otro procedimiento, por el consulado. Esta guía es para quien vive en España y no puede ir a votar el día 29.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Voto por correo' }]} schemaType="Article" article={{ publishDate: new Date('2026-11-03'), section: 'Guías' }}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Voto por correo' }]} etiqueta="Guía práctica">
+    <p>
+      <strong>Tienes hasta el jueves 19 de noviembre para pedirlo</strong> en Correos y hasta el miércoles 25 para
+      enviarlo. Si lo pides, ya no podrás votar en persona en tu mesa el día 29.
+    </p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <div class="grid gap-4 md:grid-cols-2">
+      <div class="rounded-3xl bg-slate-950 p-6 text-white">
+        <p class="text-sm font-semibold uppercase tracking-wider text-amber-300">Para pedirlo te quedan</p>
+        <div class="mt-3"><CuentaAtras hasta="2026-11-20T00:00:00+01:00" pasado="El plazo para pedirlo terminó el 19 de noviembre" oscuro /></div>
+        <p class="mt-4 text-sm text-slate-300">Último día: jueves 19 de noviembre.</p>
+      </div>
+      <div class="rounded-3xl bg-white p-6 ring-1 ring-slate-200">
+        <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Para enviarlo te quedan</p>
+        <div class="mt-3"><CuentaAtras hasta="2026-11-26T00:00:00+01:00" pasado="El plazo para enviarlo terminó el 25 de noviembre" /></div>
+        <p class="mt-4 text-sm text-slate-500">Último día: miércoles 25 de noviembre.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Cómo se vota por correo, en 4 pasos</h2>
+      <ol class="mt-6 grid gap-4 md:grid-cols-2">
+        {
+          pasos.map((p, i) => (
+            <li class="tarjeta flex gap-4">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-400 text-lg font-black text-slate-900">{i + 1}</span>
+              <div>
+                <h3 class="font-bold text-slate-900">{p.t}</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{p.d}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+      <a href="https://www.correos.es/es/es/particulares/elecciones" rel="noopener" target="_blank" class="boton mt-6">Pedir el voto en la web de Correos ↗</a>
+    </section>
+
+    <AdSlot />
+
+    <section class="texto max-w-3xl">
+      <h2>Lo que más gente pregunta antes de pedirlo</h2>
+      <h3>¿Me conviene votar por correo?</h3>
+      <p>
+        Sirve si el domingo 29 no vas a estar en tu municipio o no podrás ir a tu colegio. Si tienes dudas, piensa que es
+        definitivo: una vez pedido, no puedes votar en persona aunque al final estés.
+      </p>
+      <h3>¿Y si me toca ser miembro de mesa?</h3>
+      <p>
+        El sorteo de las mesas no tiene en cuenta si has pedido el voto por correo. Si te toca, lee
+        <a href="/mesa-electoral">qué hacer si te toca mesa</a>: plazos para alegar, dieta y permisos.
+      </p>
+      <h3>¿Qué papeletas llegan?</h3>
+      <p>
+        Las de todas las candidaturas de tu provincia al Congreso y la papeleta del Senado. Puedes ver de antemano quién va
+        en cada lista en <a href="/provincias">los candidatos de tu provincia</a>.
+      </p>
+    </section>
+
+    <Faq preguntas={preguntas} />
+    <Fuente>
+      Fuente: Ley Orgánica del Régimen Electoral General (arts. 72 y 73), <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a> y Correos.
+    </Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

@@ -1,0 +1,114 @@
+---
+// Ruta: src/pages/sobre-mi.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalArticle from '../components/LegalArticle.astro';
+import { SITE, OWNER, LEGAL_UPDATED, CHANNEL, CHANNEL_NOTE, CURRENT_PROJECT, PROJECTS, HERRAMIENTAS } from '../config/site';
+import { PROVINCIAS, ELECCION } from '../lib/datos';
+
+const title = 'Cómo funciona y sobre mí';
+const otherSites = PROJECTS.filter((p) => p.id !== CURRENT_PROJECT && p.id !== 'canal');
+const listas = PROVINCIAS.reduce((s, p) => s + p.listas.length, 0);
+const toc = [
+  { id: 'que-es', title: `Qué es ${SITE.name}` },
+  { id: 'neutralidad', title: 'Reglas de neutralidad' },
+  { id: 'datos', title: 'De dónde salen los datos' },
+  { id: 'quien', title: 'Quién está detrás' },
+  { id: 'ia', title: 'Hecha con inteligencia artificial' },
+  { id: 'independencia', title: 'Independencia y financiación' },
+  { id: 'errores', title: 'Correcciones y contacto' },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`Cómo funciona ${SITE.name}: datos del BOE y del Ministerio del Interior, reglas de neutralidad con los partidos y quién está detrás.`}
+  schemaType="AboutPage"
+  breadcrumbs={[{ name: title }]}
+>
+  <LegalArticle
+    title={title}
+    lead="Te ayudamos a votar el 29 de noviembre sabiendo los plazos, quién se presenta en tu provincia y cómo se reparten los escaños, con datos oficiales y sin pedirte el voto para nadie."
+    updated={LEGAL_UPDATED}
+    toc={toc}
+  >
+    <h2 id="que-es">Qué es {SITE.name}</h2>
+    <p>
+      Una web gratuita y sin registro con {HERRAMIENTAS.length} herramientas y guías para las elecciones generales
+      del 29 de noviembre de 2026: los plazos del voto por correo, las {listas} listas al Congreso de las 52
+      provincias, una ficha por partido, una calculadora de pactos, un simulador del reparto de escaños y los
+      resultados de 2023.
+    </p>
+
+    <h2 id="neutralidad">Reglas de neutralidad</h2>
+    <ul>
+      <li>Todos los partidos tienen la misma plantilla de ficha, con los mismos apartados.</li>
+      <li>
+        Se ordenan por escaños obtenidos en 2023 y, si no tuvieron, por el número de provincias en las que se
+        presentan. Es un criterio objetivo, no una preferencia.
+      </li>
+      <li>
+        Las medidas de cada partido solo salen de su programa oficial. Si todavía no lo ha publicado, la ficha lo
+        dice («Programa aún no publicado») en vez de suponer nada.
+      </li>
+      <li>
+        No publicamos encuestas. Desde el 24 de noviembre la ley prohíbe difundirlas (LOREG, art. 69.7), y las
+        simulaciones de esta web parten de los datos que pones tú o de los resultados oficiales de 2023.
+      </li>
+      <li>
+        Las fotos de candidatos son las que tienen licencia libre en Wikimedia Commons. Si no hay ninguna, ponemos
+        sus iniciales, sea quien sea. Los créditos están en <a href="/creditos-imagenes">Créditos de las imágenes</a>.
+      </li>
+    </ul>
+
+    <h2 id="datos">De dónde salen los datos</h2>
+    <ul>
+      <li>
+        <strong>Convocatoria y escaños por provincia:</strong>
+        <a href={ELECCION.decreto.boe} rel="noopener" target="_blank">{ELECCION.decreto.nombre}</a>.
+      </li>
+      <li>
+        <strong>Candidaturas:</strong> candidaturas proclamadas por las juntas electorales provinciales,
+        <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>.
+      </li>
+      <li><strong>Resultados de 2023:</strong> Ministerio del Interior, elecciones al Congreso del 23 de julio de 2023.</li>
+      <li><strong>Plazos y trámites:</strong> Ley Orgánica del Régimen Electoral General (LOREG), Junta Electoral Central y Correos.</li>
+    </ul>
+
+    <h2 id="quien">Quién está detrás</h2>
+    <p>
+      Soy <strong>{OWNER.name}</strong>, programador backend. {SITE.name} es un proyecto personal e
+      independiente, como mis otras webs:
+    </p>
+    <ul>
+      {otherSites.map((p) => (
+        <li>
+          <a href={p.url}>{p.name}</a>: {p.description.toLowerCase()}.
+        </li>
+      ))}
+    </ul>
+
+    <h2 id="ia">Hecha con inteligencia artificial</h2>
+    <p>
+      Esta web la he construido con <strong>Claude Code</strong>, una herramienta de inteligencia artificial que
+      escribe código, y cuento el proceso completo, errores incluidos, en mi canal de YouTube
+      <a href={CHANNEL.url} rel="noopener" target="_blank">{CHANNEL.name}</a>. Las listas y los resultados no los
+      escribe ninguna IA: se leen del BOE y del Ministerio del Interior con un programa y se comprueban (por ejemplo,
+      que cada lista tenga tantos candidatos como escaños reparte su provincia y que los escaños sumen 350).
+    </p>
+    <p>
+      <a href={CHANNEL.url} rel="noopener" target="_blank"><strong>{CHANNEL_NOTE} →</strong></a>
+    </p>
+
+    <h2 id="independencia">Independencia y financiación</h2>
+    <p>
+      {SITE.name} es gratuito y se financia con publicidad de Google AdSense, siempre identificada como
+      «Publicidad». No recibimos dinero de ningún partido, candidato ni organismo.
+    </p>
+
+    <h2 id="errores">Correcciones y contacto</h2>
+    <p>
+      Si ves un error, escríbenos a <a href={`mailto:${OWNER.email}`}>{OWNER.email}</a> o desde la página de
+      <a href="/contacto">contacto</a>.
+    </p>
+  </LegalArticle>
+</BaseLayout>

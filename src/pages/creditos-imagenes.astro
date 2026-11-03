@@ -1,0 +1,26 @@
+---
+// Ruta: src/pages/creditos-imagenes.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LegalArticle from '../components/LegalArticle.astro';
+import { LEGAL_UPDATED } from '../config/site';
+import { CREDITOS } from '../lib/datos';
+
+const title = 'Créditos de las imágenes';
+const fotos = Object.entries(CREDITOS).filter(([k]) => k.startsWith('f-'));
+const logos = Object.entries(CREDITOS).filter(([k]) => k.startsWith('l-'));
+---
+
+<BaseLayout title={title} description="Autor, licencia y enlace de origen de cada foto de candidato y de cada logotipo de partido que usa la web, todos de Wikimedia Commons." breadcrumbs={[{ name: title }]}>
+  <LegalArticle title={title} lead="Todas las fotos y logotipos vienen de Wikimedia Commons con licencia libre o en dominio público. Aquí está el autor y la licencia de cada uno." updated={LEGAL_UPDATED}>
+    <h2>Fotos de candidatos</h2>
+    <ul>
+      {fotos.map(([, c]) => <li><a href={c.url} rel="noopener nofollow" target="_blank">{c.archivo}</a>: {c.autor}. Licencia: {c.licencia}.</li>)}
+    </ul>
+    <p>Las fotos se han recortado para mostrarlas en cuadrado. Si no hay ninguna foto con licencia libre de un candidato, se muestran sus iniciales.</p>
+    <h2>Logotipos de los partidos</h2>
+    <ul>
+      {logos.map(([, c]) => <li><a href={c.url} rel="noopener nofollow" target="_blank">{c.archivo}</a>: {c.autor}. Licencia: {c.licencia}.</li>)}
+    </ul>
+    <p>Los logotipos son marcas de sus partidos y se muestran solo para identificarlos. Su uso no implica ninguna relación con esta web.</p>
+  </LegalArticle>
+</BaseLayout>

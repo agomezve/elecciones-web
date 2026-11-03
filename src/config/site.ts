@@ -190,7 +190,7 @@ export function isNewsletterEnabled(): boolean {
  * Google Analytics 4 ("G-XXXXXXXXXX"). Vacío: no se carga nada.
  * Con Consent Mode v2 todo empieza denegado; la CMP de Google (AdSense) actualiza el consentimiento.
  */
-export const GA4_ID = '';
+export const GA4_ID = 'G-HQCZ2ZMCW4';
 
 /**
  * Escrutinio en directo del 29-N: scripts/escrutinio.mjs escribe public/escrutinio.json y hace push;

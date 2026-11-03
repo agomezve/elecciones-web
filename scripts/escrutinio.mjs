@@ -5,9 +5,9 @@
 //   → abre /resultados-29n?prueba en `npm run preview`.
 //
 // La noche del 29-N (fuente oficial de Interior; el adaptador se conecta cuando se publique su formato):
-//   node scripts/escrutinio.mjs --fuente <url> --salida ../escrutinio-29n/escrutinio.json --bucle 60 --publicar
-//   --bucle N: repite cada N segundos. --publicar: commit y push del repo donde está --salida
-//   (GitHub Pages purga su caché en cada despliegue, raw.githubusercontent no).
+//   node scripts/escrutinio.mjs --fuente <url> --salida public/escrutinio.json --bucle 120 --publicar
+//   --bucle N: repite cada N segundos. --publicar: commit y push solo de ese archivo; el push despliega la web
+//   (~45 s) y GitHub Pages purga su caché en cada despliegue (raw.githubusercontent no: hasta 5 min de retraso).
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -159,9 +159,9 @@ async function unaVez() {
   console.log(`${new Date().toLocaleTimeString('es-ES')} · ${datos.escrutado} % escrutado · ${datos.total.partidos.slice(0, 4).map((x) => `${x.siglas} ${x.escanos}`).join(', ')} → ${salida}`);
   if (args.publicar) {
     const repo = dirname(salida);
-    execFileSync('git', ['-C', repo, 'add', '-A']);
+    execFileSync('git', ['-C', repo, 'add', salida]);
     try {
-      execFileSync('git', ['-C', repo, 'commit', '-q', '-m', `Escrutinio ${datos.escrutado} %`]);
+      execFileSync('git', ['-C', repo, 'commit', '-q', '-m', `Escrutinio ${datos.escrutado} %`, '--', salida]);
       execFileSync('git', ['-C', repo, 'push', '-q']);
     } catch (e) {
       console.warn('Sin cambios o fallo al publicar:', e.message.split('\n')[0]);

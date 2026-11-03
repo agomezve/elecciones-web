@@ -122,7 +122,7 @@ export const PROJECTS = [
   },
   {
     id: 'vivienda',
-    name: 'Elecciones al Día',
+    name: 'ViviendaClara',
     url: 'https://viviendaclara.iaencrudo.es',
     description: 'Busca piso según tu presupuesto, con datos oficiales',
   },
@@ -193,10 +193,10 @@ export function isNewsletterEnabled(): boolean {
 export const GA4_ID = '';
 
 /**
- * Escrutinio en directo del 29-N: lo escribe scripts/escrutinio.mjs en el repo agomezve/escrutinio-29n
- * (GitHub Pages, que purga su caché en cada push). /resultados-29n lo pide cada minuto.
+ * Escrutinio en directo del 29-N: scripts/escrutinio.mjs escribe public/escrutinio.json y hace push;
+ * cada despliegue de GitHub Pages purga su caché. /resultados-29n lo pide cada minuto.
  */
-export const ESCRUTINIO_URL = 'https://agomezve.github.io/escrutinio-29n/escrutinio.json';
+export const ESCRUTINIO_URL = '/escrutinio.json';
 
 export function isAnalyticsEnabled(): boolean {
   return /^G-[A-Z0-9]+$/.test(GA4_ID.trim());

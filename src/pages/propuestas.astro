@@ -1,0 +1,106 @@
+---
+// Ruta: src/pages/propuestas.astro
+// Comparador de propuestas por tema. Mismo orden de partidos que en el resto de la web (escaños de 2023).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import LogoPartido from '../components/LogoPartido.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { fechaCorta, fechaLarga } from '../lib/datos';
+import { PARTIDOS_ORDENADOS } from '../lib/partidos';
+import { ORIGENES, REVISADO, TEMAS, propuestasDe } from '../lib/propuestas';
+
+const conPropuestas = PARTIDOS_ORDENADOS.filter((p) => propuestasDe(p.slug).length > 0);
+const sinPropuestas = PARTIDOS_ORDENADOS.filter((p) => propuestasDe(p.slug).length === 0);
+const temas = TEMAS.filter((t) => conPropuestas.some((p) => propuestasDe(p.slug).some((x) => x.tema === t.id)));
+const total = conPropuestas.reduce((s, p) => s + propuestasDe(p.slug).length, 0);
+
+const title = 'Propuestas de los partidos para el 29-N, tema a tema';
+const heading = 'Qué propone cada partido para el 29-N';
+const description = `${total} medidas de PP, PSOE, Vox, Frente Amplio, Podemos y SALF sobre vivienda, impuestos, salarios, pensiones e inmigración, cada una con su fuente.`;
+
+const preguntas = [
+  {
+    q: '¿Ya han publicado los partidos sus programas para el 29-N?',
+    a: `A ${fechaLarga(REVISADO)}, ninguno de estos partidos ha publicado su programa completo. Por eso recogemos lo que han dicho en público, con la fuente de cada medida, y lo cambiaremos por el programa en cuanto lo publiquen.`,
+  },
+  {
+    q: '¿Qué significa cada etiqueta?',
+    a: '«Programa del 29-N»: está en el programa oficial. «Documento del partido»: viene de un documento aprobado o firmado por el partido (por ejemplo, el «Contrato con España» del PP). «Declaración pública»: lo han dicho el partido o sus candidatos en actos o entrevistas. «Decreto del Gobierno»: medida ya aprobada por el Gobierno que el partido defiende.',
+  },
+  {
+    q: '¿Por qué no están todos los partidos?',
+    a: `Solo incluimos medidas con una fuente que se pueda comprobar. De ${sinPropuestas.map((p) => p.siglas).join(', ')} aún no hemos recogido ninguna; están en su ficha con sus candidatos.`,
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Propuestas' }]} modified={new Date(`${REVISADO}T12:00:00Z`)}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Propuestas' }]} etiqueta={`Revisado el ${fechaLarga(REVISADO)}`}>
+    <p>
+      <strong>{total} medidas de {conPropuestas.length} partidos</strong>, ordenadas por tema. Ninguno ha publicado aún su programa:
+      lo que hay es lo que han dicho en público, y cada medida enlaza a su fuente.
+    </p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <nav aria-label="Temas" class="sticky top-16 z-10 -mx-4 overflow-x-auto bg-slate-50/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-2xl">
+      <ul class="flex gap-2 whitespace-nowrap">
+        {temas.map((t) => <li><a href={`#${t.id}`} class="pastilla hover:bg-indigo-100">{t.nombre}</a></li>)}
+      </ul>
+    </nav>
+
+    {
+      temas.map((t, i) => (
+        <>
+          <section id={t.id} class="scroll-mt-32">
+            <h2 class="text-2xl font-bold tracking-tight">{t.nombre}</h2>
+            <div class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {conPropuestas
+                .filter((p) => propuestasDe(p.slug).some((x) => x.tema === t.id))
+                .map((p) => (
+                  <article class="tarjeta border-t-4" style={`border-top-color:${p.color}`}>
+                    <a href={`/partidos/${p.slug}#propuestas`} class="flex items-center gap-3">
+                      <LogoPartido partido={p} class="h-9 w-14" />
+                      <span class="font-bold text-slate-900 hover:text-indigo-700">{p.siglas}</span>
+                    </a>
+                    <ul class="mt-4 space-y-3">
+                      {propuestasDe(p.slug)
+                        .filter((x) => x.tema === t.id)
+                        .map((x) => (
+                          <li>
+                            <p class="text-sm font-medium text-slate-900">{x.texto}</p>
+                            <p class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500">
+                              <span class:list={['rounded-full px-2 py-0.5 font-semibold', ORIGENES[x.origen].clase]}>{ORIGENES[x.origen].nombre}</span>
+                              {x.quien && <span>{x.quien}</span>}
+                              <a href={x.fuente.url} rel="noopener nofollow" target="_blank" class="underline hover:text-indigo-700">
+                                {x.fuente.medio}, {fechaCorta(x.fuente.fecha)}{x.fuente.fecha.startsWith('2025') ? ' de 2025' : ''} ↗
+                              </a>
+                            </p>
+                          </li>
+                        ))}
+                    </ul>
+                  </article>
+                ))}
+            </div>
+          </section>
+          {i === 1 && <AdSlot />}
+        </>
+      ))
+    }
+
+    <section class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+      <h2 class="text-lg font-bold">Los demás partidos</h2>
+      <p class="mt-1 text-sm text-slate-600">Aún sin medidas con fuente verificable. Mira sus candidatos en su ficha.</p>
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {sinPropuestas.map((p) => <li><a href={`/partidos/${p.slug}`} class="pastilla hover:bg-indigo-100">{p.siglas}</a></li>)}
+      </ul>
+    </section>
+
+    <Faq preguntas={preguntas} />
+    <Fuente>Cada medida enlaza a su fuente. Las resumimos sin valorarlas y sin añadir datos que no estén en ella. Si algo ha cambiado, escríbenos desde <a href="/contacto">contacto</a>.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

@@ -192,6 +192,12 @@ export function isNewsletterEnabled(): boolean {
  */
 export const GA4_ID = '';
 
+/**
+ * Escrutinio en directo del 29-N: lo escribe scripts/escrutinio.mjs en el repo agomezve/escrutinio-29n
+ * (GitHub Pages, que purga su caché en cada push). /resultados-29n lo pide cada minuto.
+ */
+export const ESCRUTINIO_URL = 'https://agomezve.github.io/escrutinio-29n/escrutinio.json';
+
 export function isAnalyticsEnabled(): boolean {
   return /^G-[A-Z0-9]+$/.test(GA4_ID.trim());
 }
@@ -207,6 +213,7 @@ export function isPending(value: string): boolean {
 
 export const NAV_LINKS = [
   { href: '/voto-por-correo', title: 'Voto por correo' },
+  { href: '/propuestas', title: 'Propuestas' },
   { href: '/partidos', title: 'Partidos' },
   { href: '/provincias', title: 'Tu provincia' },
   { href: '/pactos', title: 'Pactos' },
@@ -215,6 +222,7 @@ export const NAV_LINKS = [
 
 /** Herramientas y guías, en el orden de portada, /herramientas y el pie. */
 export const HERRAMIENTAS = [
+  { href: '/propuestas', titulo: 'Qué propone cada partido', texto: 'Vivienda, impuestos, pensiones, inmigración: las medidas con su fuente.', icono: 'papeleta' },
   { href: '/voto-por-correo', titulo: 'Voto por correo', texto: 'Plazos, pasos y qué pasa si lo pides y luego quieres votar en persona.', icono: 'sobre' },
   { href: '/provincias', titulo: 'Candidatos de tu provincia', texto: 'Todas las listas al Congreso proclamadas en el BOE, nombre a nombre.', icono: 'mapa' },
   { href: '/pactos', titulo: 'Calculadora de pactos', texto: 'Suma escaños y comprueba qué combinaciones llegan a 176.', icono: 'pacto' },
@@ -226,6 +234,7 @@ export const HERRAMIENTAS = [
   { href: '/voto-en-blanco-nulo-abstencion', titulo: 'Blanco, nulo o abstención', texto: 'Qué cuenta cada uno y a quién beneficia en el reparto.', icono: 'papeleta' },
   { href: '/donde-voto-y-que-llevar', titulo: 'Dónde voto y qué llevar', texto: 'Cómo saber tu colegio y qué documentos valen.', icono: 'dni' },
   { href: '/calendario', titulo: 'Calendario electoral', texto: 'Todas las fechas, de la convocatoria a la constitución de las Cortes.', icono: 'calendario' },
+  { href: '/resultados-29n', titulo: 'Resultados del 29-N en directo', texto: 'Escaños, votos y participación mientras avanza el escrutinio, desde las 20:00.', icono: 'grafica' },
   { href: '/resultados-2023', titulo: 'Resultados de 2023', texto: 'Votos y escaños del 23-J, en España y en cada provincia.', icono: 'urna' },
 ] as const;
 

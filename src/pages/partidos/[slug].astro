@@ -10,7 +10,8 @@ import Faq from '../../components/Faq.astro';
 import Autor from '../../components/Autor.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Fuente from '../../components/Fuente.astro';
-import { ELECCION, PROVINCIAS, num, pct } from '../../lib/datos';
+import { ELECCION, PROVINCIAS, fechaCorta, fechaLarga, num, pct } from '../../lib/datos';
+import { ORIGENES, REVISADO, TEMAS, propuestasDe } from '../../lib/propuestas';
 import { PARTIDOS, PARTIDOS_ORDENADOS, SIGLAS_2023, VALIDOS_2023, cabezaEn, listasDe, type Partido } from '../../lib/partidos';
 
 export function getStaticPaths() {
@@ -40,10 +41,20 @@ const escanos23 = PROVINCIAS.map((p) => ({
 const posicion = PARTIDOS_ORDENADOS.findIndex((p) => p.slug === partido.slug);
 const vecinos = PARTIDOS_ORDENADOS.filter((p) => p.slug !== partido.slug).slice(0, 4);
 const nombreCorto = partido.nombre.length > 30 ? partido.siglas : partido.nombre;
+const propuestas = propuestasDe(partido.slug);
+const temasTop = TEMAS.filter((t) => propuestas.some((p) => p.tema === t.id)).slice(0, 3).map((t) => t.nombre.toLowerCase());
 
-const title = `${nombreCorto} el 29-N: candidatos y listas`;
+const title = propuestas.length
+  ? [`Propuestas de ${nombreCorto} para el 29-N y sus candidatos`, `Propuestas de ${partido.siglas} para el 29-N y sus candidatos`].find((t) => t.length <= 60)!
+  : `${nombreCorto} el 29-N: candidatos y listas`;
 const heading = `${partido.nombre} (${partido.siglas}) en las elecciones generales de 2026`;
 const descripciones = [
+  ...(propuestas.length
+    ? [
+        `Qué propone ${partido.siglas} para el 29-N en ${temasTop.join(', ')} y más, con la fuente de cada medida. Su cabeza de lista por ${cabeza.provincia.nombre} es ${cabeza.nombre}.`,
+        `Qué propone ${partido.siglas} para el 29-N en ${temasTop.join(', ')} y más, con la fuente de cada medida, y sus candidatos según el BOE.`,
+      ]
+    : []),
   `${partido.siglas} se presenta en ${listas.length} ${listas.length === 1 ? 'provincia' : 'provincias'}. Su cabeza de lista por ${cabeza.provincia.nombre} es ${cabeza.nombre}. Candidatos de cada provincia según el BOE y resultado de 2023.`,
   `${partido.siglas} se presenta en ${listas.length} ${listas.length === 1 ? 'provincia' : 'provincias'}. Cabeza de lista por ${cabeza.provincia.nombre}: ${cabeza.nombre}. Candidatos según el BOE y resultado de 2023.`,
 ];
@@ -71,13 +82,14 @@ const preguntas = [
     q: `¿Dónde está el programa electoral de ${partido.siglas} para el 29-N?`,
     a: partido.programa
       ? `Lo publicó el ${partido.programa.fecha} en su web.`
-      : `A ${'3 de noviembre'} no lo ha publicado. Cuando lo publique en su web oficial, resumiremos aquí sus medidas citando el programa.`,
+      : `A ${fechaLarga(REVISADO)} no lo ha publicado. Mientras tanto, en esta ficha están las medidas que ha anunciado en público, cada una con su fuente.`,
   },
 ];
 ---
 
 <BaseLayout
   title={title}
+  modified={propuestas.length ? new Date(`${REVISADO}T12:00:00Z`) : undefined}
   heading={heading}
   description={description}
   breadcrumbs={[{ name: 'Partidos', href: '/partidos' }, { name: partido.siglas }]}
@@ -119,22 +131,50 @@ const preguntas = [
   </section>
 
   <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
-    <section>
-      <h2 class="text-2xl font-bold tracking-tight">Sus medidas para el 29-N</h2>
+    <section id="propuestas">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <h2 class="text-2xl font-bold tracking-tight">Qué propone {partido.siglas} para el 29-N</h2>
+        {propuestas.length > 0 && <a href="/propuestas" class="text-sm font-semibold text-indigo-700 hover:underline">Comparar con los demás partidos →</a>}
+      </div>
       {
         partido.programa ? (
-          <p class="mt-3">Programa publicado el {partido.programa.fecha}: <a href={partido.programa.url} rel="noopener" target="_blank" class="font-semibold text-indigo-700 underline">leer el programa ↗</a></p>
+          <p class="mt-3 rounded-2xl bg-emerald-50 p-4 text-emerald-900 ring-1 ring-emerald-200">Programa electoral publicado el {fechaLarga(partido.programa.fecha)}: <a href={partido.programa.url} rel="noopener" target="_blank" class="font-semibold underline">leer el programa completo ↗</a></p>
+        ) : (
+          <p class="mt-3 max-w-3xl text-slate-600">
+            <strong class="text-slate-900">Programa aún no publicado.</strong> Mientras tanto, recogemos lo que {partido.siglas} y sus candidatos han
+            dicho en público, cada medida con su fuente. Cuando publique el programa, lo cambiamos por sus medidas oficiales.
+          </p>
+        )
+      }
+      {
+        propuestas.length > 0 ? (
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            {TEMAS.filter((t) => propuestas.some((p) => p.tema === t.id)).map((t) => (
+              <div class="tarjeta">
+                <h3 class="text-sm font-bold uppercase tracking-wider" style={`color:${partido.color}`}>{t.nombre}</h3>
+                <ul class="mt-3 space-y-4">
+                  {propuestas.filter((p) => p.tema === t.id).map((p) => (
+                    <li>
+                      <p class="font-medium text-slate-900">{p.texto}</p>
+                      <p class="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500">
+                        <span class:list={['rounded-full px-2 py-0.5 font-semibold', ORIGENES[p.origen].clase]}>{ORIGENES[p.origen].nombre}</span>
+                        {p.quien && <span>{p.quien}</span>}
+                        <a href={p.fuente.url} rel="noopener nofollow" target="_blank" class="underline hover:text-indigo-700">{p.fuente.medio}, {fechaCorta(p.fuente.fecha)}{p.fuente.fecha.startsWith('2025') ? ' de 2025' : ''} ↗</a>
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         ) : (
           <div class="mt-4 rounded-2xl border border-dashed border-slate-300 bg-white p-6">
-            <p class="text-lg font-bold text-slate-900">Programa aún no publicado</p>
-            <p class="mt-2 max-w-2xl text-slate-600">
-              A 3 de noviembre, {partido.siglas} no ha publicado su programa electoral completo. No resumimos propuestas sueltas
-              ni declaraciones: cuando el programa esté en su web oficial, aquí aparecerán sus medidas principales, citando cada una.
-            </p>
+            <p class="text-slate-600">Todavía no hemos recogido propuestas de {partido.siglas} con fuente verificable. Las añadiremos en cuanto las presente.</p>
             {partido.web && <a href={partido.web} rel="noopener nofollow" target="_blank" class="boton-secundario mt-4">Web oficial de {partido.siglas} ↗</a>}
           </div>
         )
       }
+      {propuestas.length > 0 && <p class="fuente mt-4">Revisado el {fechaLarga(REVISADO)}. Resumimos sin valorar; la medida exacta está en el enlace de cada una. ¿Falta algo o ha cambiado? Escríbenos desde <a href="/contacto">contacto</a>.</p>}
     </section>
 
     {

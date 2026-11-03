@@ -1,0 +1,282 @@
+---
+// Ruta: src/pages/resultados-29n.astro
+// Escrutinio en directo. Antes del cierre de los colegios: cuenta atrás y cómo funciona el recuento.
+// Desde las 20:00 del 29-N pide ESCRUTINIO_URL cada minuto (lo escribe scripts/escrutinio.mjs).
+// /resultados-29n?prueba lee /escrutinio-prueba.json (datos de 2023, solo en local).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import CuentaAtras from '../components/CuentaAtras.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Fuente from '../components/Fuente.astro';
+import { ESCRUTINIO_URL } from '../config/site';
+import { PROVINCIAS } from '../lib/datos';
+import { PARTIDOS } from '../lib/partidos';
+
+const CIERRE = '2026-11-29T20:00:00+01:00';
+const partidos = Object.fromEntries(PARTIDOS.map((p) => [p.slug, { siglas: p.siglas, color: p.color, escanos2023: p.r2023?.escanos ?? null }]));
+const provincias = Object.fromEntries(PROVINCIAS.map((p) => [p.slug, { nombre: p.nombre, escanos: p.escanos }]));
+
+const title = 'Resultados de las elecciones del 29-N en directo';
+const heading = 'Resultados de las elecciones generales del 29-N, en directo';
+const description = 'Escaños, votos y participación del 29-N mientras avanza el escrutinio, en España y en cada provincia. Se actualiza solo cada minuto desde las 20:00.';
+
+const preguntas = [
+  {
+    q: '¿A qué hora se saben los resultados del 29-N?',
+    a: 'Los colegios cierran a las 20:00 y entonces empieza el recuento en cada mesa. El Ministerio del Interior publica los resultados provisionales a medida que las mesas los comunican, así que el porcentaje escrutado sube durante la noche. En Canarias los colegios cierran a las 20:00 hora canaria, una hora más tarde que en la península.',
+  },
+  {
+    q: '¿Los resultados de esta noche son los oficiales?',
+    a: 'No. El escrutinio de la noche electoral es provisional y no tiene validez jurídica. Los resultados oficiales salen del escrutinio general que hacen las juntas electorales provinciales unos días después, y que incluye los votos de los españoles que viven en el extranjero (CERA).',
+  },
+  {
+    q: '¿Por qué pueden cambiar los escaños después de la noche electoral?',
+    a: 'Porque el escrutinio general añade los votos del extranjero y corrige errores de las actas. En provincias donde el último escaño se decide por pocos votos, eso puede hacer que pase de un partido a otro.',
+  },
+  {
+    q: '¿De dónde salen estos datos?',
+    a: 'De los resultados provisionales que publica el Ministerio del Interior. Los recogemos cada minuto y los mostramos sin tocar los votos. Cada actualización indica la hora y el porcentaje escrutado.',
+  },
+  {
+    q: '¿Cuántos escaños hacen falta para gobernar?',
+    a: 'La mayoría absoluta del Congreso son 176 de 350. En la primera votación de investidura hace falta mayoría absoluta; en la segunda, 48 horas después, basta con más síes que noes.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Resultados del 29-N' }]}>
+  <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Resultados del 29-N' }]} etiqueta="En directo desde las 20:00">
+    <p>Escaños, votos y participación mientras avanza el recuento, con datos del Ministerio del Interior. No hace falta recargar: la página se actualiza sola cada minuto.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <!-- Antes de que haya datos -->
+    <section id="espera" class="rounded-3xl bg-slate-900 p-6 text-white sm:p-10">
+      <p class="text-sm font-semibold uppercase tracking-wider text-amber-300">Cierre de los colegios</p>
+      <h2 class="mt-2 text-2xl font-black sm:text-3xl">Los resultados empiezan a llegar el domingo 29 a las 20:00</h2>
+      <div class="mt-6"><CuentaAtras hasta={CIERRE} pasado="Colegios cerrados" oscuro /></div>
+      <p class="mt-6 max-w-2xl text-slate-300" data-mensaje>
+        Guarda esta página. Esa noche verás aquí el reparto de los 350 escaños, quién llega a 176 y cómo va tu provincia.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/pactos" class="boton">Prueba la calculadora de pactos</a>
+        <a href="/resultados-2023" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Resultados de 2023 →</a>
+      </div>
+    </section>
+
+    <!-- En directo -->
+    <section id="directo" class="hidden space-y-8" aria-live="polite">
+      <p data-prueba class="hidden rounded-xl bg-amber-100 px-4 py-3 text-sm font-semibold text-amber-900">
+        Datos de prueba: el resultado de 2023 recortado, para comprobar la página. No son resultados del 29-N.
+      </p>
+      <dl class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div class="dato"><dd class="dato-valor" data-escrutado>–</dd><dt class="dato-nombre">escrutado</dt></div>
+        <div class="dato"><dd class="dato-valor" data-participacion>–</dd><dt class="dato-nombre">participación</dt></div>
+        <div class="dato"><dd class="dato-valor" data-lider>–</dd><dt class="dato-nombre">primera fuerza</dt></div>
+        <div class="dato"><dd class="dato-valor" data-hora>–</dd><dt class="dato-nombre">última actualización</dt></div>
+      </dl>
+      <div class="h-2 overflow-hidden rounded-full bg-slate-200"><div class="h-full bg-indigo-600 transition-all" data-barra style="width:0%"></div></div>
+
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+        <figure class="tarjeta">
+          <svg viewBox="0 0 400 215" class="w-full" role="img" aria-label="Hemiciclo con el reparto de escaños" data-hemiciclo></svg>
+          <figcaption class="mt-2 text-center text-sm text-slate-600">Mayoría absoluta: <strong>176 escaños</strong></figcaption>
+        </figure>
+        <div class="tarjeta overflow-x-auto p-0">
+          <table class="tabla">
+            <thead><tr><th>Partido</th><th class="text-right">Escaños</th><th class="text-right">2023</th><th class="text-right">Votos</th><th class="text-right">%</th></tr></thead>
+            <tbody data-tabla></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="text-sm text-slate-600">
+        ¿Quién suma 176? Prueba las combinaciones en la <a href="/pactos" class="font-semibold text-indigo-700 underline">calculadora de pactos</a>.
+        La columna 2023 es el resultado de las mismas siglas; Frente Amplio y Podemos se presentaron en 2023 dentro de Sumar.
+      </p>
+
+      <AdSlot />
+
+      <section class="tarjeta">
+        <div class="flex flex-wrap items-end justify-between gap-3">
+          <h2 class="text-xl font-bold">Resultados por provincia</h2>
+          <label class="text-sm font-semibold text-slate-700">
+            Provincia
+            <select class="entrada mt-1 block" data-selector>
+              {PROVINCIAS.map((p) => <option value={p.slug}>{p.nombre}</option>)}
+            </select>
+          </label>
+        </div>
+        <p class="mt-2 text-sm text-slate-600" data-prov-resumen></p>
+        <div class="mt-4 overflow-x-auto">
+          <table class="tabla">
+            <thead><tr><th>Candidatura</th><th class="text-right">Escaños</th><th class="text-right">Votos</th><th class="text-right">%</th></tr></thead>
+            <tbody data-prov-tabla></tbody>
+          </table>
+        </div>
+        <a data-prov-enlace href="/provincias" class="mt-4 inline-block text-sm font-semibold text-indigo-700 hover:underline">Candidatos de esta provincia →</a>
+      </section>
+      <p class="fuente" data-fuente></p>
+    </section>
+
+    <section class="texto max-w-3xl">
+      <h2>Cómo se cuentan los votos la noche del 29-N</h2>
+      <p>
+        Al cerrar el colegio, cada mesa cuenta sus papeletas en público, rellena el acta y la envía. Con esas actas, el
+        Ministerio del Interior publica el <strong>escrutinio provisional</strong>: el porcentaje escrutado es la parte de las
+        mesas que ya han comunicado su resultado. Los escaños se reparten en cada provincia con el
+        <a href="/simulador-dhondt">sistema D'Hondt</a>, solo entre las candidaturas con al menos el 3 % de los votos válidos
+        de esa provincia.
+      </p>
+      <p>
+        Con poco escrutado, los escaños bailan: las mesas rurales y las urbanas no terminan a la vez. Por eso el reparto final
+        puede ser distinto del de las 21:00. Y el resultado oficial llega días después, con el escrutinio general de las juntas
+        provinciales y los votos del extranjero.
+      </p>
+      <p>Mientras tanto: <a href="/cuanto-vale-tu-voto">cuánto vale tu voto en cada provincia</a> y <a href="/votos-que-no-sirvieron">los votos que en 2023 no sacaron ningún escaño</a>.</p>
+    </section>
+
+    <Faq preguntas={preguntas} />
+    <Fuente>Resultados provisionales del Ministerio del Interior. Escaños de 2023: Junta Electoral Central. La página no modifica ningún dato: solo los ordena.</Fuente>
+    <Autor />
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ ESCRUTINIO_URL, CIERRE, partidos, provincias }}>
+  const prueba = new URLSearchParams(location.search).has('prueba');
+  const url = prueba ? '/escrutinio-prueba.json' : ESCRUTINIO_URL;
+  const $ = (s) => document.querySelector(s);
+  const nf = new Intl.NumberFormat('es-ES');
+  const pc = (n) => `${n.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} %`;
+  const colorDe = (x) => partidos[x.id]?.color ?? '#94a3b8';
+  const nombreDe = (x) => partidos[x.id]?.siglas ?? x.siglas;
+  let datos = null;
+
+  function celda(tr, texto, clase) {
+    const td = document.createElement('td');
+    td.textContent = texto;
+    if (clase) td.className = clase;
+    tr.appendChild(td);
+    return td;
+  }
+  function filaPartido(x, conAnterior) {
+    const tr = document.createElement('tr');
+    const td = celda(tr, '');
+    const punto = document.createElement('span');
+    punto.className = 'mr-2 inline-block h-3 w-3 rounded-full align-middle';
+    punto.style.background = colorDe(x);
+    td.append(punto, nombreDe(x));
+    td.className = 'font-semibold';
+    celda(tr, String(x.escanos), 'text-right text-lg font-black tabular-nums');
+    if (conAnterior) {
+      const ant = partidos[x.id]?.escanos2023;
+      celda(tr, ant == null ? '–' : String(ant), 'text-right tabular-nums text-slate-500');
+    }
+    celda(tr, nf.format(x.votos), 'text-right tabular-nums');
+    celda(tr, pc(x.pct), 'text-right tabular-nums');
+    return tr;
+  }
+
+  // Hemiciclo: 350 puntos en filas concéntricas, de izquierda a derecha por número de escaños.
+  function hemiciclo(svg, lista) {
+    const filas = 10, total = 350, r0 = 70, r1 = 190, cx = 200, cy = 200;
+    const radios = Array.from({ length: filas }, (_, i) => r0 + ((r1 - r0) * i) / (filas - 1));
+    const suma = radios.reduce((s, r) => s + r, 0);
+    let porFila = radios.map((r) => Math.round((total * r) / suma));
+    porFila[filas - 1] += total - porFila.reduce((s, n) => s + n, 0);
+    const puntos = [];
+    radios.forEach((r, i) => {
+      for (let k = 0; k < porFila[i]; k++) {
+        const a = Math.PI - (Math.PI * k) / (porFila[i] - 1);
+        puntos.push({ x: cx + r * Math.cos(a), y: cy - r * Math.sin(a), a });
+      }
+    });
+    puntos.sort((p, q) => q.a - p.a);
+    const colores = lista.flatMap((x) => Array(x.escanos).fill(colorDe(x)));
+    svg.replaceChildren();
+    const ns = 'http://www.w3.org/2000/svg';
+    puntos.forEach((p, i) => {
+      const c = document.createElementNS(ns, 'circle');
+      c.setAttribute('cx', p.x.toFixed(1));
+      c.setAttribute('cy', p.y.toFixed(1));
+      c.setAttribute('r', '4.6');
+      c.setAttribute('fill', colores[i] ?? '#e2e8f0');
+      svg.appendChild(c);
+    });
+    const t = document.createElementNS(ns, 'text');
+    t.setAttribute('x', String(cx));
+    t.setAttribute('y', String(cy + 8));
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('class', 'fill-slate-900 text-[28px] font-black');
+    t.textContent = `${lista.reduce((s, x) => s + x.escanos, 0)} / 350`;
+    svg.appendChild(t);
+  }
+
+  function pintaProvincia() {
+    if (!datos) return;
+    const slug = $('[data-selector]').value;
+    const p = datos.provincias[slug];
+    const info = provincias[slug];
+    $('[data-prov-enlace]').href = `/provincias/${slug}`;
+    const tb = $('[data-prov-tabla]');
+    tb.replaceChildren();
+    if (!p) {
+      $('[data-prov-resumen]').textContent = `${info.nombre}: todavía sin datos.`;
+      return;
+    }
+    $('[data-prov-resumen]').textContent = `${info.nombre} elige ${info.escanos} ${info.escanos === 1 ? 'diputado' : 'diputados'}. Escrutado: ${pc(p.escrutado)}${p.participacion != null ? ` · participación: ${pc(p.participacion)}` : ''}.`;
+    p.partidos.slice(0, 12).forEach((x) => tb.appendChild(filaPartido(x, false)));
+  }
+
+  function pinta(d) {
+    datos = d;
+    $('#espera').classList.add('hidden');
+    $('#directo').classList.remove('hidden');
+    $('[data-prueba]').classList.toggle('hidden', !d.prueba);
+    $('[data-escrutado]').textContent = pc(d.escrutado);
+    $('[data-participacion]').textContent = d.participacion == null ? '–' : pc(d.participacion);
+    $('[data-barra]').style.width = `${d.escrutado}%`;
+    const lider = d.total.partidos[0];
+    $('[data-lider]').textContent = lider ? `${nombreDe(lider)} ${lider.escanos}` : '–';
+    $('[data-hora]').textContent = new Date(d.actualizado).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
+    const conEscano = d.total.partidos.filter((x) => x.escanos > 0);
+    hemiciclo($('[data-hemiciclo]'), conEscano);
+    const tb = $('[data-tabla]');
+    tb.replaceChildren();
+    d.total.partidos.filter((x) => x.escanos > 0 || x.pct >= 1).forEach((x) => tb.appendChild(filaPartido(x, true)));
+    const f = $('[data-fuente]');
+    f.replaceChildren('Fuente: ');
+    const a = document.createElement('a');
+    a.href = d.fuente.url;
+    a.rel = 'noopener nofollow';
+    a.textContent = d.fuente.nombre;
+    f.append(a, `. Escrutinio provisional, sin validez jurídica.`);
+    pintaProvincia();
+  }
+
+  async function carga() {
+    if (!prueba && Date.now() < new Date(CIERRE).getTime() - 60_000) return;
+    try {
+      const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
+      if (!r.ok) throw new Error(String(r.status));
+      const d = await r.json();
+      if (d.version === 1 && (prueba || !d.prueba)) pinta(d);
+    } catch {
+      if (!datos && Date.now() >= new Date(CIERRE).getTime()) {
+        $('[data-mensaje]').textContent = 'Los colegios ya han cerrado. Esperando los primeros datos de Interior: la página se actualiza sola.';
+      }
+    }
+  }
+
+  let guardada = null;
+  try { guardada = localStorage.getItem('provincia'); } catch {}
+  $('[data-selector]').value = provincias[guardada] ? guardada : 'madrid';
+  $('[data-selector]').addEventListener('change', (e) => {
+    try { localStorage.setItem('provincia', e.target.value); } catch {}
+    pintaProvincia();
+  });
+  carga();
+  setInterval(() => { if (!document.hidden) carga(); }, 60_000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) carga(); });
+</script>

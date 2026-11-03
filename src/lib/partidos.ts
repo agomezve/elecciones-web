@@ -1,8 +1,8 @@
 // Ruta: src/lib/partidos.ts
 // Fichas de partido. Regla de neutralidad: todas usan la misma plantilla, se ordenan por escaños
 // obtenidos en 2023 (y, si no tuvieron, por número de provincias en las que se presentan ahora)
-// y no llevan opiniones. Las cabezas de lista salen del BOE; las medidas, solo del programa
-// oficial cuando el partido lo publique (mientras tanto: «Programa aún no publicado»).
+// y no llevan opiniones. Las cabezas de lista salen del BOE; las medidas, de src/lib/propuestas.ts
+// (cada una con su fuente) hasta que el partido publique su programa.
 import { PROVINCIAS, type Lista, type Provincia } from './datos';
 
 export interface Partido {

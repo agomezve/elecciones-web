@@ -1,0 +1,208 @@
+---
+// Ruta: src/pages/test-politico.astro
+// Test de afinidad del 29-N: 20 afirmaciones (unos 5 minutos). Las posturas de los partidos salen de
+// src/lib/test-afinidad.ts, cada una con su fuente. Las respuestas no salen del navegador.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CabeceraPagina from '../components/CabeceraPagina.astro';
+import Faq from '../components/Faq.astro';
+import Autor from '../components/Autor.astro';
+import { AFIRMACIONES, MINIMO_FIABLE } from '../lib/test-afinidad';
+import { PARTIDOS_ORDENADOS } from '../lib/partidos';
+import { REVISADO } from '../lib/propuestas';
+import { fechaLarga } from '../lib/datos';
+
+const title = 'Test político 29-N: ¿qué partido piensa como tú?';
+const heading = 'Test político del 29-N: qué partido se parece más a lo que piensas';
+const description =
+  'Responde 20 afirmaciones en 5 minutos y compara tus respuestas con los votos en el Congreso y las propuestas de cada partido, con la fuente de cada una.';
+const breadcrumbs = [{ name: 'Test político' }];
+
+const partidos = PARTIDOS_ORDENADOS.map((p) => ({ slug: p.slug, siglas: p.siglas, nombre: p.nombre, color: p.color }));
+const conDatos = new Set(AFIRMACIONES.flatMap((a) => Object.keys(a.posturas)));
+const sinDatos = PARTIDOS_ORDENADOS.filter((p) => !conDatos.has(p.slug));
+const datos = AFIRMACIONES.map((a) => ({ id: a.id, tema: a.tema, texto: a.texto, posturas: a.posturas }));
+
+const preguntas = [
+  {
+    q: '¿De dónde salen las posturas de los partidos?',
+    a: 'De dos sitios, y nada más: lo que votó cada partido en el Congreso en esta legislatura (amnistía, jornada de 37,5 horas y centrales nucleares) y las propuestas que ha hecho en público para el 29-N, cada una con el medio, la fecha y el enlace. Si un partido no se ha pronunciado sobre una afirmación, no le ponemos postura y esa afirmación no cuenta para él.',
+  },
+  {
+    q: '¿Cómo se calcula el porcentaje?',
+    a: 'En cada afirmación comparamos tu respuesta (de «muy en desacuerdo» a «muy de acuerdo») con la postura del partido en la misma escala. Si coincidís del todo suma el 100 %; si estáis en extremos opuestos, el 0 %. Las afirmaciones que marcas como importantes cuentan el doble. El porcentaje es la media solo de las afirmaciones en las que el partido tiene postura.',
+  },
+  {
+    q: '¿Por qué algunos partidos salen aparte?',
+    a: `Porque tienen postura documentada en menos de ${MINIMO_FIABLE} de las 20 afirmaciones. Con tan pocas, el porcentaje dice poco, así que los enseñamos separados y con el número de afirmaciones en las que se basa.`,
+  },
+  {
+    q: '¿Guardáis mis respuestas?',
+    a: 'No. El test se calcula en tu navegador y las respuestas no se envían a ningún sitio.',
+  },
+  {
+    q: '¿El test me dice a quién votar?',
+    a: 'No. Te dice con qué partidos coincides en estas 20 cuestiones, según lo que han votado y propuesto. Antes de decidir, mira la ficha de cada partido y, cuando lo publiquen, su programa.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={breadcrumbs} modified={new Date(`${REVISADO}T12:00:00Z`)}>
+  <CabeceraPagina titulo={heading} breadcrumbs={breadcrumbs} etiqueta="Test · 5 minutos">
+    <p>Di si estás de acuerdo con 20 afirmaciones sobre vivienda, empleo, impuestos, inmigración, energía y Europa. Al final verás con qué partidos coincides más y en qué, con la fuente de cada postura: sus votos en el Congreso y sus propuestas públicas.</p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-3xl space-y-10 px-4 py-10 sm:px-6">
+    <section class="tarjeta" data-test aria-live="polite">
+      <div data-paso>
+        <div class="flex items-center justify-between text-sm text-slate-500">
+          <span data-progreso-texto>Afirmación 1 de {datos.length}</span>
+          <span data-tema></span>
+        </div>
+        <div class="mt-2 h-2 rounded-full bg-slate-100"><div class="h-2 rounded-full bg-indigo-600 transition-all" style="width:0%" data-progreso></div></div>
+        <p class="mt-6 text-xl font-bold leading-snug text-slate-900 sm:text-2xl" data-texto></p>
+        <div class="mt-6 grid gap-2" role="group" aria-label="Tu respuesta">
+          <button type="button" class="boton-secundario justify-start" data-r="2">Muy de acuerdo</button>
+          <button type="button" class="boton-secundario justify-start" data-r="1">De acuerdo</button>
+          <button type="button" class="boton-secundario justify-start" data-r="0">Ni de acuerdo ni en desacuerdo</button>
+          <button type="button" class="boton-secundario justify-start" data-r="-1">En desacuerdo</button>
+          <button type="button" class="boton-secundario justify-start" data-r="-2">Muy en desacuerdo</button>
+        </div>
+        <label class="mt-4 flex items-center gap-2 text-sm text-slate-700">
+          <input type="checkbox" class="h-4 w-4 rounded border-slate-300" data-importa /> Esto me importa mucho (cuenta el doble)
+        </label>
+        <div class="mt-5 flex flex-wrap gap-4 text-sm">
+          <button type="button" class="font-semibold text-slate-500 hover:text-slate-800 disabled:opacity-40" data-atras disabled>← Anterior</button>
+          <button type="button" class="font-semibold text-slate-500 hover:text-slate-800" data-saltar>No lo tengo claro, saltar →</button>
+        </div>
+      </div>
+
+      <div data-resultado hidden>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Tu resultado</h2>
+        <p class="mt-1 text-sm text-slate-600" data-resumen></p>
+        <ol class="mt-5 space-y-3" data-ranking></ol>
+        <div data-pocos hidden>
+          <h3 class="mt-8 text-lg font-bold text-slate-900">Con pocos datos (menos de {MINIMO_FIABLE} afirmaciones)</h3>
+          <p class="mt-1 text-sm text-slate-600">Su porcentaje sale de muy pocas afirmaciones: tómalo con cuidado.</p>
+          <ol class="mt-3 space-y-3" data-ranking-pocos></ol>
+        </div>
+        {
+          sinDatos.length > 0 && (
+            <p class="nota mt-6">
+              Sin posturas documentadas todavía, así que no salen en el test:{' '}
+              {sinDatos.map((p, i) => (
+                <>
+                  {i > 0 && ', '}
+                  <a href={`/partidos/${p.slug}`} class="font-semibold underline">{p.siglas}</a>
+                </>
+              ))}
+              .
+            </p>
+          )
+        }
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" class="boton-secundario" data-repetir>Volver a empezar</button>
+          <a href="/propuestas" class="boton">Ver todas las propuestas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="prose-slate">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Cómo está hecho</h2>
+      <p class="mt-3 text-slate-700">Las posturas no las hemos supuesto ni las han rellenado los partidos: salen de sus votos en el Congreso y de las propuestas que han hecho en público, y en el resultado puedes abrir la fuente de cada una. Las afirmaciones van siempre en el mismo orden, para todos, y los partidos se ordenan solo por tu porcentaje. Revisado el {fechaLarga(REVISADO)}.</p>
+    </section>
+
+    <Faq preguntas={preguntas} />
+    <Autor />
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ datos, partidos, MINIMO_FIABLE }}>
+  const raiz = document.querySelector('[data-test]');
+  const $ = (s) => raiz.querySelector(s);
+  const resp = new Array(datos.length).fill(null);
+  let i = 0;
+
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const ETIQUETA = { 2: 'muy de acuerdo', 1: 'de acuerdo', 0: 'neutral', '-1': 'en desacuerdo', '-2': 'muy en desacuerdo' };
+
+  function pintar() {
+    const a = datos[i];
+    $('[data-progreso-texto]').textContent = `Afirmación ${i + 1} de ${datos.length}`;
+    $('[data-tema]').textContent = a.tema;
+    $('[data-progreso]').style.width = `${(100 * i) / datos.length}%`;
+    $('[data-texto]').textContent = a.texto;
+    $('[data-importa]').checked = !!resp[i]?.importa;
+    $('[data-atras]').disabled = i === 0;
+    raiz.querySelectorAll('[data-r]').forEach((b) => {
+      const marcado = resp[i] && resp[i].v === Number(b.dataset.r);
+      b.classList.toggle('border-indigo-700', marcado);
+      b.classList.toggle('text-indigo-800', marcado);
+    });
+  }
+
+  function avanzar(valor) {
+    resp[i] = valor === null ? null : { v: valor, importa: $('[data-importa]').checked };
+    if (i < datos.length - 1) {
+      i++;
+      pintar();
+    } else resultado();
+    raiz.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
+  function resultado() {
+    const filas = partidos
+      .map((p) => {
+        let suma = 0, peso = 0;
+        const detalle = [];
+        datos.forEach((a, k) => {
+          const pos = a.posturas[p.slug];
+          if (!pos || !resp[k]) return;
+          const w = resp[k].importa ? 2 : 1;
+          const acuerdo = 1 - Math.abs(resp[k].v - pos.v) / 4;
+          suma += w * acuerdo;
+          peso += w;
+          detalle.push({ a, pos, tu: resp[k].v, acuerdo });
+        });
+        return { p, n: detalle.length, pct: peso ? Math.round((100 * suma) / peso) : null, detalle };
+      })
+      .filter((f) => f.n > 0)
+      .sort((x, y) => y.pct - x.pct || y.n - x.n);
+
+    const tarjeta = (f) => {
+      const orden = [...f.detalle].sort((x, y) => y.acuerdo - x.acuerdo);
+      const linea = (d) =>
+        `<li class="mt-2"><span class="font-semibold">${d.acuerdo >= 0.75 ? 'Coincidís' : d.acuerdo <= 0.25 ? 'No coincidís' : 'A medias'}:</span> ${esc(d.a.texto)} <span class="text-slate-500">(tú: ${ETIQUETA[d.tu]})</span><br><span class="text-slate-600">${esc(d.pos.por)}</span> <a class="underline" data-href="${esc(d.pos.fuente.url)}" rel="noopener nofollow" target="_blank">${esc(d.pos.fuente.medio)} ↗</a></li>`;
+      return `<li class="rounded-2xl border border-slate-200 bg-white p-4">
+        <div class="flex items-center justify-between gap-3">
+          <a data-href="/partidos/${f.p.slug}" class="font-bold text-slate-900 hover:text-indigo-700">${esc(f.p.siglas)} <span class="font-normal text-slate-500">· ${esc(f.p.nombre)}</span></a>
+          <span class="shrink-0 whitespace-nowrap text-2xl font-extrabold tabular-nums">${f.pct} %</span>
+        </div>
+        <div class="mt-2 h-2.5 rounded-full bg-slate-100"><div class="h-2.5 rounded-full" style="width:${f.pct}%;background:${f.p.color}"></div></div>
+        <details class="mt-2 text-sm"><summary class="cursor-pointer text-indigo-700">En qué coincidís y en qué no (${f.n} ${f.n === 1 ? 'afirmación' : 'afirmaciones'})</summary><ul>${orden.map(linea).join('')}</ul></details>
+      </li>`;
+    };
+
+    const fiables = filas.filter((f) => f.n >= MINIMO_FIABLE);
+    const pocos = filas.filter((f) => f.n < MINIMO_FIABLE);
+    const respondidas = resp.filter(Boolean).length;
+    $('[data-ranking]').innerHTML = fiables.length ? fiables.map(tarjeta).join('') : '<li class="text-slate-600">Has respondido muy pocas afirmaciones para comparar. Vuelve a empezar y responde algunas más.</li>';
+    $('[data-ranking-pocos]').innerHTML = pocos.map(tarjeta).join('');
+    $('[data-pocos]').hidden = pocos.length === 0;
+    raiz.querySelectorAll('[data-href]').forEach((el) => el.setAttribute('href', el.dataset.href));
+    $('[data-resumen]').textContent = `Has respondido ${respondidas} de ${datos.length} afirmaciones. El porcentaje de cada partido es tu coincidencia media en las afirmaciones en las que tiene postura documentada.`;
+    $('[data-paso]').hidden = true;
+    $('[data-resultado]').hidden = false;
+  }
+
+  raiz.querySelectorAll('[data-r]').forEach((b) => b.addEventListener('click', () => avanzar(Number(b.dataset.r))));
+  $('[data-saltar]').addEventListener('click', () => avanzar(null));
+  $('[data-atras]').addEventListener('click', () => { if (i > 0) { i--; pintar(); } });
+  $('[data-repetir]').addEventListener('click', () => {
+    resp.fill(null);
+    i = 0;
+    $('[data-paso]').hidden = false;
+    $('[data-resultado]').hidden = true;
+    pintar();
+  });
+  pintar();
+</script>

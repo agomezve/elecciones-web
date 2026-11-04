@@ -214,6 +214,7 @@ export function isPending(value: string): boolean {
 export const NAV_LINKS = [
   { href: '/voto-por-correo', title: 'Voto por correo' },
   { href: '/propuestas', title: 'Propuestas' },
+  { href: '/test-politico', title: 'Test político' },
   { href: '/partidos', title: 'Partidos' },
   { href: '/provincias', title: 'Tu provincia' },
   { href: '/pactos', title: 'Pactos' },
@@ -222,6 +223,7 @@ export const NAV_LINKS = [
 
 /** Herramientas y guías, en el orden de portada, /herramientas y el pie. */
 export const HERRAMIENTAS = [
+  { href: '/test-politico', titulo: 'Test político del 29-N', texto: '20 afirmaciones en 5 minutos: con qué partido coincides más, con fuentes.', icono: 'balanza' },
   { href: '/propuestas', titulo: 'Qué propone cada partido', texto: 'Vivienda, impuestos, pensiones, inmigración: las medidas con su fuente.', icono: 'papeleta' },
   { href: '/voto-por-correo', titulo: 'Voto por correo', texto: 'Plazos, pasos y qué pasa si lo pides y luego quieres votar en persona.', icono: 'sobre' },
   { href: '/provincias', titulo: 'Candidatos de tu provincia', texto: 'Todas las listas al Congreso proclamadas en el BOE, nombre a nombre.', icono: 'mapa' },

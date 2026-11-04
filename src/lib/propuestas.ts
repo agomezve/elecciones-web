@@ -44,7 +44,7 @@ export interface Propuesta {
 }
 
 // ─── Fuentes ───────────────────────────────────────────────────────────────────
-const F = {
+export const F = {
   ppContrato: { medio: 'El Español', url: 'https://www.elespanol.com/espana/politica/20261019/compromisos-feijoo-contrato-espana-garantizar-pensiones-ordenar-inmigracion/1003744426020_0.html', fecha: '2026-10-19' },
   ppContrato2: { medio: 'Moncloa.com', url: 'https://www.moncloa.com/2026/10/19/feijoo-espana-3451414/', fecha: '2026-10-19' },
   psoeForbes: { medio: 'Forbes España', url: 'https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/', fecha: '2026-10-05' },

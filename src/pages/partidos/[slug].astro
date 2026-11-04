@@ -12,6 +12,7 @@ import AdSlot from '../../components/AdSlot.astro';
 import Fuente from '../../components/Fuente.astro';
 import { ELECCION, PROVINCIAS, fechaCorta, fechaLarga, num, pct } from '../../lib/datos';
 import { ORIGENES, REVISADO, TEMAS, propuestasDe } from '../../lib/propuestas';
+import { AFIRMACIONES } from '../../lib/test-afinidad';
 import { PARTIDOS, PARTIDOS_ORDENADOS, SIGLAS_2023, VALIDOS_2023, cabezaEn, listasDe, type Partido } from '../../lib/partidos';
 
 export function getStaticPaths() {
@@ -42,11 +43,12 @@ const posicion = PARTIDOS_ORDENADOS.findIndex((p) => p.slug === partido.slug);
 const vecinos = PARTIDOS_ORDENADOS.filter((p) => p.slug !== partido.slug).slice(0, 4);
 const nombreCorto = partido.nombre.length > 30 ? partido.siglas : partido.nombre;
 const propuestas = propuestasDe(partido.slug);
+const enElTest = AFIRMACIONES.some((a) => a.posturas[partido.slug]);
 const temasTop = TEMAS.filter((t) => propuestas.some((p) => p.tema === t.id)).slice(0, 3).map((t) => t.nombre.toLowerCase());
 
 const title = propuestas.length
   ? [`Propuestas de ${nombreCorto} para el 29-N y sus candidatos`, `Propuestas de ${partido.siglas} para el 29-N y sus candidatos`].find((t) => t.length <= 60)!
-  : `${nombreCorto} el 29-N: candidatos y listas`;
+  : [`${nombreCorto} el 29-N: programa, candidatos y listas`, `${nombreCorto} el 29-N: candidatos y listas`].find((t) => t.length <= 60)!;
 const heading = `${partido.nombre} (${partido.siglas}) en las elecciones generales de 2026`;
 const descripciones = [
   ...(propuestas.length
@@ -135,6 +137,7 @@ const preguntas = [
       <div class="flex flex-wrap items-end justify-between gap-3">
         <h2 class="text-2xl font-bold tracking-tight">Qué propone {partido.siglas} para el 29-N</h2>
         {propuestas.length > 0 && <a href="/propuestas" class="text-sm font-semibold text-indigo-700 hover:underline">Comparar con los demás partidos →</a>}
+        {enElTest && <a href="/test-politico" class="text-sm font-semibold text-indigo-700 hover:underline">¿Coincides con {partido.siglas}? Haz el test →</a>}
       </div>
       {
         partido.programa ? (

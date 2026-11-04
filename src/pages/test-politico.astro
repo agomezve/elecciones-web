@@ -79,6 +79,16 @@ const preguntas = [
       <div data-resultado hidden>
         <h2 class="text-2xl font-bold tracking-tight text-slate-900">Tu resultado</h2>
         <p class="mt-1 text-sm text-slate-600" data-resumen></p>
+        <div class="mt-4 rounded-2xl bg-indigo-50 p-4 ring-1 ring-indigo-100">
+          <p class="font-bold text-slate-900">¿Y a tus amigos qué les sale?</p>
+          <p class="mt-1 text-sm text-slate-700" data-compartir-texto></p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <button type="button" class="boton" data-compartir>Compartir mi resultado</button>
+            <a class="boton-secundario" data-compartir-red="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="boton-secundario" data-compartir-red="x" target="_blank" rel="noopener">X</a>
+            <button type="button" class="boton-secundario" data-copiar>Copiar enlace</button>
+          </div>
+        </div>
         <ol class="mt-5 space-y-3" data-ranking></ol>
         <div data-pocos hidden>
           <h3 class="mt-8 text-lg font-bold text-slate-900">Con pocos datos (menos de {MINIMO_FIABLE} afirmaciones)</h3>
@@ -192,7 +202,39 @@ const preguntas = [
     $('[data-resumen]').textContent = `Has respondido ${respondidas} de ${datos.length} afirmaciones. El porcentaje de cada partido es tu coincidencia media en las afirmaciones en las que tiene postura documentada.`;
     $('[data-paso]').hidden = true;
     $('[data-resultado]').hidden = false;
+
+    const top = fiables[0];
+    textoCompartir = top
+      ? `Mi partido más afín el 29-N: ${top.p.siglas} (${top.pct}\u00a0%). ¿Y el tuyo? 20 afirmaciones, 5 minutos:`
+      : '¿Qué partido piensa como tú el 29-N? 20 afirmaciones, 5 minutos:';
+    $('[data-compartir-texto]').textContent = `«${textoCompartir} ${URL_TEST}»`;
+    const msg = encodeURIComponent(`${textoCompartir} ${URL_TEST}`);
+    $('[data-compartir-red="whatsapp"]').setAttribute('href', 'https://wa.me/?text=' + msg);
+    $('[data-compartir-red="x"]').setAttribute('href', 'https://twitter.com/intent/tweet?text=' + msg);
+    if (!navigator.share) $('[data-compartir]').hidden = true;
+    evento('terminado');
   }
+
+  const URL_TEST = 'https://elecciones.iaencrudo.es/test-politico';
+  let textoCompartir = '';
+  // Eventos sin datos personales en GoatCounter: cuántos terminan el test y cuántos lo comparten.
+  function evento(nombre) {
+    try { window.goatcounter?.count?.({ path: `test-politico/${nombre}`, title: `Test político: ${nombre}`, event: true }); } catch (e) {}
+  }
+  $('[data-compartir]').addEventListener('click', async () => {
+    try {
+      await navigator.share({ title: 'Test político del 29-N', text: textoCompartir, url: URL_TEST });
+      evento('compartido');
+    } catch (e) {}
+  });
+  raiz.querySelectorAll('[data-compartir-red]').forEach((a) => a.addEventListener('click', () => evento(`compartido-${a.dataset.compartirRed}`)));
+  $('[data-copiar]').addEventListener('click', async (ev) => {
+    try {
+      await navigator.clipboard.writeText(`${textoCompartir} ${URL_TEST}`);
+      ev.currentTarget.textContent = '¡Copiado!';
+      evento('compartido-copiar');
+    } catch (e) {}
+  });
 
   raiz.querySelectorAll('[data-r]').forEach((b) => b.addEventListener('click', () => avanzar(Number(b.dataset.r))));
   $('[data-saltar]').addEventListener('click', () => avanzar(null));

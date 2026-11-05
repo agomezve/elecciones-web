@@ -256,3 +256,19 @@
 input[type='number']::-webkit-inner-spin-button {
   opacity: 0.4;
 }
+
+/* ─── Móvil: letra mínima legible ──────────────────────────────────────────────
+   Fuera de @layer para ganar a las utilidades. En pantallas estrechas, nada por
+   debajo de 13 px (antes había textos de 10–12 px en /propuestas y /provincias). */
+@media (max-width: 639px) {
+  .text-xs,
+  .ayuda,
+  .fuente {
+    font-size: 0.8125rem;
+    line-height: 1.45;
+  }
+  .text-\[10px\],
+  .text-\[11px\] {
+    font-size: 0.75rem;
+  }
+}

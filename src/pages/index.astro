@@ -69,11 +69,15 @@ const preguntas = [
         <div class="mt-7">
           <SelectorProvincia oscuro />
         </div>
-        <div class="mt-4 flex flex-wrap gap-3 text-sm">
-          <a href="/voto-por-correo" class="font-semibold text-amber-300 underline-offset-4 hover:underline">Voto por correo →</a>
-          <a href="/pactos" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Calculadora de pactos →</a>
-          <a href="/propuestas" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Qué propone cada partido →</a>
-          <a href="/partidos" class="font-semibold text-slate-200 underline-offset-4 hover:underline">Los partidos →</a>
+        <a href="/test-politico" class="mt-5 flex items-center justify-between gap-3 rounded-2xl bg-white px-5 py-4 text-slate-900 shadow-lg transition hover:bg-amber-50 sm:inline-flex sm:justify-start">
+          <span><span class="block text-base font-extrabold leading-tight">¿A qué partido te pareces?</span><span class="block text-sm text-slate-600">20 afirmaciones, unos 5 minutos</span></span>
+          <span class="text-2xl font-black text-indigo-700" aria-hidden="true">→</span>
+        </a>
+        <div class="mt-5 grid grid-cols-2 gap-x-4 gap-y-1 text-sm sm:flex sm:flex-wrap sm:gap-3">
+          <a href="/voto-por-correo" class="font-semibold text-amber-300 underline-offset-4 hover:underline py-2 sm:py-0">Voto por correo →</a>
+          <a href="/pactos" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Calculadora de pactos →</a>
+          <a href="/propuestas" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Qué propone cada partido →</a>
+          <a href="/partidos" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Los partidos →</a>
         </div>
       </div>
 
@@ -110,7 +114,7 @@ const preguntas = [
       </div>
       <a href="/partidos" class="boton-secundario">Ver todos</a>
     </div>
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {PARTIDOS_ORDENADOS.slice(0, 8).map((p) => <TarjetaPartido partido={p} />)}
     </div>
   </section>

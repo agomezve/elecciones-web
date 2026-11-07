@@ -24,6 +24,7 @@ export const TEMAS = [
   { id: 'seguridad', nombre: 'Seguridad y justicia' },
   { id: 'economia', nombre: 'Energía, campo e infraestructuras' },
   { id: 'exterior', nombre: 'Europa y defensa' },
+  { id: 'animales', nombre: 'Animales y medio ambiente' },
 ] as const;
 export type Tema = (typeof TEMAS)[number]['id'];
 
@@ -56,6 +57,10 @@ export const F = {
   faTren: { medio: 'Infobae (EFE)', url: 'https://infobae.com/espana/agencias/2026/10/31/emilio-delgado-frente-amplio-mas-alla-de-dimisiones-pedimos-mas-inversion-ferroviaria', fecha: '2026-10-31' },
   podWeb: { medio: 'Diario Red', url: 'https://www.diario-red.com/espana/irene-montero-lanza-web-campana-29n-llama-organizar-voluntarios-barrios-municipios/20261020180948078764.html', fecha: '2026-10-21' },
   podEP: { medio: 'Periódico de Ibiza (Europa Press)', url: 'https://www.periodicodeibiza.es/noticias/elecciones-29n/2026/10/28/2737933/irene-montero-propone-prohibir-especulacion-casa-puede-comprar-para-hacer-negocio.html', fecha: '2026-10-28' },
+  foEntrevista: { medio: 'El Diario de Madrid', url: 'https://www.eldiariodemadrid.es/articulo/entrevistas/roberto-vaquero-frente-obrero-sistema-politico/20261031102036145765.html', fecha: '2026-10-31' },
+  foCircunscripciones: { medio: 'ESdiario', url: 'https://www.esdiario.com/nacional/261026/201315/roberto-vaquero-anuncia-frente-obrero-estara-52-circunscripciones-29-n.html', fecha: '2026-10-26' },
+  pacma30: { medio: 'PACMA', url: 'https://pacma.es/actualidad/pacma-concurrira-a-las-elecciones-generales-del-29n-en-30-provincias/', fecha: '2026-11-03' },
+  pcteCantabria: { medio: 'Cantabria al Día', url: 'https://cantabrialdia.com/pcte-pablo-isidro-alfredo-ramos-elecciones/', fecha: '2026-11-02' },
   salfVistalegre: { medio: 'Demócrata', url: 'https://www.democrata.es/politica/alvise-perez-acabo-fiesta-elecciones-generales-deportaciones-referendum-ue/', fecha: '2025-10-12' },
 } satisfies Record<string, Fuente>;
 
@@ -114,6 +119,25 @@ export const PROPUESTAS: Record<string, Propuesta[]> = {
     { tema: 'servicios', texto: 'Más recursos, más profesionales y mejores salarios en la sanidad y la educación públicas.', origen: 'declaracion', fuente: F.podWeb },
     { tema: 'exterior', texto: 'No destinar «ni un euro más» a armamento.', origen: 'declaracion', fuente: F.podWeb },
   ],
+  'frente-obrero': [
+    { tema: 'inmigracion', texto: 'Reforzar el control de las fronteras y poner fin al actual modelo migratorio.', origen: 'declaracion', fuente: F.foCircunscripciones },
+    { tema: 'inmigracion', texto: 'Expulsar a los extranjeros que cometan determinados delitos y retirar la nacionalidad a personas nacionalizadas en ciertos supuestos.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'instituciones', texto: 'Un proceso constituyente con una nueva Constitución (o, si no, una reforma integral de la actual) y estudiar una circunscripción única para que el reparto sea más proporcional.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'instituciones', texto: 'Evaluar el desempeño de los funcionarios y gestionar las empresas públicas con criterios de eficiencia.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'vivienda', texto: 'Construir vivienda pública y fomentar la privada, acabar con la okupación y combatir la especulación de los grandes fondos sin criminalizar al pequeño propietario.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'economia', texto: 'Reindustrializar España, tecnificar el campo y defender a autónomos y pequeños empresarios frente a las grandes empresas supranacionales.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'servicios', texto: 'Invertir en sanidad, educación y servicios esenciales, exigiendo resultados.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'exterior', texto: 'Recuperar capacidad de decisión frente a las instituciones de la Unión Europea.', origen: 'declaracion', fuente: F.foCircunscripciones },
+    { tema: 'exterior', texto: 'Transformar a fondo la Unión Europea y, si esa transformación no llega, «plantearse otras alternativas».', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'exterior', texto: 'Renegociar la relación con la OTAN e invertir en un ejército moderno.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+  ],
+  pacma: [
+    { tema: 'animales', texto: 'Luchar contra el maltrato y el abandono animal, la tauromaquia, la caza y la explotación de los animales, e impulsar medidas de protección medioambiental.', origen: 'documento', fuente: F.pacma30 },
+  ],
+  pcte: [
+    { tema: 'empleo', texto: 'Defender los derechos laborales y sociales e impulsar la movilización de los trabajadores.', origen: 'declaracion', fuente: F.pcteCantabria },
+    { tema: 'economia', texto: 'Una planificación democrática de la economía.', origen: 'declaracion', fuente: F.pcteCantabria },
+  ],
   salf: [
     { tema: 'impuestos', texto: 'IRPF del 0 % para quien gane menos de 35.000 € al año y cinco puntos menos por cada hijo.', origen: 'declaracion', fuente: F.salfVistalegre },
     { tema: 'inmigracion', texto: 'Un plan de deportación masiva de inmigrantes en situación irregular y suprimir ayudas a países como Marruecos.', origen: 'declaracion', fuente: F.salfVistalegre },
@@ -133,4 +157,4 @@ export const ultimaFuente = (slug: string) =>
   propuestasDe(slug).reduce((max, p) => (p.fuente.fecha > max ? p.fuente.fecha : max), '');
 
 /** Fecha de la última revisión de las propuestas (se cambia a mano en cada revisión). */
-export const REVISADO = '2026-11-03';
+export const REVISADO = '2026-11-07';

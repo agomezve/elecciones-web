@@ -53,7 +53,7 @@ const votos2023 = (l: (typeof p.listas)[number]) => {
 const VISIBLES = 5;
 const listas = p.listas.map((l, i) => ({ l, i, v: votos2023(l) })).sort((a, b) => b.v - a.v || a.i - b.i);
 
-const title = `Candidatos al Congreso por ${p.nombre} el 29-N`;
+const title = [`Listas al Congreso por ${p.nombre} el 29-N: candidatos`, `Candidatos al Congreso por ${p.nombre} el 29-N`].find((t) => t.length <= 60) ?? `Listas al Congreso por ${p.nombre} el 29-N`;
 const heading = `Elecciones generales en ${p.nombre}: candidatos y listas al Congreso`;
 const descripciones = [
   `${p.nombre} elige ${p.escanos} ${p.escanos === 1 ? 'diputado' : 'diputados'} el 29 de noviembre. Las ${p.listas.length} listas al Congreso con todos sus candidatos según el BOE, el Senado y el resultado de 2023.`,
@@ -76,6 +76,10 @@ const preguntas = [
       p.senado.length > 1
         ? `${senadores}, por islas: ${p.senado.map((s) => `${s.isla} ${s.senadores}`).join(', ')}.`
         : `${senadores}. En la papeleta del Senado puedes marcar hasta ${marcas(senadores)} ${marcas(senadores) === 1 ? 'candidato' : 'candidatos'}.`,
+  },
+  {
+    q: `¿Cuánto se cobra por estar en una mesa electoral en ${p.nombre}?`,
+    a: 'Lo mismo en toda España: una dieta de 75 € para los miembros que forman la mesa el día de la votación (Orden INT/650/2026).',
   },
   {
     q: `¿Qué votó ${p.nombre} en las generales de 2023?`,
@@ -174,6 +178,17 @@ const preguntas = [
     </section>
 
     <AdSlot />
+
+    <section>
+      <h2 class="text-2xl font-bold tracking-tight">Mesa electoral el 29-N en {p.nombre}</h2>
+      <p class="mt-2 max-w-3xl text-slate-600">Las condiciones son las mismas en toda España. La mesa se forma a las 8:00 del domingo 29 y no acaba hasta que termina el recuento.</p>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="tarjeta"><p class="dato-valor">75 €</p><p class="dato-nombre">dieta por el día</p><p class="ayuda mt-1">Para presidentes y vocales que forman la mesa (Orden INT/650/2026).</p></div>
+        <div class="tarjeta"><p class="dato-valor">7 días</p><p class="dato-nombre">para alegar</p><p class="ayuda mt-1">Desde que te notifican, ante la Junta Electoral de Zona.</p></div>
+        <div class="tarjeta"><p class="dato-valor">5 h</p><p class="dato-nombre">libres el lunes 30</p><p class="ayuda mt-1">Además del domingo completo, si trabajas.</p></div>
+      </div>
+      <p class="mt-4"><a href="/mesa-electoral" class="font-semibold text-indigo-700 hover:underline">Qué hacer si te toca mesa electoral →</a></p>
+    </section>
 
     <section class="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
       <div>

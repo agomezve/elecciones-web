@@ -47,7 +47,7 @@ const enElTest = AFIRMACIONES.some((a) => a.posturas[partido.slug]);
 const temasTop = TEMAS.filter((t) => propuestas.some((p) => p.tema === t.id)).slice(0, 3).map((t) => t.nombre.toLowerCase());
 
 const title = propuestas.length
-  ? [`Propuestas de ${nombreCorto} para el 29-N y sus candidatos`, `Propuestas de ${partido.siglas} para el 29-N y sus candidatos`].find((t) => t.length <= 60)!
+  ? [`Propuestas, candidatos y listas de ${nombreCorto} el 29-N`, `Propuestas y listas de ${nombreCorto} para el 29-N`, `Propuestas y listas de ${partido.siglas} para el 29-N`].find((t) => t.length <= 60)!
   : [`${nombreCorto} el 29-N: programa, candidatos y listas`, `${nombreCorto} el 29-N: candidatos y listas`].find((t) => t.length <= 60)!;
 const heading = `${partido.nombre} (${partido.siglas}) en las elecciones generales de 2026`;
 const descripciones = [

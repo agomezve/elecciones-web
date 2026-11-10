@@ -1,0 +1,91 @@
+---
+// Ruta: src/components/OtrasWebs.astro
+// Enlaces a las otras webs de IA en Crudo con lo que le sirve a quien vive en esa provincia.
+// Los slugs de provincia coinciden con los de RepostaBarato y ViviendaClara (URL comprobadas el 10-nov-2026).
+import type { Provincia } from '../lib/datos';
+
+interface Props {
+  provincia: Provincia;
+}
+const { provincia: p } = Astro.props;
+
+// Comunidad (como figura en provincias.json) → slug del calendario laboral en Vacacionable.
+const CALENDARIOS: Record<string, string> = {
+  'Andalucía': 'andalucia',
+  'Aragón': 'aragon',
+  'Asturias': 'asturias',
+  'Illes Balears': 'baleares',
+  'Canarias': 'canarias',
+  'Cantabria': 'cantabria',
+  'Castilla-La Mancha': 'castilla-la-mancha',
+  'Castilla y León': 'castilla-y-leon',
+  'Cataluña': 'cataluna',
+  'Ceuta': 'ceuta',
+  'Comunitat Valenciana': 'comunitat-valenciana',
+  'Extremadura': 'extremadura',
+  'Galicia': 'galicia',
+  'La Rioja': 'la-rioja',
+  'Comunidad de Madrid': 'madrid',
+  'Melilla': 'melilla',
+  'Región de Murcia': 'murcia',
+  'Navarra': 'navarra',
+  'País Vasco': 'pais-vasco',
+};
+const calendario = CALENDARIOS[p.comunidad];
+
+const enlaces: { href: string; titulo: string; texto: string; web: string }[] = [];
+// La web se reconstruye cada día: el puente deja de salir cuando ya ha pasado.
+if (new Date().toISOString().slice(0, 10) <= '2026-12-08') {
+  enlaces.push({
+    href: 'https://vacacionable.iaencrudo.es/puente-diciembre-2026',
+    titulo: 'Puente de diciembre de 2026',
+    texto: 'Dónde es festivo el lunes 7 y qué día conviene pedir.',
+    web: 'Vacacionable',
+  });
+}
+if (calendario) {
+  enlaces.push({
+    href: `https://vacacionable.iaencrudo.es/calendario-laboral-2027/${calendario}`,
+    titulo: `Festivos y puentes de 2027 en ${p.comunidad}`,
+    texto: 'El calendario laboral oficial, con los puentes del año.',
+    web: 'Vacacionable',
+  });
+}
+enlaces.push(
+  {
+    href: `https://repostabarato.iaencrudo.es/provincia/${p.slug}`,
+    titulo: `Gasolineras más baratas en ${p.nombre}`,
+    texto: 'Precios oficiales del Ministerio, actualizados cada día.',
+    web: 'RepostaBarato',
+  },
+  {
+    href: `https://viviendaclara.iaencrudo.es/provincia/${p.slug}`,
+    titulo: `Precio de la vivienda en ${p.nombre}`,
+    texto: 'Precio por metro cuadrado y cómo ha cambiado, con datos oficiales.',
+    web: 'ViviendaClara',
+  },
+  {
+    href: 'https://ahorroluz.iaencrudo.es/precio-luz-hoy',
+    titulo: 'Precio de la luz hoy, por horas',
+    texto: 'Las horas más baratas para poner la lavadora o cargar el coche.',
+    web: 'AhorroLuz',
+  },
+);
+---
+
+<section aria-labelledby="otras-webs">
+  <h2 id="otras-webs" class="text-xl font-bold tracking-tight">Más cosas útiles si vives en {p.nombre}</h2>
+  <ul class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+    {
+      enlaces.map((e) => (
+        <li>
+          <a href={e.href} class="block h-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:shadow-md">
+            <p class="text-xs font-semibold uppercase tracking-wide text-indigo-700">{e.web}</p>
+            <p class="mt-1 font-semibold text-slate-900">{e.titulo} →</p>
+            <p class="mt-1 text-sm text-slate-600">{e.texto}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

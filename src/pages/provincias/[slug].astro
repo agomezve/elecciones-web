@@ -9,6 +9,7 @@ import Faq from '../../components/Faq.astro';
 import Autor from '../../components/Autor.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Fuente from '../../components/Fuente.astro';
+import OtrasWebs from '../../components/OtrasWebs.astro';
 import { ELECCION, PROVINCIAS, electoresPorEscano, marcasSenado, num, pct, type Provincia } from '../../lib/datos';
 import { SIGLAS_2023, getPartido } from '../../lib/partidos';
 
@@ -264,6 +265,8 @@ const preguntas = [
         </section>
       )
     }
+
+    <OtrasWebs provincia={p} />
 
     <Fuente>
       Fuentes: candidaturas proclamadas por la Junta Electoral Provincial de {p.nombre}, <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>;

@@ -1,0 +1,11646 @@
+{
+"a-coruna": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Manuel Rey Varela",
+"suplentes": [
+{
+"n": "María Laura Salgado García"
+},
+{
+"n": "Gumersindo Pedro Galego Feal"
+}
+]
+},
+{
+"n": "Marta González Vázquez",
+"suplentes": [
+{
+"n": "Pedro Antonio López Ríos"
+},
+{
+"n": "Kristel Testa Ameneiros"
+}
+]
+},
+{
+"n": "Adrián Pardo López",
+"suplentes": [
+{
+"n": "Verónica María Casal Míguez"
+},
+{
+"n": "Ángel Manuel González Carneiro"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA",
+"siglas": "PCTG",
+"candidatos": [
+{
+"n": "Mario Jiménez de la Torre",
+"suplentes": [
+{
+"n": "María Dolores Muñoz Alonso"
+},
+{
+"n": "Martín Vallejo Recuna"
+}
+]
+}
+]
+},
+{
+"nombre": "BLOQUE NACIONALISTA GALEGO",
+"siglas": "B.N.G.",
+"candidatos": [
+{
+"n": "Bieito Lobeira Domínguez",
+"suplentes": [
+{
+"n": "María Pilar Lozano Yañez"
+},
+{
+"n": "José Alberto García Sánchez"
+}
+]
+},
+{
+"n": "Iria Nande Fernández",
+"suplentes": [
+{
+"n": "Manuel Agra Sánchez"
+},
+{
+"n": "Cristina Caamaño Rodríguez"
+}
+]
+},
+{
+"n": "Mario Figueira Márquez",
+"suplentes": [
+{
+"n": "María Beatriz Pérez Mosquera"
+},
+{
+"n": "David Casais Bargiela"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Sonia María Fernández Carracedo",
+"suplentes": [
+{
+"n": "Carlos Nogueira Carral"
+},
+{
+"n": "Ángela Buisan Talavera"
+}
+]
+},
+{
+"n": "Juan Manuel Gianzo Gutiérrez",
+"suplentes": [
+{
+"n": "María Ana Iglesias Obarrio"
+},
+{
+"n": "Alfonso José Caparrós Esperante"
+}
+]
+},
+{
+"n": "María Inmaculada Rojas Díaz",
+"suplentes": [
+{
+"n": "Antonio Ribao Cid"
+},
+{
+"n": "Begoña Herce Meléndrez"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Óscar Rodríguez Pino",
+"suplentes": [
+{
+"n": "Karina Veiga Rodríguez"
+},
+{
+"n": "Juan Ángel Regueiro Juzgado"
+}
+]
+},
+{
+"n": "Melchora Muñoz Fuentes",
+"suplentes": [
+{
+"n": "Abel Ángel García López"
+},
+{
+"n": "Violeta Esteban Ceballos"
+}
+]
+},
+{
+"n": "José Francisco Manso Bernárdez",
+"suplentes": [
+{
+"n": "Elena María Gómez Senra"
+},
+{
+"n": "Carlos Iglesias Rey"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-MS)",
+"candidatos": [
+{
+"n": "Gumersindo Guinarte Cabada",
+"suplentes": [
+{
+"n": "María Montserrat García Chavarría"
+},
+{
+"n": "Antonio Agustín Regueiro Rodríguez"
+}
+]
+},
+{
+"n": "Rocío Núñez Rúa",
+"suplentes": [
+{
+"n": "Manuel Seijas Caamaño"
+},
+{
+"n": "Carme Casado Casado"
+}
+]
+},
+{
+"n": "Alejandro Antonio García Sousa",
+"suplentes": [
+{
+"n": "Gema Fernández Cuíña"
+},
+{
+"n": "Carlos Pernas Fraguela"
+}
+]
+}
+]
+}
+]
+}
+],
+"alava": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "SENADO DE PROGRESO / AURRERA DOAN SENATUA SDP",
+"siglas": "PSOE-EZAN IU-MS",
+"candidatos": [
+{
+"n": "Daniel Senderos Oraá",
+"suplentes": [
+{
+"n": "María Isabel Martín Hidalgo"
+},
+{
+"n": "Joaquín Esteban Sánchez"
+}
+]
+},
+{
+"n": "Paula Somalo García",
+"suplentes": [
+{
+"n": "Jorge Juez Ortiz"
+},
+{
+"n": "Irantzu Mateos López de Arechaga"
+}
+]
+},
+{
+"n": "Adolfo Lander Vera",
+"suplentes": [
+{
+"n": "Arantza Ruiz Huidobro"
+},
+{
+"n": "Esteban Martiarena Vadillo"
+}
+]
+}
+]
+},
+{
+"nombre": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA",
+"siglas": "EH BILDU-ERC",
+"candidatos": [
+{
+"n": "Josu Estarrona Elizondo",
+"suplentes": [
+{
+"n": "Nayat Aduh Jatri"
+},
+{
+"n": "Unai Ruiz de Viñaspre Bezares"
+}
+]
+},
+{
+"n": "Ainhize Solaun Mendiguren",
+"suplentes": [
+{
+"n": "Iñaki Xabier Ullibarri Urraka"
+},
+{
+"n": "Claudia Venceslao Pueyo"
+}
+]
+},
+{
+"n": "Manu Martínez Aguirre",
+"suplentes": [
+{
+"n": "Consuelo Auzmendi Jiménez"
+},
+{
+"n": "Mikel Díaz de Alda Gómez de Segura"
+}
+]
+}
+]
+},
+{
+"nombre": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+"siglas": "EAJ-PNV",
+"candidatos": [
+{
+"n": "Saray Zárate Fernández de Landa",
+"suplentes": [
+{
+"n": "Iñaki Arrieta Pérez"
+},
+{
+"n": "Nerea Bengoa García de Cortázar"
+}
+]
+},
+{
+"n": "Angel Marcos Pérez de Arrilucea Pérez de Leceta",
+"suplentes": [
+{
+"n": "Eneritz Alonso Montaño"
+},
+{
+"n": "Rubén Ruiz de Eguino López de Guereñu"
+}
+]
+},
+{
+"n": "Arantza Yarza Valle",
+"suplentes": [
+{
+"n": "Jon Pérez García"
+},
+{
+"n": "Ainhoa Izaskun Uriarte Unzalu"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Luis María Ormaetxea Santsiñena",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Verónica Alvarez Muñoz",
+"nota": "Independiente"
+},
+{
+"n": "Alejandro Iraola Iceta",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Eva María Carrascal Salgado",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Aimar Urra Iraola",
+"nota": "Independiente"
+},
+{
+"n": "Isabel García Arrausi",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "María Amaya Martínez Grisaleña",
+"suplentes": [
+{
+"n": "Juan María Simón Alba"
+},
+{
+"n": "Verónica Gómez Nieva"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Juan José Miller Valdez",
+"suplentes": [
+{
+"n": "Araceli Jiménez Esquilas"
+},
+{
+"n": "David Rodríguez Llinares"
+}
+]
+},
+{
+"n": "Esther San Martín Gil",
+"suplentes": [
+{
+"n": "Jesús Herrero García"
+},
+{
+"n": "María Lourdes Rodríguez Suárez"
+}
+]
+},
+{
+"n": "Txomin-Domingo Valluerca Monje",
+"suplentes": [
+{
+"n": "Leire Montañés Augusto"
+},
+{
+"n": "Pedro Antonio López Cervera"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA",
+"siglas": "PCTE/ELAK",
+"candidatos": [
+{
+"n": "Aimar Rodríguez Soto",
+"suplentes": [
+{
+"n": "Inmaculada Ameyugo Blanco"
+},
+{
+"n": "Gorka Sáenz Alvarez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Daniel García Ruiz",
+"suplentes": [
+{
+"n": "Ana Morales Peral"
+},
+{
+"n": "Miguel Garnica Azofra"
+}
+]
+},
+{
+"n": "Marta Alaña Alonso",
+"suplentes": [
+{
+"n": "Gustavo Antepara Benito"
+},
+{
+"n": "Elisabeth Ochoa de Eribe Román"
+}
+]
+},
+{
+"n": "Mikel Rogado García",
+"suplentes": [
+{
+"n": "Sara López de Torre López de Torre"
+},
+{
+"n": "Borja Monje Frías"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Ignacio Lijó Sancho",
+"suplentes": [
+{
+"n": "María del Mar Aguilera Márquez"
+},
+{
+"n": "Ignacio Romera Sobrino"
+}
+]
+}
+]
+}
+]
+}
+],
+"albacete": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Sara García Jiménez",
+"suplentes": [
+{
+"n": "Álvaro Rafael Vallvé Fritschi"
+},
+{
+"n": "Leticia Serna Esteban"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Luis Ángel Aguilar Montero",
+"suplentes": [
+{
+"n": "Constance Martí Carrasco"
+},
+{
+"n": "Juan Pablo Martínez Castillejos"
+}
+]
+},
+{
+"n": "María de los Llanos Rabadán Navarro",
+"suplentes": [
+{
+"n": "Juan Carlos Sánchez Fajardo"
+},
+{
+"n": "María Caridad Aguilar Cantos"
+}
+]
+},
+{
+"n": "Antonio Brell Díaz",
+"suplentes": [
+{
+"n": "Rebeca Cañavate Ayuso"
+},
+{
+"n": "David García Navarro"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Isabel Belén Iniesta Egido",
+"nota": "SPD (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Manuel Miranda Martínez",
+"nota": "SPD (PSOE-IU-MS)"
+},
+{
+"n": "María de la Fuente Aguilar Arenas",
+"nota": "SPD (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "Francisco José Requena Terol",
+"nota": "SPD (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "María Dolores Moreno Ortiz",
+"nota": "SPD (PSOE-IU-MS)"
+},
+{
+"n": "Agustín Zamora Pocovi",
+"nota": "SPD (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "María Rosario Herrera Gómez",
+"nota": "SPD (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "José Ignacio López Cifuentes",
+"nota": "SPD (PSOE-IU-MS)"
+},
+{
+"n": "Almudena Vázquez Parra",
+"nota": "SPD (PSOE-IU-MS)"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Román Jesús González Balado",
+"suplentes": [
+{
+"n": "María Jesús López Sarrió"
+},
+{
+"n": "Álvaro Gabriel García"
+}
+]
+},
+{
+"n": "Virginia Carrión Peralta",
+"suplentes": [
+{
+"n": "José Agustín Rosa Belmonte"
+},
+{
+"n": "Sonia Marta Rosa Sánchez"
+}
+]
+},
+{
+"n": "Ginés Luis Núñez Martínez",
+"suplentes": [
+{
+"n": "Ana Isabel González López"
+},
+{
+"n": "Santiago Pérez Pascual"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Miriam García Navarro",
+"suplentes": [
+{
+"n": "Antonio García Docón"
+},
+{
+"n": "María Pilar Medina Martínez"
+}
+]
+},
+{
+"n": "Antonio Martínez Gómez",
+"suplentes": [
+{
+"n": "Cristina García Martínez"
+},
+{
+"n": "Moisés López Martínez"
+}
+]
+},
+{
+"n": "Pilar Milagros Rojo Noguera",
+"suplentes": [
+{
+"n": "Eduardo Sánchez Martínez"
+},
+{
+"n": "María Isabel Martínez Gómez"
+}
+]
+}
+]
+}
+]
+}
+],
+"alicante": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Miguel Arsen Kerobyan Arshakyan",
+"suplentes": [
+{
+"n": "María de las Mercedes López Carrasco"
+},
+{
+"n": "Javier Pérez García"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-COMPROMIS-EUPV)",
+"candidatos": [
+{
+"n": "Francisco Miguel Fenollar Iváñez",
+"suplentes": [
+{
+"n": "Dolores Vílchez López"
+},
+{
+"n": "Carlos Giménez Bertomeu"
+}
+]
+},
+{
+"n": "Inmaculada Orozco Ripoll",
+"suplentes": [
+{
+"n": "Federico Zaragoza Alberich"
+},
+{
+"n": "Sara Llobell Peralta"
+}
+]
+},
+{
+"n": "Vicent Grimalt Boronat",
+"suplentes": [
+{
+"n": "Cristina Escoda Santamaría"
+},
+{
+"n": "Esteban Vallejo Muñoz"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Eva Ortiz Vilella",
+"suplentes": [
+{
+"n": "Vicente Raúl Llobell Signes"
+},
+{
+"n": "María del Mar Sáez Martínez"
+}
+]
+},
+{
+"n": "Agustín Almodóbar Barceló",
+"suplentes": [
+{
+"n": "María de Los Ángeles Quiles Mondéjar"
+},
+{
+"n": "Antonio Emmanuel Mira Cerdán"
+}
+]
+},
+{
+"n": "María Francisca Sempere Ripoll",
+"suplentes": [
+{
+"n": "Jesús López Blanco"
+},
+{
+"n": "María Teresa Peñalver Barrachina"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Aurora Rodil Martínez",
+"suplentes": [
+{
+"n": "Manuel Mestre Barea"
+},
+{
+"n": "María del Carmen Robledillo Sánchez"
+}
+]
+}
+]
+}
+]
+}
+],
+"almeria": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Miguel Ángel Castellón Rubio",
+"suplentes": [
+{
+"n": "Noelia José Damián López"
+},
+{
+"n": "Juan Bautista López Ruiz"
+}
+]
+},
+{
+"n": "Ana María Martínez Labella",
+"suplentes": [
+{
+"n": "José Francisco Garrido Requena"
+},
+{
+"n": "Nuria Rodríguez Martín"
+}
+]
+},
+{
+"n": "Juan José Matarí Sáez",
+"suplentes": [
+{
+"n": "Carmen Belén López Zapata"
+},
+{
+"n": "Raúl Martínez Requejo"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José María Martín Fernández",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Ana María Romero Villegas",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Víctor Martínez Martín",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "María Jesús Amate Ruiz",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Rafael Manuel Salazar Amat",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "María del Mar Palenzuela Martínez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Ismael Gil Salmerón",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María del Carmen de la Paz Huélamo",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Juan Cristóbal García Molina",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Marta Asunción Castro Fuertes",
+"suplentes": [
+{
+"n": "José Antonio Buendía Téllez"
+},
+{
+"n": "María Azucena López Martín"
+}
+]
+},
+{
+"n": "Carlos Antonio García Sánchez",
+"suplentes": [
+{
+"n": "María Estela Bonilla Gil"
+},
+{
+"n": "Juan Antonio Prados Moreno"
+}
+]
+},
+{
+"n": "Amadea García Martínez",
+"suplentes": [
+{
+"n": "Enrique Fuentes Gallardo"
+},
+{
+"n": "Martirio Fernández Blanco"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María de los Milagros Torrejón Carabe",
+"suplentes": [
+{
+"n": "Antonio Machado Villacañas"
+},
+{
+"n": "Francisca Gallardo Morales"
+}
+]
+},
+{
+"n": "Fernando Fernández Frontela",
+"suplentes": [
+{
+"n": "María Teresa Martínez Ortega"
+},
+{
+"n": "Pablo Gil LLoreda"
+}
+]
+},
+{
+"n": "Rosa María Martínez Ortega",
+"suplentes": [
+{
+"n": "Juan Antonio Herranz Cabrero"
+},
+{
+"n": "Ana Teresa Fernández Cerro"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "José Arturo Lay Frías",
+"suplentes": [
+{
+"n": "Trinidad Rodríguez López"
+},
+{
+"n": "José Lay Quero"
+}
+]
+}
+]
+},
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Vanesa Martínez Crisol",
+"suplentes": [
+{
+"n": "Antonio José Castro Sánchez"
+},
+{
+"n": "Araceli Francisca Bermúdez Vázquez"
+}
+]
+},
+{
+"n": "Luis María Salmerón Hinojosa",
+"suplentes": [
+{
+"n": "Ana Isabel Fernández Garrón"
+},
+{
+"n": "Salvador Lorenzo Ferrón Padilla"
+}
+]
+},
+{
+"n": "Carmen María González Jiménez",
+"suplentes": [
+{
+"n": "Alfonso Lázaro Simón Castaño"
+},
+{
+"n": "Claudia Alejandra González Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Alberto Martínez Jódar",
+"suplentes": [
+{
+"n": "María Luisa Roldán González",
+"nota": "Independiente"
+},
+{
+"n": "Gabriel López Rodríguez"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Carlos Julián Molina López",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Francisco Javier Rico Castro",
+"nota": "Independiente"
+},
+{
+"n": "Diego Roca Silva",
+"nota": "Independiente"
+}
+]
+}
+]
+}
+]
+}
+],
+"asturias": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Elisa García Gutiérrez",
+"suplentes": [
+{
+"n": "Diego Torrecilla de Arriba"
+},
+{
+"n": "María Llorente Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "José Iván Fernández Andrade",
+"suplentes": [
+{
+"n": "Nuria Platas Iglesias"
+},
+{
+"n": "Raúl Martínez Turrero"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Eva María Fernández González",
+"suplentes": [
+{
+"n": "Raúl Mestas Argüelles"
+},
+{
+"n": "Laura García Fernández"
+}
+]
+},
+{
+"n": "Roberto González García",
+"suplentes": [
+{
+"n": "Florentina Cuadriello Sánchez"
+},
+{
+"n": "Sergio de la Calle Iglesias"
+}
+]
+},
+{
+"n": "María Alejandra Tejón Ballesteros",
+"suplentes": [
+{
+"n": "Miguel Alonso López"
+},
+{
+"n": "María Rosa Prieto Baragaño"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO UNIONISTA ESTADO DE ESPAÑA",
+"siglas": "PUEDE",
+"candidatos": [
+{
+"n": "Ángel Fernández Santos",
+"suplentes": [
+{
+"n": "Lorena Garea Alcedo"
+},
+{
+"n": "Juan Manuel Fernández Medina"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Sara Concepción Álvarez Rouco",
+"suplentes": [
+{
+"n": "Gonzalo Centeno Martín"
+},
+{
+"n": "María Aránzazu Martínez Riola"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Silverio Argüelles García",
+"suplentes": [
+{
+"n": "Gemma Álvarez Cereigido"
+},
+{
+"n": "José Manuel Pimentao Oliveira"
+}
+]
+},
+{
+"n": "María del Pilar Fernández Pardo",
+"suplentes": [
+{
+"n": "José Luis Fontaniella Fernández"
+},
+{
+"n": "Aurora Aguilar Cánovas"
+}
+]
+},
+{
+"n": "José Manuel Fernández Díaz",
+"nota": "Chami",
+"suplentes": [
+{
+"n": "María Fe Gómez Alonso"
+},
+{
+"n": "Javier Mateus Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "Iván González Espina",
+"nota": "PSOE-IU-MS",
+"suplentes": [
+{
+"n": "María Aránzazu González Montell",
+"nota": "PSOE-IU-MS"
+},
+{
+"n": "Gilberto Alonso Suárez",
+"nota": "PSOE-IU-MS"
+}
+]
+},
+{
+"n": "Antona Luengo Sánchez",
+"nota": "PSOE-IU-MS",
+"suplentes": [
+{
+"n": "Alejandro Suárez González",
+"nota": "PSOE-IU-MS"
+},
+{
+"n": "María Josefa Miranda Fernández",
+"nota": "PSOE-IU-MS"
+}
+]
+},
+{
+"n": "Julio Tamés Sordo",
+"nota": "PSOE-IU-MS",
+"suplentes": [
+{
+"n": "Silvia Suárez Rodríguez",
+"nota": "PSOE-IU-MS"
+},
+{
+"n": "Miguel Ángel Fernández Iglesias",
+"nota": "PSOE-IU-MS"
+}
+]
+}
+]
+}
+]
+}
+],
+"avila": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Amador María Villar Riu",
+"suplentes": [
+{
+"n": "Amparo Meseguer Vicente"
+},
+{
+"n": "Luis Jesús Hernández Martín"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "David Arense Jiménez",
+"suplentes": [
+{
+"n": "Isabel Fernández Navas"
+},
+{
+"n": "Alfonso Rubio- Manzanares Soria"
+}
+]
+},
+{
+"n": "Rebeca Acevedo García",
+"suplentes": [
+{
+"n": "Félix Arense De La Antonia"
+},
+{
+"n": "Minerva Martínez Montero"
+}
+]
+},
+{
+"n": "Javier Jara García",
+"suplentes": [
+{
+"n": "María Paloma Ortiz Inocencio"
+},
+{
+"n": "Jesús Maqueda Herrero"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Alicia García Rodríguez",
+"suplentes": [
+{
+"n": "Vidal García Jaramillo"
+},
+{
+"n": "María del Pino Gómez Pérez"
+}
+]
+},
+{
+"n": "Carlos García González",
+"suplentes": [
+{
+"n": "María Sonsoles Sánchez-Reyes Peñamaría"
+},
+{
+"n": "David Sánchez Tenrero"
+}
+]
+},
+{
+"n": "María Pilar Rodríguez Aparicio",
+"suplentes": [
+{
+"n": "Juan Pablo Martín Martín"
+},
+{
+"n": "Asunción Martín Manzano"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO DEMÓCRATA SOCIAL JUBILADOS EUROPEOS",
+"siglas": "P.D.S.J.E.",
+"candidatos": [
+{
+"n": "José María Martín García",
+"suplentes": [
+{
+"n": "Anabel García López"
+},
+{
+"n": "José Miguel Mateo Martín"
+}
+]
+},
+{
+"n": "Virginia Maycas Márquez",
+"suplentes": [
+{
+"n": "Vicente Maycas Márquez"
+},
+{
+"n": "María Cristina González Amaro"
+}
+]
+},
+{
+"n": "Luis Miguel Sáenz de la Puente",
+"suplentes": [
+{
+"n": "Carmen Celia Lafaja Losilla"
+},
+{
+"n": "Eduardo Javier González Segovia"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Carlos Montesino Garro",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Lucia Hernández Hernández",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "Santiago Chinarro Pulido",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "Cristina Pindado López Samaniego",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "José María González Suárez",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "María Teresa Gloria López Alija",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "Juan Carlos Del Bosque Portero",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Virginia Suárez Blázquez",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "José Sierra García",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Clara Isabel Rubio Contreras",
+"suplentes": [
+{
+"n": "Daniel Marugán Martín"
+},
+{
+"n": "Aránzazu López Nombela"
+}
+]
+},
+{
+"n": "Carlos Salazar Moreta",
+"suplentes": [
+{
+"n": "Yolanda Corona San Segundo"
+},
+{
+"n": "Luis Ángel Horga Rodrigo"
+}
+]
+},
+{
+"n": "Bárbara Vallejo Fernández-Cano",
+"suplentes": [
+{
+"n": "Félix Sanz Cantalapiedra"
+},
+{
+"n": "Tania Molina Medina"
+}
+]
+}
+]
+}
+]
+}
+],
+"badajoz": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José Luis Quintana Álvarez",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Miriam García Cabezas"
+},
+{
+"n": "Juan Manuel Ortiz Paredes"
+}
+]
+},
+{
+"n": "Sandra Caballero Expósito",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Jairo Pino Mendoza"
+},
+{
+"n": "Irene Guadalupe Salazar Rabanal"
+}
+]
+},
+{
+"n": "Joaquín Macías Rodríguez",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "María Dolores López Leitón"
+},
+{
+"n": "Manuel Vélez García"
+}
+]
+}
+]
+},
+{
+"nombre": "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA",
+"siglas": "NEX",
+"candidatos": [
+{
+"n": "Gerardo Rubio Muñoz",
+"suplentes": [
+{
+"n": "María García Guisado"
+},
+{
+"n": "Juan María Andreo Romera"
+}
+]
+},
+{
+"n": "María de los Ángeles Campos Paniagua",
+"suplentes": [
+{
+"n": "Marcos Augusto Gómez Gazapo"
+},
+{
+"n": "Ángela María Muñoz García"
+}
+]
+},
+{
+"n": "Jesús Cerrato Porro",
+"suplentes": [
+{
+"n": "Nuria Flores Andújar"
+},
+{
+"n": "Sergio Morales Castañeda"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Antonio Monago Terraza",
+"suplentes": [
+{
+"n": "Magdalena Carmona López"
+},
+{
+"n": "Álvaro Ballesteros Sánchez"
+}
+]
+},
+{
+"n": "Ana Fernández Salguero Elena",
+"suplentes": [
+{
+"n": "Carlos Carrillo Cabanillas"
+},
+{
+"n": "Paula Del Carmen Matito Calderón"
+}
+]
+},
+{
+"n": "Manuel Lavado Barroso",
+"suplentes": [
+{
+"n": "Mariema del Carmen Seck Moreno"
+},
+{
+"n": "José Ignacio Antón Gil"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Ángel Fernando Manzano Sánchez",
+"suplentes": [
+{
+"n": "Juliana Naharro Hernández"
+},
+{
+"n": "David Tobaja Márquez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Rosa Mogollón Calvo",
+"suplentes": [
+{
+"n": "Daniel Cordero Botejara"
+},
+{
+"n": "Casilda Rosa Acosta"
+}
+]
+},
+{
+"n": "Antonio De la Cruz Ruiz Millán",
+"suplentes": [
+{
+"n": "María Dolores Santomé Barros"
+},
+{
+"n": "Marcos Arroyo Rangel"
+}
+]
+},
+{
+"n": "Araceli Ortiz Trejo",
+"suplentes": [
+{
+"n": "Pablo García Martín"
+},
+{
+"n": "Rosario Santomé Barros"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Andrés Barrera Rangel",
+"suplentes": [
+{
+"n": "Ángela Flores Sanromán"
+},
+{
+"n": "Pascual José Ruiz de Alarcón Jaramillo"
+}
+]
+}
+]
+}
+]
+}
+],
+"barcelona": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+"siglas": "PSC",
+"candidatos": [
+{
+"n": "Raquel Sánchez Jimenez",
+"suplentes": [
+{
+"n": "Óscar López Hidalgo"
+},
+{
+"n": "Renata Bedós Stout"
+}
+]
+},
+{
+"n": "Gabriel Colomé Garcia",
+"suplentes": [
+{
+"n": "Beatriz Moreno Martín"
+},
+{
+"n": "Daniel Calvo Zurriaga"
+}
+]
+},
+{
+"n": "Cristobalina Albéndiz Pérez",
+"suplentes": [
+{
+"n": "Ignasi Simón Ortoll"
+},
+{
+"n": "Pilar Díez Nieto"
+}
+]
+}
+]
+},
+{
+"nombre": "JUNTS PER CATALUNYA",
+"siglas": "JxCat",
+"candidatos": [
+{
+"n": "Josep Maria Vida de Abadal i Serra",
+"suplentes": [
+{
+"n": "Cristina Tous i Bosch"
+},
+{
+"n": "Miquel Aguilar i Barberà"
+}
+]
+},
+{
+"n": "Anna Cols i Aguilar",
+"suplentes": [
+{
+"n": "Jaume Tomàs i Claramunt"
+},
+{
+"n": "Eulàlia Sardà i Bonvehí"
+}
+]
+},
+{
+"n": "Oriol Izquierdo i Llopis",
+"suplentes": [
+{
+"n": "Maria Mercè Escudero i Guiu"
+},
+{
+"n": "Ramon Domènech i Taulats"
+}
+]
+}
+]
+},
+{
+"nombre": "ESQUERRA REPUBLICANA DE CATALUNYA-EUSKAL HERRIA BILDU",
+"siglas": "ERC-EH BILDU",
+"candidatos": [
+{
+"n": "Francesc-Marc Álvaro i Vidal",
+"suplentes": [
+{
+"n": "Gemma Boix López"
+},
+{
+"n": "Roger Bayó Padró"
+}
+]
+},
+{
+"n": "Mercedes Vidal Lago",
+"suplentes": [
+{
+"n": "Miquel Mateu Ballesté"
+},
+{
+"n": "Sara Roca i Ibáñez"
+}
+]
+},
+{
+"n": "Joaquim (Pim) Camprubí i Cabané",
+"suplentes": [
+{
+"n": "Aurora Jiménez Ruiz",
+"nota": "Independent"
+},
+{
+"n": "Enric Gisbert Tomàs"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+"siglas": "PCTC",
+"candidatos": [
+{
+"n": "Ferran Peris Serrano",
+"suplentes": [
+{
+"n": "Rosa Gil Minguell"
+},
+{
+"n": "Javier Carrillo Gris"
+}
+]
+}
+]
+},
+{
+"nombre": "Comuns-Front Ampli per la democràcia",
+"siglas": "C-DEM",
+"candidatos": [
+{
+"n": "Laura Alzamora Merino",
+"suplentes": [
+{
+"n": "Jordi Gil Dorado"
+},
+{
+"n": "Irene Aldabert Gonzalez"
+}
+]
+},
+{
+"n": "Miquel Àngel Essomba Gelabert",
+"suplentes": [
+{
+"n": "Margarita Gual Izquierdo"
+},
+{
+"n": "Manuel Domínguez López"
+}
+]
+},
+{
+"n": "Aïda Llauradó Álvarez",
+"suplentes": [
+{
+"n": "Ivan Molinos Meire"
+},
+{
+"n": "Mar López Barreiro"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "María Elisa García Fuster",
+"suplentes": [
+{
+"n": "Jaume Casino Romero"
+},
+{
+"n": "Ana Vega Triguero"
+}
+]
+},
+{
+"n": "Jorge Mena Gálvez",
+"suplentes": [
+{
+"n": "María Del Mar Buscá Rey"
+},
+{
+"n": "Félix Torres Martínez"
+}
+]
+},
+{
+"n": "María Montserrat Piqueras Ruiz",
+"suplentes": [
+{
+"n": "Eric Pérez López"
+},
+{
+"n": "María Teresa Aparicio Vidal"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT POPULAR / PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Josep Tutusaus Besante",
+"suplentes": [
+{
+"n": "Eva Guillén Rodríguez"
+},
+{
+"n": "Javier Alcalde Navas"
+}
+]
+},
+{
+"n": "Mónica Parés Centeno",
+"suplentes": [
+{
+"n": "José María Azorín Armela"
+},
+{
+"n": "Gloria Aymerich Gázquez"
+}
+]
+},
+{
+"n": "Javier Guasch Torrens",
+"suplentes": [
+{
+"n": "Yolanda Laspalas Cantón"
+},
+{
+"n": "Aleix Serrallonga Vilardell"
+}
+]
+}
+]
+}
+]
+}
+],
+"bizkaia": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+"siglas": "EAJ-PNV",
+"candidatos": [
+{
+"n": "Nerea Ahedo Ceza",
+"suplentes": [
+{
+"n": "Martín Pérez Garmendia"
+},
+{
+"n": "Keltse Eiguren Alberdi"
+}
+]
+},
+{
+"n": "Kepa Lambarri Camilo",
+"suplentes": [
+{
+"n": "Olatz Garamendi Landa"
+},
+{
+"n": "Etor Gorroño Gerediaga"
+}
+]
+},
+{
+"n": "María Dolores Etxano Varela",
+"suplentes": [
+{
+"n": "Aitor Arregi Osoro"
+},
+{
+"n": "Aitziber Oliban Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA",
+"siglas": "EH BILDU-ERC",
+"candidatos": [
+{
+"n": "Idurre Bideguren Gabantxo",
+"suplentes": [
+{
+"n": "Oskar Lorenzo Arlanzón"
+},
+{
+"n": "Jasone Agirre Garitaonandia"
+}
+]
+},
+{
+"n": "Martin Arrasate Iriarte",
+"suplentes": [
+{
+"n": "Bea Ilardia Olangua"
+},
+{
+"n": "Asier Vega Isasi"
+}
+]
+},
+{
+"n": "Aitziber Ibaibarriaga Etxebarrieta",
+"suplentes": [
+{
+"n": "Gaizka Suarez Iparragirre"
+},
+{
+"n": "Izaskun Duque Santacoloma"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA",
+"siglas": "PCTE/ELAK",
+"candidatos": [
+{
+"n": "Oscar Frontaura García",
+"suplentes": [
+{
+"n": "María Teresa Magrach Longrande"
+},
+{
+"n": "Ander Eguiluz Belar"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Miguel Fernández Marcos",
+"suplentes": [
+{
+"n": "Mercedes Mauricio Aguilar"
+},
+{
+"n": "Joseba Andoni Fernández Rodríguez"
+}
+]
+},
+{
+"n": "María Teresa Junquera Galende",
+"suplentes": [
+{
+"n": "Manuel Chenlo Fernández"
+},
+{
+"n": "Manuela Ruiz Vivanco"
+}
+]
+},
+{
+"n": "Miguel Angel Carpintero Alfaro",
+"suplentes": [
+{
+"n": "Petra Casas Pastor"
+},
+{
+"n": "Agustin Fernandez Ortiz"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Ángel Martínez Villastrigo",
+"suplentes": [
+{
+"n": "Arantza Montero González"
+},
+{
+"n": "José María Losa Ciarrusta"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Jon Albisu Seoane",
+"suplentes": [
+{
+"n": "Silvia Barea Galindez"
+},
+{
+"n": "Ángel Rodrigo Izquierdo"
+}
+]
+},
+{
+"n": "Paula Garagalza Muñoz",
+"suplentes": [
+{
+"n": "Eduardo Andrade Aurrecoechea"
+},
+{
+"n": "Maria Elena Ruiz Martinez"
+}
+]
+},
+{
+"n": "Luis Peña Barturen",
+"suplentes": [
+{
+"n": "Elena Garcia Muñoz"
+},
+{
+"n": "Luis Ángel Urdiales Villanueva"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Jesús Barcina Burgui",
+"suplentes": [
+{
+"n": "Mireia Alaña Heredero"
+},
+{
+"n": "David Lamíquiz Rámila"
+}
+]
+},
+{
+"n": "Judith López Cano",
+"suplentes": [
+{
+"n": "José María Labandeira Ferreiro"
+},
+{
+"n": "María Pilar Sancho Morales"
+}
+]
+},
+{
+"n": "Francisco Javier Barcina Elcuaz",
+"suplentes": [
+{
+"n": "María del Carmen Magaña Diaz"
+},
+{
+"n": "Alfredo Parte Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO/AURRERA DOAN SENATUA SDP",
+"siglas": "PSOE-EZAN IU-MS",
+"candidatos": [
+{
+"n": "Txema Oleaga Zalvidea",
+"suplentes": [
+{
+"n": "Elena Perez Barredo"
+},
+{
+"n": "Juan Isidro Otermin Eraso"
+}
+]
+},
+{
+"n": "Alba Gutierrez Gomez",
+"suplentes": [
+{
+"n": "Sergio Moreno Rios"
+},
+{
+"n": "Azahara Artacho Botella"
+}
+]
+},
+{
+"n": "Juan Carlos (Txitxo) Abascal Candas",
+"suplentes": [
+{
+"n": "Teresa Fernandez Garcia"
+},
+{
+"n": "Jon Pesquera Gonzalez"
+}
+]
+}
+]
+}
+]
+}
+],
+"burgos": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Mónica López Blanco",
+"suplentes": [
+{
+"n": "Guillermo De la Cuesta Bonilla"
+},
+{
+"n": "Icíar Carmen Carrero Contreras"
+}
+]
+},
+{
+"n": "Georges Mirko Dimitrijevic Pozo",
+"suplentes": [
+{
+"n": "María Teresa Vega Nadal Martínez"
+},
+{
+"n": "Martiniano López Muñoz"
+}
+]
+},
+{
+"n": "María Ángeles Castrillo Martínez",
+"suplentes": [
+{
+"n": "Alberto Palacín Gutiérrez"
+},
+{
+"n": "Cristina Ferreras Pineda"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "German López Castro",
+"suplentes": [
+{
+"n": "Marta Ordoñez Aguirre"
+},
+{
+"n": "Saturnino Pardilla Abad"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Jaime Saiz de la Peña",
+"suplentes": [
+{
+"n": "Clara Martínez Núñez"
+},
+{
+"n": "César Domínguez Baños"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "María Aitana Hernando Ruiz",
+"suplentes": [
+{
+"n": "Jesús Puente Alcaraz"
+},
+{
+"n": "Sonia González Calvo"
+}
+]
+},
+{
+"n": "Carlos Serrano Hermo",
+"suplentes": [
+{
+"n": "María Vicenta Rodríguez Gómez"
+},
+{
+"n": "Carlos Medina Martín"
+}
+]
+},
+{
+"n": "María Concepción Camarero Merino",
+"suplentes": [
+{
+"n": "Eusebio Martín Hernando"
+},
+{
+"n": "Eva Ceballos Marroquín"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Fernando Martínez-Acitores Puig",
+"suplentes": [
+{
+"n": "Lourdes Porcar Laínez"
+},
+{
+"n": "Fernando de la Parte Alcalde"
+}
+]
+},
+{
+"n": "María Teresa Alonso Ortega",
+"suplentes": [
+{
+"n": "Jesús Cantero Pinto"
+},
+{
+"n": "Elma Vicente Barrios"
+}
+]
+},
+{
+"n": "José Manuel Gutiérrez Martínez",
+"suplentes": [
+{
+"n": "María Montserrat Ibáñez Barcina"
+},
+{
+"n": "Ángel Luis Martín Rivas"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Francisco Javier Lacalle Lacalle",
+"suplentes": [
+{
+"n": "Eva María Asensio Esteban"
+},
+{
+"n": "Francisco Javier Martínez Arranz"
+}
+]
+},
+{
+"n": "María Sandra Moneo Díez",
+"suplentes": [
+{
+"n": "David Colinas Maté"
+},
+{
+"n": "Paula Palacios Alonso"
+}
+]
+},
+{
+"n": "Salvador De Foronda Vaquero",
+"suplentes": [
+{
+"n": "María Belén Paramio Vila"
+},
+{
+"n": "Mario Ortega Pardo"
+}
+]
+}
+]
+}
+]
+}
+],
+"caceres": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Fernando Pizarro García",
+"suplentes": [
+{
+"n": "Isabel Faustina Palomino Márquez"
+},
+{
+"n": "Antonio Ignacio Martín Caballero"
+}
+]
+},
+{
+"n": "María Inés Rubio Díaz",
+"suplentes": [
+{
+"n": "Andrés Manzano Redondo"
+},
+{
+"n": "Noelia Rodríguez Campos"
+}
+]
+},
+{
+"n": "Emilio José Borrega Romero",
+"suplentes": [
+{
+"n": "Marta Jordán Ordiales"
+},
+{
+"n": "José Ramón Hidalgo Vicho"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Joaquín Cuello Martínez-Pereda",
+"suplentes": [
+{
+"n": "Celia Cano Molina"
+},
+{
+"n": "Pablo Pacheco Domínguez"
+}
+]
+},
+{
+"n": "Inés Mirella Conejero Domínguez",
+"suplentes": [
+{
+"n": "Josafat Clemente Pérez"
+},
+{
+"n": "Manuela Ortega Iglesias"
+}
+]
+},
+{
+"n": "Antonio Leonardo Calle Izquierdo",
+"suplentes": [
+{
+"n": "Marta González Cava"
+},
+{
+"n": "Miguel Rodal Martínez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Milagros Martínez Morán",
+"suplentes": [
+{
+"n": "Luciano Hernández de la Calle"
+},
+{
+"n": "Juana Benítez López"
+}
+]
+},
+{
+"n": "Arnaldo Ramos Serradilla",
+"suplentes": [
+{
+"n": "María Olga Blanca Plaza"
+},
+{
+"n": "Francisco Rodríguez Rubio"
+}
+]
+},
+{
+"n": "Petra Vacas Fernández",
+"suplentes": [
+{
+"n": "Félix Núñez García"
+},
+{
+"n": "Rita Pascual Jiménez"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Inés Checa Mallebrera",
+"suplentes": [
+{
+"n": "Álvaro Luis Sánchez Ocaña Vara"
+},
+{
+"n": "Raquel Mirat Galet"
+}
+]
+}
+]
+},
+{
+"nombre": "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA",
+"siglas": "NEX",
+"candidatos": [
+{
+"n": "Jesús Montero Melchor",
+"suplentes": [
+{
+"n": "Verónica Díaz Piñas"
+},
+{
+"n": "Ramón Presentación Alonso"
+}
+]
+},
+{
+"n": "Yanira Anguas Moreno",
+"suplentes": [
+{
+"n": "José Solís Polo"
+},
+{
+"n": "Judith Rico Martín"
+}
+]
+},
+{
+"n": "Pablo Galán Pacheco",
+"suplentes": [
+{
+"n": "Mónica López del Consuelo"
+},
+{
+"n": "Gonzalo de Mosteyrín Sampalo"
+}
+]
+}
+]
+}
+]
+}
+],
+"cadiz": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Soulaima Otilia Vázquez Noune",
+"suplentes": [
+{
+"n": "Jorge Cerrillo Jiménez"
+},
+{
+"n": "María del Mar Reyes Rafoso"
+}
+]
+},
+{
+"n": "Juan Antonio Ruiz Giraldo",
+"suplentes": [
+{
+"n": "Carla Maraver Morales"
+},
+{
+"n": "Pablo Criado Prieto"
+}
+]
+},
+{
+"n": "Francisca Delgado Ruiz",
+"suplentes": [
+{
+"n": "Ramón Heredia Salas"
+},
+{
+"n": "Sara Álvarez Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Alejandro Úcar Vital",
+"suplentes": [
+{
+"n": "María Sancho Serrano"
+},
+{
+"n": "José Olmo Cobos Salmerón"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Carlos Bertoa Cano",
+"suplentes": [
+{
+"n": "María Violeta de Moreta Hermoso"
+},
+{
+"n": "Francisco de Paula Parodi Aguirre"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Juan Carlos Ruiz Boix",
+"suplentes": [
+{
+"n": "Susana Romero Lobato"
+},
+{
+"n": "José Joaquín Muñoz Pérez"
+}
+]
+},
+{
+"n": "Violeta Márquez Ruiz",
+"suplentes": [
+{
+"n": "Ángel Francisco Fernández Salas"
+},
+{
+"n": "María Dolores Vela Navarrete"
+}
+]
+},
+{
+"n": "Javier Rodríguez Cabeza",
+"suplentes": [
+{
+"n": "Natalia María Álvarez Dodero"
+},
+{
+"n": "Lorenzo Barrera Chacón"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Marina Liberato Olmedo",
+"suplentes": [
+{
+"n": "Emilio Palacios Romero"
+},
+{
+"n": "María Montserrat Lence Pérez"
+}
+]
+},
+{
+"n": "Juan Luis Martínez Muñoz Cruzado",
+"suplentes": [
+{
+"n": "Sonia Coto Rojas"
+},
+{
+"n": "Guillermo Gutiérrez Jurado"
+}
+]
+},
+{
+"n": "Ana Isabel Castedo Ferreiro",
+"suplentes": [
+{
+"n": "José Enrique Centén Martín"
+},
+{
+"n": "Ana María Martín García"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Ricardo Rodríguez Torti",
+"suplentes": [
+{
+"n": "Guadalupe Martín-Laborda García de Rasilla"
+},
+{
+"n": "Miguel Taboada Tabuenca"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Jacinto Muñoz Madrid",
+"suplentes": [
+{
+"n": "Samara Sarai Ortiz Fernández"
+},
+{
+"n": "Francisco Ponce Pérez"
+}
+]
+},
+{
+"n": "María del Carmen Pérez Becerra",
+"suplentes": [
+{
+"n": "Agustín Muñoz Martín"
+},
+{
+"n": "Catalina Almazo Amaya"
+}
+]
+},
+{
+"n": "Enrique José García-Máiquez López",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "María del Carmen Salas Alcázar",
+"nota": "Independiente"
+},
+{
+"n": "Agustín Jiménez Inverno",
+"nota": "Independiente"
+}
+]
+}
+]
+}
+]
+}
+],
+"cantabria": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Mercedes González Reguilón",
+"suplentes": [
+{
+"n": "Ricardo Amigo Saiz"
+},
+{
+"n": "Corina Ruiz González"
+}
+]
+},
+{
+"n": "Raúl Gómez Varela",
+"suplentes": [
+{
+"n": "Emilia García Gómez"
+},
+{
+"n": "Alejandro Fernández González"
+}
+]
+},
+{
+"n": "Elsa María Miguel Gutiérrez",
+"suplentes": [
+{
+"n": "Luis Ruiz Gómez"
+},
+{
+"n": "Aglae Amigo García"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "José Joaquín Bengochea Seco",
+"suplentes": [
+{
+"n": "Sonia Pacheco Castañera"
+},
+{
+"n": "Javier Barrón Serrano"
+}
+]
+},
+{
+"n": "Victoria Eugenia Rodriguez Varela",
+"suplentes": [
+{
+"n": "Francisco Javier Soler-Espiauba Gallo"
+},
+{
+"n": "Luz María Jayo Sánchez"
+}
+]
+},
+{
+"n": "José Luis Palacio Bensusan",
+"suplentes": [
+{
+"n": "Emma Tato Velasco"
+},
+{
+"n": "César Ramón Ortíz Arriola"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Paz Mercedes de la Cuesta Aguado",
+"suplentes": [
+{
+"n": "Raúl Pesquera Cabezas"
+},
+{
+"n": "María Carmen Gutiérrez Pérez"
+}
+]
+},
+{
+"n": "Israel Ruiz Salmón",
+"suplentes": [
+{
+"n": "María Leticia Martínez Osaba"
+},
+{
+"n": "Sergio Tamayo Gilabert"
+}
+]
+},
+{
+"n": "Paloma Palacio Sánchez",
+"suplentes": [
+{
+"n": "David Sanjuan Escudero"
+},
+{
+"n": "Cristina Hermosa Oyarbide"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Alfredo Ramos Gómez",
+"suplentes": [
+{
+"n": "Carmen Valentina Didenko Vega"
+},
+{
+"n": "Carlos Arribas Velarde"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Gema Igual Ortiz",
+"suplentes": [
+{
+"n": "Juan Carlos García Diego"
+},
+{
+"n": "Lidia Víctor Fernández"
+}
+]
+},
+{
+"n": "Luis Venancio Martínez Abad",
+"suplentes": [
+{
+"n": "Eva Cueva González"
+},
+{
+"n": "Francisco Javier Velasco Ruigómez"
+}
+]
+},
+{
+"n": "María Carmen Bedoya Morton",
+"suplentes": [
+{
+"n": "Pablo Caso Lamadrid"
+},
+{
+"n": "María de los Milagros García Media"
+}
+]
+}
+]
+}
+]
+}
+],
+"castellon": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Pablo Riesco Navajo",
+"suplentes": [
+{
+"n": "Marina Gómez Gutiérrez"
+},
+{
+"n": "Juan Manuel Turrero Álvarez"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS JONS",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Teresa Navarro Traver",
+"suplentes": [
+{
+"n": "Juan Amorós Mezquita"
+},
+{
+"n": "Susana Soria Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "Eva María Redondo Gamero",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Adrián Sorribes Herraiz",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Celia Salvador Macián",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "David Lluch Almenar",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Rosario Castelló Alfaro",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Juan Francisco Alcolea Morcillo",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Ana Besalduch Besalduch",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Raúl Andreu Rodríguez",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "María Isabel Albalat Celades",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Alberto Fabra Part",
+"suplentes": [
+{
+"n": "Susana Marqués Escoín"
+},
+{
+"n": "Javier Peris Luque"
+}
+]
+},
+{
+"n": "María Nieves Martínez Tarazona",
+"suplentes": [
+{
+"n": "Jaume Llorens Monzonís"
+},
+{
+"n": "Silvana Rovira Bodí"
+}
+]
+},
+{
+"n": "Miguel Rovira de la Fuente",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Arantxa Miralles Benages",
+"nota": "Independiente"
+},
+{
+"n": "Cristóbal Caballero Escribano",
+"nota": "Independiente"
+}
+]
+}
+]
+}
+]
+}
+],
+"ceuta": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Abdelhakim Abdeselam Al-lal",
+"suplentes": [
+{
+"n": "Pilar Orozco Valverde"
+},
+{
+"n": "Nicola Cecchi Bisoni"
+}
+]
+},
+{
+"n": "Cristina Díaz Moreno",
+"suplentes": [
+{
+"n": "Gonzalo Torrado Chamorro"
+},
+{
+"n": "Manal Mohamed Mohamed"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "Abdel lah Abdel lah Mustafa",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Mercedes Vega Pérez"
+},
+{
+"n": "José Antonio Bersabe González",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Nesrin Haddad Ahmed",
+"suplentes": [
+{
+"n": "José Miguel Romero Martínez"
+},
+{
+"n": "Malika El Hadi Abdesalam"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Francisco José Ruiz Enríquez",
+"suplentes": [
+{
+"n": "María del Carmen Arana Arana"
+},
+{
+"n": "Francisco Javier Acosta Balmon"
+}
+]
+},
+{
+"n": "Ana García León",
+"suplentes": [
+{
+"n": "José Antonio Lobato Cruz"
+},
+{
+"n": "Inmaculada Cortina Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PAZ,CASA Y TRABAJO",
+"candidatos": [
+{
+"n": "Mariam Ahmed El asri",
+"suplentes": [
+{
+"n": "Jesús Pérez Noguera"
+},
+{
+"n": "Silvia Gómez Murillo"
+}
+]
+},
+{
+"n": "Jaume Piñol Salvatierra",
+"suplentes": [
+{
+"n": "María del Mar Diaz Martinez"
+},
+{
+"n": "Tarik Ahmed Mohamed"
+}
+]
+}
+]
+}
+]
+}
+],
+"ciudad-real": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Víctor García Escribano Tajuelo",
+"suplentes": [
+{
+"n": "Gema del Mar Caballero Espinosa"
+},
+{
+"n": "Carlos Polo Peña"
+}
+]
+},
+{
+"n": "Teresa Lozano Camacho",
+"suplentes": [
+{
+"n": "Braido Pacífico Jaramillo Soto"
+},
+{
+"n": "Amaranta García Carrasco"
+}
+]
+},
+{
+"n": "José María Jiménez Mozos",
+"suplentes": [
+{
+"n": "Eusebia Nevado Hinojosas"
+},
+{
+"n": "Juan Salvador Caballero Espinosa"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Raúl Dalmacio Valero Mejía",
+"suplentes": [
+{
+"n": "Aurora Galisteo Gámiz"
+},
+{
+"n": "Alberto Lara Fonseca"
+}
+]
+},
+{
+"n": "Rosa María Romero Sánchez",
+"suplentes": [
+{
+"n": "José Luis Montalvo Ropero"
+},
+{
+"n": "Eloísa Perales López"
+}
+]
+},
+{
+"n": "Leopoldo Jerónimo Sierra Gallardo",
+"suplentes": [
+{
+"n": "Rebeca Sánchez Maroto Sánchez Migallón"
+},
+{
+"n": "Adrián Fernández Herguido"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Jesús Felipe Sánchez Crespo Ruiz Del Moral",
+"suplentes": [
+{
+"n": "Patricia Saldaña Moya"
+},
+{
+"n": "Luis Juan Blázquez García-Valenzuela"
+}
+]
+},
+{
+"n": "María Elena Villahermosa Molinero",
+"suplentes": [
+{
+"n": "Víctor Martín Cazallas"
+},
+{
+"n": "María del Prado García Sáinz"
+}
+]
+},
+{
+"n": "Félix Canal Calderón",
+"suplentes": [
+{
+"n": "Dolores González López"
+},
+{
+"n": "David José Silvestre Piñeiro"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Rosa Melchor Quiralte",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Pedro Antonio Palomo Mata",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Manuela Escudero Amazares",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Pedro César Mellado Moreno",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Yasenca Jiménez Moreno",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Mario Ángel Martín",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "María del Carmen Ballesteros Vélez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Rafael Rivas Rincón",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Almudena Moya Sánchez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+}
+]
+}
+],
+"cordoba": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Juan Moreno Luque",
+"suplentes": [
+{
+"n": "Luisa María Venteo Díaz"
+},
+{
+"n": "José María Talavera Núñez"
+}
+]
+},
+{
+"n": "Ana Isabel Martín Buendía",
+"suplentes": [
+{
+"n": "José María Valero Obrero"
+},
+{
+"n": "Patricia Carrascal Rivera"
+}
+]
+},
+{
+"n": "Juan Antonio Durán García",
+"suplentes": [
+{
+"n": "Nuria Mateos Cobacho"
+},
+{
+"n": "Jorge Fernández Vidal"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Pablo Manuel Fernández Guerrero",
+"suplentes": [
+{
+"n": "África Guzmán Arnedo"
+},
+{
+"n": "Carlos García Jiménez"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS JONS",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Miguel Cano Molina",
+"suplentes": [
+{
+"n": "Ana María Naranjo de Miguel"
+},
+{
+"n": "Gonzalo Martínez de la Haba"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Salvador Fuentes Lopera",
+"suplentes": [
+{
+"n": "María Antonia Aguilar Ríder"
+},
+{
+"n": "Juan José Castro Dorado"
+}
+]
+},
+{
+"n": "María Dolores Blanco López",
+"suplentes": [
+{
+"n": "Jorge Jiménez Aguilar"
+},
+{
+"n": "Celia Valverde González"
+}
+]
+},
+{
+"n": "Florentino Santos Porras",
+"suplentes": [
+{
+"n": "María José Tejada Jiménez"
+},
+{
+"n": "Rafael García Garrido"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Rafaela Crespín Rubio",
+"suplentes": [
+{
+"n": "José González Arenas"
+},
+{
+"n": "Ana Cruz Roldán"
+}
+]
+},
+{
+"n": "Óscar Urralburu Arza",
+"suplentes": [
+{
+"n": "María Luisa Rodas Muñoz"
+},
+{
+"n": "Miguel Ángel Peña Muñoz"
+}
+]
+},
+{
+"n": "Ana María López Losilla",
+"suplentes": [
+{
+"n": "Juan Manuel Poyato Cuenca"
+},
+{
+"n": "Manuela Jiménez Villar"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Francisco Manuel (Franky) López Morales",
+"suplentes": [
+{
+"n": "Rosario Gastón Rufaco"
+},
+{
+"n": "Iván Fernández Olivares"
+}
+]
+},
+{
+"n": "Nazareth López Muñoz",
+"suplentes": [
+{
+"n": "José Luis Aires Cabezas"
+},
+{
+"n": "Iratxe Fernández Olivares"
+}
+]
+},
+{
+"n": "Santiago Martínez Fernández",
+"suplentes": [
+{
+"n": "Almudena Villaverde González"
+},
+{
+"n": "César Alberto Plaza Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Miguel Antonio Gómez de la Rosa Aranda",
+"suplentes": [
+{
+"n": "Isabel María Carracedo López"
+},
+{
+"n": "Luis Rabadán Gallardo"
+}
+]
+},
+{
+"n": "Luisa Ángela Plata Requena",
+"suplentes": [
+{
+"n": "Manuel Antonio Chamber Flores"
+},
+{
+"n": "Rocío Barrera Ibáñez"
+}
+]
+},
+{
+"n": "Salvador Vacas Reyes",
+"suplentes": [
+{
+"n": "Almudena Concepción Aguilar Criado"
+},
+{
+"n": "José Manuel Romero Rojano"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "María del Mar Díaz Polonio",
+"suplentes": [
+{
+"n": "Miguel Lozano Díaz"
+},
+{
+"n": "Lorena Garrido Hidalgo"
+}
+]
+},
+{
+"n": "Francisco Infante Lisarte",
+"suplentes": [
+{
+"n": "Andrea Garrido Hidalgo"
+},
+{
+"n": "Iván Infante Díaz"
+}
+]
+},
+{
+"n": "María Lourdes Bellido Garrido",
+"suplentes": [
+{
+"n": "Antonio Jurado Checa"
+},
+{
+"n": "María Dolores Díaz Polonio"
+}
+]
+}
+]
+}
+]
+}
+],
+"cuenca": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Daniel Pérez Osma",
+"suplentes": [
+{
+"n": "María Amparo Girón Mota"
+},
+{
+"n": "David Valverde Recuenco"
+}
+]
+},
+{
+"n": "María Jesús Bonilla Domínguez",
+"suplentes": [
+{
+"n": "Nicolás Martínez Villar Del Saz"
+},
+{
+"n": "Irene Cabrera Rodríguez"
+}
+]
+},
+{
+"n": "Alejo Joaquín Miranda De Larra Arnaiz",
+"suplentes": [
+{
+"n": "María Peñarrubia Bañón"
+},
+{
+"n": "Samuel Mondéjar Morales"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José López Carrizo",
+"nota": "SDP (PSOE, IU, MS)",
+"suplentes": [
+{
+"n": "Monserrat Poyatos Moreno",
+"nota": "SDP(PSOE, IU, MS)"
+},
+{
+"n": "Vicente Leonardo Alarcón Cebrián",
+"nota": "SDP(PSOE, IU, MS)"
+}
+]
+},
+{
+"n": "Lorena Gallego García",
+"nota": "SDP(PSOE, IU, MS)",
+"suplentes": [
+{
+"n": "Jacobo Medianero Millán",
+"nota": "SDP(PSOE, IU, MS)"
+},
+{
+"n": "Mercedes Ruiz Martínez",
+"nota": "SDP (PSOE, IU, MS)"
+}
+]
+},
+{
+"n": "Emilio José Osma Marchante",
+"nota": "SDP (PSOE, IU, MS)",
+"suplentes": [
+{
+"n": "Esther Blanco Huete",
+"nota": "SDP(PSOE, IU, MS)"
+},
+{
+"n": "Joaquín Cuadrado Ortiz",
+"nota": "SDP(PSOE, IU, MS)"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Luis Guillermo Ortega Blanco",
+"suplentes": [
+{
+"n": "Iris Zarzuela Martínez"
+},
+{
+"n": "José María Ignacio Huerta Eguíluz"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Juan García Callejas",
+"suplentes": [
+{
+"n": "María Salomé Arricibita Antoñanzas"
+},
+{
+"n": "José Andrés Cobos Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Teresa María Navarro Zamora",
+"suplentes": [
+{
+"n": "José María Mínguez García"
+},
+{
+"n": "María Ángeles García Jiménez"
+}
+]
+},
+{
+"n": "Andrés Fernández Ruiz",
+"suplentes": [
+{
+"n": "Olga Díaz Cano"
+},
+{
+"n": "Francisco José Torrecillas Fernández"
+}
+]
+},
+{
+"n": "María Luisa Ruiz Granero",
+"suplentes": [
+{
+"n": "Leonardo Poyatos Calle"
+},
+{
+"n": "Ángela Santos Bravo"
+}
+]
+}
+]
+}
+]
+}
+],
+"gipuzkoa": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA",
+"siglas": "EH BILDU-ERC",
+"candidatos": [
+{
+"n": "Sonia Jacinto Garcia",
+"suplentes": [
+{
+"n": "Gilen Garcia Boyra"
+},
+{
+"n": "Lore Agirre Zipitria"
+}
+]
+},
+{
+"n": "Mario Zubiaga Garate",
+"suplentes": [
+{
+"n": "Estitxu Elduaien Uranga"
+},
+{
+"n": "Jon Zulueta Berastegi"
+}
+]
+},
+{
+"n": "Olaia Duarte Lopez",
+"suplentes": [
+{
+"n": "Beñat Lusarreta Ezkurdia"
+},
+{
+"n": "Eneritz Maiz Etxarri"
+}
+]
+}
+]
+},
+{
+"nombre": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+"siglas": "EAJ-PNV",
+"candidatos": [
+{
+"n": "Luke Uribe-Etxebarria Apalategi",
+"suplentes": [
+{
+"n": "Elena Lete García"
+},
+{
+"n": "Xabier Zabala Zeberio"
+}
+]
+},
+{
+"n": "María Victoria «Bittori» Zabala Fernández",
+"suplentes": [
+{
+"n": "Iker Laka Barandika"
+},
+{
+"n": "Garbiñe Mendizabal Mendizabal"
+}
+]
+},
+{
+"n": "Xabier Insausti Sarasola",
+"suplentes": [
+{
+"n": "Miren Elixabet «Eli» Huegun Arruabarrena"
+},
+{
+"n": "Jon Olano Arrese"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Susana Pérez Benito",
+"suplentes": [
+{
+"n": "Alfonso Pérez Hernández"
+},
+{
+"n": "Ainhoa Díez Hernández"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Adriana Martínez De Lizarduy Ayala",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Xabier Aperribay Carrascal",
+"nota": "Independiente"
+},
+{
+"n": "Rosa María Martín Vicente",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Diego Cea Maudo",
+"suplentes": [
+{
+"n": "María Montserrat Vidales Moreno",
+"nota": "Independiente"
+},
+{
+"n": "Pedro Igarzabal Arratibel",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Yolanda Martín Marcos",
+"suplentes": [
+{
+"n": "Jose Luis Gallego Romero"
+},
+{
+"n": "Jaione Aristregi Cao"
+}
+]
+},
+{
+"n": "Iñigo Oliberos Bruneton",
+"suplentes": [
+{
+"n": "Thania Pazos Gonzalo"
+},
+{
+"n": "Evaristo Rodríguez Rábano"
+}
+]
+},
+{
+"n": "Gloria Miguel González",
+"suplentes": [
+{
+"n": "Jose María (Pepe) Iparraguirre Balda"
+},
+{
+"n": "María del Carmen Salido Sierra"
+}
+]
+}
+]
+},
+{
+"nombre": "EUSKADIKO LANGILEEN ALDERDI KOMUNISTA/PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI",
+"siglas": "ELAK/PCTE",
+"candidatos": [
+{
+"n": "Jakes Iñarra Lasagabaster",
+"suplentes": [
+{
+"n": "Ana Teresa Vidaurrazaga Urbieta"
+},
+{
+"n": "Jonathan González Martín"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO/AURRERA DOAN SENATUA SDP",
+"siglas": "PSOE-EZAN IU-MS",
+"candidatos": [
+{
+"n": "Alberto Albistegui Zamacola",
+"suplentes": [
+{
+"n": "Duñike Agirrezabalaga Ugarte"
+},
+{
+"n": "Sergio Esarte Torras"
+}
+]
+},
+{
+"n": "Samira Raiss Boufarcha",
+"suplentes": [
+{
+"n": "Alejandro del Pozo Mate"
+},
+{
+"n": "María Aránzazu González García"
+}
+]
+},
+{
+"n": "Iñigo García Villanueva",
+"suplentes": [
+{
+"n": "Ana Priede Merchán"
+},
+{
+"n": "Santiago Sánchez Román"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Andrés Paramio Junquera",
+"suplentes": [
+{
+"n": "María Zarucka Dulysh"
+},
+{
+"n": "Diego Ignacio Artola Luzuriaga"
+}
+]
+},
+{
+"n": "Alejandra Moreno Miguel",
+"suplentes": [
+{
+"n": "Jesús Vicente Marco Martínez"
+},
+{
+"n": "Nerea Astigarraga Gaztelo"
+}
+]
+},
+{
+"n": "Jesús María García-Conde del Castillo",
+"suplentes": [
+{
+"n": "María Montserrat Moza Sánchez"
+},
+{
+"n": "Antonio Lourido González"
+}
+]
+}
+]
+}
+]
+}
+],
+"girona": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+"siglas": "PSC",
+"candidatos": [
+{
+"n": "Gael Rodríguez Garrido",
+"suplentes": [
+{
+"n": "Sílvia Barris Roca"
+},
+{
+"n": "Alfonso Jesús Martínez Puig"
+}
+]
+},
+{
+"n": "Consol Cantenys Arbolí",
+"suplentes": [
+{
+"n": "Miguel Ángel Muñoz Sánchez"
+},
+{
+"n": "Pilar Argelina Fors"
+}
+]
+},
+{
+"n": "Moisès Tomàs Alcobé",
+"suplentes": [
+{
+"n": "Marina Ramió Suñer"
+},
+{
+"n": "Samuel Rodríguez Deza"
+}
+]
+}
+]
+},
+{
+"nombre": "JUNTS PER CATALUNYA",
+"siglas": "JxCat",
+"candidatos": [
+{
+"n": "Joan Bagué i Roura",
+"suplentes": [
+{
+"n": "Montsina Llimós i Casaponsa"
+},
+{
+"n": "Francesc Xavier Ten i Costa"
+}
+]
+},
+{
+"n": "Júlia Barceló i Puig",
+"suplentes": [
+{
+"n": "Ignasi Gubert i Roure"
+},
+{
+"n": "Maria Neus Serra i Bosch"
+}
+]
+},
+{
+"n": "Pau Taberner i Pibernat",
+"suplentes": [
+{
+"n": "Pilar Arxé i Fonalleras"
+},
+{
+"n": "Josep Antoni Esteve i Climent"
+}
+]
+}
+]
+},
+{
+"nombre": "ESQUERRA REPUBLICANA DE CATALUNYA-EUSKAL HERRIA BILDU",
+"siglas": "ERC-EH BILDU",
+"candidatos": [
+{
+"n": "Etna Estrems Fayos",
+"nota": "ERC-EH BILDU",
+"suplentes": [
+{
+"n": "Albert Sanz Gonzàlez",
+"nota": "ERC-EH BILDU"
+},
+{
+"n": "Carla Andreu Pujadas",
+"nota": "ERC-EH BILDU"
+}
+]
+},
+{
+"n": "Miquel Reverter Tres",
+"nota": "ERC-EH BILDU",
+"suplentes": [
+{
+"n": "Lídia Àvila Medina",
+"nota": "ERC-EH BILDU"
+},
+{
+"n": "Jordi Vilà Vilà",
+"nota": "ERC-EH BILDU"
+}
+]
+},
+{
+"n": "Roser Carré Gonzàlez",
+"nota": "ERC-EH BILDU",
+"suplentes": [
+{
+"n": "Ferran Camps Campos",
+"nota": "ERC-EH BILDU"
+},
+{
+"n": "Carme Viñas Benítez",
+"nota": "ERC-EH BILDU"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+"siglas": "PCTC",
+"candidatos": [
+{
+"n": "Bernat Roig Arnau",
+"suplentes": [
+{
+"n": "Ana Abad Sáncez"
+},
+{
+"n": "Aznar León Palacios"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Francisco Javier Domínguez García",
+"suplentes": [
+{
+"n": "Raquel Mercedes González Ortega"
+},
+{
+"n": "Bartolomé Lopera Castro"
+}
+]
+},
+{
+"n": "María Carmen Comas Viladot",
+"suplentes": [
+{
+"n": "Carlos Pérez Solsona"
+},
+{
+"n": "María Carmen Herrera López"
+}
+]
+},
+{
+"n": "Gerónimo Vargas Henao",
+"suplentes": [
+{
+"n": "Ana María Catalán Martínez"
+},
+{
+"n": "Josep Planella Estartus"
+}
+]
+}
+]
+}
+]
+}
+],
+"granada": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Verónica Correa Dominguez",
+"suplentes": [
+{
+"n": "Roberto César Rodríguez Rubí"
+},
+{
+"n": "María Ester Jaimez Conde"
+}
+]
+},
+{
+"n": "Manuel Alejandro García Cepero",
+"suplentes": [
+{
+"n": "Andrea Moreno Rodríguez"
+},
+{
+"n": "José Antonio Folgoso Pérez"
+}
+]
+},
+{
+"n": "Lourdes Hidalgo Ramos",
+"suplentes": [
+{
+"n": "Alberto Gil Mora"
+},
+{
+"n": "María de los Ángeles Reyes González"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Luis Ángel Amores Roldán",
+"suplentes": [
+{
+"n": "María Matilde Solana Rivas"
+},
+{
+"n": "Martín Adriano Barrena Caamaño"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Carmen Martín Rubiño",
+"suplentes": [
+{
+"n": "Manuel Ávila Cazorla"
+},
+{
+"n": "Mariana Lorena Sambade Zumoffen"
+}
+]
+},
+{
+"n": "Francisco Javier Matías Reche",
+"suplentes": [
+{
+"n": "María Raquel Torres Carretero"
+},
+{
+"n": "Antonio Del Río Fernández"
+}
+]
+},
+{
+"n": "Cristina Del Río Alonso",
+"suplentes": [
+{
+"n": "Abraham Massri Pérez"
+},
+{
+"n": "Teresa Ruth Soledispa Calderón"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Luís Antonio Rodríguez Huertas",
+"suplentes": [
+{
+"n": "María Cristina Fernández Gómez"
+},
+{
+"n": "José Cobos Ruiz"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Carlos Rojas García",
+"suplentes": [
+{
+"n": "Cristina Marín Muñoz"
+},
+{
+"n": "José Ignacio Garrido López"
+}
+]
+},
+{
+"n": "María Eva Martín Pérez",
+"suplentes": [
+{
+"n": "Juan Francisco Gutiérrez Martínez"
+},
+{
+"n": "María Belén Rivas Pérez"
+}
+]
+},
+{
+"n": "Pablo Hispán Iglesias De Ussel",
+"suplentes": [
+{
+"n": "Mónica Castillo De La Rica"
+},
+{
+"n": "Eduardo Martín Quesada"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Beatriz Sánchez Agustino",
+"suplentes": [
+{
+"n": "Gustavo De Castro Sierra"
+},
+{
+"n": "María Josefa Navarro Alfambra"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Pedro Fernández Peñalver",
+"nota": "SDP(PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Ángeles Jiménez Martín",
+"nota": "SDP(PSOE-IU-MS)"
+},
+{
+"n": "Marco Antonio Pérez Mazuecos",
+"nota": "SDP(PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "María Carmen Pérez Rodríguez",
+"nota": "SDP(PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Pablo Laguna Sánchez",
+"nota": "SDP(PSOE-IU-MS)"
+},
+{
+"n": "María Ortega Castilla",
+"nota": "SDP(PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "José Antonio Montilla Martos",
+"nota": "SDP(PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "María Belén Castillo Blasco",
+"nota": "SDP(PSOE-IU-MS)"
+},
+{
+"n": "Juan José Ibáñez Martínez",
+"nota": "SDP(PSOE-IU-MS)"
+}
+]
+}
+]
+}
+]
+}
+],
+"guadalajara": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Alejandro Sanz Gregorio",
+"suplentes": [
+{
+"n": "Andrea Pol Hernández"
+},
+{
+"n": "Fernando Vázquez Garrido"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Víctor Juan Morejón Vitón",
+"suplentes": [
+{
+"n": "Patricia Sánchez-Seco Díaz"
+},
+{
+"n": "Rubén Marchamalo Almazán"
+}
+]
+},
+{
+"n": "Ana Isabel Perucho Prieto",
+"suplentes": [
+{
+"n": "Alfredo Javier de Francisco López"
+},
+{
+"n": "Sandra del Saz Cadalso"
+}
+]
+},
+{
+"n": "Juan Antonio Pérez Borda",
+"suplentes": [
+{
+"n": "Olga González Ramírez"
+},
+{
+"n": "Enrique de Prada Rodríguez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María Luisa Martínez Gobantes",
+"suplentes": [
+{
+"n": "Rodrigo Méndez Francisco"
+},
+{
+"n": "Victoria Eugenia Álvarez Ramiro"
+}
+]
+},
+{
+"n": "Luis Fernando Hernández Escudero",
+"suplentes": [
+{
+"n": "Rosa Isabel Losada Rincón"
+},
+{
+"n": "Francisco Javier Martínez Luis"
+}
+]
+},
+{
+"n": "Katia Isabel Ruiz Jodra",
+"suplentes": [
+{
+"n": "Francisco Javier Madrazo Pico"
+},
+{
+"n": "Marta Calderón de Torres"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Lucas Castillo Rodríguez",
+"suplentes": [
+{
+"n": "María Concepción Casado Herranz"
+},
+{
+"n": "Carlos Largo Alcón"
+}
+]
+},
+{
+"n": "María Patricio Zafra",
+"suplentes": [
+{
+"n": "Francisco Javier López Lorenzo"
+},
+{
+"n": "Cristina Martínez Pérez"
+}
+]
+},
+{
+"n": "Antonio Román Jasanada",
+"suplentes": [
+{
+"n": "María Montserrat Rivas de la Torre"
+},
+{
+"n": "Borja Terrón Masoko"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Gregorio Valdepeñas Díaz-Tendero",
+"suplentes": [
+{
+"n": "María Encarnación Botía López"
+},
+{
+"n": "Enrique Gavilán Pimentel"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Rafael Esteban Santamaría",
+"suplentes": [
+{
+"n": "María Luisa Alba Hervias"
+},
+{
+"n": "Eduardo Losa López"
+}
+]
+},
+{
+"n": "María del Mar González Báez",
+"suplentes": [
+{
+"n": "Michaël Blanchard Barbosa"
+},
+{
+"n": "Paz Serra Portilla"
+}
+]
+},
+{
+"n": "Daniel Jiménez Díaz",
+"suplentes": [
+{
+"n": "María de los Ángeles Moreno Sánchez"
+},
+{
+"n": "Vladimiro Pastor Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Hermes González González",
+"suplentes": [
+{
+"n": "Sara Astorga Villa"
+},
+{
+"n": "Juan Antonio Muñoz Adalia"
+}
+]
+}
+]
+}
+]
+}
+],
+"huelva": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Juana María Fernández Mora",
+"suplentes": [
+{
+"n": "Roberto Sena Mata"
+},
+{
+"n": "Cristina López Martín"
+}
+]
+},
+{
+"n": "Rafael José Vélez Aibar",
+"suplentes": [
+{
+"n": "Silvia Gómez Rodríguez"
+},
+{
+"n": "José Antonio Rincón Valenzuela"
+}
+]
+},
+{
+"n": "Rosa Elizabeth Tortosa Alonso",
+"suplentes": [
+{
+"n": "Javier Jesús Beltrán Castaño"
+},
+{
+"n": "Almudena Monroy Silvera"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "María Eugenia Limón Bayo",
+"suplentes": [
+{
+"n": "Antonio Jesús Cazorla García"
+},
+{
+"n": "Manuela Bravo Mogedas"
+}
+]
+},
+{
+"n": "Pablo Valdera Pérez",
+"suplentes": [
+{
+"n": "María Rocío Cárdenas Fernández"
+},
+{
+"n": "Diego Carrasco Caballero"
+}
+]
+},
+{
+"n": "Mónica Rossi Palomar",
+"suplentes": [
+{
+"n": "Marcos Toti García Núñez"
+},
+{
+"n": "Isabel María Salas Martín"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Marcos Villalba Ayelo",
+"suplentes": [
+{
+"n": "María Isabel Sánchez Domínguez"
+},
+{
+"n": "César Montiel Moragues"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Manuel Alberto Fernández Rodríguez",
+"suplentes": [
+{
+"n": "Cristina Romero Sancha"
+},
+{
+"n": "Máximo Valdivia Salas"
+}
+]
+},
+{
+"n": "Bella Verano Domínguez",
+"suplentes": [
+{
+"n": "Carmelo Romero Hernández"
+},
+{
+"n": "Begoña Limón Macías"
+}
+]
+},
+{
+"n": "Juan Manuel González Camacho",
+"suplentes": [
+{
+"n": "Susana Duque Mora"
+},
+{
+"n": "Manuel Jesús Prudencio Márquez"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Carlos Bermejo Martins",
+"suplentes": [
+{
+"n": "María Jésica Longo López"
+},
+{
+"n": "Gustavo Ignacio Arduán Galdames"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Carmen Borrero Martín",
+"suplentes": [
+{
+"n": "Ángel Ruiz Medina"
+},
+{
+"n": "Cristina Escobar Cárdenas"
+}
+]
+},
+{
+"n": "José Luis Borrero Martín",
+"suplentes": [
+{
+"n": "Julia Feria González"
+},
+{
+"n": "Toni Álvarez Martín"
+}
+]
+},
+{
+"n": "Esperanza Delgado Villalba",
+"suplentes": [
+{
+"n": "David Labrador Romero"
+},
+{
+"n": "Alicia María Mateos Gómez"
+}
+]
+}
+]
+}
+]
+}
+],
+"huesca": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Juán Atrián Garcés",
+"suplentes": [
+{
+"n": "Natalia Ferrer García",
+"nota": "Independiente"
+},
+{
+"n": "Óscar Luis Buñuel Caudevilla"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Rocio Castillo Molero",
+"suplentes": [
+{
+"n": "Alberto Estepa Milla"
+},
+{
+"n": "Alba Castillo Molero"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO DE ARAGÓN",
+"siglas": "SENADO DE PROGRESO DE ARAGÓN",
+"candidatos": [
+{
+"n": "Tania Solans Raluy",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Manuel Díez Casas",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Lucía Pérez Corvinos",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Rubén Cabañas Aranda",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Blasco Martín",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Daniel Yoldi Muniay",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Lorena Cajal Escartín",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Francisco José Santolaria Alastrue",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Sonia Labrador Benedicto",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Manuel Souto Hernández",
+"suplentes": [
+{
+"n": "Carmen Margarita Ramos Martínez"
+},
+{
+"n": "Carlos Aísa Redondo"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Ana Delgado Molina",
+"suplentes": [
+{
+"n": "Leonardo Fabián Ravinale Tarántola"
+},
+{
+"n": "Magdalena Bischoff Jancovich"
+}
+]
+},
+{
+"n": "Jose Felix Embid Fernández",
+"suplentes": [
+{
+"n": "Natalia Bodelón Ferreiro"
+},
+{
+"n": "Josep Maria MasMiquel Cullell"
+}
+]
+},
+{
+"n": "Paola Gentile Etchimendi",
+"suplentes": [
+{
+"n": "Sergi Gómez Planella"
+},
+{
+"n": "María Mabel Sainz Zanou"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Melania Mur Sangra",
+"suplentes": [
+{
+"n": "Adrián Lafarga Hombrados"
+},
+{
+"n": "Celsa Ana Rufas Acín"
+}
+]
+},
+{
+"n": "José Antonio Lagüens Martín",
+"suplentes": [
+{
+"n": "Silvia Garcés Castillo"
+},
+{
+"n": "Valeriano Terra Arroyos"
+}
+]
+},
+{
+"n": "Blanca Mónica Galindo Sanz",
+"suplentes": [
+{
+"n": "Álvaro Domec López"
+},
+{
+"n": "Elena Ventura Sanromán"
+}
+]
+}
+]
+},
+{
+"nombre": "FEDERACION DE LOS INDEPENDIENTES DE ARAGON",
+"siglas": "FIA",
+"candidatos": [
+{
+"n": "Juan Carlos Isábal Ferrer",
+"suplentes": [
+{
+"n": "Fatoumata Tounkara Fofana"
+},
+{
+"n": "César Guardía Contreras"
+}
+]
+},
+{
+"n": "María José Castejón Trigo",
+"suplentes": [
+{
+"n": "Eduardo Abad Torres"
+},
+{
+"n": "María Teresa Torres Lerín"
+}
+]
+},
+{
+"n": "Gonzalo José Lorenzo García",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Marta Abad Torres"
+},
+{
+"n": "Héctor Beguería Igual"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "María Lorena García López",
+"suplentes": [
+{
+"n": "Francisco Casarrubio de la Rubia"
+},
+{
+"n": "María Jesús Montañés Machío"
+}
+]
+}
+]
+}
+]
+}
+],
+"illes-balears": [
+{
+"isla": "Mallorca",
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Agustín Gálvez Martínez",
+"suplentes": [
+{
+"n": "Alba Mompo Bellver"
+},
+{
+"n": "David Cardell Quintana"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Sebastià Sagreras Ballester",
+"suplentes": [
+{
+"n": "Catalina Cirer Adrover"
+},
+{
+"n": "Jaime Antonio Bujosa Arbona"
+}
+]
+},
+{
+"n": "María Belén Bordils Girona",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Jordi Aguiló Vendrell",
+"nota": "Independiente"
+},
+{
+"n": "Nerea García Serrano",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "ACORD DE PROGRÉS PER MALLORCA",
+"siglas": "PSIB-PSOE-MÉS PER MALLORCA-SUMAR-EUIB",
+"candidatos": [
+{
+"n": "Catalina Cladera Crespí",
+"suplentes": [
+{
+"n": "Joaquim Torres Artigues"
+},
+{
+"n": "Beatriz Gamundí Molina"
+}
+]
+},
+{
+"n": "Francisco José González Paredes",
+"suplentes": [
+{
+"n": "Rosa Cursach Salas"
+},
+{
+"n": "Víctor Manuel Robles Román"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "Menorca",
+"listas": [
+{
+"nombre": "MENORCA AL SENAT",
+"siglas": "PSOE-MÉS PER MENORCA-EM-EU-PODEMOS",
+"candidatos": [
+{
+"n": "Joana María Barceló Martí",
+"suplentes": [
+{
+"n": "Joan Albert Pons Bagur"
+},
+{
+"n": "Rosa Palliser Riudavets"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Ramón Sintes Villalonga",
+"suplentes": [
+{
+"n": "Carmen Reynés Calvache"
+},
+{
+"n": "Alfonso Toral Melis"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "Ibiza",
+"listas": [
+{
+"nombre": "EIVISSA AL SENAT",
+"siglas": "PSOE-SUMAR-EUIB-ARA EIVISSA-PODEM",
+"candidatos": [
+{
+"n": "Juanjo Ferrer Martínez",
+"suplentes": [
+{
+"n": "María de los Ángeles Suárez Ferreiro"
+},
+{
+"n": "Alberto Marí Planells"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "María del Carmen Ferrer Torres",
+"suplentes": [
+{
+"n": "Francisco Javier Marí Álvarez"
+},
+{
+"n": "Neus Mateu Roselló"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "Formentera",
+"listas": [
+{
+"nombre": "FORMENTERA AL SENAT",
+"siglas": "PSOE-GxF-M.SUMAR",
+"candidatos": [
+{
+"n": "Neus Massanet Florit",
+"suplentes": [
+{
+"n": "José Marí Mayans"
+},
+{
+"n": "Ana Juan Torres"
+}
+]
+}
+]
+},
+{
+"nombre": "Formentera Viva",
+"siglas": "FV",
+"candidatos": [
+{
+"n": "Lorenzo Córdoba Marí",
+"suplentes": [
+{
+"n": "Ana Vanessa Moreno García"
+},
+{
+"n": "Francisco Herraiz Casas"
+}
+]
+}
+]
+},
+{
+"nombre": "SA UNIÓ DE FORMENTERA (PP-COMPROMÍS)",
+"siglas": "SA UNIÓ",
+"candidatos": [
+{
+"n": "Vicente Tur Costa",
+"suplentes": [
+{
+"n": "Carolina Tur Torres"
+},
+{
+"n": "Hugo Martínez Bermúdez"
+}
+]
+}
+]
+}
+]
+}
+],
+"jaen": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Alejandro Braulio Cabrera Cabrera",
+"suplentes": [
+{
+"n": "Yolanda Fernández Pérez"
+},
+{
+"n": "Alberto González Rosa"
+}
+]
+},
+{
+"n": "Inés María Gila León",
+"suplentes": [
+{
+"n": "Ricardo Fermín Camacho Díaz"
+},
+{
+"n": "María de las Mercedes Romero López"
+}
+]
+},
+{
+"n": "José Ángel Vega Vico",
+"suplentes": [
+{
+"n": "Encarnación Puig Mena"
+},
+{
+"n": "Manuel Del Moral Mena"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José Latorre Ruiz",
+"nota": "COALICIÓN SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María del Rosario Cano Peña",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+},
+{
+"n": "Jesús Cobo Parra",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Laura Cerezuela Expósito",
+"nota": "COALICIÓN SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Francisco José López Ruano",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+},
+{
+"n": "Roberta Granadino Alcántara",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Luis Romero Rubio",
+"nota": "COALICIÓN SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Rosario Miras Martínez",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+},
+{
+"n": "Alberto Garrido Aibar",
+"nota": "COALICIÓN SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Francisca Sánchez Alba",
+"suplentes": [
+{
+"n": "Óscar Pando Frías"
+},
+{
+"n": "Encarnación Aguayo Tello"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Juan Diego Requena Ruiz",
+"suplentes": [
+{
+"n": "Rocío Beltrán Valcárcel"
+},
+{
+"n": "Francisco Javier Bermúdez Carrillo"
+}
+]
+},
+{
+"n": "Encarnación Bienvenida Castro Cano",
+"suplentes": [
+{
+"n": "Francisco Carmona Limón"
+},
+{
+"n": "Ana María Guzmán Cano"
+}
+]
+},
+{
+"n": "Francisco Javier Márquez Sánchez",
+"suplentes": [
+{
+"n": "María del Mar Dávila Jiménez"
+},
+{
+"n": "Juan Ruiz Raez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Ángela Checa Cazalla",
+"suplentes": [
+{
+"n": "Francisco López Megías"
+},
+{
+"n": "María Dolores Ginel Jiménez"
+}
+]
+},
+{
+"n": "Jerónimo Muñoz Calzado",
+"suplentes": [
+{
+"n": "Antonia López López"
+},
+{
+"n": "Rafael Bayona Justicia"
+}
+]
+},
+{
+"n": "María Isabel Soriano Puyana",
+"suplentes": [
+{
+"n": "Santiago Jesús Bayona Marín"
+},
+{
+"n": "Inmaculada López Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Raquel Puentes Poyatos",
+"suplentes": [
+{
+"n": "Salvador Caño Molina",
+"nota": "Independiente"
+},
+{
+"n": "Aurora Raez Trillo"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Santiago Otero Martínez",
+"suplentes": [
+{
+"n": "Eva del Cura Marín"
+},
+{
+"n": "Oskar San José Acosta"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Francisco Ruiz Cortés",
+"suplentes": [
+{
+"n": "Catalina Fernández Bascuñana"
+},
+{
+"n": "José Luis Jiménez Laínez"
+}
+]
+}
+]
+}
+]
+}
+],
+"la-rioja": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Lucía Antoñanzas Gil",
+"suplentes": []
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO SDP",
+"siglas": "PSOE-IU-MS",
+"candidatos": [
+{
+"n": "Concepción Andreu Rodríguez",
+"suplentes": [
+{
+"n": "Pedro Antonio Montalvo Iñigo"
+},
+{
+"n": "Coral Pérez Muñoz"
+}
+]
+},
+{
+"n": "Diego Mendiola García",
+"suplentes": [
+{
+"n": "Henar Moreno Martínez"
+},
+{
+"n": "Álvaro Villar Calvo"
+}
+]
+},
+{
+"n": "Lidia Ascacibar Rodríguez",
+"suplentes": [
+{
+"n": "Pedro Luis Fernández Cuenca"
+},
+{
+"n": "Amparo Bermejo González"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Juan Miguel Calvo García",
+"suplentes": [
+{
+"n": "Susana Redondo Robles"
+},
+{
+"n": "Miguel Castrejón García"
+}
+]
+},
+{
+"n": "Mónica Solana Abad",
+"suplentes": [
+{
+"n": "José Murillo Torrero"
+},
+{
+"n": "Soraida del Carmen Santander Olarte"
+}
+]
+},
+{
+"n": "Victorino Pablo Pascual",
+"suplentes": [
+{
+"n": "María Luisa Úbeda Expósito"
+},
+{
+"n": "Mariano Somoza Toribio"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Luis Emilio Mayoral Corcuera",
+"suplentes": [
+{
+"n": "Hilda Cárdenas Díaz"
+},
+{
+"n": "Juan Ignacio Aquesolo García"
+}
+]
+},
+{
+"n": "Jésica Fernández Villoslada",
+"suplentes": [
+{
+"n": "Saúl Bastida Somovilla"
+},
+{
+"n": "Paula Manso Camarena"
+}
+]
+},
+{
+"n": "Eduardo Garrido Marzo",
+"suplentes": [
+{
+"n": "Sagrario Eloísa Gil García"
+},
+{
+"n": "Eros Seral Santamaría"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Javier Merino Martínez",
+"suplentes": [
+{
+"n": "Encarnación Fuertes Reboiro"
+},
+{
+"n": "Rubén Moreno San Casimiro"
+}
+]
+},
+{
+"n": "María del Mar San Martín Ibarra",
+"suplentes": [
+{
+"n": "Mario Nafría Matas"
+},
+{
+"n": "Mónica Moreno Campo"
+}
+]
+},
+{
+"n": "Carlos Yécora Roca",
+"suplentes": [
+{
+"n": "María Asunción Sáez Arnedo"
+},
+{
+"n": "César Buezo Urrecho"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACIOS",
+"siglas": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACIOS",
+"candidatos": [
+{
+"n": "María del Carmen Andrés Domínguez",
+"suplentes": [
+{
+"n": "Pablo Barrio Alonso"
+},
+{
+"n": "Tania Sánchez Andrés"
+}
+]
+},
+{
+"n": "Manuel Sánchez Aguarón",
+"suplentes": [
+{
+"n": "Ángela Caparrós Caparrós"
+},
+{
+"n": "Luca Fernández Pisón"
+}
+]
+},
+{
+"n": "Encarnación Villalba Ale",
+"suplentes": [
+{
+"n": "José Carlos Palacios Miguel"
+},
+{
+"n": "Nerea Etxezarreta Ruíz"
+}
+]
+}
+]
+}
+]
+}
+],
+"las-palmas": [
+{
+"isla": "Fuerteventura",
+"listas": [
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Paloma Hernández Cerezo",
+"suplentes": [
+{
+"n": "Víctor Modesto Alonso Falcón"
+},
+{
+"n": "Kathaisa Rodríguez Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "María Esther Hernández Marrero",
+"suplentes": [
+{
+"n": "Ignacio Solana Rodríguez"
+},
+{
+"n": "Gema Ibañez Ruíz"
+}
+]
+}
+]
+},
+{
+"nombre": "COALICIÓN CANARIA-MUNICIPALISTAS PRIMERO CANARIAS",
+"siglas": "CCa-1.ºCAN",
+"candidatos": [
+{
+"n": "Nuria Cabrera Méndez",
+"suplentes": [
+{
+"n": "José Benito Alonso Placeres"
+},
+{
+"n": "Guacimara de la Peña Sosa Hernández"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Rubén Reyes Gutiérrez",
+"suplentes": [
+{
+"n": "Sonia Betancor Rodríguez"
+},
+{
+"n": "Samuel Alberto González Sáez"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "Gran Canaria",
+"listas": [
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Juan Jesús Facundo Suárez",
+"suplentes": [
+{
+"n": "Azahara Sosa Delgado"
+},
+{
+"n": "Luis Zamorano Arantegui"
+}
+]
+},
+{
+"n": "Marta Jorgina Saavedra Domenech",
+"suplentes": [
+{
+"n": "Isaac Bolaños Betancor"
+},
+{
+"n": "Fabiola Begoña Sosa Reyes"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Carlos Alberto Sánchez Ojeda",
+"suplentes": [
+{
+"n": "Rosa Faustina Viera Fernández"
+},
+{
+"n": "Rayco Nauzet Padilla Cubas"
+}
+]
+},
+{
+"n": "Alba Moreno Santa",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Yeray Antonio Suárez Salem",
+"nota": "Independiente"
+},
+{
+"n": "María Cristina Aguado Cubero",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA",
+"siglas": "1.ºCAN-CCa",
+"candidatos": [
+{
+"n": "Elisabet Santana Rosales",
+"suplentes": [
+{
+"n": "Miguel Ángel Hernández Infantes"
+},
+{
+"n": "Sara Segura Quintana"
+}
+]
+},
+{
+"n": "Samuel Henríquez Quintana",
+"suplentes": [
+{
+"n": "Ingrid Navarro Armas"
+},
+{
+"n": "Faneque Javier Hernández Bautista"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MÁS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Javier Vázquez De La Torre Salinas",
+"suplentes": [
+{
+"n": "Idaira María González Betancor"
+},
+{
+"n": "Sergio López Casillas"
+}
+]
+},
+{
+"n": "Dora Alejandrina Benítez Rodríguez",
+"suplentes": [
+{
+"n": "Héctor Juan Pérez Hernández"
+},
+{
+"n": "Flora Gutiérrez Suárez"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Ana Gloria Sánchez Ruano",
+"suplentes": [
+{
+"n": "Agustín Jorge Arencibia Martín"
+},
+{
+"n": "Hiurma Castejón Suárez"
+}
+]
+},
+{
+"n": "Iván Santana López",
+"suplentes": [
+{
+"n": "Josefa Milán Padrón"
+},
+{
+"n": "Juan Manuel Gabella González"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "María Carmen Santana Benítez",
+"suplentes": [
+{
+"n": "Ignacio Llorente Igea"
+},
+{
+"n": "Dunia Carmen Sánchez Padrón"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+"siglas": "PCPC",
+"candidatos": [
+{
+"n": "Javier Delgado Pérez",
+"suplentes": [
+{
+"n": "Jesús Dolores Betancor Ojeda"
+},
+{
+"n": "Juan Samper Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Rubén Jiménez Ruiz",
+"suplentes": [
+{
+"n": "María Pilar Montesdeoca Felipe",
+"nota": "Independiente"
+},
+{
+"n": "Markel García Alcón"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "Lanzarote",
+"listas": [
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Francisco Manuel Fajardo Palarea",
+"suplentes": [
+{
+"n": "Sabina Inmaculada Vizcaíno Sicilia"
+},
+{
+"n": "Celestino José Socas Callero"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Francisco Hernández García",
+"suplentes": [
+{
+"n": "Maureen Margarita Meza Rieder"
+},
+{
+"n": "Víctor Manuel Duque Medrano"
+}
+]
+}
+]
+},
+{
+"nombre": "COALICIÓN CANARIA-MUNICIPALISTAS PRIMERO CANARIAS",
+"siglas": "CCa-1.ºCAN",
+"candidatos": [
+{
+"n": "Daisy Villalba Perdomo",
+"suplentes": [
+{
+"n": "Marciano Acuña Betancor"
+},
+{
+"n": "María Matilde Corujo Fontes"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Fernando María Jiménez García",
+"suplentes": [
+{
+"n": "María Zayda González Cedrés"
+},
+{
+"n": "Mamadou Niang Niang"
+}
+]
+}
+]
+}
+]
+}
+],
+"leon": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "María Begoña Fernández García",
+"suplentes": [
+{
+"n": "Francisco Quiñones Bermejo"
+},
+{
+"n": "Marta Belén Recio Pachón"
+}
+]
+},
+{
+"n": "Juan Carlos Ramos Rodríguez",
+"suplentes": [
+{
+"n": "Lourdes González Martínez"
+},
+{
+"n": "José Ángel Elices de Prado"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO REGIONALISTA DEL PAIS LEONES",
+"siglas": "PREPAL",
+"candidatos": [
+{
+"n": "Jesús Fernández Villar",
+"suplentes": [
+{
+"n": "María Transito Esteban Ramírez"
+},
+{
+"n": "José Manuel Boixo Vidal"
+}
+]
+},
+{
+"n": "Catalina Antúnez García",
+"suplentes": [
+{
+"n": "Carlos García Álvarez"
+},
+{
+"n": "María Asunción Sevillano Mayo"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Salvador Vidal Varela",
+"suplentes": [
+{
+"n": "María Begoña Bermúdez Riera"
+},
+{
+"n": "Ángel Rodríguez Liébana"
+}
+]
+},
+{
+"n": "Laura Fernández Bermejo",
+"suplentes": [
+{
+"n": "Sergio Carro Fernández"
+},
+{
+"n": "María Aurora Panizo Luengo"
+}
+]
+},
+{
+"n": "Manuel Alfonso González",
+"suplentes": [
+{
+"n": "Silvia María Cao Fornís"
+},
+{
+"n": "Gabriel Folgado Álvarez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Pedro Gómez García",
+"suplentes": [
+{
+"n": "Esther Ordoñez Fernández"
+},
+{
+"n": "Alejandro Machado Cordero"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Silvia Franco González",
+"suplentes": [
+{
+"n": "Boni Álvarez Fernández"
+},
+{
+"n": "María Amparo García García"
+}
+]
+},
+{
+"n": "Antonio Silván Rodríguez",
+"suplentes": [
+{
+"n": "María del Camino Lozano García"
+},
+{
+"n": "Darío Lorenzana Marcos"
+}
+]
+},
+{
+"n": "María Asunción Mayo Fernández",
+"suplentes": [
+{
+"n": "Manuel Rodríguez Díez"
+},
+{
+"n": "Olga Natalia Pérez Rodríguez"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Rafael Díez Gutiérrez",
+"suplentes": [
+{
+"n": "Bárbara Santamarta Fernández"
+},
+{
+"n": "Roberto Guerra Ampudia"
+}
+]
+},
+{
+"n": "María Esther Chamorro Alonso",
+"suplentes": [
+{
+"n": "Antonio Voces García"
+},
+{
+"n": "Erica Alonso Vidales"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Jaime Alonso Gila",
+"suplentes": [
+{
+"n": "María Ángeles García Suarez"
+},
+{
+"n": "José Antonio Sabugo Álvarez"
+}
+]
+},
+{
+"n": "Laura Gallego Gaspar",
+"suplentes": [
+{
+"n": "Roberto Joaquín Weigand Muñoz"
+},
+{
+"n": "María Belén Fidalgo Cañón"
+}
+]
+},
+{
+"n": "Raúl Ramos Juan",
+"suplentes": [
+{
+"n": "Arabela De Lamo González"
+},
+{
+"n": "Jesús Darío Montiel Cordero"
+}
+]
+}
+]
+}
+]
+}
+],
+"lleida": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+"siglas": "PSC",
+"candidatos": [
+{
+"n": "Jan Pomés López",
+"suplentes": [
+{
+"n": "Sandra Madueño Marín"
+},
+{
+"n": "Francesc Sabanés Serra"
+}
+]
+},
+{
+"n": "Pasión Gador Romero García",
+"suplentes": [
+{
+"n": "Emili Gil Ortiz"
+},
+{
+"n": "Miriam Farré Sopena"
+}
+]
+},
+{
+"n": "Carlos Trinidad Ortega",
+"suplentes": [
+{
+"n": "Violant Trilla Martinoli"
+},
+{
+"n": "Noel Pons Gilabert"
+}
+]
+}
+]
+},
+{
+"nombre": "JUNTS PER CATALUNYA",
+"siglas": "JxCat",
+"candidatos": [
+{
+"n": "Rosa Maria Melines i Rius",
+"suplentes": [
+{
+"n": "Marc Rodrigo i Gómez"
+},
+{
+"n": "Carlota Canut i Farré"
+}
+]
+},
+{
+"n": "Emili Gilabert i Roca",
+"suplentes": [
+{
+"n": "Gemma Peries i Giménez"
+},
+{
+"n": "Ramon Pere Mateu i Español"
+}
+]
+},
+{
+"n": "Judit Guim i Tarruella",
+"suplentes": [
+{
+"n": "Joan Carles Garcia i Guillamon"
+},
+{
+"n": "Nadine Serra i Puigfel"
+}
+]
+}
+]
+},
+{
+"nombre": "ESQUERRA REPUBLICANA DE CATALUNYA-EUSKAL HERRIA BILDU",
+"siglas": "ERC-EH BILDU",
+"candidatos": [
+{
+"n": "Sílvia Martínez i Fuentes",
+"suplentes": [
+{
+"n": "Adolf Martínez i Primo"
+},
+{
+"n": "Maria Estela Lleonart i Carrillo"
+}
+]
+},
+{
+"n": "Pol Oliva i Solé",
+"suplentes": [
+{
+"n": "Rosa Noray i Vidal"
+},
+{
+"n": "Ramon Cristòfol i Mora"
+}
+]
+},
+{
+"n": "Judith Gisbert i Ester",
+"suplentes": [
+{
+"n": "Joan Parcerisa i Albacete"
+},
+{
+"n": "Rosa Mas i Fustà"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+"siglas": "PCTC",
+"candidatos": [
+{
+"n": "Guillem Sans Garrote",
+"suplentes": [
+{
+"n": "Maria Luisa Serrano Zuñeda"
+},
+{
+"n": "Adrià Ventura i Herce"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT POPULAR / PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Ramón Guiu Estopá",
+"suplentes": [
+{
+"n": "Nuria Agullo Rodriguez"
+},
+{
+"n": "Daniel Barios Seró"
+}
+]
+},
+{
+"n": "Ana Cava Muñoz",
+"suplentes": [
+{
+"n": "Carlos Sisteré Saureu"
+},
+{
+"n": "Núria Llovet Querol"
+}
+]
+},
+{
+"n": "Miguel Angel Balao Garcia",
+"suplentes": [
+{
+"n": "Isabel Martorell Badia"
+},
+{
+"n": "Alejandro Martinez Garcia"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Isabel Mas Picatoste",
+"suplentes": [
+{
+"n": "Carlos Fernando Nicolas Arfelis"
+},
+{
+"n": "Montserrat Acuña Guzman"
+}
+]
+},
+{
+"n": "Antonio Blas Martí Martín",
+"suplentes": [
+{
+"n": "Nieves Vilchez Justicia"
+},
+{
+"n": "Fernando Fernández Carretero"
+}
+]
+},
+{
+"n": "Paula García Castellanos",
+"suplentes": [
+{
+"n": "Mateo Figuerola Niubo"
+},
+{
+"n": "Maria Antonia Herrero Duran"
+}
+]
+}
+]
+}
+]
+}
+],
+"lugo": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Fernando Otero Bello",
+"suplentes": [
+{
+"n": "Esther Gómez Rivera"
+},
+{
+"n": "Carlos Martínez Martínez"
+}
+]
+},
+{
+"n": "María Isabel Vázquez Pérez",
+"suplentes": [
+{
+"n": "Mario Argüeso Galván"
+},
+{
+"n": "María Ángeles Gayoso Fraga"
+}
+]
+},
+{
+"n": "Arturo Pérez Gutiérrez",
+"suplentes": [
+{
+"n": "Andrea Farias Asegurado"
+},
+{
+"n": "Salvador García Cebral"
+}
+]
+}
+]
+},
+{
+"nombre": "BLOQUE NACIONALISTA GALEGO",
+"siglas": "BNG",
+"candidatos": [
+{
+"n": "Brenda González Fernández",
+"suplentes": [
+{
+"n": "Manuel Diéguez Vázquez"
+},
+{
+"n": "Wanesa Gómez Lourido"
+}
+]
+},
+{
+"n": "David Ángel Villares Sánchez",
+"suplentes": [
+{
+"n": "Mónica Roca Ares"
+},
+{
+"n": "Jorge Macía González"
+}
+]
+},
+{
+"n": "Candela López Piñeiro",
+"suplentes": [
+{
+"n": "Martín Gómez Souto"
+},
+{
+"n": "Pilar Vázquez Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Manuel Barreiro Fernández",
+"suplentes": [
+{
+"n": "Karin Mago Marcano"
+},
+{
+"n": "José Manuel Blanco Vila"
+}
+]
+},
+{
+"n": "Dolores Castro Ochoa",
+"suplentes": [
+{
+"n": "Pablo Figueiras Reguera"
+},
+{
+"n": "Encarnación Bernal Marín"
+}
+]
+},
+{
+"n": "Juan Carlos Serrano López",
+"suplentes": [
+{
+"n": "Rosa María Arza Rodríguez"
+},
+{
+"n": "Daniel Orosa Pico"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-MS)",
+"candidatos": [
+{
+"n": "César Alejandro Mogo Zaro",
+"suplentes": [
+{
+"n": "Marina Ramudo Graña"
+},
+{
+"n": "Miguel Ángel Crende López"
+}
+]
+},
+{
+"n": "Paula González Fernández",
+"suplentes": [
+{
+"n": "Plácido Lizancos Mora"
+},
+{
+"n": "Libertad Fraga Grueiro"
+}
+]
+},
+{
+"n": "Roberto Castro González",
+"suplentes": [
+{
+"n": "Lucía Villamor Lagos"
+},
+{
+"n": "Sergio López Ramudo"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Manuel Menéndez Mato",
+"suplentes": [
+{
+"n": "Seidy Seijo Vergara"
+},
+{
+"n": "Adolfo Yáñez Río"
+}
+]
+},
+{
+"n": "María Jesús Sánchez Suárez",
+"suplentes": [
+{
+"n": "Julio Pérez Loureiro"
+},
+{
+"n": "Tahis Cambeses Abeledo"
+}
+]
+},
+{
+"n": "José Miguel González Lemos",
+"suplentes": [
+{
+"n": "María Cruz Pérez González"
+},
+{
+"n": "Giovanni Lodos López"
+}
+]
+}
+]
+}
+]
+}
+],
+"madrid": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Jorge Garrido San Román",
+"suplentes": [
+{
+"n": "Natalia Aznar Moreno"
+},
+{
+"n": "Manuel Matías Martos de la Cuz"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "José Luis González Vega",
+"suplentes": [
+{
+"n": "Mercedes Roldán Luceno"
+},
+{
+"n": "David Díez Ávila"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO HUMANISTA",
+"siglas": "PH",
+"candidatos": [
+{
+"n": "Gloria López López",
+"suplentes": [
+{
+"n": "Álvaro Esteban Vázquez Sánchez"
+},
+{
+"n": "Rocío Bravo Pinel"
+}
+]
+},
+{
+"n": "Pedro Pablo Martín Hernández",
+"suplentes": [
+{
+"n": "Laura González Curull"
+},
+{
+"n": "José Luis Gómez-Plácito Carrero"
+}
+]
+},
+{
+"n": "Tamara Rosa Bueno Doral",
+"suplentes": [
+{
+"n": "Miguel Ángel Guadalix López"
+},
+{
+"n": "Inocencia Pérez Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "IUSTITIA EUROPA",
+"siglas": "IE",
+"candidatos": [
+{
+"n": "Alicia Gómez Cuéllar",
+"suplentes": [
+{
+"n": "Diego Martins Corral"
+},
+{
+"n": "Rafi Tur Cobacho"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Jorge Serrano Paradinas",
+"suplentes": [
+{
+"n": "Ana María Quero Molina"
+},
+{
+"n": "Jaime Santamaria Cortiguera"
+}
+]
+},
+{
+"n": "Bárbara Rubio Gribble",
+"suplentes": [
+{
+"n": "Juan Carlos Baena del Campo"
+},
+{
+"n": "Esther García Piña"
+}
+]
+},
+{
+"n": "Enrique Blázquez Muñoz",
+"suplentes": [
+{
+"n": "Maria Pilar Ruiz Nosea"
+},
+{
+"n": "Diego Bellido Castañeda"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Pedro Rollán Ojeda",
+"suplentes": [
+{
+"n": "Arancha Álvarez Peinado"
+},
+{
+"n": "Mariano Núñez Muñoz"
+}
+]
+},
+{
+"n": "María Inmaculada Sanz Otero",
+"suplentes": [
+{
+"n": "José Yepes Jiménez"
+},
+{
+"n": "Almudena Corral Ocaña"
+}
+]
+},
+{
+"n": "Carlos García Adanero",
+"suplentes": [
+{
+"n": "Nerea Infantes Ramos"
+},
+{
+"n": "Rafael García Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-MM-IU-MS)",
+"candidatos": [
+{
+"n": "Antonio Hernando Vera",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Milagros Del Pino Suela",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Fermín Rodríguez Díaz",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "María Acín Carrera",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Valentín Villarroel Ortega",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Ana Carolina Elías Espinoza",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "José Luis García Sánchez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Paloma Gil De la Calle",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Valentín Gómez Gómez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Francisco Freytez Pérez",
+"suplentes": [
+{
+"n": "Antonia Tomé Gallego"
+},
+{
+"n": "Carlos Daniel Enjuto Domínguez"
+}
+]
+},
+{
+"n": "María Laura Martín Chiappe",
+"suplentes": [
+{
+"n": "Darko Decimavilla García"
+},
+{
+"n": "Paula Miranda Martínez"
+}
+]
+},
+{
+"n": "Alfonso Manuel García Díaz",
+"suplentes": [
+{
+"n": "Rosario Arcas Díaz"
+},
+{
+"n": "Juan Carlos Muñoz de la Torre Fontecha"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Ana María Cuartero Lorenzo",
+"suplentes": [
+{
+"n": "Alfonso Carlos Palomeque Messia"
+},
+{
+"n": "María Narvarte Campandegui"
+}
+]
+},
+{
+"n": "Iñigo Henríquez de Luna Losada",
+"suplentes": [
+{
+"n": "Irene Sanz González"
+},
+{
+"n": "Carlos Ignacio Sagastibelza Lugo"
+}
+]
+},
+{
+"n": "Ana María Velasco Vidal-Abarca",
+"suplentes": [
+{
+"n": "Ignacio Felipe Bautista Samaniego"
+},
+{
+"n": "Alba María Ortega Alonso"
+}
+]
+}
+]
+}
+]
+}
+],
+"malaga": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Sergio Flores Borrego",
+"suplentes": [
+{
+"n": "Alicia Aguilar Vera"
+},
+{
+"n": "Antonio Carlos Rojas Gallego"
+}
+]
+},
+{
+"n": "Verónica Carrillo Díaz",
+"suplentes": [
+{
+"n": "José Manuel Morillo Escalera"
+},
+{
+"n": "Remedios Crespo Soler"
+}
+]
+},
+{
+"n": "Óscar Ávila Gómez",
+"suplentes": [
+{
+"n": "Salud Díaz Prieto"
+},
+{
+"n": "Pablo Martín Armada"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "María José Torres Mayorga",
+"suplentes": [
+{
+"n": "Fernando Marín Gallardo"
+},
+{
+"n": "Marina Pérez Ardao"
+}
+]
+},
+{
+"n": "Francisco Javier De laTorre Velasco",
+"suplentes": [
+{
+"n": "Soledad Ruiz Almagro"
+},
+{
+"n": "Juan Cabello Nuño"
+}
+]
+},
+{
+"n": "Estefanía Rosado Velázquez",
+"suplentes": [
+{
+"n": "Fernando Cera Corral"
+},
+{
+"n": "Adoración Ponferrada Acedo"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José Francisco Salado Escaño",
+"suplentes": [
+{
+"n": "Ana María Mula Redruello"
+},
+{
+"n": "Francisco José Sánchez Guerrero"
+}
+]
+},
+{
+"n": "Margarita del Carmen del Cid Muñoz",
+"suplentes": [
+{
+"n": "Francisco Javier Santos Cantos"
+},
+{
+"n": "Encarnación Pareja García"
+}
+]
+},
+{
+"n": "Mario Cortés Carballo",
+"suplentes": [
+{
+"n": "Ana Carmen Mata Rico"
+},
+{
+"n": "Manuel Ríos Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "ALTERNATIVA MALAGUEÑA",
+"siglas": "29",
+"candidatos": [
+{
+"n": "Alejandra Borrás González",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "José Sánchez Mancera",
+"nota": "Independiente"
+},
+{
+"n": "María Olivia Escaño López",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Carmen Rosa Navajas Moreno",
+"suplentes": [
+{
+"n": "José Antonio Picazo Cano"
+},
+{
+"n": "María Espinosa González"
+}
+]
+},
+{
+"n": "José García Olmo",
+"suplentes": [
+{
+"n": "María Conejo Barranco"
+},
+{
+"n": "Demetrio López Consuegra"
+}
+]
+},
+{
+"n": "María Carmen Serrán González",
+"suplentes": [
+{
+"n": "Miguel Bermúdez Jiménez"
+},
+{
+"n": "Rafaela Conejo Palomo"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Antonio Alfonso Alcázar Díaz",
+"suplentes": [
+{
+"n": "Deseada González Vallejo"
+},
+{
+"n": "José Manuel Pérez Castillo"
+}
+]
+},
+{
+"n": "Gemma María Palomo Ferrer",
+"suplentes": [
+{
+"n": "Francisco Raúl Cordero Olmedo"
+},
+{
+"n": "Paula Fernández Ruiz"
+}
+]
+},
+{
+"n": "Ricardo José García García",
+"suplentes": [
+{
+"n": "Lourde Chapresto Cortés"
+},
+{
+"n": "José Miguel Gutiérrez Rodríguez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Sergio Aranda Ruiz-Matas",
+"suplentes": [
+{
+"n": "Lourdes Delgado Torralbo"
+},
+{
+"n": "Fernando Varela Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Francisco Javier García León",
+"suplentes": [
+{
+"n": "Carmen Gómez Díaz"
+},
+{
+"n": "José Luis Escobar Pacheco"
+}
+]
+},
+{
+"n": "Rosario Luque Torrejón",
+"suplentes": [
+{
+"n": "Miguel Galisteo Saravia"
+},
+{
+"n": "María José Torres Gómez"
+}
+]
+},
+{
+"n": "Antonio Sánchez Fernández",
+"suplentes": [
+{
+"n": "Estefanía Martín Palop"
+},
+{
+"n": "Salvador Aguilar Díaz"
+}
+]
+}
+]
+}
+]
+}
+],
+"melilla": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Lucía Rubio Cruz",
+"suplentes": [
+{
+"n": "Rafael Robles Reina"
+},
+{
+"n": "María Concepción Pagán Fernández"
+}
+]
+},
+{
+"n": "Manuel García Alonso",
+"suplentes": [
+{
+"n": "Dina El Ouardani Mohamed"
+},
+{
+"n": "Eder Barandiarán Calvo"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Sendy Nanwani Ramchand Ghanshandas",
+"suplentes": [
+{
+"n": "Francisco Felipe Fernández Navas"
+},
+{
+"n": "Noelia María Salvador Rodríguez"
+}
+]
+},
+{
+"n": "Emilio Buendía Pérez",
+"suplentes": [
+{
+"n": "María Isabel Cristóbal Sánchez"
+},
+{
+"n": "Adrián Becerra Martínez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Fernando Adolfo Gutiérrez Díaz de Otazu",
+"suplentes": [
+{
+"n": "Esther Donoso García-Sacristán"
+},
+{
+"n": "Rafael Calatrava Valenzuela"
+}
+]
+},
+{
+"n": "Isabel María Moreno Mohamed",
+"suplentes": [
+{
+"n": "Hadriel Mehamed González"
+},
+{
+"n": "Virginia Martínez Torres"
+}
+]
+}
+]
+}
+]
+}
+],
+"murcia": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "TERCERA EDAD EN ACCIÓN",
+"siglas": "3e",
+"candidatos": [
+{
+"n": "José Luis García Díaz",
+"suplentes": [
+{
+"n": "Sonia Teruel Ondoño"
+},
+{
+"n": "Rodrigo Mora Bautista"
+}
+]
+},
+{
+"n": "Estrella Cánovas Rubio",
+"suplentes": [
+{
+"n": "Domingo Díaz Caravaca"
+},
+{
+"n": "Liria María Hernández Codina"
+}
+]
+},
+{
+"n": "José Luis Márquez Fernández",
+"suplentes": [
+{
+"n": "Magdalena Valverde Pérez"
+},
+{
+"n": "Andrés San Martín Marín"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Francisco Martín Bernabé Pérez",
+"suplentes": [
+{
+"n": "Nuria Vives Cabruja"
+},
+{
+"n": "Salvador Pérez Martos"
+}
+]
+},
+{
+"n": "María Hernández Benítez",
+"suplentes": [
+{
+"n": "Patricio Ortiz Sánchez"
+},
+{
+"n": "Patricia Eva Corbalán Muñíz"
+}
+]
+},
+{
+"n": "Antonio Luengo Zapata",
+"suplentes": [
+{
+"n": "Estela del Carmen Tomás Jiménez"
+},
+{
+"n": "David Pérez Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "Irene Jódar Pérez",
+"suplentes": [
+{
+"n": "Francisco Javier Cascales Leal"
+},
+{
+"n": "María Gloria Gómez Sánchez"
+}
+]
+},
+{
+"n": "Antonio Moreno Gil",
+"suplentes": [
+{
+"n": "Liliana Mellado Miñano"
+},
+{
+"n": "Andrés Alacid Cano"
+}
+]
+},
+{
+"n": "Asunción Molina Bautista",
+"suplentes": [
+{
+"n": "Antonio José Candel García"
+},
+{
+"n": "María Isabel Cánovas Marín"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "José Manuel Pancorbo de la Torre",
+"suplentes": [
+{
+"n": "María Inmaculada Ortega Domínguez"
+},
+{
+"n": "Alejandro Gálvez Carrillo"
+}
+]
+},
+{
+"n": "María Carmen Menduiña García",
+"suplentes": [
+{
+"n": "Vicente Quiles Albert"
+},
+{
+"n": "María de la Paloma Blanco Bravo"
+}
+]
+},
+{
+"n": "José Mariano Orenes Bastida",
+"suplentes": [
+{
+"n": "Jerónima María Reinaldos García"
+},
+{
+"n": "Ignacio Isasi Llamas"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María Dolores Larrosa Segovia",
+"suplentes": [
+{
+"n": "Pedro Antonio Pina Maiquez"
+},
+{
+"n": "Elvira Medina Ruiz"
+}
+]
+},
+{
+"n": "José Manuel Sevilla Lizón",
+"suplentes": [
+{
+"n": "Aurelia García Muñoz"
+},
+{
+"n": "Daniel Andreu García"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Gonzalo Navarro Martínez",
+"suplentes": [
+{
+"n": "Isabel Martínez Miralles"
+},
+{
+"n": "José Manuel Rosique Lorca"
+}
+]
+},
+{
+"n": "Josefa Serrano Sánchez",
+"suplentes": [
+{
+"n": "José Antonio Guillén Muñoz"
+},
+{
+"n": "Caridad Pérez Ramos"
+}
+]
+}
+]
+}
+]
+}
+],
+"navarra": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA",
+"siglas": "EH BILDU-ERC",
+"candidatos": [
+{
+"n": "Florencio Aoiz Monreal",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA",
+"suplentes": [
+{
+"n": "Lola Eslava Serrano",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+},
+{
+"n": "Ander Larunbe Anderson",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+}
+]
+},
+{
+"n": "Paula García García",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA",
+"suplentes": [
+{
+"n": "Aitor Larraza Carrera",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+},
+{
+"n": "Edurne León Sánchez",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+}
+]
+},
+{
+"n": "Angel Martín Unzue Ayanz",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA",
+"suplentes": [
+{
+"n": "Itziar Imaz Artazcoz",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+},
+{
+"n": "Paolo Albanese Weiss",
+"nota": "EUSKAL HERRIA BILDU - ESQUERRA REPUBLICANA DE CATALUNYA"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IUN NEB-MS-BATZARRE)",
+"candidatos": [
+{
+"n": "Antonio Ángel Moleón Segura",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Susana Castanera Gómez",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Alejandro López Orejuela",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Ane María Sánchez Jiménez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Eduardo Mayordomo Carrasco",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Olga Risueño Molina",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Jesús María Rodríguez Gómez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Blanca Yolanda González García",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Jaime Aliaga Chivite",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "GEROA BAI",
+"siglas": "GBAI",
+"candidatos": [
+{
+"n": "María Teresa Espinosa Sáenz",
+"nota": "GEROA BAI",
+"suplentes": [
+{
+"n": "Juan José Ausan Errandonea",
+"nota": "GEROA BAI"
+},
+{
+"n": "Isabel Aramburu Bergua",
+"nota": "GEROA BAI"
+}
+]
+},
+{
+"n": "Raúl Ayala Martínez",
+"nota": "GEROA BAI",
+"suplentes": [
+{
+"n": "Maite Garbayo Valencia",
+"nota": "GEROA BAI"
+},
+{
+"n": "José Javier Leoz Sanz",
+"nota": "GEROA BAI"
+}
+]
+},
+{
+"n": "Ana Carmen Luján Martínez",
+"nota": "GEROA BAI",
+"suplentes": [
+{
+"n": "Hasier Morrás Aranoa",
+"nota": "GEROA BAI"
+},
+{
+"n": "Blanca Isabel Regúlez Alvarez",
+"nota": "GEROA BAI"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "María Arantzazu Munárriz Rodríguez",
+"suplentes": [
+{
+"n": "Josep María Valls Martí"
+},
+{
+"n": "María Rosario Elcuaz Viscarret"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR",
+"siglas": "UPN-PP",
+"candidatos": [
+{
+"n": "José Javier Esparza Abaurrea",
+"nota": "UPN",
+"suplentes": [
+{
+"n": "Marta Ruiz de Alda Parla",
+"nota": "UPN"
+},
+{
+"n": "Jesús Miguel Sáinz Ruiz",
+"nota": "UPN"
+}
+]
+},
+{
+"n": "María Isabel García Malo",
+"nota": "PP",
+"suplentes": [
+{
+"n": "David Diago Cascán",
+"nota": "PP"
+},
+{
+"n": "María de las Mercedes San Pedro López",
+"nota": "PP"
+}
+]
+},
+{
+"n": "Miguel Aguirre Yanguas",
+"nota": "UPN",
+"suplentes": [
+{
+"n": "Cristina Sota Pernaut",
+"nota": "UPN"
+},
+{
+"n": "Casto Alvero González",
+"nota": "UPN"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Eva Calleja Novales",
+"suplentes": [
+{
+"n": "Jorge Aníbal Quilumba Díaz"
+},
+{
+"n": "Virginia Mateo Solana"
+}
+]
+},
+{
+"n": "Fernando González Martín",
+"suplentes": [
+{
+"n": "Raquel Blanco Bartolomé"
+},
+{
+"n": "Antonio Jiménez Millán"
+}
+]
+},
+{
+"n": "María Graciela López Camarán",
+"suplentes": [
+{
+"n": "Yago Iglesias Vidaurre"
+},
+{
+"n": "María Sagrario Marco Elorz"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Estíbaliz Moreno Irigoyen",
+"suplentes": [
+{
+"n": "Juan del Águila Pérez"
+},
+{
+"n": "Carolina Garcia-Ochoa Bonail"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Ibon Landaluce Marquinez",
+"suplentes": [
+{
+"n": "Oihane Garcia Pablos"
+},
+{
+"n": "Beñat Saiz Zuluaga"
+}
+]
+}
+]
+}
+]
+}
+],
+"ourense": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA",
+"siglas": "PCTG",
+"candidatos": [
+{
+"n": "Miguel Martínez Martínez",
+"suplentes": [
+{
+"n": "Mireya Álvarez González"
+},
+{
+"n": "Xoan Xose Vázquez Turrion"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Avelino Carballo Álvarez",
+"suplentes": [
+{
+"n": "María Jesús Pereiro Mariño"
+},
+{
+"n": "Hugo Álvarez Seco"
+}
+]
+},
+{
+"n": "María Jesusa Álvarez Canitrot",
+"suplentes": [
+{
+"n": "Gonzalo Martín Gómez Sprovieri"
+},
+{
+"n": "Rosa María Mariño Bardanca"
+}
+]
+},
+{
+"n": "Luis Gómez Piña",
+"suplentes": [
+{
+"n": "Eva Baltar Torres"
+},
+{
+"n": "Fernando Naya Prieto"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Enrique Rudolf Quiros Hoppe",
+"suplentes": [
+{
+"n": "Isabel Villar Martínez"
+},
+{
+"n": "Manuel González Vázquez"
+}
+]
+},
+{
+"n": "Mara Marques Canedo",
+"suplentes": [
+{
+"n": "José Manuel Fernández Paz"
+},
+{
+"n": "Sonia Conde Vázquez"
+}
+]
+},
+{
+"n": "Julio Rodríguez Garrido",
+"suplentes": [
+{
+"n": "Marta Teresa Álvarez Vas"
+},
+{
+"n": "Ramón Iglesias Soto"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Miguel Ángel Santalices Vieira",
+"suplentes": [
+{
+"n": "Diana Pérez Fernández"
+},
+{
+"n": "Bernardo Rodríguez Danoz"
+}
+]
+},
+{
+"n": "Rosa María Sánchez Gándara",
+"suplentes": [
+{
+"n": "Manuel Ángel Fernández Movilla"
+},
+{
+"n": "María Belén Iglesias Cortés"
+}
+]
+},
+{
+"n": "José Antonio Cerdeira Pérez",
+"suplentes": [
+{
+"n": "Ana Patricia Torres Madureira"
+},
+{
+"n": "Rodrigo Aparicio Santamaría"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAIS XUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Carmen Adela Armesto Fernández «CARMELA»",
+"suplentes": [
+{
+"n": "Alberto Fernández Armesto"
+},
+{
+"n": "Sara Alar Castro"
+}
+]
+}
+]
+},
+{
+"nombre": "BLOQUE NACIONALISTA GALEGO",
+"siglas": "BNG",
+"candidatos": [
+{
+"n": "Bernardo Varela López",
+"suplentes": [
+{
+"n": "Erea Blanco Gallego"
+},
+{
+"n": "Javier Rocha Rivera"
+}
+]
+},
+{
+"n": "Melanie Arias Puccio",
+"suplentes": [
+{
+"n": "Bieito Conde Salgado"
+},
+{
+"n": "Noelia Currás Rodríguez"
+}
+]
+},
+{
+"n": "Francisco Nogueiras Marra",
+"suplentes": [
+{
+"n": "Carmen Fernández Fernández"
+},
+{
+"n": "Rubén García Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "María Fernández Ojea",
+"suplentes": [
+{
+"n": "Federico Ramiro Conrado Pérez Mato"
+},
+{
+"n": "Ana Rosa Paradelo Carracedo"
+}
+]
+},
+{
+"n": "Millán Brea Castro",
+"suplentes": [
+{
+"n": "María Do Pilar Barros Barco"
+},
+{
+"n": "Francisco Xabier Vázquez Álvarez"
+}
+]
+},
+{
+"n": "Lorena Guerra Vigo",
+"suplentes": [
+{
+"n": "Manuel González Iglesias"
+},
+{
+"n": "Noa Fernández López"
+}
+]
+}
+]
+}
+]
+}
+],
+"palencia": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Alba Alonso Pérez",
+"suplentes": [
+{
+"n": "Ricardo Pozo Díez"
+},
+{
+"n": "María José Llamas Moro"
+}
+]
+},
+{
+"n": "Alberto Riol de Prado",
+"suplentes": [
+{
+"n": "Diana Patricia Rivera Tobón"
+},
+{
+"n": "José Gabriel Zurbano Melero"
+}
+]
+},
+{
+"n": "Ana Isabel Pérez Mena",
+"suplentes": [
+{
+"n": "Antonio Pardillo Rodríguez"
+},
+{
+"n": "Alicia Bartolomé Cid"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Óscar Sánchez Rico",
+"suplentes": [
+{
+"n": "María Victoria González Ordáx"
+},
+{
+"n": "Daniel Fuertes Medina"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Roberto Martín Casado",
+"suplentes": [
+{
+"n": "Sara Pastor Rodríguez"
+},
+{
+"n": "Gonzalo Pérez Ibáñez"
+}
+]
+},
+{
+"n": "Cristina Sandino Vallejo",
+"suplentes": [
+{
+"n": "Manuel Gañán Rodríguez"
+},
+{
+"n": "María Teresa Carmona Crespo"
+}
+]
+},
+{
+"n": "Jorge Domingo Martínez Antolín",
+"suplentes": [
+{
+"n": "Sara Pérez Gregorio"
+},
+{
+"n": "José Luis Emperador León"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Cristina Gutiérrez Aguirre",
+"suplentes": [
+{
+"n": "Jorge Gutiérrez López"
+},
+{
+"n": "María Inmaculada Concepción Martínez de Renobales"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Jorge Castrillejo Arnaiz",
+"suplentes": [
+{
+"n": "María del Pilar Junco Navascués"
+},
+{
+"n": "Fernando Blanco Baeza"
+}
+]
+},
+{
+"n": "Zaida de la Fuente Sancho",
+"suplentes": [
+{
+"n": "Samuel Sordo Antolín"
+},
+{
+"n": "Celia Ramos Pastor"
+}
+]
+},
+{
+"n": "Juan Antonio García García",
+"suplentes": [
+{
+"n": "María Gema del Palacio Simón"
+},
+{
+"n": "Juan Carlos Gutiérrez Muñoz"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "María Inés Aceves Ballesteros",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Alberto Matia López",
+"nota": "Independiente"
+},
+{
+"n": "Raquel Miguel Antolín",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Rosa María Aldea Gómez",
+"suplentes": [
+{
+"n": "Moisés Payo Nevares"
+},
+{
+"n": "María del Carmen Casas Simón"
+}
+]
+},
+{
+"n": "Eduardo Velázquez Martín",
+"suplentes": [
+{
+"n": "María Cristina Colino Agudo"
+},
+{
+"n": "Serguei Sanz Gómez"
+}
+]
+},
+{
+"n": "Belinda Mencía Solla",
+"suplentes": [
+{
+"n": "Jesús Manuel López Infante"
+},
+{
+"n": "Raquel Macho Palenzuela"
+}
+]
+}
+]
+}
+]
+}
+],
+"pontevedra": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "Partido Comunista dos Traballadores da Galiza",
+"siglas": "PCTG",
+"candidatos": [
+{
+"n": "Pablo Corral Rolán",
+"suplentes": [
+{
+"n": "María Castillo Alias"
+},
+{
+"n": "Juan Pablo Viña Suárez"
+}
+]
+}
+]
+},
+{
+"nombre": "Escanos en Branco para deixar Escanos Baleiros",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Susana Díaz Palacios",
+"suplentes": [
+{
+"n": "José María Soler Pardo"
+},
+{
+"n": "Sonia Miralles Martínez"
+}
+]
+}
+]
+},
+{
+"nombre": "Coalición electoral Senado de Progreso SDP",
+"siglas": "PSOE-MS",
+"candidatos": [
+{
+"n": "María del Carmen «Carmela» Silva Rego",
+"suplentes": [
+{
+"n": "José Antonio Cacabelos Rico"
+},
+{
+"n": "Bárbara Domínguez González"
+}
+]
+},
+{
+"n": "Paulo Carlos López López",
+"suplentes": [
+{
+"n": "Sara De Matos Fernández"
+},
+{
+"n": "Estevo Sánchez Gálvez"
+}
+]
+},
+{
+"n": "María Olga Alonso Suárez",
+"suplentes": [
+{
+"n": "José Luis Camiñas Vázquez"
+},
+{
+"n": "Alba Forno Crespo"
+}
+]
+}
+]
+},
+{
+"nombre": "Partido Popular",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Nidia María Arévalo Gómez",
+"suplentes": [
+{
+"n": "Santiago Rodríguez Davila"
+},
+{
+"n": "Ana María Alonso Alonso"
+}
+]
+},
+{
+"n": "José Crespo Iglesias",
+"suplentes": [
+{
+"n": "Montserrat María Otero Oitavén"
+},
+{
+"n": "Vicente Búa Martínez"
+}
+]
+},
+{
+"n": "Mónica Domínguez Estévez",
+"suplentes": [
+{
+"n": "Guillermo Juncal Peñas"
+},
+{
+"n": "Alba Martínez Oubiña"
+}
+]
+}
+]
+},
+{
+"nombre": "BLOQUE NACIONALISTA GALEGO",
+"siglas": "BNG",
+"candidatos": [
+{
+"n": "Kevin González Santiago",
+"suplentes": [
+{
+"n": "Sabela Méndez Casteleiro"
+},
+{
+"n": "Alexandre Basteiro Comesaña"
+}
+]
+},
+{
+"n": "Marta Gómez Martín",
+"suplentes": [
+{
+"n": "Pablo Luciano Guimeráns Sanjorge"
+},
+{
+"n": "Iria Costas Pérez"
+}
+]
+},
+{
+"n": "Duarte Correa Piñeiro",
+"suplentes": [
+{
+"n": "Trinidad Pérez Labaca Diz"
+},
+{
+"n": "Ismael Pato Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María del Carmen Camiña Vázquez",
+"suplentes": [
+{
+"n": "Moisés Asensi Cabirta"
+},
+{
+"n": "Soraya María Veloso Martínez"
+}
+]
+},
+{
+"n": "José Luis Patiño Acuña",
+"suplentes": [
+{
+"n": "Patricia Cardozo Marquizo"
+},
+{
+"n": "José Ramón Otero Quinteiro"
+}
+]
+},
+{
+"n": "María Uxía Rodríguez Crespo",
+"suplentes": [
+{
+"n": "Benjamín Gutiérrez Huerta"
+},
+{
+"n": "Teresa Landín Carragal"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "José Manuel Torres Corredoira",
+"suplentes": [
+{
+"n": "María Elena Barros Pereira"
+},
+{
+"n": "Jesús Vila García"
+}
+]
+}
+]
+}
+]
+}
+],
+"salamanca": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María del Carmen Díez Sierra",
+"suplentes": [
+{
+"n": "Eduardo Parra González"
+},
+{
+"n": "María Isabel García Calderón"
+}
+]
+},
+{
+"n": "Genaro Luis García López",
+"suplentes": [
+{
+"n": "Camila Vaquero Hernández"
+},
+{
+"n": "Emilio Rollán Peña"
+}
+]
+},
+{
+"n": "María del Sol Muñoz Martín",
+"suplentes": [
+{
+"n": "José Antonio Morales Calderón"
+},
+{
+"n": "María Montserrat Val Arroyo"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO REGIONALISTA DEL PAIS LEONES",
+"siglas": "PREPAL",
+"candidatos": [
+{
+"n": "Juan Manuel Andrés López",
+"suplentes": [
+{
+"n": "Noelia López Vaquero"
+},
+{
+"n": "Juan Francisco Jambrina Segurado"
+}
+]
+},
+{
+"n": "María de las Mercedes Fernández León",
+"suplentes": [
+{
+"n": "Francisco José Jambrina Galán"
+},
+{
+"n": "Marta Jambrina Galán"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Purificación Pozo García",
+"suplentes": [
+{
+"n": "Gabriel Fernández Llamazares Rodilla"
+},
+{
+"n": "Natalia Fuentes Abad"
+}
+]
+},
+{
+"n": "Carlos Polo Prieto",
+"suplentes": [
+{
+"n": "María del Carmen Frades Muñoz"
+},
+{
+"n": "Jesús Martínez Navarro"
+}
+]
+},
+{
+"n": "Raquel Izquierdo Martín",
+"suplentes": [
+{
+"n": "Francisco Javier Bellido González"
+},
+{
+"n": "María Teresa Pardo Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "José Fernández Reguera",
+"suplentes": [
+{
+"n": "Raquel Molina González"
+},
+{
+"n": "Alejandro Martín Toribio"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Bienvenido de Arriba Sánchez",
+"suplentes": [
+{
+"n": "Adoración Vicente Ciudad"
+},
+{
+"n": "Claudio del Río Sánchez"
+}
+]
+},
+{
+"n": "Marta Labrador Gutiérrez",
+"suplentes": [
+{
+"n": "Ángel Luis Peralvo Sanchón"
+},
+{
+"n": "Victoria Eugenia Manjón Barrera"
+}
+]
+},
+{
+"n": "Pedro Samuel Martín García",
+"suplentes": [
+{
+"n": "María Adoración Ginés González"
+},
+{
+"n": "José García Gómez"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Carlos Fernández Chanca",
+"suplentes": [
+{
+"n": "Jennifer del Pozo Hernández"
+},
+{
+"n": "Luis Rodríguez Herrero"
+}
+]
+},
+{
+"n": "Yolanda Sánchez Villarón",
+"suplentes": [
+{
+"n": "José Luis Sánchez Martín"
+},
+{
+"n": "Julia Panchuelo Sánchez"
+}
+]
+},
+{
+"n": "Sergio Maqueda Hernández",
+"suplentes": [
+{
+"n": "Erica Polo Hernández"
+},
+{
+"n": "Roberto de Castro Rivas"
+}
+]
+}
+]
+}
+]
+}
+],
+"santa-cruz-de-tenerife": [
+{
+"isla": "Tenerife",
+"listas": [
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Pedro Martín Domínguez",
+"suplentes": [
+{
+"n": "Ana Rosa Mena De Dios"
+},
+{
+"n": "Marco Antonio González Mesa"
+}
+]
+},
+{
+"n": "Alicia Álvarez González",
+"suplentes": [
+{
+"n": "Luis Javier González Delgado"
+},
+{
+"n": "Esther Morales Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "Coalición Canaria-Municipalistas Primero Canarias",
+"siglas": "CCa-1.ºCAN",
+"candidatos": [
+{
+"n": "Juan Alfonso Cabello Mesa",
+"suplentes": [
+{
+"n": "Diana Mora Izquierdo"
+},
+{
+"n": "Alejandro García Delgado"
+}
+]
+},
+{
+"n": "Patricia León Pérez",
+"suplentes": [
+{
+"n": "Javier Rivero Rodríguez"
+},
+{
+"n": "Andrea Carballo Fariña"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "María Inés Vera Goya",
+"suplentes": [
+{
+"n": "José Carlos Acha Domínguez"
+},
+{
+"n": "Esther Franco Galán"
+}
+]
+},
+{
+"n": "Francisco José García Paramio",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Isis María Luque Carrasco",
+"nota": "Independiente"
+},
+{
+"n": "David Fernández Santillan",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Andrea Mónica Martín Tacoronte",
+"suplentes": [
+{
+"n": "Cristian Viera Martín"
+},
+{
+"n": "Leticia Del Carmen López Díaz"
+}
+]
+},
+{
+"n": "Ángel Manuel Rivera Ruz",
+"suplentes": [
+{
+"n": "Alejandra Orrillo Hernández"
+},
+{
+"n": "José Valentín Correa Gutiérrez"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "La Palma",
+"listas": [
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Kilian Sánchez San Juan",
+"suplentes": [
+{
+"n": "Goretti Pérez Corujo"
+},
+{
+"n": "Juan Gabriel Pérez Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "Coalición Canaria-Municipalistas Primero Canarias",
+"siglas": "CCa-1.ºCAN",
+"candidatos": [
+{
+"n": "Miriam Perestelo Rodríguez",
+"suplentes": [
+{
+"n": "Carlos De Paz González"
+},
+{
+"n": "Erika Castro Pérez"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Jacob Qadri Hijazo",
+"suplentes": [
+{
+"n": "Elena Concepción Marrero"
+},
+{
+"n": "Jesús Pérez Hernández"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Fernando Jesús Martín Acosta",
+"suplentes": [
+{
+"n": "Filiberta María Martín Álvarez"
+},
+{
+"n": "José Luis Valero Hellín"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Miguel Ángel Pulido Rodríguez",
+"suplentes": [
+{
+"n": "María Angustias Rodríguez García"
+},
+{
+"n": "Javier Hernández San Blas"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "La Gomera",
+"listas": [
+{
+"nombre": "INICIATIVA POR LA GOMERA",
+"siglas": "IxLG",
+"candidatos": [
+{
+"n": "Alejandro García Vera",
+"suplentes": [
+{
+"n": "Raquel Correa Marichal"
+},
+{
+"n": "Cristian Pomares Sánchez"
+}
+]
+}
+]
+},
+{
+"nombre": "AGRUPACION SOCIALISTA GOMERA",
+"siglas": "ASG",
+"candidatos": [
+{
+"n": "Yaiza Castilla Herrera",
+"suplentes": [
+{
+"n": "Fabián Chinea Correa"
+},
+{
+"n": "Guacimara Barrera Magdalena"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Juan Luis Navarro Mesa",
+"suplentes": [
+{
+"n": "Amanda Abigail Arteaga Acevedo"
+},
+{
+"n": "Jonay Rodríguez Darias"
+}
+]
+}
+]
+},
+{
+"nombre": "Coalición Canaria-Municipalistas Primero Canarias",
+"siglas": "CCa-1.ºCAN",
+"candidatos": [
+{
+"n": "Víctor Tomás Chinea Mendoza",
+"suplentes": [
+{
+"n": "Nuria Esther Niebla Chinea"
+},
+{
+"n": "Christian Méndez Benedetti"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Héctor Armando Bencomo Bayoll",
+"suplentes": [
+{
+"n": "Socorro Sabina Bello Pérez"
+},
+{
+"n": "Johny Medina Negrín"
+}
+]
+}
+]
+}
+]
+},
+{
+"isla": "El Hierro",
+"listas": [
+{
+"nombre": "AGRUPACION HERREÑA INDEPENDIENTE",
+"siglas": "A.H.I.",
+"candidatos": [
+{
+"n": "Aniceto Javier Armas González",
+"suplentes": [
+{
+"n": "Yarín González Padrón"
+},
+{
+"n": "Alberto Machín Martín"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+"siglas": "PSOE",
+"candidatos": [
+{
+"n": "Alpidio Armas González",
+"suplentes": [
+{
+"n": "Ana González González"
+},
+{
+"n": "Juan Rafael Zamora Padrón"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Inés Del Hierro Lías",
+"suplentes": [
+{
+"n": "Abel Hernández García"
+},
+{
+"n": "Gisela Katrina López Gutiérrez"
+}
+]
+}
+]
+},
+{
+"nombre": "ASAMBLEA HERREÑA",
+"siglas": "ASAMBLEA HERREÑA",
+"candidatos": [
+{
+"n": "Emilio Víctor Hernández Montero",
+"suplentes": [
+{
+"n": "Elizabeth Gutiérrez Fernández"
+},
+{
+"n": "Jose Antonio Quintero Morales"
+}
+]
+}
+]
+},
+{
+"nombre": "UNIDAD DEL PUEBLO CANARIO UPC",
+"siglas": "NC-BC, PODEMOS, IU, SUMAR",
+"candidatos": [
+{
+"n": "Tinaxara Padrón Reyes",
+"suplentes": [
+{
+"n": "Abel Fernández Acosta"
+},
+{
+"n": "Laura Rodríguez Lima"
+}
+]
+}
+]
+}
+]
+}
+],
+"segovia": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Leonor Delgado Sánchez",
+"suplentes": [
+{
+"n": "Fernando Herranz García"
+},
+{
+"n": "María Josefa Inés de Esteban Barrena"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Rafael Alonso Ponce",
+"suplentes": [
+{
+"n": "Ana María del Real Cañas"
+},
+{
+"n": "Francisco Javier Lobo de Frutos"
+}
+]
+},
+{
+"n": "Maria del Carmen Polo López",
+"suplentes": [
+{
+"n": "Joaquín Gilabert Duaygues"
+},
+{
+"n": "María Fuencisla Gómez Gómez"
+}
+]
+},
+{
+"n": "Mariano Rojas Magallanes",
+"suplentes": [
+{
+"n": "Susana Estefanía Sanz Arroyo"
+},
+{
+"n": "Rafael Martín del Caz"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SENADO DE PROGRESO",
+"candidatos": [
+{
+"n": "María del Lirio Martín García",
+"nota": "Senado De Progreso",
+"suplentes": [
+{
+"n": "Juan José Maroto Sáez",
+"nota": "Senado De Progreso"
+},
+{
+"n": "Aitana Elena Tamayo Hernando",
+"nota": "Senado De Progreso"
+}
+]
+},
+{
+"n": "Alberto López Villa",
+"nota": "Senado De Progreso",
+"suplentes": [
+{
+"n": "Cristina Herrero Arranz",
+"nota": "Senado De Progreso"
+},
+{
+"n": "Javier García Díez",
+"nota": "Senado De Progreso"
+}
+]
+},
+{
+"n": "Alba Barrio Martín",
+"nota": "Senado De Progreso",
+"suplentes": [
+{
+"n": "Alfonso Dorrego Méndez",
+"nota": "Senado De Progreso"
+},
+{
+"n": "Isabel Clara Dorotea Gómez Sancho",
+"nota": "Senado De Progreso"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Juan José Sanz Vitorio",
+"suplentes": [
+{
+"n": "María del Pilar Martín Sampedro"
+},
+{
+"n": "Carlos Enrique Fuentes Pascual"
+}
+]
+},
+{
+"n": "María Ángeles García Herrero",
+"suplentes": [
+{
+"n": "Miguel Ángel Hernández Tortajada"
+},
+{
+"n": "Azucena Suárez del Pozo"
+}
+]
+},
+{
+"n": "José María Bravo Gozalo",
+"suplentes": [
+{
+"n": "María Carpio Guijarro"
+},
+{
+"n": "Basilio del Olmo Alonso"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Patricia Bernabé Municio",
+"suplentes": [
+{
+"n": "Alfonso de Ceballos Escalera Gila"
+},
+{
+"n": "Mónica Beatriz Anampa Rodríguez"
+}
+]
+},
+{
+"n": "Pedro María Varela de Sagarra",
+"suplentes": [
+{
+"n": "Silvia Rodríguez Arias"
+},
+{
+"n": "José Carlos Rodríguez Marinero"
+}
+]
+},
+{
+"n": "Esther Núñez Martínez",
+"suplentes": [
+{
+"n": "David Rodríguez Alconchel"
+},
+{
+"n": "Elena Escribano Von de Sehur"
+}
+]
+}
+]
+}
+]
+}
+],
+"sevilla": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "ADELANTE ANDALUCÍA",
+"siglas": "ADELANTE ANDALUCÍA",
+"candidatos": [
+{
+"n": "Francisca Maqueda Fernández",
+"suplentes": [
+{
+"n": "Nicolás Ángel López Rincón"
+},
+{
+"n": "Marta Victoria Domínguez Gutiérrez"
+}
+]
+},
+{
+"n": "Juan Manuel Luna Fuentes",
+"suplentes": [
+{
+"n": "María Consolación Vargas Zapata"
+},
+{
+"n": "Daniel Marín Balmori"
+}
+]
+},
+{
+"n": "María Teresa Pablo Torres",
+"suplentes": [
+{
+"n": "Alejandro Agustín Perera Rincón"
+},
+{
+"n": "María Sol Castañeda Marotte"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Miguel Fuentes Martínez",
+"suplentes": [
+{
+"n": "Vanesa Muñoz González"
+},
+{
+"n": "José María Domínguez Calderón"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Rosario Andújar Torrejón",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Francisco Jesús Mora Mora",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "María de los Ángeles Iglesias Domínguez",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "Antonio Gutiérrez Limones",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Myriam Díaz Rodríguez",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "Juan Carlos Cabrera Valera",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+},
+{
+"n": "Eva Patricia Bueno Campanario",
+"nota": "SDP (PSOE-IU-MS)",
+"suplentes": [
+{
+"n": "Francisco Israel Fernández Varela",
+"nota": "SDP (PSOE-IU-MS)"
+},
+{
+"n": "María Teresa Jiménez Rodríguez",
+"nota": "SDP (PSOE-IU-MS)"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Jaime Martínez Sánchez-Suárez",
+"suplentes": [
+{
+"n": "Rocío Fernández Lobo"
+},
+{
+"n": "Juan Manuel Mudarra Pozo"
+}
+]
+},
+{
+"n": "María Elena Romero Sánchez",
+"suplentes": [
+{
+"n": "José Manuel Perea Fernández"
+},
+{
+"n": "Esperanza Macarena Romero Méndez"
+}
+]
+},
+{
+"n": "Fernando Jesús Martín Pozo",
+"suplentes": [
+{
+"n": "Trinidad Molina Restituto"
+},
+{
+"n": "Antonio Martínez del Olmo"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Laura Gil Cantos",
+"suplentes": [
+{
+"n": "Enrique Suárez Campos"
+},
+{
+"n": "María Ángeles García Ramírez"
+}
+]
+},
+{
+"n": "Antonio Durán Montero",
+"suplentes": [
+{
+"n": "María del Pilar de la Rosa Pérez"
+},
+{
+"n": "Mariano Mallén Álvarez"
+}
+]
+},
+{
+"n": "María Purificación Huertas Fuentes",
+"suplentes": [
+{
+"n": "Juan Miguel Garrido Peña"
+},
+{
+"n": "María Aurora Ramírez Collado"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Juan Manuel Ávila Gutiérrez",
+"suplentes": [
+{
+"n": "María del Valle Naranjo Muñoz"
+},
+{
+"n": "Jorge Muriel Jiménez"
+}
+]
+},
+{
+"n": "María Teresa Astolfi González-Mogena",
+"suplentes": [
+{
+"n": "Rubén Rivera Sánchez"
+},
+{
+"n": "Paula María Cabello Gaya"
+}
+]
+},
+{
+"n": "Antonio Miguel Enamorado Aguilar",
+"suplentes": [
+{
+"n": "Ascensión Blandino Aguirrezábal"
+},
+{
+"n": "Juan Ignacio Fuentes Hernández"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Luis Valseca Tejerina",
+"suplentes": [
+{
+"n": "María Luisa Márquez de Aracena Ríos"
+},
+{
+"n": "Antonio Jiménez Castillo"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Bienvenu Povele Kiladi",
+"suplentes": [
+{
+"n": "Montserrat Trapero García"
+},
+{
+"n": "Alejandro Gamiz García"
+}
+]
+}
+]
+}
+]
+}
+],
+"soria": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Álvaro Galera Arias",
+"suplentes": [
+{
+"n": "Alicia Percaz Betelu"
+},
+{
+"n": "Pablo Casado Briz"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "María Sara López Pérez",
+"suplentes": [
+{
+"n": "José María Ortega Poza"
+},
+{
+"n": "María Soledad López Valburgos"
+}
+]
+},
+{
+"n": "Alberto Enrique Peñuelas Felipe",
+"suplentes": [
+{
+"n": "María Isabel Martínez Torrijo"
+},
+{
+"n": "Fernando José Castillo Álvarez"
+}
+]
+},
+{
+"n": "Esther María García García",
+"suplentes": [
+{
+"n": "Luis Bosque Campos"
+},
+{
+"n": "Julia Berrojo Lafuente"
+}
+]
+}
+]
+},
+{
+"nombre": "SORIA ¡YA!",
+"siglas": "SY",
+"candidatos": [
+{
+"n": "David Romera Sevillano",
+"suplentes": [
+{
+"n": "María Lourdes Simal Domínguez"
+},
+{
+"n": "César Francisco Castro Ayuso"
+}
+]
+},
+{
+"n": "María Concepción Álvarez Sacristán",
+"suplentes": [
+{
+"n": "Raúl Martínez Martínez"
+},
+{
+"n": "María Luisa Andrés del Río"
+}
+]
+},
+{
+"n": "Fernando del Amo Gallego",
+"suplentes": [
+{
+"n": "Yolanda María Gil Sarmiento"
+},
+{
+"n": "Jesús Alberto Chico García"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Benito Serrano Mata",
+"suplentes": [
+{
+"n": "María José Jiménez Las Heras"
+},
+{
+"n": "Juan Luis Antón Antón"
+}
+]
+},
+{
+"n": "María Yolanda de Gregorio Pachón",
+"suplentes": [
+{
+"n": "Pedro Antonio Heras Jiménez"
+},
+{
+"n": "Paula Garijo Pérez"
+}
+]
+},
+{
+"n": "Javier Jiménez Santamaría",
+"suplentes": [
+{
+"n": "Elia Jiménez Hernández"
+},
+{
+"n": "Iván Andrés Aparicio"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Luis Lasfuentes García",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Olga Gallego De Luis",
+"nota": "Independiente"
+},
+{
+"n": "Antonio Alier Laplana",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Gloria De la Parra Amorena",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "José Antonio Díez Agesta",
+"nota": "Independiente"
+},
+{
+"n": "Laura González Fernández",
+"nota": "Independiente"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Ana Alegre Martínez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "José Peñalba Sanz",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "María Pilar Delgado Díez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Manuel Madrid Castro",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Ana Isabel García Garcés",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Enrique García Domínguez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Gemma Hernández Ramos",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Carlos Llorente de Miguel",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Sara Antón López",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Mario Calonge Calvo",
+"suplentes": [
+{
+"n": "Patrocinio Hernández Aranda"
+},
+{
+"n": "Francisco Javier Agapito Muñoz Monge"
+}
+]
+},
+{
+"n": "María José Marco Llorente",
+"suplentes": [
+{
+"n": "Juan Carlos García Hernández"
+},
+{
+"n": "María Isabel Hernández Aranda"
+}
+]
+},
+{
+"n": "Jose Luis San Juan García",
+"suplentes": [
+{
+"n": "Amalia García González"
+},
+{
+"n": "Saulo Domingo Mediavilla"
+}
+]
+}
+]
+}
+]
+}
+],
+"tarragona": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+"siglas": "PSC",
+"candidatos": [
+{
+"n": "Manel de la Vega Carrera",
+"suplentes": [
+{
+"n": "Bibiana Porres Carranza"
+},
+{
+"n": "Javier Sánchez Martínez"
+}
+]
+},
+{
+"n": "Montse García Biosca",
+"suplentes": [
+{
+"n": "Pere Valls Miró"
+},
+{
+"n": "Esther Forgas Berdet"
+}
+]
+},
+{
+"n": "Xavier Lorenzo Torres",
+"suplentes": [
+{
+"n": "Núria Güell del Campo"
+},
+{
+"n": "Roger Caballero Folch"
+}
+]
+}
+]
+},
+{
+"nombre": "ESQUERRA REPUBLICANA DE CATALUNYA-EUSKAL HERRIA BILDU",
+"siglas": "ERC-EH BILDU",
+"candidatos": [
+{
+"n": "Noemí Llauradó Sans",
+"nota": "ERC-EH-BILDU",
+"suplentes": [
+{
+"n": "Josep Maria Farré Vidal",
+"nota": "ERC-EH-BILDU"
+},
+{
+"n": "Marina Berasategui Canals",
+"nota": "ERC-EH-BILDU"
+}
+]
+},
+{
+"n": "Xavier Faura Sanmartín",
+"nota": "ERC-EH-BILDU",
+"suplentes": [
+{
+"n": "Montse Subirats Gisbert",
+"nota": "ERC-EH-BILDU"
+},
+{
+"n": "Jordi Gaseni Blanch",
+"nota": "ERC-EH-BILDU"
+}
+]
+},
+{
+"n": "Montserrat Ventura Jané",
+"nota": "ERC-EH-BILDU",
+"suplentes": [
+{
+"n": "Jean-Marc Segarra Mauri",
+"nota": "ERC-EH-BILDU"
+},
+{
+"n": "Virginia Martínez Torres",
+"nota": "ERC-EH-BILDU"
+}
+]
+}
+]
+},
+{
+"nombre": "JUNTS PER CATALUNYA",
+"siglas": "JxCat",
+"candidatos": [
+{
+"n": "Josep Andreu i Domingo",
+"suplentes": [
+{
+"n": "Aida Sánchez i Martínez"
+},
+{
+"n": "Josep Mateu i Guarro"
+}
+]
+},
+{
+"n": "Montserrat Vellvé i Foix",
+"suplentes": [
+{
+"n": "Josep Ràfols i Vilanova"
+},
+{
+"n": "Laura Salvat i López"
+}
+]
+},
+{
+"n": "Felip Monclús i Arasa",
+"suplentes": [
+{
+"n": "Gemma Cid i Espuny"
+},
+{
+"n": "Èric Bel i Gisbert"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+"siglas": "PCTC",
+"candidatos": [
+{
+"n": "Albert Camarasa Escubedo",
+"suplentes": [
+{
+"n": "Kelly Marcela Parra Aponte"
+},
+{
+"n": "Jon Manso Fernandez"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Ana Belén Rodríguez Ros",
+"suplentes": [
+{
+"n": "Paul Daniel Axinte Axinte"
+},
+{
+"n": "Elena Sánchez Fernández"
+}
+]
+},
+{
+"n": "Francisco Javier Vaquero Rodríguez",
+"suplentes": [
+{
+"n": "María Dolores Fernández Ortega"
+},
+{
+"n": "Carlos Iban Borràs Marimón"
+}
+]
+},
+{
+"n": "María Dolores Zamora Carmona",
+"suplentes": [
+{
+"n": "Pedro Sánchez Martínez"
+},
+{
+"n": "María Belenguer Bermejo"
+}
+]
+}
+]
+},
+{
+"nombre": "CONVERGENTS",
+"siglas": "CNV",
+"candidatos": [
+{
+"n": "Demelsa Bartual Soria",
+"suplentes": [
+{
+"n": "Joan Antoni Artigau Alcaraz"
+},
+{
+"n": "María Pilar Erla Bruñen"
+}
+]
+},
+{
+"n": "Manuel Andrés Marín García",
+"suplentes": [
+{
+"n": "Eugènia Martín Garcia"
+},
+{
+"n": "Carlos López Tellez"
+}
+]
+},
+{
+"n": "Mercè Alicia Sans Sáez",
+"suplentes": [
+{
+"n": "Antonio Giraltó Morell"
+},
+{
+"n": "Angélica Montenegro Quintela"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "María del Carmen Barros Ruiz",
+"suplentes": [
+{
+"n": "Juan Gerardo Dávila Pereyra"
+},
+{
+"n": "Gladys Elena Giribaldi Soto"
+}
+]
+}
+]
+}
+]
+}
+],
+"teruel": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Sergio Cases Arnas",
+"suplentes": [
+{
+"n": "Laura Sanz Gascón",
+"nota": "Independiente"
+},
+{
+"n": "Marcos Arriazu Tejero"
+}
+]
+}
+]
+},
+{
+"nombre": "TERUEL EXISTE",
+"siglas": "TERUEL EXISTE",
+"candidatos": [
+{
+"n": "Raúl Blasco Aznar",
+"suplentes": [
+{
+"n": "Inmaculada Moliner Mallén"
+},
+{
+"n": "Saúl Valenzuela Hermosilla"
+}
+]
+},
+{
+"n": "Beatriz Martín Larred",
+"suplentes": [
+{
+"n": "Enrique Vicente Marín Martinez"
+},
+{
+"n": "Carmen Fraj Latorre"
+}
+]
+},
+{
+"n": "Daniel Sancho Vargas",
+"suplentes": [
+{
+"n": "Elena Paricio Damián"
+},
+{
+"n": "Alberto Carmona Grima"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO DE ARAGÓN",
+"siglas": "SDP (PSOE-CHA-IU-MS)",
+"candidatos": [
+{
+"n": "María José Villalba Chavarría",
+"nota": "SDP (PSOE-CHA-IU-MS)",
+"suplentes": [
+{
+"n": "Joaquín Noé Serrano",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+},
+{
+"n": "Sandra Bayón Acebes",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+}
+]
+},
+{
+"n": "Ricardo Moreno Romero",
+"nota": "SDP (PSOE-CHA-IU-MS)",
+"suplentes": [
+{
+"n": "Ana Isabel Navarro Ramo",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+},
+{
+"n": "Jorge Ignacio Rodríguez Gracia",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+}
+]
+},
+{
+"n": "Silvia Inés Gimeno Gascón",
+"nota": "SDP (PSOE-CHA-IU-MS)",
+"suplentes": [
+{
+"n": "Antonio Santiago Navarro Sánchez",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+},
+{
+"n": "Silvia Blasco Casorrán",
+"nota": "SDP (PSOE-CHA-IU-MS)"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Emma Buj Sánchez",
+"suplentes": [
+{
+"n": "Juan Carlos Cruzado Punter"
+},
+{
+"n": "Eva Pilar Domene Benito"
+}
+]
+},
+{
+"n": "Carlos Boné Amela",
+"suplentes": [
+{
+"n": "Ana Isabel Fernández Romero"
+},
+{
+"n": "Miguel Gascón López"
+}
+]
+},
+{
+"n": "Celia Durbán Solaz",
+"suplentes": [
+{
+"n": "Juan Miguel Pérez Lafuente"
+},
+{
+"n": "Marta Bellido Muñoz"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Esmeralda Royo Cerezuela",
+"suplentes": [
+{
+"n": "José Carlos Lago Álvarez"
+},
+{
+"n": "María Lila Freiría Piñeiro"
+}
+]
+},
+{
+"n": "Jesús Eduardo Tizón Vázquez",
+"suplentes": [
+{
+"n": "Paula Victoria Usera Diz"
+},
+{
+"n": "Manuel Andrés Mena García"
+}
+]
+},
+{
+"n": "Irma Prado Portela",
+"suplentes": [
+{
+"n": "Emilio Manuel Del Pazo Fernández"
+},
+{
+"n": "Gloria Ángela Estévez Fernández"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "José Anselmo Fernández Miguel",
+"suplentes": [
+{
+"n": "Inmaculada García Casamayor"
+},
+{
+"n": "Antonio Oscar Montañés Sancho"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Bárbara Alastuey Rivas",
+"suplentes": [
+{
+"n": "Jesús Lanzuela Sánchez"
+},
+{
+"n": "Begoña Calomarde Cebrián"
+}
+]
+},
+{
+"n": "Joaquín Buj Sánchez",
+"suplentes": [
+{
+"n": "María Fuster Pérez"
+},
+{
+"n": "Ramón Millán Piquer"
+}
+]
+},
+{
+"n": "Verónica Luz Herrero",
+"suplentes": [
+{
+"n": "Juan Jesús Vicente García"
+},
+{
+"n": "Sara Suñer Gilabert"
+}
+]
+}
+]
+}
+]
+}
+],
+"toledo": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Javier Luis Horas Puente",
+"suplentes": [
+{
+"n": "Maria Eugenia Fernández Rubio"
+},
+{
+"n": "Fernando Pérez Ruiz"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Agustín Conde Bajén",
+"suplentes": [
+{
+"n": "Almudena González Pascual"
+},
+{
+"n": "Francisco López Arenas"
+}
+]
+},
+{
+"n": "María Pilar Alía Aguado",
+"suplentes": [
+{
+"n": "Jesús Guerrero Lorente"
+},
+{
+"n": "Paula Gómez Fernández"
+}
+]
+},
+{
+"n": "Vicente Tirado Ochoa",
+"suplentes": [
+{
+"n": "Julia Sanz De Andrés"
+},
+{
+"n": "Alberto López Castell"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María Ángeles Zarzoso Ajado",
+"suplentes": [
+{
+"n": "Eduardo Rodríguez Fontela"
+},
+{
+"n": "María Jesús Villafruela Matilla"
+}
+]
+},
+{
+"n": "Juan Muñoz Gutiérrez",
+"suplentes": [
+{
+"n": "Carmen Cid Parro"
+},
+{
+"n": "Óscar Ricardo Gómez De la Cruz"
+}
+]
+},
+{
+"n": "María del Carmen Gómez Gómez",
+"suplentes": [
+{
+"n": "Manuel Peces Valentín"
+},
+{
+"n": "Sagrario Guerrero Peces"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Fernando Sánchez Izquierdo Hurtado",
+"suplentes": [
+{
+"n": "Viviana Jacqueline Bravo Ortega"
+},
+{
+"n": "Juan Carlos Sánchez Hernández"
+}
+]
+},
+{
+"n": "Laura Félix Sánchez-Vallejo",
+"suplentes": [
+{
+"n": "Ángel Farao Blázquez"
+},
+{
+"n": "Sara Isabel Vinuesa Jorge"
+}
+]
+},
+{
+"n": "Jesús Gutiérrez Fernández",
+"suplentes": [
+{
+"n": "Natalia Sánchez-Flor Díaz-Madroñero"
+},
+{
+"n": "Servando Chico Zarapuz"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José Manuel Tofiño Pérez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Elena Sonseca Majano",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Javier Payo Béjar",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "María Isabel Álvarez Domínguez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Rubén Hernández Villasevil",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Silvia García Delgado",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Ignacio Hernández Rodríguez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Serrate Mayoral",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Fernando Díaz Martín-Escudero",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Carlos Pantoja Fente",
+"suplentes": []
+},
+{
+"n": "Sonia Catalina Roa Jiménez",
+"suplentes": []
+},
+{
+"n": "Javier Gómez-Pintado Gálvez",
+"suplentes": []
+}
+]
+}
+]
+}
+],
+"valencia": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-COMPROMIS-EUPV)",
+"candidatos": [
+{
+"n": "Juan Antonio Sagredo Marco",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Luisa Martínez Mora",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Antonio Esquinas Martínez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Isaura Navarro Casillas",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Jaime Gallego Delgado",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "María Encarnación Mifsud Estruch",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Jordi Mayor Vallet",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Cristina Moreno Fernández",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Rafael Darijo Escamilla",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Susana Camarero Benítez",
+"suplentes": [
+{
+"n": "José Joaquín Segarra Castillo"
+},
+{
+"n": "Pilar Peris Barres"
+}
+]
+},
+{
+"n": "José Luís Aguirre Larrauri",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "María Isabel Castellano Carrión",
+"nota": "Independiente"
+},
+{
+"n": "Vicente Moreno Ribelles",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Rut Sánchez Férriz",
+"suplentes": [
+{
+"n": "José Miguel Ferris Estrems"
+},
+{
+"n": "Estela del Carmen Darocas Marín"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Luis de Mazarredo Aznar",
+"suplentes": [
+{
+"n": "Reyes Aragón Vicente"
+},
+{
+"n": "Ignacio Castaño López"
+}
+]
+},
+{
+"n": "Marta Pérez de los Cobos Cassinello",
+"suplentes": [
+{
+"n": "José Ignacio Añón Ayguavives"
+},
+{
+"n": "María Lázaro Aznar"
+}
+]
+},
+{
+"n": "Fernando Lerma Besó",
+"suplentes": [
+{
+"n": "Pilar Salas Ortiz de Villajos"
+},
+{
+"n": "Ignacio María de Mazarredo Aznar"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Rafael Llaneli Santos-olmo",
+"suplentes": [
+{
+"n": "Florina Loredana Stanica Stanica"
+},
+{
+"n": "Juan Borja Segarra"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Andrés Núñez Esparcia",
+"suplentes": [
+{
+"n": "María Díez Llistó"
+},
+{
+"n": "Federico Cesar Polo Robles"
+}
+]
+}
+]
+},
+{
+"nombre": "AGENDA VALENCIANA",
+"siglas": "AGENDA VALENCIANA",
+"candidatos": [
+{
+"n": "José Bonet Navarro",
+"suplentes": [
+{
+"n": "Mónica Crespo Martinez"
+},
+{
+"n": "Pablo Jover Laparra"
+}
+]
+}
+]
+}
+]
+}
+],
+"valladolid": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO NACIONALISTA DE CASTILLA Y LEÓN - UNION REFORMISTA CIUDADANA",
+"siglas": "PANCAL-URCI",
+"candidatos": [
+{
+"n": "José Ignacio Moratinos Delgado –el Empecinado–",
+"suplentes": [
+{
+"n": "María Nuria San José Juste"
+},
+{
+"n": "Diego Sanchez Herrero"
+}
+]
+},
+{
+"n": "María Pilar Cubero Valdes",
+"suplentes": [
+{
+"n": "Francisco Javier Velez Ortega"
+},
+{
+"n": "Mercedes Blanco Pastor"
+}
+]
+},
+{
+"n": "Tomas Francisco Arconada Villar",
+"suplentes": [
+{
+"n": "Natalia Sanchez Sanchez"
+},
+{
+"n": "Jesus Romo Gonzalez"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Roberto Gutiérrez Ampudia",
+"suplentes": [
+{
+"n": "María Luisa Valls Alguacil"
+},
+{
+"n": "Miguel Ángel De Juan Cebrián"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+"siglas": "PACMA",
+"candidatos": [
+{
+"n": "Iván Serrano Pérez",
+"suplentes": [
+{
+"n": "Clara González Martín"
+},
+{
+"n": "Javier Pinto Arranz"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "Sara Maria Galván Lobato",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Pablo Poveda Arias",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Alicia Villar Pérez",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Francisco Javier de la Rosa Gutiérrez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "María Victoria Moyano Cantalapiedra",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Jesus Salamanca Tejero",
+"nota": "SENADO DE PROGRESO"
+}
+]
+},
+{
+"n": "Yolanda Rosa Lanza Alaez",
+"nota": "SENADO DE PROGRESO",
+"suplentes": [
+{
+"n": "Orlando Aranzana Méndez",
+"nota": "SENADO DE PROGRESO"
+},
+{
+"n": "Diana Carretero Ajo",
+"nota": "SENADO DE PROGRESO"
+}
+]
+}
+]
+},
+{
+"nombre": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+"siglas": "FE de las JONS",
+"candidatos": [
+{
+"n": "Juan Antonio Peral Disdier",
+"suplentes": [
+{
+"n": "Alicia María Del Pilar Nestares Gazol"
+},
+{
+"n": "Francisco Javier Del Campo Velasco"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Juan Antonio Heras García",
+"suplentes": [
+{
+"n": "Ana María Teresa Oliva Manrique"
+},
+{
+"n": "Jorge Rubio Barbado"
+}
+]
+},
+{
+"n": "María Belén Manjarres Hernández",
+"suplentes": [
+{
+"n": "Miguel Jaime López De Lerma"
+},
+{
+"n": "María Del Henar Pérez Pérez"
+}
+]
+},
+{
+"n": "José Manuel Campos Carrion",
+"suplentes": [
+{
+"n": "María Teresa Bartolomé Ramos"
+},
+{
+"n": "José Ignacio Peinador Sala"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Álvaro de Prada González",
+"suplentes": [
+{
+"n": "Marta Villamuera Aparicio"
+},
+{
+"n": "Diego Colás Carbajo"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Luis Alberto Matarranz Herreras",
+"suplentes": [
+{
+"n": "Ana Rosa Bartolomé Cano"
+},
+{
+"n": "Angel Manuel Margarida de Vega"
+}
+]
+},
+{
+"n": "Aroa Valdés Hernández",
+"suplentes": [
+{
+"n": "José Carlos Vilorio de la Fuente"
+},
+{
+"n": "Nazaret Corral San José"
+}
+]
+},
+{
+"n": "Miguel Ángel Sainz Juez",
+"suplentes": [
+{
+"n": "Virginia Arronte de Ávila"
+},
+{
+"n": "Jorge Martín Carrasco"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Jesús Julio Carnero García",
+"suplentes": [
+{
+"n": "María Pilar Peña Frutos"
+},
+{
+"n": "Raúl Gómez Pintado"
+}
+]
+},
+{
+"n": "María Mercedes Cantalapiedra Álvarez",
+"suplentes": [
+{
+"n": "Carlos Basilio Fernández Rodríguez"
+},
+{
+"n": "Esther Rico Calle"
+}
+]
+},
+{
+"n": "José Ángel Alonso Pérez",
+"suplentes": [
+{
+"n": "María Arenales Serrano Argüello"
+},
+{
+"n": "Emilio Jesús Álvarez Olea"
+}
+]
+}
+]
+},
+{
+"nombre": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+"siglas": "ESCAÑOS EN BLANCO",
+"candidatos": [
+{
+"n": "Santiago Manuel Martínez Redondo",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Leticia Fernández Fernández",
+"nota": "Independiente"
+},
+{
+"n": "Tomás Del Barrio García",
+"nota": "Independiente"
+}
+]
+},
+{
+"n": "Ana María Redondo Alvaredo",
+"nota": "Independiente",
+"suplentes": [
+{
+"n": "Félix Antonio Escudero Ruiz",
+"nota": "Independiente"
+},
+{
+"n": "Judith De Haro Del Caño",
+"nota": "Independiente"
+}
+]
+}
+]
+}
+]
+}
+],
+"zamora": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO REGIONALISTA DEL PAIS LEONES",
+"siglas": "PREPAL",
+"candidatos": [
+{
+"n": "Teresita Loreto Álvarez Pérez",
+"suplentes": [
+{
+"n": "Luis Carlos Iglesias Sienra"
+},
+{
+"n": "Esthér Rodríguez Centeno"
+}
+]
+},
+{
+"n": "José Cayetano Rodríguez De Castro",
+"suplentes": [
+{
+"n": "Luisa Pérez Pastor"
+},
+{
+"n": "Iván Prado Andrés"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO",
+"siglas": "SDP (PSOE-IU-MS)",
+"candidatos": [
+{
+"n": "José Fernández Blanco",
+"suplentes": [
+{
+"n": "María Agustina Martín Viñas"
+},
+{
+"n": "Luis Malmierca Pérez"
+}
+]
+},
+{
+"n": "María Inmaculada Lucas Baraja",
+"suplentes": [
+{
+"n": "Javier Novo Espiñeira"
+},
+{
+"n": "María Eugenia Cabezas Carreras"
+}
+]
+},
+{
+"n": "Ángel Calleja Gómez",
+"suplentes": [
+{
+"n": "Arantza Torrijos Cid"
+},
+{
+"n": "Pascual Iglesias Méndez"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "María Carmen Cuesta Benavides",
+"suplentes": [
+{
+"n": "Alcides Marcos García"
+},
+{
+"n": "María Inmaculada Valdivia Pablo"
+}
+]
+},
+{
+"n": "Antonio Narváez De Las Heras",
+"suplentes": [
+{
+"n": "Argelina Fernández Lera"
+},
+{
+"n": "Rafael Prieto Martín"
+}
+]
+},
+{
+"n": "María Soraya García Serna",
+"suplentes": [
+{
+"n": "Alberto Fernández García"
+},
+{
+"n": "Bernarda De La Iglesia Vicente"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "José María Barrios Tejero",
+"suplentes": [
+{
+"n": "Rosa María López Fernández"
+},
+{
+"n": "José Emiliano De La Puente Mazariegos"
+}
+]
+},
+{
+"n": "Elvira Velasco Morillo",
+"suplentes": [
+{
+"n": "Emilio Fernández Martínez"
+},
+{
+"n": "Natalia Ucero Pérez"
+}
+]
+},
+{
+"n": "Óscar Ramajo Prada",
+"suplentes": [
+{
+"n": "Ana Díez Fernández"
+},
+{
+"n": "Aurelio Iglesias Moreno"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Eugenio Blanco Ugidos",
+"suplentes": [
+{
+"n": "María del Mar Rodríguez Alejo"
+},
+{
+"n": "José Luis Morales Carbajo"
+}
+]
+},
+{
+"n": "María Victoria Fradejas Calleja",
+"suplentes": [
+{
+"n": "Claudio Luelmo Rodríguez"
+},
+{
+"n": "Alejandra Alonso Vicente"
+}
+]
+},
+{
+"n": "Juan Bartual Magro",
+"suplentes": [
+{
+"n": "María Reyes Fernández Pérez"
+},
+{
+"n": "Miquel García García"
+}
+]
+}
+]
+}
+]
+}
+],
+"zaragoza": [
+{
+"isla": null,
+"listas": [
+{
+"nombre": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+"siglas": "PCTE",
+"candidatos": [
+{
+"n": "Miguel Tello Bernad",
+"suplentes": [
+{
+"n": "Ana Adela Borroy Lasheras",
+"nota": "Independiente"
+},
+{
+"n": "Eduardo Pérez Goñi"
+}
+]
+}
+]
+},
+{
+"nombre": "POR UN MUNDO MAS JUSTO",
+"siglas": "MUNDO+JUSTO",
+"candidatos": [
+{
+"n": "Isabel Puyoles Hernández",
+"suplentes": [
+{
+"n": "Luis María Serra Renobales"
+},
+{
+"n": "Raquel García Risco"
+}
+]
+}
+]
+},
+{
+"nombre": "SENADO DE PROGRESO DE ARAGÓN",
+"siglas": "SDP (PSOE-CHA-IU-MS)",
+"candidatos": [
+{
+"n": "Miguel Dalmau Blanco",
+"suplentes": [
+{
+"n": "Marina Gómez Eggers"
+},
+{
+"n": "Rubén Alonso Orera"
+}
+]
+},
+{
+"n": "Ruth Pina Jiménez",
+"suplentes": [
+{
+"n": "Diego Percebal Marco"
+},
+{
+"n": "Gloria María Cano Rodríguez"
+}
+]
+},
+{
+"n": "Ramón Duce Maestro",
+"suplentes": [
+{
+"n": "Débora Terraza Guardia"
+},
+{
+"n": "Jesús Bazán Sanz"
+}
+]
+}
+]
+},
+{
+"nombre": "PODEMOS",
+"siglas": "PODEMOS",
+"candidatos": [
+{
+"n": "Andrés Pardo Granero",
+"suplentes": [
+{
+"n": "Estefanía Torres Martínez"
+},
+{
+"n": "Rubén Alonso Rodríguez"
+}
+]
+},
+{
+"n": "María Luisa Garós Cirés",
+"suplentes": [
+{
+"n": "Francisco Garay Menéndez"
+},
+{
+"n": "Lucía Armada Álvarez"
+}
+]
+},
+{
+"n": "Carlos Álvarez Vega",
+"suplentes": [
+{
+"n": "Violeta Arbesú Sancho"
+},
+{
+"n": "Fernando Llaneza Alunda"
+}
+]
+}
+]
+},
+{
+"nombre": "FEDERACION DE LOS INDEPENDIENTES DE ARAGON",
+"siglas": "F.I.A.",
+"candidatos": [
+{
+"n": "Florencio Hidalgo García",
+"suplentes": [
+{
+"n": "Maite Hidalgo Estébanez"
+},
+{
+"n": "Francisco Javier Artigas Bagüés"
+}
+]
+},
+{
+"n": "Ana María Pérez Sánchez",
+"suplentes": [
+{
+"n": "Ángel Alamán Muñoz"
+},
+{
+"n": "María Jiménez Méndez"
+}
+]
+},
+{
+"n": "Fernando Benjamín Ruiz Sebastián",
+"suplentes": [
+{
+"n": "Ana Ruiz Cepero"
+},
+{
+"n": "José Carvajal Arenzana"
+}
+]
+}
+]
+},
+{
+"nombre": "PARTIDO POPULAR",
+"siglas": "PP",
+"candidatos": [
+{
+"n": "Luis María Beamonte Mesa",
+"suplentes": [
+{
+"n": "Elena Lacalle Oreja"
+},
+{
+"n": "Miguel Rodrigo Ayesa"
+}
+]
+},
+{
+"n": "María Elena Bondía Pinós",
+"suplentes": [
+{
+"n": "Francisco Javier Bernal Sanz"
+},
+{
+"n": "Raquel Coscolla Almau"
+}
+]
+},
+{
+"n": "José Manuel Aranda Lassa",
+"suplentes": [
+{
+"n": "Iluminada Ustero Pérez"
+},
+{
+"n": "Raúl García Asensio"
+}
+]
+}
+]
+},
+{
+"nombre": "VOX",
+"siglas": "VOX",
+"candidatos": [
+{
+"n": "Germán Sanz Bordonaba",
+"suplentes": [
+{
+"n": "María Isabel Calzada Andreu"
+},
+{
+"n": "Francisco Antonio Berna Dito"
+}
+]
+}
+]
+}
+]
+}
+]
+}

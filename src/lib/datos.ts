@@ -5,6 +5,7 @@
 // - Resultados de 2023: Ministerio del Interior, elecciones al Congreso del 23 de julio de 2023.
 // src/data/provincias.json lo genera scripts/datos/preparar.py.
 import provinciasJson from '../data/provincias.json';
+import senadoJson from '../data/senado.json';
 import creditosJson from '../data/creditos.json';
 
 export interface Persona {
@@ -47,6 +48,30 @@ export interface Provincia {
 }
 
 export const PROVINCIAS = provinciasJson as Provincia[];
+
+export interface PersonaSenado {
+  n: string;
+  nota?: string;
+}
+export interface CandidatoSenado extends PersonaSenado {
+  suplentes: PersonaSenado[];
+}
+export interface ListaSenado {
+  nombre: string;
+  siglas: string;
+  candidatos: CandidatoSenado[];
+}
+export interface CircunscripcionSenado {
+  isla: string | null;
+  listas: ListaSenado[];
+}
+/** Candidaturas al Senado por provincia, en el orden del BOE (BOE-A-2026-23103). Se genera con scripts/datos/senado.py. */
+export const SENADO = senadoJson as Record<string, CircunscripcionSenado[]>;
+
+/** Candidatos que se pueden marcar según los senadores de la circunscripción (LOREG, art. 166.1.a). */
+export function marcasSenado(senadores: number): number {
+  return senadores === 4 ? 3 : senadores >= 2 ? 2 : 1;
+}
 
 export function getProvincia(slug: string): Provincia {
   const p = PROVINCIAS.find((x) => x.slug === slug);

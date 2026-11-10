@@ -26,7 +26,7 @@ assert sum(ESCANOS_2026.values()) == 350
 
 # Senado (LOREG art. 165): 4 por provincia; en las islas, por isla.
 SENADO = {
-    'Illes Balears': [('Mallorca', 3), ('Menorca', 1), ('Ibiza-Formentera', 1)],
+    'Illes Balears': [('Mallorca', 3), ('Menorca', 1), ('Ibiza', 1), ('Formentera', 1)],
     'Las Palmas': [('Gran Canaria', 3), ('Lanzarote', 1), ('Fuerteventura', 1)],
     'Santa Cruz de Tenerife': [('Tenerife', 3), ('La Palma', 1), ('La Gomera', 1), ('El Hierro', 1)],
     'Ceuta': [('Ceuta', 2)],

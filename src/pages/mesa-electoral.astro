@@ -7,10 +7,10 @@ import Autor from '../components/Autor.astro';
 import AdSlot from '../components/AdSlot.astro';
 import Fuente from '../components/Fuente.astro';
 
-const title = 'Mesa electoral 29-N: dieta de 75 €, permisos y cómo alegar';
+const title = 'Mesa electoral 29-N: excusas válidas, plazos y dieta de 75 €';
 const heading = 'Si te toca mesa electoral el 29-N';
 const description =
-  'Los miembros de mesa cobran una dieta de 75 €, tienen libre la mañana del lunes 30 y 7 días desde la notificación para alegar. Lo que tienes que saber.';
+  'Qué excusas acepta la Junta para librarte de la mesa, los 7 días para alegar, la dieta de 75 € y los permisos del trabajo. Con la lista oficial completa.';
 
 const datos = [
   { v: '75 €', n: 'dieta por el día', a: 'Para presidentes y vocales que forman la mesa.' },
@@ -18,7 +18,63 @@ const datos = [
   { v: '5 h', n: 'libres el lunes 30', a: 'Además del domingo completo, si trabajas.' },
 ];
 
+const excusas = [
+  {
+    t: 'Por tu situación personal: valen siempre',
+    l: [
+      'Tener entre 65 y 69 años.',
+      'Discapacidad declarada, de cualquier grado. Basta con la declaración, sin certificado médico.',
+      'Pensión de incapacidad permanente absoluta o gran invalidez.',
+      'Estar de baja médica.',
+      'Embarazo a partir del sexto mes, y el periodo de descanso por cuidado del menor (también adopción y acogimiento).',
+      'Internamiento en un centro penitenciario o en un hospital psiquiátrico.',
+      'Haber estado en una mesa al menos 3 veces en los últimos 10 años, si la mesa se puede formar igualmente con gente de su lista.',
+      'Ser víctima con una orden judicial de alejamiento en vigor, si el condenado o investigado vota en tu mismo colegio.',
+    ],
+  },
+  {
+    t: 'Por tu situación personal: la Junta valora cada caso',
+    l: [
+      'Lesión o enfermedad que te impida estar en la mesa o te lo haga especialmente penoso. Hace falta un certificado médico que detalle las limitaciones.',
+      'Pensión de incapacidad permanente total, si la causa también afecta a las tareas de la mesa.',
+      'Riesgo durante el embarazo o la lactancia natural.',
+      'Operación o pruebas médicas importantes e inaplazables ese día, los días justo antes o el día siguiente.',
+      'Pertenecer a una confesión religiosa cuyo ideario o clausura sea incompatible con la mesa.',
+      'Haberte mudado a otra comunidad autónoma, si además justificas la dificultad para acudir.',
+    ],
+  },
+  {
+    t: 'Por tu familia: valen siempre',
+    l: [
+      'Cuidar de un lactante, acreditado con la reducción de jornada y el libro de familia.',
+      'Cuidado directo y continuo, por guarda legal, de menores de 12 años o de personas con discapacidad.',
+      'Cuidado directo y continuo de un familiar hasta segundo grado que no pueda valerse por sí mismo.',
+    ],
+  },
+  {
+    t: 'Por tu familia: la Junta valora cada caso',
+    l: [
+      'Un acto familiar inaplazable ese día, o cuyo aplazamiento cause un perjuicio económico importante, si eres protagonista o familiar hasta segundo grado.',
+      'Tener hijos menores de 14 años en una familia monoparental, o si el otro progenitor no puede cuidarlos ese día.',
+    ],
+  },
+  {
+    t: 'Por tu trabajo',
+    l: [
+      'Prestar servicio en juntas electorales, juzgados o administraciones con funciones electorales ese día.',
+      'Servicios esenciales (médicos, sanitarios, protección civil, bomberos...), con un informe sobre la dificultad de sustituirte.',
+      'Dirigir un medio de información general o un servicio informativo que cubra la jornada.',
+      'Profesionales de actos públicos programados antes de la convocatoria, si eres insustituible y la suspensión causa un perjuicio económico importante.',
+    ],
+  },
+];
+
 const preguntas = [
+  { q: '¿Cómo sé si me ha tocado mesa electoral?', a: 'Te lo notifican a ti: junto con la notificación recibes un manual de instrucciones. Consultar el censo solo te dice dónde votas.' },
+  { q: '¿Cuándo es el sorteo de las mesas?', a: 'La ley lo fija entre los días 25 y 29 tras la convocatoria: del 31 de octubre al 4 de noviembre de 2026, contando desde la publicación del decreto. La notificación debe hacerse en los 3 días siguientes.' },
+  { q: '¿Puedo librarme si tengo más de 65 años?', a: 'Sí. Entre los 65 y los 69 años puedes renunciar en el plazo de 7 días. A partir de los 70 no entras en el sorteo.' },
+  { q: '¿Y si me surge un imprevisto después de esos 7 días?', a: 'Avisa a la Junta Electoral de Zona al menos 72 horas antes, con justificante. Si surge más tarde, avisa de inmediato y siempre antes de que se forme la mesa.' },
+  { q: '¿Se puede recurrir si la Junta rechaza mi excusa?', a: 'La ley dice que la Junta resuelve en 5 días y sin ulterior recurso. Si deniega la excusa, debe explicar brevemente el motivo.' },
   { q: '¿Cuánto se cobra por estar en una mesa electoral?', a: 'Una dieta de 75 € para los miembros que forman la mesa el día de la votación (Orden INT/650/2026).' },
   { q: '¿Puedo librarme de la mesa?', a: 'Solo con una causa justificada y documentada. Tienes 7 días desde la notificación para presentar la alegación ante la Junta Electoral de Zona, que decide si la acepta.' },
   { q: '¿Qué pasa si no voy?', a: 'No presentarse sin causa justificada es un delito electoral castigado con prisión de 3 meses a 1 año o multa de 6 a 24 meses (LOREG, art. 143).' },
@@ -40,6 +96,24 @@ const preguntas = [
     </section>
 
     <section class="texto max-w-3xl">
+      <h2>Tienes 7 días desde que te notifican</h2>
+      <p>Presenta tu alegación ante la <strong>Junta Electoral de Zona</strong>, con la causa justificada y los documentos que la prueben. Los días son naturales: si te notificaron el 5 de noviembre, tu plazo acaba el 12. La Junta decide en 5 días y, si te libera, avisa al primer suplente.</p>
+      <p>La lista de abajo es la de la Junta Electoral Central. <strong>No es cerrada:</strong> la Junta de Zona debe valorar también los casos parecidos. Sirve igual para titulares y suplentes.</p>
+    </section>
+
+    <section class="max-w-3xl space-y-6">
+      <h2 class="text-2xl font-bold tracking-tight">Excusas para no ir a la mesa electoral</h2>
+      {
+        excusas.map((e) => (
+          <div class="texto">
+            <h3>{e.t}</h3>
+            <ul>{e.l.map((x) => <li>{x}</li>)}</ul>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="texto max-w-3xl">
       <h2>Cómo es el día, hora a hora</h2>
       <ul>
         <li><strong>8:00</strong>: titulares y suplentes se presentan en el colegio. Se forma la mesa.</li>
@@ -54,7 +128,7 @@ const preguntas = [
 
     <AdSlot />
     <Faq preguntas={preguntas} />
-    <Fuente>Fuente: LOREG (arts. 26, 27, 28 y 143), Orden INT/650/2026 y Real Decreto 605/1999.</Fuente>
+    <Fuente>Fuente: LOREG (arts. 26, 27, 28, 119 y 143), <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-7705" rel="noopener" target="_blank">Instrucción 6/2011 de la Junta Electoral Central</a>, Orden INT/650/2026 y Real Decreto 605/1999.</Fuente>
     <Autor />
   </div>
 </BaseLayout>

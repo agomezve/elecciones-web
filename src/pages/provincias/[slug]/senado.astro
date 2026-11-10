@@ -1,0 +1,136 @@
+---
+// Ruta: src/pages/provincias/[slug]/senado.astro
+// Candidatos al Senado de una provincia, por circunscripción (isla en Baleares y Canarias), en el orden del BOE.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CabeceraPagina from '../../../components/CabeceraPagina.astro';
+import Faq from '../../../components/Faq.astro';
+import Autor from '../../../components/Autor.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import Fuente from '../../../components/Fuente.astro';
+import { ELECCION, PROVINCIAS, SENADO, marcasSenado, type Provincia } from '../../../lib/datos';
+import { getPartido } from '../../../lib/partidos';
+
+export function getStaticPaths() {
+  return PROVINCIAS.map((provincia) => ({ params: { slug: provincia.slug }, props: { provincia } }));
+}
+
+interface Props {
+  provincia: Provincia;
+}
+const { provincia: p } = Astro.props;
+
+const circunscripciones = SENADO[p.slug].map((c) => {
+  const senadores = c.isla ? (p.senado.find((s) => s.isla === c.isla)?.senadores ?? p.senado[0].senadores) : p.senado[0].senadores;
+  return { ...c, senadores, marcas: marcasSenado(senadores) };
+});
+const porIslas = circunscripciones.length > 1;
+const senadores = circunscripciones.reduce((t, c) => t + c.senadores, 0);
+const candidaturas = circunscripciones.reduce((t, c) => t + c.listas.length, 0);
+const candidatos = circunscripciones.reduce((t, c) => t + c.listas.reduce((u, l) => u + l.candidatos.length, 0), 0);
+const unica = circunscripciones[0];
+const palabra = (n: number) => (n === 1 ? 'candidato' : 'candidatos');
+const resumenMarcas = porIslas
+  ? circunscripciones.map((c) => `${c.isla}: ${c.marcas}`).join(', ')
+  : `${unica.marcas} ${palabra(unica.marcas)}`;
+const familia = (siglas: string) => p.listas.find((l) => l.siglas === siglas)?.familia;
+
+const title = `Candidatos al Senado por ${p.nombre} el 29-N`;
+const heading = `Candidatos al Senado por ${p.nombre}`;
+const description = (
+  porIslas
+    ? `${p.nombre} elige ${senadores} senadores por islas el 29-N. Todas las candidaturas de cada isla, con sus candidatos y suplentes según el BOE.`
+    : `${p.nombre} elige ${senadores} senadores el 29-N. Las ${candidaturas} candidaturas con sus candidatos y suplentes según el BOE. Puedes marcar hasta ${unica.marcas} y mezclar partidos.`
+);
+const breadcrumbs = [{ name: 'Provincias', href: '/provincias' }, { name: p.nombre, href: `/provincias/${p.slug}` }, { name: 'Senado' }];
+
+const preguntas = [
+  {
+    q: `¿Cuántos senadores se eligen en ${p.nombre}?`,
+    a: porIslas ? `${senadores}, por islas: ${circunscripciones.map((c) => `${c.isla} ${c.senadores}`).join(', ')}.` : `${senadores}. Salen elegidos los ${senadores} candidatos con más votos.`,
+  },
+  {
+    q: `¿Cuántos candidatos al Senado puedo marcar en ${p.nombre}?`,
+    a: porIslas ? `Depende de la isla. ${resumenMarcas}. Si marcas más, el voto es nulo.` : `Hasta ${unica.marcas}. Si marcas más, el voto es nulo; si no marcas ninguno, es voto en blanco.`,
+  },
+  {
+    q: '¿Puedo votar a candidatos de partidos distintos?',
+    a: 'Sí. Las listas del Senado son abiertas: marcas personas, no un partido, y pueden ser de candidaturas diferentes.',
+  },
+  {
+    q: '¿Qué es un suplente en el Senado?',
+    a: 'Cada candidato lleva sus suplentes. Si un senador elegido fallece, queda incapacitado o renuncia, ocupa su lugar su suplente.',
+  },
+];
+---
+
+<BaseLayout title={title} heading={heading} description={description} breadcrumbs={breadcrumbs}>
+  <CabeceraPagina titulo={heading} breadcrumbs={breadcrumbs} etiqueta="Senado · 29 de noviembre de 2026">
+    <p>
+      {porIslas ? <>Aquí el Senado se vota por islas: </> : <>Se eligen <strong>{senadores} senadores</strong> y puedes marcar <strong>hasta {unica.marcas}</strong>, del mismo partido o de partidos distintos. </>}
+      {porIslas && <strong>{circunscripciones.map((c) => `${c.isla} elige ${c.senadores}`).join(', ')}.</strong>}
+    </p>
+  </CabeceraPagina>
+
+  <div class="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
+    <section class="grid grid-cols-2 gap-4 md:grid-cols-3">
+      <div class="tarjeta"><p class="dato-valor">{senadores}</p><p class="dato-nombre">senadores en juego</p></div>
+      <div class="tarjeta"><p class="dato-valor">{candidaturas}</p><p class="dato-nombre">candidaturas</p></div>
+      <div class="tarjeta"><p class="dato-valor">{candidatos}</p><p class="dato-nombre">candidatos</p></div>
+    </section>
+
+    {
+      circunscripciones.map((c) => (
+        <section>
+          <h2 class="text-2xl font-bold tracking-tight">{porIslas ? `${c.isla}: ${c.listas.length} candidaturas` : `Las ${c.listas.length} candidaturas al Senado por ${p.nombre}`}</h2>
+          <p class="mt-2 max-w-3xl text-slate-600">
+            {porIslas ? `Elige ${c.senadores} ${c.senadores === 1 ? 'senador' : 'senadores'}; puedes marcar ${c.marcas === 1 ? 'un candidato' : `hasta ${c.marcas} candidatos`}. ` : ''}En el orden en que las publica el BOE.
+          </p>
+          <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {c.listas.map((l) => {
+              const f = familia(l.siglas);
+              const partido = f ? getPartido(f) : undefined;
+              const color = partido?.color ?? '#475569';
+              const conSuplentes = l.candidatos.filter((x) => x.suplentes.length > 0);
+              return (
+                <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                  <span class="h-1.5" style={`background:${color}`} />
+                  <header class="p-4">
+                    <p class="text-lg font-black leading-tight" style={`color:${color}`}>{l.siglas}</p>
+                    {l.nombre !== l.siglas && <p class="text-xs leading-snug text-slate-500">{l.nombre}</p>}
+                    {partido && <a href={`/partidos/${partido.slug}`} class="mt-1 inline-block text-xs font-semibold text-indigo-700 hover:underline">Ficha del partido →</a>}
+                  </header>
+                  <ul class="flex-1 space-y-1 px-4 pb-3 text-sm text-slate-800">
+                    {l.candidatos.map((x) => <li class="font-semibold">{x.n}{x.nota && <span class="text-xs font-normal text-slate-400"> ({x.nota})</span>}</li>)}
+                  </ul>
+                  {conSuplentes.length > 0 && (
+                    <details class="border-t border-slate-100 px-4 text-sm">
+                      <summary class="cursor-pointer py-3 font-semibold text-slate-500">Ver los suplentes</summary>
+                      <ul class="space-y-2 pb-3 text-slate-600">
+                        {conSuplentes.map((x) => <li><span class="font-semibold">{x.n}:</span> {x.suplentes.map((s) => s.n).join(' y ')}</li>)}
+                      </ul>
+                    </details>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+
+    <AdSlot />
+
+    <section class="texto max-w-3xl">
+      <h2>Cómo se vota esta papeleta</h2>
+      <p>La papeleta del Senado es de color sepia y trae a todos los candidatos. Marcas con una cruz a quienes quieras, sin pasarte del máximo, y la metes en su sobre. <a href="/senado">Guía completa del voto al Senado</a>.</p>
+      <p>Las listas al Congreso son otra votación: <a href={`/provincias/${p.slug}`}>candidatos al Congreso por {p.nombre}</a>.</p>
+    </section>
+
+    <Faq preguntas={preguntas} />
+    <Fuente>
+      Fuentes: candidaturas proclamadas por la Junta Electoral Provincial de {p.nombre}, <a href={ELECCION.proclamadas.boe} rel="noopener" target="_blank">{ELECCION.proclamadas.nombre}</a>;
+      Ley Orgánica del Régimen Electoral General (arts. 96, 165, 166 y 171). No se incluyen las candidaturas que la Junta no proclamó.
+    </Fuente>
+    <Autor />
+  </div>
+</BaseLayout>

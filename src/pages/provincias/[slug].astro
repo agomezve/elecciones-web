@@ -9,7 +9,7 @@ import Faq from '../../components/Faq.astro';
 import Autor from '../../components/Autor.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Fuente from '../../components/Fuente.astro';
-import { ELECCION, PROVINCIAS, electoresPorEscano, num, pct, type Provincia } from '../../lib/datos';
+import { ELECCION, PROVINCIAS, electoresPorEscano, marcasSenado, num, pct, type Provincia } from '../../lib/datos';
 import { SIGLAS_2023, getPartido } from '../../lib/partidos';
 
 export function getStaticPaths() {
@@ -37,7 +37,7 @@ const maxPct = Math.max(...r.partidos.map((x) => x.pct));
 const participacion = (100 * r.votantes) / r.censo;
 
 const senadores = p.senado.reduce((s, x) => s + x.senadores, 0);
-const marcas = (n: number) => (n === 4 ? 3 : n === 3 ? 2 : n === 2 ? 1 : 1);
+const marcas = marcasSenado;
 const vecinas = PROVINCIAS.filter((x) => x.comunidad === p.comunidad && x.slug !== p.slug);
 const enLaCapital = p.nombre;
 
@@ -246,6 +246,7 @@ const preguntas = [
           </p>
         )
       }
+      <p><a href={`/provincias/${p.slug}/senado`}>Ver los candidatos al Senado por {p.nombre} →</a></p>
     </section>
 
     <Faq preguntas={preguntas} />

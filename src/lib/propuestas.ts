@@ -58,6 +58,7 @@ export const F = {
   podWeb: { medio: 'Diario Red', url: 'https://www.diario-red.com/espana/irene-montero-lanza-web-campana-29n-llama-organizar-voluntarios-barrios-municipios/20261020180948078764.html', fecha: '2026-10-21' },
   podEP: { medio: 'Periódico de Ibiza (Europa Press)', url: 'https://www.periodicodeibiza.es/noticias/elecciones-29n/2026/10/28/2737933/irene-montero-propone-prohibir-especulacion-casa-puede-comprar-para-hacer-negocio.html', fecha: '2026-10-28' },
   foEntrevista: { medio: 'El Diario de Madrid', url: 'https://www.eldiariodemadrid.es/articulo/entrevistas/roberto-vaquero-frente-obrero-sistema-politico/20261031102036145765.html', fecha: '2026-10-31' },
+  foPrograma: { medio: 'Frente Obrero (programa «Un programa para recuperar España», en su web)', url: 'https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf', fecha: '2026-10-07' },
   foCircunscripciones: { medio: 'ESdiario', url: 'https://www.esdiario.com/nacional/261026/201315/roberto-vaquero-anuncia-frente-obrero-estara-52-circunscripciones-29-n.html', fecha: '2026-10-26' },
   pacma30: { medio: 'PACMA', url: 'https://pacma.es/actualidad/pacma-concurrira-a-las-elecciones-generales-del-29n-en-30-provincias/', fecha: '2026-11-03' },
   pcteCantabria: { medio: 'Cantabria al Día', url: 'https://cantabrialdia.com/pcte-pablo-isidro-alfredo-ramos-elecciones/', fecha: '2026-11-02' },
@@ -120,14 +121,26 @@ export const PROPUESTAS: Record<string, Propuesta[]> = {
     { tema: 'exterior', texto: 'No destinar «ni un euro más» a armamento.', origen: 'declaracion', fuente: F.podWeb },
   ],
   'frente-obrero': [
+    { tema: 'vivienda', texto: 'Construir vivienda pública, paralizar los desahucios de familias vulnerables hasta tener una alternativa y garantizar la dación en pago.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'vivienda', texto: 'Dar prioridad a los españoles en el acceso a la vivienda pública y actuar contra la okupación, los «inquiokupas» y los narcopisos.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'impuestos', texto: 'Bajar el IRPF a las rentas bajas y subirlo a las altas con más tramos, y subir sociedades y patrimonio a las grandes empresas.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'impuestos', texto: 'Bajar el IVA, pasar los productos de primera necesidad al tipo superreducido y quitar el impuesto de sucesiones a las rentas bajas.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'empleo', texto: 'Subir los salarios en relación con el coste de la vida, prohibir las empresas de trabajo temporal y derogar las reformas laborales que abarataron el despido.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'empleo', texto: 'Quitar la cuota a los autónomos que no llegan al salario mínimo y bajarla al resto.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'pensiones', texto: 'Revertir la subida de la edad de jubilación, subir las pensiones mínimas y no contributivas y calcular la pensión con los mejores años cotizados.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'inmigracion', texto: 'Expulsar a los inmigrantes en situación irregular o que delincan de forma reiterada y retirar la nacionalidad a los nacionalizados que cometan un delito grave.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'inmigracion', texto: 'Dejar de conceder nacionalidades hasta revisar las de los últimos veinte años y endurecer los requisitos de la nacionalidad y del asilo.', origen: 'documento', fuente: F.foPrograma },
     { tema: 'inmigracion', texto: 'Reforzar el control de las fronteras y poner fin al actual modelo migratorio.', origen: 'declaracion', fuente: F.foCircunscripciones },
-    { tema: 'inmigracion', texto: 'Expulsar a los extranjeros que cometan determinados delitos y retirar la nacionalidad a personas nacionalizadas en ciertos supuestos.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
+    { tema: 'instituciones', texto: 'Las mismas competencias y el mismo régimen fiscal para todas las comunidades, centralizar sanidad, educación y emergencias, y fusionar ayuntamientos.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'instituciones', texto: 'Suprimir el Ministerio de Igualdad y las subvenciones «de carácter ideológico».', origen: 'documento', fuente: F.foPrograma },
     { tema: 'instituciones', texto: 'Un proceso constituyente con una nueva Constitución (o, si no, una reforma integral de la actual) y estudiar una circunscripción única para que el reparto sea más proporcional.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
-    { tema: 'instituciones', texto: 'Evaluar el desempeño de los funcionarios y gestionar las empresas públicas con criterios de eficiencia.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
-    { tema: 'vivienda', texto: 'Construir vivienda pública y fomentar la privada, acabar con la okupación y combatir la especulación de los grandes fondos sin criminalizar al pequeño propietario.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
-    { tema: 'economia', texto: 'Reindustrializar España, tecnificar el campo y defender a autónomos y pequeños empresarios frente a las grandes empresas supranacionales.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
-    { tema: 'servicios', texto: 'Invertir en sanidad, educación y servicios esenciales, exigiendo resultados.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
-    { tema: 'exterior', texto: 'Recuperar capacidad de decisión frente a las instituciones de la Unión Europea.', origen: 'declaracion', fuente: F.foCircunscripciones },
+    { tema: 'servicios', texto: 'Una sanidad pública centralizada y sin externalizaciones, con dentista, fisioterapia y oftalmología gratuitos.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'servicios', texto: 'Educación gratuita en todos los niveles (la universitaria, para las rentas bajas), comedor escolar gratuito y sin subvenciones a la escuela privada.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'seguridad', texto: 'Integrar las policías autonómicas en la Policía Nacional, igualar los sueldos con la Guardia Civil y dejar que la Guardia Civil se sindique.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'seguridad', texto: 'Penas más altas por corrupción, también para los partidos, y prohibir el indulto en esos casos.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'economia', texto: 'Nacionalizar los sectores estratégicos, regular el precio de la luz y los combustibles y ampliar el parque nuclear.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'economia', texto: 'Romper con la política agraria de la UE (PAC) y expropiar las tierras sin uso de grandes propietarios para repartirlas entre agricultores y cooperativas.', origen: 'documento', fuente: F.foPrograma },
+    { tema: 'exterior', texto: 'Salir de la Unión Europea y de la OTAN y cerrar las bases militares extranjeras, empezando por recuperar Gibraltar.', origen: 'documento', fuente: F.foPrograma },
     { tema: 'exterior', texto: 'Transformar a fondo la Unión Europea y, si esa transformación no llega, «plantearse otras alternativas».', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
     { tema: 'exterior', texto: 'Renegociar la relación con la OTAN e invertir en un ejército moderno.', quien: 'Roberto Vaquero, en una entrevista', origen: 'declaracion', fuente: F.foEntrevista },
   ],
@@ -157,4 +170,4 @@ export const ultimaFuente = (slug: string) =>
   propuestasDe(slug).reduce((max, p) => (p.fuente.fecha > max ? p.fuente.fecha : max), '');
 
 /** Fecha de la última revisión de las propuestas (se cambia a mano en cada revisión). */
-export const REVISADO = '2026-11-07';
+export const REVISADO = '2026-11-11';

@@ -59,6 +59,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'nucleares', tema: 'Energía',
     texto: 'Hay que alargar la vida de las centrales nucleares más allá del calendario de cierre.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone frenar el cierre de centrales y ampliar el parque nuclear.', fuente: F.foPrograma },
       pp: { v: 2, por: 'Presentó y votó a favor de pedir que se amplíe la vida útil de las centrales (12-feb-2025).', fuente: V.nucleares },
       vox: { v: 2, por: 'Propone mantener las centrales nucleares.', fuente: F.voxDebate },
       'upn-pp': { v: 2, por: 'UPN votó a favor de pedir que se amplíe la vida útil de las centrales (12-feb-2025).', fuente: V.nucleares },
@@ -101,6 +102,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'vivienda-publica', tema: 'Vivienda',
     texto: 'El Estado debe construir y gestionar mucha más vivienda pública.',
     posturas: {
+      'frente-obrero': { v: 1, por: 'Su programa propone construir vivienda pública de calidad.', fuente: F.foPrograma },
       psoe: { v: 2, por: 'Propone una Empresa Estatal de Vivienda y un parque público por encima del 6 %.', fuente: F.psoeForbes },
       podemos: { v: 2, por: 'Propone expropiar viviendas de fondos para alquilarlas como vivienda social.', fuente: F.podEP },
       'frente-amplio': { v: 1, por: 'Propone intervenir el mercado de la vivienda.', fuente: F.faActo },
@@ -118,6 +120,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'okupas', tema: 'Vivienda',
     texto: 'Hay que desalojar a los okupas en un plazo de horas, sin esperar a un juicio largo.',
     posturas: {
+      'frente-obrero': { v: 1, por: 'Su programa dice que la okupación de viviendas de particulares no debe permitirse en ningún caso.', fuente: F.foPrograma },
       pp: { v: 2, por: 'Propone desalojar a los okupas en 48 horas.', fuente: F.ppContrato2 },
       vox: { v: 2, por: 'Propone endurecer la respuesta a la okupación.', fuente: F.voxDemocrata },
     },
@@ -135,6 +138,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'autonomos', tema: 'Empleo',
     texto: 'Los autónomos que ganan poco deberían pagar mucha menos cuota, o ninguna.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone quitar la cuota a los autónomos que no llegan al salario mínimo.', fuente: F.foPrograma },
       vox: { v: 2, por: 'Propone quitar la cuota a quien ingrese menos que el salario mínimo.', fuente: F.voxDebate },
       psoe: { v: 1, por: 'Propone que los autónomos coticen por sus ingresos reales.', fuente: F.psoeForbes },
     },
@@ -150,6 +154,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'deportaciones', tema: 'Inmigración',
     texto: 'Hay que expulsar de España a los inmigrantes que están en situación irregular.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone expulsar a los inmigrantes en situación irregular.', fuente: F.foPrograma },
       vox: { v: 2, por: 'Propone repatriar a quien entra ilegalmente («remigración»).', fuente: F.voxDebate },
       salf: { v: 2, por: 'Propone un plan de deportación masiva de inmigrantes en situación irregular.', fuente: F.salfVistalegre },
       pp: { v: 1, por: 'Propone reducir la inmigración irregular y no hacer regularizaciones colectivas.', fuente: F.ppContrato },
@@ -159,6 +164,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'prioridad-nacional', tema: 'Inmigración',
     texto: 'Las ayudas sociales y del alquiler deben darse primero a los españoles.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone dar prioridad a los españoles en la vivienda pública y en las ayudas.', fuente: F.foPrograma },
       vox: { v: 2, por: 'Propone la «prioridad nacional» en ayudas sociales, al alquiler y guarderías.', fuente: F.voxDebate },
     },
   },
@@ -166,6 +172,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'gasto-politico', tema: 'Instituciones',
     texto: 'Hay que recortar el gasto político: menos altos cargos y nada de subvenciones a partidos y sindicatos.',
     posturas: {
+      'frente-obrero': { v: 1, por: 'Su programa propone suprimir cargos duplicados y las subvenciones «de carácter ideológico».', fuente: F.foPrograma },
       pp: { v: 1, por: 'Propone menos ministerios, altos cargos y asesores, y auditar el gasto.', fuente: F.ppContrato },
       vox: { v: 2, por: 'Propone acabar con las subvenciones a partidos, sindicatos y patronales.', fuente: F.voxDebate },
       salf: { v: 2, por: 'Propone eliminar la financiación pública de partidos, sindicatos y medios.', fuente: F.salfVistalegre },
@@ -182,6 +189,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'empresas-publicas', tema: 'Economía',
     texto: 'Las grandes empresas de energía y alimentación deberían pasar a ser públicas.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone nacionalizar los sectores estratégicos de la economía.', fuente: F.foPrograma },
       podemos: { v: 2, por: 'Propone expropiar empresas estratégicas como las de energía y alimentación.', fuente: F.podEP },
     },
   },
@@ -189,6 +197,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'pacto-verde', tema: 'Energía',
     texto: 'España debería dejar de aplicar las normas del Pacto Verde Europeo.',
     posturas: {
+      'frente-obrero': { v: 2, por: 'Su programa propone poner fin a la «transición ecológica» que marca la UE.', fuente: F.foPrograma },
       vox: { v: 2, por: 'Propone derogar la normativa del Pacto Verde Europeo.', fuente: F.voxDebate },
     },
   },
@@ -196,6 +205,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'defensa', tema: 'Europa y defensa',
     texto: 'España no debe gastar más dinero en armamento.',
     posturas: {
+      'frente-obrero': { v: -1, por: 'Su programa propone salir de la OTAN y reforzar el ejército.', fuente: F.foPrograma },
       podemos: { v: 2, por: 'Propone no destinar «ni un euro más» a armamento.', fuente: F.podWeb },
     },
   },

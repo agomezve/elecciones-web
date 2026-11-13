@@ -16,15 +16,17 @@ const conPropuestas = PARTIDOS_ORDENADOS.filter((p) => propuestasDe(p.slug).leng
 const sinPropuestas = PARTIDOS_ORDENADOS.filter((p) => propuestasDe(p.slug).length === 0);
 const temas = TEMAS.filter((t) => conPropuestas.some((p) => propuestasDe(p.slug).some((x) => x.tema === t.id)));
 const total = conPropuestas.reduce((s, p) => s + propuestasDe(p.slug).length, 0);
+const conPrograma = PARTIDOS_ORDENADOS.filter((p) => p.programa || p.programaPresentado);
+const siglasConPrograma = conPrograma.map((p) => p.siglas).join(', ').replace(/, ([^,]*)$/, ' y $1');
 
 const title = 'Propuestas de los partidos para el 29-N, tema a tema';
 const heading = 'Qué propone cada partido para el 29-N';
-const description = `${total} medidas de PP, PSOE, Vox, Frente Amplio, Podemos y SALF sobre vivienda, impuestos, salarios, pensiones e inmigración, cada una con su fuente.`;
+const description = `${total} medidas de ${conPropuestas.length} partidos para el 29-N: los programas de ${siglasConPrograma} y lo que han dicho en público, cada una con su fuente.`;
 
 const preguntas = [
   {
     q: '¿Ya han publicado los partidos sus programas para el 29-N?',
-    a: `A ${fechaLarga(REVISADO)}, ninguno de estos partidos ha publicado su programa completo. Por eso recogemos lo que han dicho en público, con la fuente de cada medida, y lo cambiaremos por el programa en cuanto lo publiquen.`,
+    a: `A ${fechaLarga(REVISADO)} han presentado su programa ${siglasConPrograma}. Sus medidas llevan la etiqueta «Programa del 29-N». Del resto recogemos lo que han dicho en público, con la fuente de cada medida, y lo cambiaremos por el programa en cuanto lo publiquen.`,
   },
   {
     q: '¿Qué significa cada etiqueta?',
@@ -40,8 +42,8 @@ const preguntas = [
 <BaseLayout title={title} heading={heading} description={description} breadcrumbs={[{ name: 'Propuestas' }]} modified={new Date(`${REVISADO}T12:00:00Z`)}>
   <CabeceraPagina titulo={heading} breadcrumbs={[{ name: 'Propuestas' }]} etiqueta={`Revisado el ${fechaLarga(REVISADO)}`}>
     <p>
-      <strong>{total} medidas de {conPropuestas.length} partidos</strong>, ordenadas por tema. Ninguno ha publicado aún su programa:
-      lo que hay es lo que han dicho en público, y cada medida enlaza a su fuente.
+      <strong>{total} medidas de {conPropuestas.length} partidos</strong>, ordenadas por tema. Ya tienen programa del 29-N {siglasConPrograma};
+      del resto, lo que han dicho en público. Cada medida enlaza a su fuente.
     </p>
   </CabeceraPagina>
 

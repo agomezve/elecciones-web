@@ -22,6 +22,8 @@ export interface Partido {
   nota2023?: string;
   web?: string;
   programa?: { url: string; fecha: string } | null;
+  /** Programa presentado, pero sin documento completo localizado en la web del partido: se enlaza la noticia. */
+  programaPresentado?: { fecha: string; medio: string; url: string };
   /** Otras cabezas de lista que se destacan en la ficha (provincia → slug). */
   destacados?: string[];
 }
@@ -33,6 +35,7 @@ export const PARTIDOS: Partido[] = [
     slug: 'pp', siglas: 'PP', nombre: 'Partido Popular', color: '#1d84ce', logo: '/img/partidos/pp.svg',
     ambito: 'estatal', provinciaRef: 'madrid', r2023: { escanos: 137, votos: 8_160_837 }, web: 'https://www.pp.es',
     destacados: ['barcelona'],
+    programa: { url: 'https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf', fecha: '2026-11-10' },
   },
   {
     slug: 'psoe', siglas: 'PSOE', nombre: 'Partido Socialista Obrero Español', color: '#e30613', logo: '/img/partidos/psoe.svg',
@@ -43,10 +46,12 @@ export const PARTIDOS: Partido[] = [
   {
     slug: 'vox', siglas: 'VOX', nombre: 'VOX', color: '#5ac035', logo: '/img/partidos/vox.svg',
     ambito: 'estatal', provinciaRef: 'madrid', r2023: { escanos: 33, votos: 3_057_000 }, web: 'https://www.voxespana.es',
+    programaPresentado: { fecha: '2026-11-12', medio: 'El Debate', url: 'https://www.eldebate.com/espana/20261112/vox-desvela-programa-29n-115-medidas-ceuta-melilla-primer-lugar_480280.html' },
   },
   {
     slug: 'erc', siglas: 'ERC', nombre: 'Esquerra Republicana de Catalunya', color: '#ffb232', logo: '/img/partidos/erc.svg',
     ambito: 'autonómico', provinciaRef: 'barcelona', r2023: { escanos: 7, votos: 466_020 }, web: 'https://www.esquerra.cat',
+    programa: { url: 'https://esquerrarepublicana.cat/documents/e2026-programa.pdf', fecha: '2026-11-10' },
   },
   {
     slug: 'junts', siglas: 'JxCat', nombre: 'Junts per Catalunya', color: '#00c3b2', logo: '/img/partidos/junts.svg',
@@ -64,10 +69,12 @@ export const PARTIDOS: Partido[] = [
   {
     slug: 'bng', siglas: 'BNG', nombre: 'Bloque Nacionalista Galego', color: '#76b3dd', logo: '/img/partidos/bng.svg',
     ambito: 'autonómico', provinciaRef: 'a-coruna', r2023: { escanos: 1, votos: 153_995 }, web: 'https://www.bng.gal',
+    programa: { url: 'https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf', fecha: '2026-11-03' },
   },
   {
     slug: 'coalicion-canaria', siglas: 'CCa', nombre: 'Coalición Canaria', color: '#ffd700', logo: '/img/partidos/cca.svg',
     ambito: 'autonómico', provinciaRef: 'santa-cruz-de-tenerife', r2023: { escanos: 1, votos: 116_363 }, web: 'https://coalicioncanaria.org',
+    programa: { url: 'https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf', fecha: '2026-11-08' },
   },
   {
     slug: 'upn-pp', siglas: 'UPN-PP', nombre: 'Unión del Pueblo Navarro en coalición con el Partido Popular', color: '#2a52be', logo: '/img/partidos/upn.svg',

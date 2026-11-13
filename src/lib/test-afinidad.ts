@@ -60,7 +60,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     texto: 'Hay que alargar la vida de las centrales nucleares más allá del calendario de cierre.',
     posturas: {
       'frente-obrero': { v: 2, por: 'Su programa propone frenar el cierre de centrales y ampliar el parque nuclear.', fuente: F.foPrograma },
-      pp: { v: 2, por: 'Presentó y votó a favor de pedir que se amplíe la vida útil de las centrales (12-feb-2025).', fuente: V.nucleares },
+      pp: { v: 2, por: 'Su programa propone eliminar el calendario de cierre de las centrales nucleares.', fuente: F.ppPrograma },
       vox: { v: 2, por: 'Propone mantener las centrales nucleares.', fuente: F.voxDebate },
       'upn-pp': { v: 2, por: 'UPN votó a favor de pedir que se amplíe la vida útil de las centrales (12-feb-2025).', fuente: V.nucleares },
       erc: { v: 0, por: 'Se abstuvo en la votación para ampliar la vida útil de las centrales (12-feb-2025).', fuente: V.nucleares },
@@ -74,8 +74,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'bajar-impuestos', tema: 'Impuestos',
     texto: 'Hay que bajar los impuestos en general, aunque el Estado ingrese menos.',
     posturas: {
-      pp: { v: 2, por: 'Propone revisar las subidas de impuestos de los últimos años y bajar la presión fiscal.', fuente: F.ppContrato },
-      vox: { v: 2, por: 'Propone bajar el IRPF (15 % hasta 70.000 €) y el IVA general al 18 %.', fuente: F.voxDebate },
+      erc: { v: -1, por: 'Su programa propone subir el IRPF de las ganancias de capital y bajarlo a las rentas del trabajo de menos de 35.000 €.', fuente: F.ercPrograma },
+      pp: { v: 2, por: 'Su programa propone bajar el IRPF a rentas medias y bajas y un IVA del 0 % en alimentos básicos.', fuente: F.ppPrograma },
+      vox: { v: 2, por: 'Su programa propone bajar el IRPF, el IVA y el Impuesto de Sociedades.', fuente: F.voxPrograma },
       salf: { v: 2, por: 'Propone un IRPF del 0 % para quien gane menos de 35.000 € al año.', fuente: F.salfVistalegre },
       'frente-amplio': { v: -1, por: 'Ernest Urtasun propone subir los impuestos a las eléctricas.', fuente: F.faActo },
     },
@@ -84,6 +85,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'precio-alquiler', tema: 'Vivienda',
     texto: 'El Estado debe limitar el precio de los alquileres.',
     posturas: {
+      bng: { v: 2, por: 'Su programa propone topar por ley el precio de los alquileres.', fuente: F.bngPrograma },
+      pp: { v: -2, por: 'Su programa propone derogar la Ley de Vivienda y eliminar las zonas tensionadas y el índice de precios.', fuente: F.ppPrograma },
+      vox: { v: -1, por: 'Su programa propone derogar la Ley de Vivienda.', fuente: F.voxPrograma },
       'frente-amplio': { v: 2, por: 'Propone controlar los precios del alquiler.', fuente: F.faActo },
       podemos: { v: 2, por: 'Propone bajar los alquileres un 40 %.', fuente: F.podEP },
       psoe: { v: 1, por: 'Propone prorrogar dos años los contratos limitando las subidas.', fuente: F.psoeDecretos },
@@ -93,8 +97,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'suelo', tema: 'Vivienda',
     texto: 'Para que la vivienda baje, lo principal es construir más liberando suelo y quitando trámites.',
     posturas: {
-      pp: { v: 2, por: 'Propone construir un millón de viviendas con menos trámites para liberar suelo.', fuente: F.ppContrato },
-      vox: { v: 2, por: 'Propone liberalizar el suelo salvo zonas protegidas.', fuente: F.voxDemocrata },
+      pp: { v: 2, por: 'Su programa propone un millón de viviendas, una nueva Ley del Suelo y licencias en tres meses.', fuente: F.ppPrograma },
+      vox: { v: 2, por: 'Su programa propone reformar la ley del suelo y construir más vivienda nueva.', fuente: F.voxPrograma },
       salf: { v: 2, por: 'Propone eliminar trabas a la construcción de vivienda.', fuente: F.salfVistalegre },
     },
   },
@@ -102,6 +106,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'vivienda-publica', tema: 'Vivienda',
     texto: 'El Estado debe construir y gestionar mucha más vivienda pública.',
     posturas: {
+      erc: { v: 2, por: 'Su programa propone dedicar el 1,5 % del PIB a vivienda para ampliar el parque público de alquiler.', fuente: F.ercPrograma },
+      bng: { v: 2, por: 'Su programa propone traspasar la Sareb a la Xunta para vivienda pública de alquiler y crear empresas públicas de vivienda.', fuente: F.bngPrograma },
+      'coalicion-canaria': { v: 1, por: 'Su programa propone un fondo estatal de ocho años para vivienda pública y asequible.', fuente: F.ccPrograma },
       'frente-obrero': { v: 1, por: 'Su programa propone construir vivienda pública de calidad.', fuente: F.foPrograma },
       psoe: { v: 2, por: 'Propone una Empresa Estatal de Vivienda y un parque público por encima del 6 %.', fuente: F.psoeForbes },
       podemos: { v: 2, por: 'Propone expropiar viviendas de fondos para alquilarlas como vivienda social.', fuente: F.podEP },
@@ -112,6 +119,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'expropiar-fondos', tema: 'Vivienda',
     texto: 'Hay que expropiar las viviendas de los grandes fondos de inversión para hacerlas vivienda social.',
     posturas: {
+      bng: { v: 1, por: 'Su programa propone facilitar la expropiación de vivienda de promoción pública comprada por fondos.', fuente: F.bngPrograma },
       podemos: { v: 2, por: 'Propone expropiar las viviendas de los «fondos buitre».', fuente: F.podEP },
       'frente-amplio': { v: 1, por: 'Su texto conjunto propone plantar cara a los fondos buitre.', fuente: F.faPublico },
     },
@@ -121,14 +129,16 @@ export const AFIRMACIONES: Afirmacion[] = [
     texto: 'Hay que desalojar a los okupas en un plazo de horas, sin esperar a un juicio largo.',
     posturas: {
       'frente-obrero': { v: 1, por: 'Su programa dice que la okupación de viviendas de particulares no debe permitirse en ningún caso.', fuente: F.foPrograma },
-      pp: { v: 2, por: 'Propone desalojar a los okupas en 48 horas.', fuente: F.ppContrato2 },
-      vox: { v: 2, por: 'Propone endurecer la respuesta a la okupación.', fuente: F.voxDemocrata },
+      pp: { v: 2, por: 'Su programa propone que el propietario recupere su vivienda en 48 horas por orden judicial.', fuente: F.ppPrograma },
+      vox: { v: 2, por: 'Su programa propone desalojar al okupa en menos de 24 horas.', fuente: F.voxPrograma },
     },
   },
   {
     id: 'smi', tema: 'Empleo',
     texto: 'El salario mínimo debe seguir subiendo.',
     posturas: {
+      erc: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.ercPrograma },
+      bng: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.bngPrograma },
       psoe: { v: 2, por: 'Propone que el salario mínimo equivalga al 60 % del salario medio.', fuente: F.psoeForbes },
       'frente-amplio': { v: 2, por: 'Ernest Urtasun propone seguir subiendo el salario mínimo.', fuente: F.faActo },
       podemos: { v: 2, por: 'Propone un salario mínimo de 1.800 € por ley.', fuente: F.podWeb },
@@ -138,8 +148,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'autonomos', tema: 'Empleo',
     texto: 'Los autónomos que ganan poco deberían pagar mucha menos cuota, o ninguna.',
     posturas: {
+      pp: { v: 2, por: 'Su programa propone que los nuevos autónomos no paguen cuota el primer año, ni el segundo si no llegan al salario mínimo.', fuente: F.ppPrograma },
+      erc: { v: 1, por: 'Su programa propone cuotas reducidas para los autónomos que ingresen menos del salario mínimo.', fuente: F.ercPrograma },
       'frente-obrero': { v: 2, por: 'Su programa propone quitar la cuota a los autónomos que no llegan al salario mínimo.', fuente: F.foPrograma },
-      vox: { v: 2, por: 'Propone quitar la cuota a quien ingrese menos que el salario mínimo.', fuente: F.voxDebate },
+      vox: { v: 2, por: 'Su programa propone cuota cero para los autónomos que no lleguen al salario mínimo.', fuente: F.voxPrograma },
       psoe: { v: 1, por: 'Propone que los autónomos coticen por sus ingresos reales.', fuente: F.psoeForbes },
     },
   },
@@ -147,7 +159,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'pensiones-ipc', tema: 'Pensiones',
     texto: 'Las pensiones deben subir cada año al menos lo que suban los precios (IPC).',
     posturas: {
-      pp: { v: 2, por: 'Propone revalorizar las pensiones con el IPC dentro del Pacto de Toledo.', fuente: F.ppContrato },
+      erc: { v: 2, por: 'Su programa propone blindar la revalorización de las pensiones.', fuente: F.ercPrograma },
+      bng: { v: 2, por: 'Su programa propone revalorizar las pensiones con el IPC real.', fuente: F.bngPrograma },
+      pp: { v: 2, por: 'Su programa propone que las pensiones suban cada año con el IPC.', fuente: F.ppPrograma },
     },
   },
   {
@@ -155,9 +169,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     texto: 'Hay que expulsar de España a los inmigrantes que están en situación irregular.',
     posturas: {
       'frente-obrero': { v: 2, por: 'Su programa propone expulsar a los inmigrantes en situación irregular.', fuente: F.foPrograma },
-      vox: { v: 2, por: 'Propone repatriar a quien entra ilegalmente («remigración»).', fuente: F.voxDebate },
+      vox: { v: 2, por: 'Su programa propone repatriar a quien entra ilegalmente («remigración»).', fuente: F.voxPrograma },
       salf: { v: 2, por: 'Propone un plan de deportación masiva de inmigrantes en situación irregular.', fuente: F.salfVistalegre },
-      pp: { v: 1, por: 'Propone reducir la inmigración irregular y no hacer regularizaciones colectivas.', fuente: F.ppContrato },
+      pp: { v: 1, por: 'Su programa propone devolver sin demora a quien entre de forma irregular y prohibir las regularizaciones masivas.', fuente: F.ppPrograma },
     },
   },
   {
@@ -165,7 +179,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     texto: 'Las ayudas sociales y del alquiler deben darse primero a los españoles.',
     posturas: {
       'frente-obrero': { v: 2, por: 'Su programa propone dar prioridad a los españoles en la vivienda pública y en las ayudas.', fuente: F.foPrograma },
-      vox: { v: 2, por: 'Propone la «prioridad nacional» en ayudas sociales, al alquiler y guarderías.', fuente: F.voxDebate },
+      vox: { v: 2, por: 'Su programa propone la «prioridad nacional» en vivienda pública, guarderías y ayudas.', fuente: F.voxPrograma },
     },
   },
   {
@@ -173,8 +187,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     texto: 'Hay que recortar el gasto político: menos altos cargos y nada de subvenciones a partidos y sindicatos.',
     posturas: {
       'frente-obrero': { v: 1, por: 'Su programa propone suprimir cargos duplicados y las subvenciones «de carácter ideológico».', fuente: F.foPrograma },
-      pp: { v: 1, por: 'Propone menos ministerios, altos cargos y asesores, y auditar el gasto.', fuente: F.ppContrato },
-      vox: { v: 2, por: 'Propone acabar con las subvenciones a partidos, sindicatos y patronales.', fuente: F.voxDebate },
+      pp: { v: 1, por: 'Su programa propone menos ministerios, altos cargos y asesores.', fuente: F.ppPrograma },
+      vox: { v: 2, por: 'Su programa propone eliminar las subvenciones a sindicatos, partidos y organismos «ideológicos».', fuente: F.voxPrograma },
       salf: { v: 2, por: 'Propone eliminar la financiación pública de partidos, sindicatos y medios.', fuente: F.salfVistalegre },
     },
   },
@@ -189,6 +203,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'empresas-publicas', tema: 'Economía',
     texto: 'Las grandes empresas de energía y alimentación deberían pasar a ser públicas.',
     posturas: {
+      bng: { v: 1, por: 'Su programa propone el control público de los sectores estratégicos, sobre todo de la energía.', fuente: F.bngPrograma },
       'frente-obrero': { v: 2, por: 'Su programa propone nacionalizar los sectores estratégicos de la economía.', fuente: F.foPrograma },
       podemos: { v: 2, por: 'Propone expropiar empresas estratégicas como las de energía y alimentación.', fuente: F.podEP },
     },
@@ -205,6 +220,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'defensa', tema: 'Europa y defensa',
     texto: 'España no debe gastar más dinero en armamento.',
     posturas: {
+      bng: { v: 2, por: 'Su programa rechaza el aumento del gasto militar.', fuente: F.bngPrograma },
+      pp: { v: -1, por: 'Su programa propone una ley de financiación de la defensa para cumplir los compromisos con los aliados.', fuente: F.ppPrograma },
       'frente-obrero': { v: -1, por: 'Su programa propone salir de la OTAN y reforzar el ejército.', fuente: F.foPrograma },
       podemos: { v: 2, por: 'Propone no destinar «ni un euro más» a armamento.', fuente: F.podWeb },
     },

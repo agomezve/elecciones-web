@@ -141,6 +141,7 @@ export const AFIRMACIONES: Afirmacion[] = [
       erc: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.ercPrograma },
       bng: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.bngPrograma },
       psoe: { v: 2, por: 'Su programa propone blindar por ley un salario mínimo por encima del 60 % del salario medio.', fuente: F.psoePrograma },
+      pnv: { v: 1, por: 'Su programa pide que Euskadi pueda fijar un salario mínimo propio, superior al estatal.', fuente: F.pnvPrograma },
       'frente-amplio': { v: 2, por: 'Ernest Urtasun propone seguir subiendo el salario mínimo.', fuente: F.faActo },
       podemos: { v: 2, por: 'Propone un salario mínimo de 1.800 € por ley.', fuente: F.podWeb },
     },
@@ -164,6 +165,7 @@ export const AFIRMACIONES: Afirmacion[] = [
       bng: { v: 2, por: 'Su programa propone revalorizar las pensiones con el IPC real.', fuente: F.bngPrograma },
       pp: { v: 2, por: 'Su programa propone que las pensiones suban cada año con el IPC.', fuente: F.ppPrograma },
       psoe: { v: 2, por: 'Su programa propone blindar en la Constitución la revalorización de las pensiones con el IPC.', fuente: F.psoePrograma },
+      pnv: { v: 2, por: 'Su programa propone mantener la revalorización de las pensiones conforme al IPC.', fuente: F.pnvPrograma },
     },
   },
   {

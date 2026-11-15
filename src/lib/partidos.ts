@@ -66,6 +66,7 @@ export const PARTIDOS: Partido[] = [
   {
     slug: 'pnv', siglas: 'EAJ-PNV', nombre: 'Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco', color: '#008a3e', logo: '/img/partidos/pnv.svg',
     ambito: 'autonómico', provinciaRef: 'bizkaia', r2023: { escanos: 5, votos: 277_289 }, web: 'https://www.eaj-pnv.eus',
+    programa: { url: 'https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n', fecha: '2026-11-10' },
   },
   {
     slug: 'bng', siglas: 'BNG', nombre: 'Bloque Nacionalista Galego', color: '#76b3dd', logo: '/img/partidos/bng.svg',

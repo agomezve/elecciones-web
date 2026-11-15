@@ -68,11 +68,23 @@ export const F = {
   ercPrograma: { medio: 'ERC (programa «Pel país. Per la gent. Pel futur.», en su web)', url: 'https://esquerrarepublicana.cat/documents/e2026-programa.pdf', fecha: '2026-11-10' },
   bngPrograma: { medio: 'BNG (programa electoral «29N. Xerais 2026», en su web)', url: 'https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf', fecha: '2026-11-03' },
   psoePrograma: { medio: 'PSOE (programa «La fuerza de seguir avanzando», en su web)', url: 'https://lafuerzadelagente.es/programa/PROGRAMA_PSOE_29N26.pdf', fecha: '2026-11-15' },
+  pnvPrograma: { medio: 'EAJ-PNV (programa «Euskadi Zaindu. Defendemos Euskadi», en su web)', url: 'https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n', fecha: '2026-11-10' },
   ccPrograma: { medio: 'Coalición Canaria (programa «Defiende Canarias», en su web)', url: 'https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf', fecha: '2026-11-08' },
 } satisfies Record<string, Fuente>;
 
 // ─── Propuestas por partido (slug de partidos.ts) ──────────────────────────────
 export const PROPUESTAS: Record<string, Propuesta[]> = {
+  pnv: [
+    { tema: 'vivienda', texto: 'Evitar que se usen contratos de temporada para saltarse los derechos de quien alquila su vivienda habitual, y facilitar a los jóvenes la primera vivienda en alquiler o en propiedad.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'empleo', texto: 'Que Euskadi tenga competencia para fijar un salario mínimo propio, superior al estatal y adaptado al coste de vida.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'empleo', texto: 'Ampliar la prestación contributiva por desempleo de 24 a 36 meses como máximo.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'impuestos', texto: 'Revisar el IVA de algunos alimentos y bienes esenciales y dar a las Haciendas Forales más capacidad sobre el IVA y los Impuestos Especiales.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'pensiones', texto: 'Mantener la revalorización de las pensiones con el IPC y quitar la penalización por jubilación anticipada a quien haya cotizado más de 40 años.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'economia', texto: 'Calendarios verificables para la Y vasca y el Corredor Atlántico, e inversión en redes eléctricas para abaratar la energía.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'seguridad', texto: 'Reformas legales contra la multirreincidencia, reformar la Ley de Seguridad Ciudadana y la de secretos oficiales.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'inmigracion', texto: 'Más competencias para Euskadi en acogida, permisos de residencia y trabajo e integración, y menos esperas para homologar títulos extranjeros.', origen: 'programa', fuente: F.pnvPrograma },
+    { tema: 'instituciones', texto: 'Completar las transferencias del Estatuto de Gernika, proteger el Concierto Económico y una nueva relación con el Estado basada en el reconocimiento nacional de Euskadi.', origen: 'programa', fuente: F.pnvPrograma },
+  ],
   pp: [
     { tema: 'vivienda', texto: 'Construir un millón de viviendas con una nueva Ley del Suelo, licencias de obra en tres meses con silencio positivo y vivienda social en suelo dotacional.', origen: 'programa', fuente: F.ppPrograma },
     { tema: 'vivienda', texto: 'Derogar la Ley de Vivienda y eliminar las zonas tensionadas y el índice de precios del alquiler.', origen: 'programa', fuente: F.ppPrograma },

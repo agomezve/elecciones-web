@@ -41,6 +41,7 @@ export const PARTIDOS: Partido[] = [
     slug: 'psoe', siglas: 'PSOE', nombre: 'Partido Socialista Obrero Español', color: '#e30613', logo: '/img/partidos/psoe.svg',
     ambito: 'estatal', provinciaRef: 'madrid',
     r2023: { escanos: 121, votos: 7_821_718, nota: 'Incluye PSC, PSdeG, PSE-EE, PSIB y PSN.' }, web: 'https://www.psoe.es',
+    programa: { url: 'https://lafuerzadelagente.es/programa/PROGRAMA_PSOE_29N26.pdf', fecha: '2026-11-15' },
     destacados: ['barcelona'],
   },
   {

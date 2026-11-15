@@ -48,7 +48,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'jornada', tema: 'Empleo',
     texto: 'Hay que reducir por ley la jornada laboral máxima por debajo de las 40 horas semanales.',
     posturas: {
-      psoe: { v: 2, por: 'Propone reducir la jornada hasta 36 horas semanales antes de 2030.', fuente: F.psoeForbes },
+      psoe: { v: 2, por: 'Su programa propone completar la reducción de la jornada a 37,5 horas y avanzar hacia las 35.', fuente: F.psoePrograma },
       'frente-amplio': { v: 2, por: 'Emilio Delgado propone reducir la jornada laboral.', fuente: F.faActo },
       podemos: { v: 2, por: 'Propone una jornada laboral de 30 horas semanales.', fuente: F.podWeb },
       erc: jornadaSi('ERC'), 'eh-bildu': jornadaSi('EH Bildu'), pnv: jornadaSi('El PNV'), bng: jornadaSi('El BNG'), 'coalicion-canaria': jornadaSi('Coalición Canaria'),
@@ -79,6 +79,7 @@ export const AFIRMACIONES: Afirmacion[] = [
       vox: { v: 2, por: 'Su programa propone bajar el IRPF, el IVA y el Impuesto de Sociedades.', fuente: F.voxPrograma },
       salf: { v: 2, por: 'Propone un IRPF del 0 % para quien gane menos de 35.000 € al año.', fuente: F.salfVistalegre },
       'frente-amplio': { v: -1, por: 'Ernest Urtasun propone subir los impuestos a las eléctricas.', fuente: F.faActo },
+      psoe: { v: -1, por: 'Su programa propone subir los impuestos a las rentas del capital altas y a las grandes tecnológicas, y no hacer tributar a las rentas más bajas.', fuente: F.psoePrograma },
     },
   },
   {
@@ -110,7 +111,7 @@ export const AFIRMACIONES: Afirmacion[] = [
       bng: { v: 2, por: 'Su programa propone traspasar la Sareb a la Xunta para vivienda pública de alquiler y crear empresas públicas de vivienda.', fuente: F.bngPrograma },
       'coalicion-canaria': { v: 1, por: 'Su programa propone un fondo estatal de ocho años para vivienda pública y asequible.', fuente: F.ccPrograma },
       'frente-obrero': { v: 1, por: 'Su programa propone construir vivienda pública de calidad.', fuente: F.foPrograma },
-      psoe: { v: 2, por: 'Propone una Empresa Estatal de Vivienda y un parque público por encima del 6 %.', fuente: F.psoeForbes },
+      psoe: { v: 2, por: 'Su programa propone dedicar cada año el 1 % del PIB a vivienda y consolidar CASA 47, la entidad estatal de vivienda pública.', fuente: F.psoePrograma },
       podemos: { v: 2, por: 'Propone expropiar viviendas de fondos para alquilarlas como vivienda social.', fuente: F.podEP },
       'frente-amplio': { v: 1, por: 'Propone intervenir el mercado de la vivienda.', fuente: F.faActo },
     },
@@ -139,7 +140,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       erc: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.ercPrograma },
       bng: { v: 2, por: 'Su programa propone subir el salario mínimo hasta el 60 % del salario medio.', fuente: F.bngPrograma },
-      psoe: { v: 2, por: 'Propone que el salario mínimo equivalga al 60 % del salario medio.', fuente: F.psoeForbes },
+      psoe: { v: 2, por: 'Su programa propone blindar por ley un salario mínimo por encima del 60 % del salario medio.', fuente: F.psoePrograma },
       'frente-amplio': { v: 2, por: 'Ernest Urtasun propone seguir subiendo el salario mínimo.', fuente: F.faActo },
       podemos: { v: 2, por: 'Propone un salario mínimo de 1.800 € por ley.', fuente: F.podWeb },
     },
@@ -162,6 +163,7 @@ export const AFIRMACIONES: Afirmacion[] = [
       erc: { v: 2, por: 'Su programa propone blindar la revalorización de las pensiones.', fuente: F.ercPrograma },
       bng: { v: 2, por: 'Su programa propone revalorizar las pensiones con el IPC real.', fuente: F.bngPrograma },
       pp: { v: 2, por: 'Su programa propone que las pensiones suban cada año con el IPC.', fuente: F.ppPrograma },
+      psoe: { v: 2, por: 'Su programa propone blindar en la Constitución la revalorización de las pensiones con el IPC.', fuente: F.psoePrograma },
     },
   },
   {

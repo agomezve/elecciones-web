@@ -67,6 +67,7 @@ export const F = {
   voxPrograma: { medio: 'El Debate (programa de VOX para el 29-N)', url: 'https://www.eldebate.com/espana/20261112/vox-desvela-programa-29n-115-medidas-ceuta-melilla-primer-lugar_480280.html', fecha: '2026-11-12' },
   ercPrograma: { medio: 'ERC (programa «Pel país. Per la gent. Pel futur.», en su web)', url: 'https://esquerrarepublicana.cat/documents/e2026-programa.pdf', fecha: '2026-11-10' },
   bngPrograma: { medio: 'BNG (programa electoral «29N. Xerais 2026», en su web)', url: 'https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf', fecha: '2026-11-03' },
+  psoePrograma: { medio: 'PSOE (programa «La fuerza de seguir avanzando», en su web)', url: 'https://lafuerzadelagente.es/programa/PROGRAMA_PSOE_29N26.pdf', fecha: '2026-11-15' },
   ccPrograma: { medio: 'Coalición Canaria (programa «Defiende Canarias», en su web)', url: 'https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf', fecha: '2026-11-08' },
 } satisfies Record<string, Fuente>;
 
@@ -95,13 +96,27 @@ export const PROPUESTAS: Record<string, Propuesta[]> = {
     { tema: 'exterior', texto: 'Una ley de programación y financiación de la defensa para cumplir los compromisos con los aliados.', origen: 'programa', fuente: F.ppPrograma },
   ],
   psoe: [
-    { tema: 'vivienda', texto: 'Crear una Empresa Estatal de Vivienda y llevar el parque público de vivienda por encima del 6 % del total.', origen: 'documento', fuente: F.psoeForbes },
+    { tema: 'vivienda', texto: 'Reformar la Constitución para que la vivienda sea un derecho fundamental y dedicar cada año el 1 % del PIB a garantizar el acceso a la vivienda.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'vivienda', texto: 'Consolidar CASA 47, la entidad estatal que gestiona el parque público de vivienda, como actor clave de la vivienda asequible.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'vivienda', texto: 'Un impuesto progresivo a las viviendas de fondos y grandes propietarios que no se destinen al alquiler residencial asequible: las turísticas, las vacías o las alquiladas a precios inasequibles.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'vivienda', texto: 'Mantener la limitación de la compra de viviendas por fondos especulativos y que los municipios que quieran puedan cobrar una tasa por noche en los pisos turísticos.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'impuestos', texto: 'Convertir el mínimo por descendiente del IRPF en un crédito fiscal reembolsable, que llegaría a 2 millones de hogares de ingresos medios y bajos, y seguir sin hacer tributar a las rentas más bajas.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'impuestos', texto: 'Subir los tipos de las rentas del capital por encima de 50.000 €, hasta un máximo del 35 % a partir de 300.000 €, sin tocar los dos primeros tramos.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'impuestos', texto: 'Más impuestos a las grandes tecnológicas y una tasa a los megayates, los jets privados y los billetes en business.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'empleo', texto: 'Completar la reducción de la jornada a 37,5 horas e incentivar que los convenios avancen hacia las 35.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'empleo', texto: 'Blindar por ley un salario mínimo por encima del 60 % del salario medio.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'empleo', texto: 'Un permiso pagado por la Seguridad Social de cuatro semanas al 100 % de la base reguladora para cuidar de hijos menores de ocho años.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'empleo', texto: 'Aprobar el Estatuto del Becario para blindar las prácticas remuneradas.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'pensiones', texto: 'Blindar en la Constitución el sistema público de pensiones y su revalorización con el IPC.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'servicios', texto: 'Acabar con las listas de espera con una financiación pública de la sanidad en torno al 7 % del PIB.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'servicios', texto: 'Plan Sonríe: meter poco a poco en la sanidad pública los tratamientos dentales básicos de los adultos, empezando por empastes, endodoncias y reconstrucciones.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'instituciones', texto: 'Blindar en la Constitución el derecho al aborto y crear en el Código Civil la «unión de amistad» para personas que se comprometen a cuidarse sin ser pareja.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'inmigracion', texto: 'Plan de Integración y Ciudadanía 2026-2030, con 500 millones de euros, y más vías legales y seguras de protección internacional.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'economia', texto: 'Llegar al 81 % de electricidad renovable en 2030 y mantener el cierre de las centrales nucleares hasta 2035.', origen: 'programa', fuente: F.psoePrograma },
+    { tema: 'exterior', texto: 'Impulsar una defensa común europea coordinando el gasto en defensa, sin aceptar el 5 % del PIB en gasto militar.', origen: 'programa', fuente: F.psoePrograma },
     { tema: 'vivienda', texto: 'Préstamos de hasta 50.000 € para la primera vivienda, con una línea de 10.000 millones.', quien: 'Pedro Sánchez, al presentar los decretos de vivienda', origen: 'gobierno', fuente: F.psoeDecretos },
     { tema: 'vivienda', texto: 'Que los inquilinos se desgraven parte del alquiler y prorrogar dos años los contratos limitando las subidas.', quien: 'Pedro Sánchez, al presentar los decretos de vivienda', origen: 'gobierno', fuente: F.psoeDecretos },
     { tema: 'impuestos', texto: 'Que los pisos turísticos tributen como un negocio y ligar las ventajas fiscales de las socimis al alquiler social.', quien: 'Pedro Sánchez, al presentar los decretos de vivienda', origen: 'gobierno', fuente: F.psoeDecretos },
-    { tema: 'empleo', texto: 'Reducir la jornada laboral hasta 36 horas semanales antes de 2030.', origen: 'documento', fuente: F.psoeForbes },
-    { tema: 'empleo', texto: 'Que el salario mínimo equivalga al 60 % del salario medio.', origen: 'documento', fuente: F.psoeForbes },
-    { tema: 'empleo', texto: 'Aprobar un Estatuto del Becario y que los autónomos coticen por sus ingresos reales.', origen: 'documento', fuente: F.psoeForbes },
   ],
   vox: [
     { tema: 'inmigracion', texto: '«Prioridad nacional»: acceso preferente de los españoles a la vivienda pública, guarderías, ayudas y bonos de comedor, y el Ingreso Mínimo Vital solo para españoles.', origen: 'programa', fuente: F.voxPrograma },
@@ -218,4 +233,4 @@ export const ultimaFuente = (slug: string) =>
   propuestasDe(slug).reduce((max, p) => (p.fuente.fecha > max ? p.fuente.fecha : max), '');
 
 /** Fecha de la última revisión de las propuestas (se cambia a mano en cada revisión). */
-export const REVISADO = '2026-11-13';
+export const REVISADO = '2026-11-15';

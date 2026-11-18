@@ -4,7 +4,11 @@ import { SITE, CURRENT_PROJECT, HERRAMIENTAS, LEGAL_LINKS, PROJECTS, SITE_LINKS,
 import { PARTIDOS_ORDENADOS } from '../lib/partidos';
 
 const year = new Date().getFullYear();
-const otherProjects = PROJECTS.filter((p) => p.id !== CURRENT_PROJECT);
+// Una sola web hermana (festivos y puentes, lo más ligado a fechas) y la portada común, como en las demás webs.
+const otherProjects = [
+  ...PROJECTS.filter((p) => p.id === 'puentes' && p.id !== CURRENT_PROJECT),
+  { id: 'iaencrudo', name: 'Todas las webs de IA en Crudo', url: 'https://iaencrudo.es/', description: 'Gasolina, luz, festivos, viajes y vivienda' },
+];
 ---
 
 <footer class="mt-16 bg-slate-950 text-slate-300">

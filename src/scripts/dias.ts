@@ -23,3 +23,8 @@ for (const el of document.querySelectorAll<HTMLElement>('[data-dias]')) {
   el.textContent = texto(d, el.dataset.forma ?? 'faltan');
   if (d === 0 && el.dataset.forma !== 'quedan') el.classList.replace('bg-indigo-50', 'bg-amber-100');
 }
+
+// «Próximo plazo» de la portada: enseña la primera tarjeta cuyo plazo no ha vencido todavía.
+const tarjetas = [...document.querySelectorAll<HTMLElement>('[data-proximo]')];
+const vigente = tarjetas.find((t) => Date.parse(t.dataset.proximo!) > Date.now());
+for (const t of tarjetas) t.hidden = t !== vigente;

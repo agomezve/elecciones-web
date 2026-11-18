@@ -8,8 +8,8 @@ import Icono from '../components/Icono.astro';
 import Faq from '../components/Faq.astro';
 import Autor from '../components/Autor.astro';
 import AdSlot from '../components/AdSlot.astro';
-import { SITE, HERRAMIENTAS } from '../config/site';
-import { CALENDARIO, ELECCION, PROVINCIAS, diasHasta, electoresPorEscano, fechaCorta, getProvincia, num } from '../lib/datos';
+import { SITE, HERRAMIENTAS, POST_ELECCIONES } from '../config/site';
+import { CALENDARIO, COMUNIDADES, ELECCION, PROVINCIAS, diasHasta, electoresPorEscano, fechaCorta, getProvincia, num } from '../lib/datos';
 import { PARTIDOS_ORDENADOS } from '../lib/partidos';
 
 const ahora = Date.now();
@@ -22,7 +22,7 @@ const madrid = getProvincia('madrid');
 const veces = (electoresPorEscano(madrid) / electoresPorEscano(soria)).toLocaleString('es-ES', { maximumFractionDigits: 1 });
 const diasCorreo = diasHasta('2026-11-19');
 
-const preguntas = [
+const todasPreguntas = [
   {
     q: '¿Cuándo son las elecciones generales?',
     a: 'El domingo 29 de noviembre de 2026. Los colegios electorales abren de 9:00 a 20:00. Las convocó el Real Decreto 806/2026, publicado en el BOE el 6 de octubre.',
@@ -48,24 +48,43 @@ const preguntas = [
     a: 'No. Desde el martes 24 de noviembre hasta el cierre de los colegios está prohibido publicar o difundir sondeos electorales (LOREG, artículo 69.7).',
   },
 ];
+/** Después del 29-N, fuera las preguntas de plazos que ya han pasado. */
+const CERRADAS = ['voto por correo', 'campaña electoral', 'encuestas'];
+const preguntas = POST_ELECCIONES ? todasPreguntas.filter((p) => !CERRADAS.some((c) => p.q.includes(c))) : todasPreguntas;
 ---
 
-<BaseLayout title={SITE.homeTitle} heading="Elecciones generales del 29 de noviembre de 2026" description={SITE.description}>
+<BaseLayout title={POST_ELECCIONES ? SITE.homeTitlePost : SITE.homeTitle} heading={POST_ELECCIONES ? 'Resultados de las elecciones generales del 29 de noviembre de 2026' : 'Elecciones generales del 29 de noviembre de 2026'} description={POST_ELECCIONES ? SITE.descriptionPost : SITE.description}>
   <!-- Portada -->
   <section class="relative overflow-hidden bg-slate-950 text-white">
     <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(99,102,241,0.35),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(245,158,11,0.18),transparent_50%)]"></div>
     <div class="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.25fr_1fr] lg:py-20">
       <div>
         <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300 ring-1 ring-white/15">
-          <span class="h-2 w-2 animate-pulse rounded-full bg-amber-400"></span> Elecciones generales · domingo 29 de noviembre
+          <span class="h-2 w-2 animate-pulse rounded-full bg-amber-400"></span> {POST_ELECCIONES ? 'Resultados · elecciones del 29 de noviembre' : 'Elecciones generales · domingo 29 de noviembre'}
         </p>
-        <h1 class="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-          Elecciones generales del <span class="whitespace-nowrap">29-N:</span> <span class="text-amber-400">todo para votar</span>, sin ruido
-        </h1>
-        <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">
-          Plazos del voto por correo, las {listas} listas al Congreso de tu provincia según el BOE, los partidos con sus
-          cabezas de lista y herramientas para entender cómo se reparten los 350 escaños.
-        </p>
+        {
+          POST_ELECCIONES ? (
+            <>
+              <h1 class="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+                Resultados del <span class="whitespace-nowrap">29-N:</span> <span class="text-amber-400">quién ha ganado</span> y qué pactos suman
+              </h1>
+              <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">
+                Los escaños de cada partido en tu provincia, el reparto de los 350 diputados y las mayorías posibles para llegar a 176,
+                con los datos oficiales del Ministerio del Interior.
+              </p>
+            </>
+          ) : (
+            <>
+              <h1 class="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+                Elecciones generales del <span class="whitespace-nowrap">29-N:</span> <span class="text-amber-400">todo para votar</span>, sin ruido
+              </h1>
+              <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-300">
+                Plazos del voto por correo, las {listas} listas al Congreso de tu provincia según el BOE, los partidos con sus
+                cabezas de lista y herramientas para entender cómo se reparten los 350 escaños.
+              </p>
+            </>
+          )
+        }
         <div class="mt-7">
           <SelectorProvincia oscuro />
         </div>
@@ -74,7 +93,9 @@ const preguntas = [
           <span class="text-2xl font-black text-indigo-700" aria-hidden="true">→</span>
         </a>
         <div class="mt-5 grid grid-cols-2 gap-x-4 gap-y-1 text-sm sm:flex sm:flex-wrap sm:gap-3">
-          <a href="/voto-por-correo" class="font-semibold text-amber-300 underline-offset-4 hover:underline py-2 sm:py-0">Voto por correo →</a>
+          {POST_ELECCIONES
+            ? <a href="/resultados-29n" class="font-semibold text-amber-300 underline-offset-4 hover:underline py-2 sm:py-0">Resultados →</a>
+            : <a href="/voto-por-correo" class="font-semibold text-amber-300 underline-offset-4 hover:underline py-2 sm:py-0">Voto por correo →</a>}
           <a href="/pactos" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Calculadora de pactos →</a>
           <a href="/propuestas" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Qué propone cada partido →</a>
           <a href="/partidos" class="font-semibold text-slate-200 underline-offset-4 hover:underline py-2 sm:py-0">Los partidos →</a>
@@ -82,10 +103,27 @@ const preguntas = [
       </div>
 
       <div class="self-center rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur sm:p-8">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-300">Abren los colegios en</p>
-        <div class="mt-3"><CuentaAtras hasta={ELECCION.apertura} pasado="Los colegios ya han abierto" oscuro /></div>
         {
-          siguiente && (
+          POST_ELECCIONES ? (
+            <>
+              <p class="text-sm font-semibold uppercase tracking-wider text-slate-300">Ya hay resultados</p>
+              <a href="/resultados-29n" class="mt-3 block rounded-2xl bg-amber-400 p-4 text-slate-900 transition hover:bg-amber-300">
+                <span class="block text-lg font-extrabold leading-snug">Resultados del 29-N por provincia →</span>
+                <span class="mt-0.5 block text-sm font-medium">Escaños, votos y participación</span>
+              </a>
+              <a href="/pactos" class="mt-3 block rounded-2xl bg-white/10 p-4 text-white ring-1 ring-white/15 transition hover:bg-white/15">
+                <span class="block text-lg font-extrabold leading-snug">¿Qué pactos llegan a 176? →</span>
+              </a>
+            </>
+          ) : (
+            <>
+              <p class="text-sm font-semibold uppercase tracking-wider text-slate-300">Abren los colegios en</p>
+              <div class="mt-3"><CuentaAtras hasta={ELECCION.apertura} pasado="Los colegios ya han abierto" oscuro /></div>
+            </>
+          )
+        }
+        {
+          !POST_ELECCIONES && siguiente && (
             <a href={siguiente.href ?? '/calendario'} class="mt-6 block rounded-2xl bg-amber-400 p-4 text-slate-900 transition hover:bg-amber-300">
               <span class="text-xs font-bold uppercase tracking-wider">Próximo plazo · {fechaCorta(siguiente.fecha)}</span>
               <span class="mt-1 block text-lg font-extrabold leading-snug">{siguiente.titulo}</span>
@@ -116,6 +154,27 @@ const preguntas = [
     </div>
     <div class="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       {PARTIDOS_ORDENADOS.slice(0, 8).map((p) => <TarjetaPartido partido={p} />)}
+    </div>
+  </section>
+
+  <!-- Provincias: enlaces rastreables a las 52 circunscripciones (el selector de arriba usa JS) -->
+  <section class="mx-auto max-w-6xl px-4 pb-14 sm:px-6">
+    <p class="text-sm font-semibold uppercase tracking-wider text-indigo-700">Candidatos por provincia</p>
+    <h2 class="mt-1 text-3xl font-extrabold tracking-tight">Las listas de tu provincia, según el BOE</h2>
+    <p class="mt-2 max-w-2xl text-slate-600">Cada provincia elige sus diputados y senadores. Entra en la tuya para ver todas las candidaturas, cuántos escaños reparte y qué pasó en 2023.</p>
+    <div class="mt-8 grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        COMUNIDADES.map((c) => (
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">{c.nombre}</h3>
+            <ul class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
+              {c.provincias.map((p) => (
+                <li><a href={`/provincias/${p.slug}`} class="text-indigo-700 hover:underline">{p.nombre}</a></li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
   </section>
 

@@ -1,6 +1,6 @@
 ---
 // Ruta: src/components/Header.astro
-import { NAV_LINKS, stripBase } from '../config/site';
+import { NAV_LINKS, POST_ELECCIONES, stripBase } from '../config/site';
 
 const currentPath = stripBase(Astro.url.pathname).replace(/\.html$/, '').replace(/\/index$/, '') || '/';
 const isActive = (href: string) =>
@@ -39,8 +39,8 @@ const isActive = (href: string) =>
       }
     </nav>
 
-    <a href="/voto-por-correo" class="hidden rounded-full bg-amber-400 px-3.5 py-1.5 text-sm font-bold text-slate-900 hover:bg-amber-300 lg:inline-flex" data-cta-cabecera>
-      Vota el 29-N
+    <a href={POST_ELECCIONES ? '/resultados-29n' : '/voto-por-correo'} class="hidden rounded-full bg-amber-400 px-3.5 py-1.5 text-sm font-bold text-slate-900 hover:bg-amber-300 lg:inline-flex" data-cta-cabecera>
+      {POST_ELECCIONES ? 'Resultados del 29-N' : 'Vota el 29-N'}
     </a>
 
     <!-- Botón de menú móvil -->

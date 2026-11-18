@@ -35,7 +35,7 @@ const canonical = canonicalURL.toString();
 const isHome = canonical === absoluteUrl('/');
 // Máximo 60 caracteres: se añade « | Sitio» solo si cabe.
 const withSuffix = `${title} | ${SITE.name}`;
-const fullTitle = isHome ? SITE.homeTitle : withSuffix.length <= 60 ? withSuffix : title;
+const fullTitle = isHome ? title : withSuffix.length <= 60 ? withSuffix : title;
 const ogType = schemaType === 'Article' ? 'article' : 'website';
 
 // Imagen OG: /og/<ruta>.png (la portada, /og/index.png).

@@ -16,6 +16,10 @@ export const SITE = {
   tagline: 'Elecciones generales del 29-N: plazos, candidatos y herramientas, con datos oficiales',
   /** <title> de la portada (60 caracteres como máximo). */
   homeTitle: 'Elecciones generales 29 de noviembre de 2026: guía y datos',
+  /** <title> y descripción de la portada con POST_ELECCIONES = true. */
+  homeTitlePost: 'Resultados de las elecciones generales del 29-N de 2026',
+  descriptionPost:
+    'Resultados del 29-N por provincia, reparto de los 350 escaños, pactos posibles para llegar a 176 y qué propone cada partido, con datos oficiales',
   description:
     'Todo para votar el 29-N: voto por correo, candidatos de tu provincia según el BOE, partidos, calculadora de pactos, simulador D\'Hondt y cuánto vale tu voto',
   year: 2026,
@@ -211,8 +215,14 @@ export function isPending(value: string): boolean {
   return value.trim() === '';
 }
 
+/**
+ * Modo después de las elecciones. Se cambia a true el 30-nov (y push): la portada pasa a resultados,
+ * la cabecera y el menú dejan de llevar al voto por correo y la FAQ quita los plazos ya cerrados.
+ */
+export const POST_ELECCIONES = false;
+
 export const NAV_LINKS = [
-  { href: '/voto-por-correo', title: 'Voto por correo' },
+  POST_ELECCIONES ? { href: '/resultados-29n', title: 'Resultados' } : { href: '/voto-por-correo', title: 'Voto por correo' },
   { href: '/propuestas', title: 'Propuestas' },
   { href: '/test-politico', title: 'Test político' },
   { href: '/partidos', title: 'Partidos' },

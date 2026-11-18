@@ -4,9 +4,12 @@ name: Deploy Elecciones al Día
 on:
   push:
     branches: [ main ]
-  # Reconstruye la web cada día a las 05:17 UTC para que la cuenta atrás y los avisos de plazos
-  # (voto por correo, campaña, encuestas) estén al día aunque no haya cambios.
+  # Reconstruye la web cada día para que los avisos de plazos (voto por correo, campaña, encuestas)
+  # estén al día aunque no haya cambios: justo después de la medianoche de Madrid (23:07 UTC en
+  # invierno) y por la mañana. GitHub puede retrasar las ejecuciones programadas varias horas; los
+  # «faltan N días» se recalculan además en el navegador (src/scripts/dias.ts).
   schedule:
+    - cron: '7 23 * * *'
     - cron: '17 5 * * *'
   workflow_dispatch:
 

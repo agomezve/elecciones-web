@@ -90,7 +90,7 @@ const preguntas = [
               <span class="text-xs font-bold uppercase tracking-wider">Próximo plazo · {fechaCorta(siguiente.fecha)}</span>
               <span class="mt-1 block text-lg font-extrabold leading-snug">{siguiente.titulo}</span>
               {siguiente.fecha === '2026-11-19' && diasCorreo >= 0 && (
-                <span class="mt-0.5 block text-sm font-medium">{diasCorreo === 0 ? 'Hoy es el último día' : `Te quedan ${diasCorreo} ${diasCorreo === 1 ? 'día' : 'días'}`} →</span>
+                <span class="mt-0.5 block text-sm font-medium" data-dias="2026-11-19" data-limite="2026-11-20T00:00:00+01:00" data-forma="quedan">{diasCorreo === 0 ? 'Hoy es el último día' : `Te ${diasCorreo === 1 ? 'queda 1 día' : `quedan ${diasCorreo} días`}`} →</span>
               )}
             </a>
           )
@@ -199,3 +199,7 @@ const preguntas = [
     <Autor />
   </section>
 </BaseLayout>
+
+<script>
+  import '../scripts/dias';
+</script>

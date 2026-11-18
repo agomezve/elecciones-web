@@ -23,12 +23,11 @@ const description = 'Fechas de las elecciones generales: voto por correo (19 y 2
         const pasado = new Date(h.limite) < ahora;
         const d = diasHasta(h.fecha, ahora);
         return (
-          <li class:list={['relative', pasado && 'opacity-60']}>
+          <li data-hito class:list={['relative', pasado && 'opacity-60']}>
             <span class:list={['absolute -left-[33px] top-1.5 h-4 w-4 rounded-full ring-4 ring-white', h.clave ? 'bg-amber-400' : pasado ? 'bg-slate-300' : 'bg-indigo-600']} />
             <p class="text-sm font-semibold capitalize text-indigo-700">
               {fechaLarga(h.fecha)}
-              {!pasado && d > 0 && <span class="ml-2 rounded-full bg-indigo-50 px-2 py-0.5 text-xs normal-case">faltan {d} días</span>}
-              {!pasado && d === 0 && <span class="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs normal-case">hoy</span>}
+              <span data-dias={h.fecha} data-limite={h.limite} hidden={pasado || d < 0} class:list={['ml-2 rounded-full px-2 py-0.5 text-xs normal-case', d === 0 ? 'bg-amber-100' : 'bg-indigo-50']}>{pasado || d < 0 ? '' : d === 0 ? 'hoy' : d === 1 ? 'falta 1 día' : `faltan ${d} días`}</span>
             </p>
             <h2 class="mt-1 text-lg font-bold text-slate-900">{h.titulo}</h2>
             <p class="mt-1 text-slate-600">{h.texto}</p>
@@ -42,3 +41,7 @@ const description = 'Fechas de las elecciones generales: voto por correo (19 y 2
     <Autor />
   </div>
 </BaseLayout>
+
+<script>
+  import '../scripts/dias';
+</script>

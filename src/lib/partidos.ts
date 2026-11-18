@@ -57,10 +57,12 @@ export const PARTIDOS: Partido[] = [
   {
     slug: 'junts', siglas: 'JxCat', nombre: 'Junts per Catalunya', color: '#00c3b2', logo: '/img/partidos/junts.svg',
     ambito: 'autonómico', provinciaRef: 'barcelona', r2023: { escanos: 7, votos: 395_429 }, web: 'https://junts.cat',
+    programaPresentado: { fecha: '2026-11-18', medio: 'Infobae (EFE)', url: 'https://www.infobae.com/espana/agencias/2026/11/18/junts-propone-desocupaciones-expres-y-una-moratoria-hasta-2028-a-que-la-banca-compre-pisos/' },
   },
   {
     slug: 'eh-bildu', siglas: 'EH Bildu', nombre: 'Euskal Herria Bildu', color: '#00a19a', logo: '/img/partidos/bildu.svg',
     ambito: 'autonómico', provinciaRef: 'bizkaia', r2023: { escanos: 6, votos: 335_129 }, web: 'https://ehbildu.eus',
+    programa: { url: 'https://posibleegin.ehbildu.eus/wp-content/uploads/2026/11/PROGRAMA-CAS.pdf', fecha: '2026-11-16' },
     destacados: ['gipuzkoa'],
   },
   {
@@ -89,16 +91,19 @@ export const PARTIDOS: Partido[] = [
   {
     slug: 'salf', siglas: 'SALF', nombre: 'Se Acabó La Fiesta', color: '#7a1f2b', logo: '/img/partidos/salf.png',
     ambito: 'estatal', provinciaRef: 'madrid', r2023: null, nota2023: 'No se presentó a las generales de 2023.',
+    programaPresentado: { fecha: '2026-11-10', medio: 'The Objective', url: 'https://theobjective.com/espana/politica/2026-11-10/alvise-megacarcel-diputado/' },
   },
   {
     slug: 'frente-amplio', siglas: 'FA', nombre: 'Frente Amplio', color: '#e5007d', logo: '/img/partidos/fa.svg',
     ambito: 'estatal', provinciaRef: 'madrid', r2023: null, nota2023: 'Se presenta por primera vez a unas generales.',
+    programa: { url: 'https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf', fecha: '2026-11-17' },
     destacados: ['barcelona'],
   },
   {
     slug: 'podemos', siglas: 'PODEMOS', nombre: 'Podemos', color: '#6b2e68', logo: '/img/partidos/podemos.svg',
     ambito: 'estatal', provinciaRef: 'madrid', r2023: null, nota2023: 'En 2023 no se presentó con sus siglas: fue dentro de la coalición Sumar.',
     web: 'https://podemos.info',
+    programa: { url: 'https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf', fecha: '2026-11-17' },
   },
   {
     slug: 'pcte', siglas: 'PCTE', nombre: 'Partido Comunista de los Trabajadores de España', color: '#c8102e',

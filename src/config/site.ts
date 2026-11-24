@@ -82,11 +82,11 @@ export const CHANNEL = {
 export const AUTHOR = {
   name: OWNER.name,
   href: '/sobre-mi',
-  jobTitle: 'Programador backend',
+  jobTitle: 'Ingeniero informático y desarrollador full-stack',
   initials: 'AG',
   /** Perfiles del autor en otras webs (schema.org sameAs). */
   sameAs: [CHANNEL.url],
-  bio: `Soy ${OWNER.name}, programador backend. He construido ${SITE.name} con ayuda de IA y lo cuento en mi canal ${CHANNEL.name}. Las cifras no las genera ninguna IA: salen del BOE, de la Junta Electoral Central y del Ministerio del Interior, tal cual. No trabajo para ningún partido.`,
+  bio: `Soy ${OWNER.name}, ingeniero informático y desarrollador full-stack. He construido ${SITE.name} con ayuda de IA y lo cuento en mi canal ${CHANNEL.name}. Las cifras no las genera ninguna IA: salen del BOE, de la Junta Electoral Central y del Ministerio del Interior, tal cual. No trabajo para ningún partido.`,
 } as const;
 
 /** Página que explica qué hace la IA, qué reviso yo y de dónde salen los datos. */

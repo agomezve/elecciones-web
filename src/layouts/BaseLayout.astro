@@ -1,4 +1,5 @@
 ---
+import { caducada } from '../config/caducadas.mjs';
 // Ruta: src/layouts/BaseLayout.astro
 import '@fontsource-variable/inter';
 import '../styles/global.css';
@@ -67,7 +68,7 @@ const canonical = new URL(/^https?:\/\//.test(canonicalInput) ? canonicalInput :
       breadcrumbs={breadcrumbs}
       article={article}
       modified={modified}
-      noindex={noindex}
+      noindex={noindex || caducada(currentPath)}
     />
 
     <!-- Google Analytics 4 con Consent Mode v2 (solo si GA4_ID está relleno en src/config/site.ts). -->

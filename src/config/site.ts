@@ -215,11 +215,10 @@ export function isPending(value: string): boolean {
   return value.trim() === '';
 }
 
-/**
- * Modo después de las elecciones. Se cambia a true el 30-nov (y push): la portada pasa a resultados,
- * la cabecera y el menú dejan de llevar al voto por correo y la FAQ quita los plazos ya cerrados.
- */
-export const POST_ELECCIONES = false;
+// POST_ELECCIONES vive en src/config/caducadas.mjs (también lo usa astro.config.mjs para el sitemap).
+// El 30-nov se cambia allí a true.
+import { POST_ELECCIONES } from './caducadas.mjs';
+export { POST_ELECCIONES };
 
 export const NAV_LINKS = [
   POST_ELECCIONES ? { href: '/resultados-29n', title: 'Resultados' } : { href: '/voto-por-correo', title: 'Voto por correo' },

@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import basePathLinks from './integrations/base-path-links.mjs';
 import ogImages from './integrations/og-images.mjs';
+import { caducada } from './src/config/caducadas.mjs';
 
 
 // https://astro.build/config
@@ -39,7 +40,7 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      filter: (page) => !page.endsWith('/404'),
+      filter: (page) => !page.endsWith('/404') && !caducada(page),
     }),
     // Imagen Open Graph 1200×630 de cada página (colores de la marca).
     ogImages({ accent: '#f59e0b', glow: '#1e3a8a' }),
